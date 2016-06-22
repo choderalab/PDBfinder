@@ -382,8 +382,7 @@ if __name__ == '__main__':
                     if fix is True:
                         pdb_fix(s, pathway, ph, curated_chains)
             else:
-                print('found %s pdb files for %s/%s. Check the CSV file for a mistake' % (len(found_pdb),
-                                                                                          targets_list[i], id))
+                print('found %s pdb files for %s. Check the CSV file for a mistake' % (len(found_pdb), ac_id))
     else:
         warnings.warn("I think you specified a search mode that isn't supported yet! Check --mode if you used it.")
 
