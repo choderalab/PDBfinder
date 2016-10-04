@@ -76,7 +76,7 @@ def gen_query(search_ligand, search_protein=None, querymode=query_mode):
           <queryRefinementLevel>0</queryRefinementLevel>
           <orgPdbQuery>
              <queryType>org.pdb.query.simple.UpAccessionIdQuery</queryType>
-            <accessionIdList>%s</accessionIdList>
+             <accessionIdList>%s</accessionIdList>
           </orgPdbQuery>
          </queryRefinement>
          <queryRefinement>
@@ -87,7 +87,23 @@ def gen_query(search_ligand, search_protein=None, querymode=query_mode):
             <haveLigands>no</haveLigands>
           </orgPdbQuery>
          </queryRefinement>
+         <queryRefinement>
+          <queryRefinementLevel>2</queryRefinementLevel>
+          <conjunctionType>and</conjunctionType>
+          <orgPdbQuery>
+            <version>head</version>
+            <queryType>org.pdb.query.simple.EnzymeClassificationQuery</queryType>
+            <Enzyme_Classification>2.7.11.*</Enzyme_Classification>
+          </orgPdbQuery>
+          <conjunctionType>or</conjunctionType>
+          <orgPdbQuery>
+            <version>head</version>
+            <queryType>org.pdb.query.simple.EnzymeClassificationQuery</queryType>
+            <Enzyme_Classification>2.7.10.*</Enzyme_Classification>
+          </orgPdbQuery>
+           </queryRefinement>
         </orgPdbCompositeQuery>
+
         """"" % (search_protein)
 
         final_params = xmltodict.parse(xml)
