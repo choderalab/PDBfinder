@@ -34,6 +34,8 @@ parser.add_argument('--cwater', required=False, action='store_true', dest='cwate
 
 parser.add_argument('--ph', required=False, default=7.4, type=int, dest='ph',
                     help='Use to set pH to something other than 7.0')
+parser.add_argument('--renumber', required=False, action='store_false', dest='keepNumbers',
+                    help='Set flag to renumber PDB and not use original numbering')
 
 args = parser.parse_args()
 
@@ -43,6 +45,7 @@ fix = args.fix
 apo = args.apo
 keep_cwater = args.cwater
 ph = args.ph
+keepNumbers = args.keepNumbers
 
 #########################################
 #        Helper Functions               #
@@ -232,15 +235,15 @@ def pdb_fix(pdbid, file_pathway, ph, chains_to_remove):
     fixer.addMissingAtoms()
     fixer.addMissingHydrogens(ph)
     PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
-                                                                         '%s_fixed_ph%s.pdb' % (pdbid, ph)), 'w'))
+                                                                         '%s_fixed_ph%s.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
     if apo is True:
         fixer.removeHeterogens(keep_cwater)
         if keep_cwater is False:
             PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
-                                                                                 '%s_fixed_ph%s_apo_nowater.pdb' % (pdbid, ph)), 'w'))
+                                                                                 '%s_fixed_ph%s_apo_nowater.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
         else:
             PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
-                                                                                 '%s_fixed_ph%s_apo.pdb' % (pdbid, ph)), 'w'))
+                                                                                 '%s_fixed_ph%s_apo.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
 
 
 def download_pdb(pdbid, file_pathway):
@@ -259,7 +262,7 @@ def download_pdb(pdbid, file_pathway):
     if not os.path.exists(file_pathway):
         os.makedirs(file_pathway)
     fixer = PDBFixer(pdbid=pdbid)
-    PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway, '%s.pdb' % pdbid), 'w'))
+    PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway, '%s.pdb' % pdbid), 'w'), keepIds=keepNumbers)
 
 
 if __name__ == '__main__':
