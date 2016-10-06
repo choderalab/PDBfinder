@@ -26,14 +26,9 @@ parser.add_argument('--mode', required=False, default='LigAll', dest='mode',
 parser.add_argument('--fix', required=False, action='store_true', dest='fix',
                     help='Setting flag fixes problems with the PDB')
 
-parser.add_argument('--apo', required=False, action='store_true', dest='apo',
-                    help='Remove heterogens, set --cwater to keep crystal waters')
-
-parser.add_argument('--cwater', required=False, action='store_true', dest='cwater',
-                    help='Set flag to keep crystal waters when using --apo')
-
 parser.add_argument('--ph', required=False, default=7.4, type=int, dest='ph',
                     help='Use to set pH to something other than 7.0')
+
 parser.add_argument('--renumber', required=False, action='store_false', dest='keepNumbers',
                     help='Set flag to renumber PDB and not use original numbering')
 
@@ -42,8 +37,6 @@ args = parser.parse_args()
 ligand = args.lig
 query_mode = args.mode
 fix = args.fix
-apo = args.apo
-keep_cwater = args.cwater
 ph = args.ph
 keepNumbers = args.keepNumbers
 
@@ -234,16 +227,18 @@ def pdb_fix(pdbid, file_pathway, ph, chains_to_remove):
     fixer.findMissingAtoms()
     fixer.addMissingAtoms()
     fixer.addMissingHydrogens(ph)
+    # Write fixed PDB file, with all of the waters and ligands
     PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
-                                                                         '%s_fixed_ph%s.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
-    if apo is True:
-        fixer.removeHeterogens(keep_cwater)
-        if keep_cwater is False:
-            PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
-                                                                                 '%s_fixed_ph%s_apo_nowater.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
-        else:
-            PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
-                                                                                 '%s_fixed_ph%s_apo.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
+                            '%s_fixed_ph%s.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
+
+    # Remove the ligand and write a pdb file
+    fixer.removeHeterogens(True)
+    PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
+                            '%s_fixed_ph%s_apo.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
+    # Remove the waters and write a pdb file
+    fixer.removeHeterogens(False)
+    PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
+                            '%s_fixed_ph%s_apo_nowater.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
 
 
 def download_pdb(pdbid, file_pathway):
@@ -404,7 +399,3 @@ if __name__ == '__main__':
                 print('found %s pdb files for %s. Check the CSV file for a mistake' % (len(found_pdb), ac_id))
     else:
         warnings.warn("I think you specified a search mode that isn't supported yet! Check --mode if you used it.")
-
-
-
-
