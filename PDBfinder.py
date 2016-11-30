@@ -14,6 +14,8 @@ from pdbfixer import PDBFixer
 from simtk.openmm.app import PDBFile
 import os
 from natsort import natsorted
+import pypdb
+import protprep
 #################################################
 
 parser = argparse.ArgumentParser(description="Automated script to search PDB by chemical ID")
@@ -26,7 +28,7 @@ parser.add_argument('--mode', required=False, default='LigAll', dest='mode',
 parser.add_argument('--fix', required=False, action='store_true', dest='fix',
                     help='Setting flag fixes problems with the PDB')
 
-parser.add_argument('--ph', required=False, default=7.4, type=int, dest='ph',
+parser.add_argument('--ph', required=False, default=7.4, type=float, dest='ph',
                     help='Use to set pH to something other than 7.0')
 
 parser.add_argument('--renumber', required=False, action='store_false', dest='keepNumbers',
@@ -45,6 +47,22 @@ keepNumbers = args.keepNumbers
 #########################################
 
 
+def write_file(filename, contents):
+    """
+    Little helper function to write the pdb files
+
+    Args:
+        filename: String, 4-letter PDB ID
+        contents: string that will be written to the file
+
+    Returns: Nothing, just writes the file
+
+    """
+
+    with open(filename, 'w') as outfile:
+        outfile.write(contents)
+
+
 def gen_query(search_ligand, search_protein=None, querymode=query_mode):
     """
     Args:
@@ -57,15 +75,18 @@ def gen_query(search_ligand, search_protein=None, querymode=query_mode):
     """
 
     if querymode == 'Lig':
-        params = dict()
-        params['queryType'] = 'org.pdb.query.simple.ChemCompIdQuery'
-        params['chemCompId'] = search_ligand
+        xml = """
+        <orgPdbQuery>
+         <queryType>org.pdb.query.simple.ChemCompIdQuery</queryType>
+         <description>Chemical ID(s):  CL and Polymeric type is Any</description>
+            <chemCompId>%s</chemCompId>
+            <polymericType>Any</polymericType>
+        </orgPdbQuery>
+        """ % search_ligand
 
-        scan_params = dict()
-        scan_params['orgPdbQuery'] = params
-        final_params = scan_params
+        final_params = xmltodict.parse(xml)
 
-    if querymode == 'Apo':
+    elif querymode == 'Apo':
         xml = """
         <orgPdbCompositeQuery>
          <queryRefinement>
@@ -183,7 +204,7 @@ def clean_pdb(list_pdb_ids, querymode=query_mode):
     return list_pdb_ids
 
 
-def pdb_fix(pdbid, file_pathway, ph, chains_to_remove):
+def pdb_fix_old(pdbid, file_pathway, ph, chains_to_remove):
     """
 
     Args:
@@ -240,6 +261,13 @@ def pdb_fix(pdbid, file_pathway, ph, chains_to_remove):
     PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway,
                             '%s_fixed_ph%s_apo_nowater.pdb' % (pdbid, ph)), 'w'), keepIds=keepNumbers)
 
+def pdb_fix(pdbid, file_pathway, ph):
+
+    print(pdbid)
+
+    input_file = os.path.join(file_pathway, '%s.pdb' % pdbid)
+    output_file_pathway = os.path.join(file_pathway, 'fixed')
+    protprep.protein_prep(input_file, output_file_pathway, pdbid, pH=ph)
 
 def download_pdb(pdbid, file_pathway):
     """
@@ -256,8 +284,9 @@ def download_pdb(pdbid, file_pathway):
 
     if not os.path.exists(file_pathway):
         os.makedirs(file_pathway)
-    fixer = PDBFixer(pdbid=pdbid)
-    PDBFile.writeFile(fixer.topology, fixer.positions, open(os.path.join(file_pathway, '%s.pdb' % pdbid), 'w'), keepIds=keepNumbers)
+    pdb = pypdb.get_pdb_file(pdbid)
+    write_file(os.path.join(file_pathway, '%s.pdb' % pdbid), pdb)
+
 
 
 if __name__ == '__main__':
@@ -293,10 +322,10 @@ if __name__ == '__main__':
         if chem_id_list == 0:
             print('Missing ChemID for %s, there are a few of these' % ligand)
         pdb_list = []
-        pathway = pathway = 'pdbs/%s' % args.lig
+        pathway = 'pdbs/%s' % args.lig
         for id in chem_id_list:
             print('Searching for PDBS containing %s' % id)
-            query = gen_query(search_ligand=id)
+            query = gen_query(search_ligand=id, querymode=query_mode)
             found_pdb = search(query)
             found_pdb = clean_pdb(found_pdb)
             if len(found_pdb) > 0:
@@ -304,7 +333,7 @@ if __name__ == '__main__':
                 for s in found_pdb:
                     download_pdb(s, pathway)
                     if fix is True:
-                        pdb_fix(s, pathway, ph, curated_chains)
+                        pdb_fix(s, pathway, ph)
             else:
                 print('found %s pdb files for %s. Check the CSV file for a mistake' % (len(found_pdb), id))
 
@@ -334,12 +363,11 @@ if __name__ == '__main__':
                         pathway = 'pdbs/%s-%s' % (args.lig, targets_list[i])
                         download_pdb(s, pathway)
                         if fix is True:
-                            pdb_fix(s, pathway, ph, curated_chains)
+                            pdb_fix(s, pathway, ph)
                 else:
                     print('found %s pdb files for %s/%s. Check the CSV file for a mistake' % (len(found_pdb),
                                                                                               targets_list[i], id))
-    # LigAll downloads all ligands and their HUMANS targets
-    # Todo: implement a way to have this download all targets regardless of species
+    # LigAll downloads all ligands and their HUMAN targets
     elif query_mode == 'LigAll':
         pdb_list = []
         # Create list of Chem_IDs for the FDA-Approved drug name from CSV file
@@ -370,7 +398,7 @@ if __name__ == '__main__':
                             pathway = 'pdbs/%s-%s' % (x, targets_list[i])
                             download_pdb(s, pathway)
                             if fix is True:
-                                pdb_fix(s, pathway, ph, curated_chains)
+                                pdb_fix(s, pathway, ph)
                     else:
                         print('found %s pdb files for %s/%s. Check the CSV file for a mistake' % (len(found_pdb),
                                                                                                   targets_list[i], id))
@@ -394,7 +422,7 @@ if __name__ == '__main__':
                     pathway = 'pdbs/apo'
                     download_pdb(s, pathway)
                     if fix is True:
-                        pdb_fix(s, pathway, ph, curated_chains)
+                        pdb_fix(s, pathway, ph)
             else:
                 print('found %s pdb files for %s. Check the CSV file for a mistake' % (len(found_pdb), ac_id))
     else:

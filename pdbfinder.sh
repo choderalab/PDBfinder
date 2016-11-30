@@ -46,4 +46,4 @@ cd $PBS_O_WORKDIR
 #source activate py27
 
 # Launch job 
-python PDBfinder.py --mode LigAll -l Imatinib --fix
+python PDBfinder.py --mode LigAll -l Imatinib --fix --ph 7.4
