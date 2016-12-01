@@ -34,6 +34,9 @@ parser.add_argument('--ph', required=False, default=7.4, type=float, dest='ph',
 parser.add_argument('--renumber', required=False, action='store_false', dest='keepNumbers',
                     help='Set flag to renumber PDB and not use original numbering')
 
+parser.add_argument('--biological_unit', required=False, action='store_true', dest='biological_unit',
+                    help='Set flag to retrive biological unit for all structures')
+
 args = parser.parse_args()
 
 ligand = args.lig
@@ -41,11 +44,31 @@ query_mode = args.mode
 fix = args.fix
 ph = args.ph
 keepNumbers = args.keepNumbers
+bunit = args.biological_unit
 
 #########################################
 #        Helper Functions               #
 #########################################
 
+def get_pdb_biological_unit(pdb_id):
+    """
+
+    Args:
+        pdb_id: 4-letter PDB code
+
+    Returns: a string with the full
+
+    """
+
+
+    fullurl = 'http://www.rcsb.org/pdb/files/'+pdb_id+'.pdb1'
+    req = urllib.request.Request(fullurl)
+    f = urllib.request.urlopen(req)
+    result = f.read()
+    result = result.decode('unicode_escape')
+    result = result.replace('XXXX', pdb_id)
+
+    return result
 
 def write_file(filename, contents):
     """
@@ -284,7 +307,13 @@ def download_pdb(pdbid, file_pathway):
 
     if not os.path.exists(file_pathway):
         os.makedirs(file_pathway)
-    pdb = pypdb.get_pdb_file(pdbid)
+
+    if bunit == True:
+        pdb = get_pdb_biological_unit(pdbid)
+
+    else:
+        pdb = pypdb.get_pdb_file(pdbid)
+
     write_file(os.path.join(file_pathway, '%s.pdb' % pdbid), pdb)
 
 
