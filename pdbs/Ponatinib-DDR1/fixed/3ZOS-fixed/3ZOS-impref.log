@@ -1,0 +1,144 @@
+
+** Heavy-atom coordinates will be fixed: maxlevel set to 0
+  **
+  ** Beginning refinement level 0
+  **
+
+%IMPACT-I (openwt): Request to open FORMATTED file 3ZOS-impref_ref0.out on unit   2
+ Entering IMPACT execution environment 
+ Date: Wednesday, November 30 2016, at 21:38:07 EST
+ Impact version 72014
+ mmshare version        35014
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+
+ Host: Linux cc05.local 2.6.32-573.18.1.el6.x86_64 #1 SMP Tue Feb 9 22:46:17 UTC 2016 x86_64
+ Job Name: 3ZOS-impref_ref0
+ SCHRODINGER  directory: /cbio/jclab/share/schrodinger/schrodinger2016-3
+ IMPACT_EXEC  directory: /cbio/jclab/share/schrodinger/schrodinger2016-3/impact-v7.2/bin/Linux-x86_64
+ MMSHARE_EXEC directory: /cbio/jclab/share/schrodinger/schrodinger2016-3/mmshare-v3.5/bin/Linux-x86_64
+
+ Clock-based global random seed:     1480559887
+%IMPACT-I(foldmain): calling OPLS_2005 atomtyping ...
+%IMPACT-I(foldmain): finished parameter assignment
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coord. are written to file: "3ZOS-impref.init_coord.rst"
+      Box dimensions not written
+
+
+ Total number of atoms  =  5630
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1375487
+ E-pot        RMS grad     Max grad    
+ -8.94138E+03  1.40703E+02  6.11471E+03
+ Step number:         10         Non-bonded count:  1375487
+ -1.50230E+04  2.14550E+00  4.23486E+01
+ Step number:         20         Non-bonded count:  1375487
+ -1.52328E+04  1.58133E+00  5.25733E+01
+ Step number:         30         Non-bonded count:  1375487
+ -1.53478E+04  1.48661E+00  8.10889E+01
+ Step number:         40         Non-bonded count:  1375487
+ -1.54449E+04  9.55469E-01  1.94342E+01
+ Step number:         50         Non-bonded count:  1375487
+ -1.55019E+04  1.09449E+00  6.54236E+01
+ Step number:         60         Non-bonded count:  1375487
+ -1.55438E+04  6.25913E-01  2.95680E+01
+ Step number:         70         Non-bonded count:  1375487
+ -1.55739E+04  6.61709E-01  3.15167E+01
+ Step number:         80         Non-bonded count:  1375487
+ -1.55931E+04  4.32030E-01  9.27212E+00
+ Step number:         90         Non-bonded count:  1375487
+ -1.56075E+04  5.32408E-01  2.96320E+01
+ Step number:        100         Non-bonded count:  1375487
+ -1.56220E+04  4.10613E-01  1.32545E+01
+ Step number:        100         Non-bonded count:  1375487
+ -1.56220E+04  4.10613E-01  1.32545E+01
+      Current coord. are written to file: "3ZOS-impref.min0_coord.rst"
+      Box dimensions not written
+      Current coordinates are read from file: "3ZOS-impref.init_coord.rst"
+      Box dimensions not read
+          read from "3ZOS-impref.init_coord.rst"
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     299
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coordinates are read from file: "3ZOS-impref.min0_coord.rst"
+      Box dimensions not read
+          read from "3ZOS-impref.min0_coord.rst"
+
+
+ Total number of atoms  =  5630
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1375487
+ E-pot        RMS grad     Max grad    
+ -1.44908E+04  2.71948E+00  2.85148E+01
+ Step number:         10         Non-bonded count:  1375487
+ -1.52377E+04  1.88702E+00  5.10181E+01
+ Step number:         20         Non-bonded count:  1375487
+ -1.53656E+04  7.76737E-01  1.83864E+01
+ Step number:         30         Non-bonded count:  1375487
+ -1.53912E+04  5.09085E-01  1.89625E+01
+ Step number:         40         Non-bonded count:  1375487
+ -1.54052E+04  3.72120E-01  1.72609E+01
+ Step number:         50         Non-bonded count:  1375487
+ -1.54112E+04  2.28665E-01  5.76487E+00
+ Step number:         60         Non-bonded count:  1375487
+ -1.54156E+04  2.15129E-01  5.52111E+00
+ Step number:         70         Non-bonded count:  1375487
+ -1.54192E+04  2.05992E-01  4.95135E+00
+ Step number:         80         Non-bonded count:  1375487
+ -1.54221E+04  2.38071E-01  8.66919E+00
+ Step number:         90         Non-bonded count:  1375487
+ -1.54246E+04  1.79873E-01  3.85792E+00
+ Step number:        100         Non-bonded count:  1375487
+ -1.54279E+04  1.48218E-01  4.27133E+00
+ Step number:        100         Non-bonded count:  1375487
+ -1.54279E+04  1.48218E-01  4.27133E+00
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     575
+
+
+Final Energy Reports:
+------------------------------------
+ Total Energy of the system...... -1.54279E+04 kcal/mol
+ Total Potential Energy.......... -1.54279E+04 kcal/mol
+ Total Kinetic Energy............  0.00000E+00 kcal/mol
+ Temperature of the system.......        0.000 K
+ Bond Stretch Energy.............  1.00954E+01 kcal/mol
+ Angle Bending Energy............  2.93207E+02 kcal/mol
+ Torsion Angle Energy............  1.15978E+02 kcal/mol
+ Restraining Energy for Torsions.  0.00000E+00 kcal/mol
+ 1,4 Lennard Jones Energy........  4.26815E+02 kcal/mol
+ 1,4 Electrostatic Energy........ -5.24303E+02 kcal/mol
+ Lennard Jones Energy............ -7.41074E+02 kcal/mol
+ Electrostatic Energy............ -1.50086E+04 kcal/mol
+ H-bond Energy...................  0.00000E+00 kcal/mol
+ 
+ Exiting IMPACT execution environment 
+ Date: Wednesday, November 30 2016, at 21:38:32 EST
+%IMPACT-I (timit): Total CPU time =      25.15 seconds (   0.4 minutes)
+Total elapsed time = 27 seconds
+  ** Completed refinement level 0      rmsd =  0.029
+
+** Refinement finished. Final level: 0
+
+** The refined complex file is 3ZOS-impref_ref.mae.

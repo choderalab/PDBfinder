@@ -1,0 +1,144 @@
+
+** Heavy-atom coordinates will be fixed: maxlevel set to 0
+  **
+  ** Beginning refinement level 0
+  **
+
+%IMPACT-I (openwt): Request to open FORMATTED file 4ANQ-impref_ref0.out on unit   2
+ Entering IMPACT execution environment 
+ Date: Thursday, December 01 2016, at 00:25:02 EST
+ Impact version 72014
+ mmshare version        35014
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+
+ Host: Linux cc05.local 2.6.32-573.18.1.el6.x86_64 #1 SMP Tue Feb 9 22:46:17 UTC 2016 x86_64
+ Job Name: 4ANQ-impref_ref0
+ SCHRODINGER  directory: /cbio/jclab/share/schrodinger/schrodinger2016-3
+ IMPACT_EXEC  directory: /cbio/jclab/share/schrodinger/schrodinger2016-3/impact-v7.2/bin/Linux-x86_64
+ MMSHARE_EXEC directory: /cbio/jclab/share/schrodinger/schrodinger2016-3/mmshare-v3.5/bin/Linux-x86_64
+
+ Clock-based global random seed:     1480569902
+%IMPACT-I(foldmain): calling OPLS_2005 atomtyping ...
+%IMPACT-I(foldmain): finished parameter assignment
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coord. are written to file: "4ANQ-impref.init_coord.rst"
+      Box dimensions not written
+
+
+ Total number of atoms  =  5534
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1350052
+ E-pot        RMS grad     Max grad    
+  8.90369E+06  1.35257E+06  6.42083E+07
+ Step number:         10         Non-bonded count:  1350052
+ -1.16846E+04  2.53694E+01  1.19675E+03
+ Step number:         20         Non-bonded count:  1350052
+ -1.40711E+04  3.58757E+00  2.30243E+02
+ Step number:         30         Non-bonded count:  1350052
+ -1.44001E+04  2.48508E+00  1.33679E+02
+ Step number:         40         Non-bonded count:  1350052
+ -1.45784E+04  2.01629E+00  9.15213E+01
+ Step number:         50         Non-bonded count:  1350052
+ -1.47094E+04  1.74600E+00  1.07809E+02
+ Step number:         60         Non-bonded count:  1350052
+ -1.48030E+04  1.11728E+00  4.98961E+01
+ Step number:         70         Non-bonded count:  1350052
+ -1.48594E+04  1.09968E+00  5.04642E+01
+ Step number:         80         Non-bonded count:  1350052
+ -1.49069E+04  1.08797E+00  5.91617E+01
+ Step number:         90         Non-bonded count:  1350052
+ -1.49453E+04  1.03921E+00  5.70386E+01
+ Step number:        100         Non-bonded count:  1350052
+ -1.49723E+04  7.45640E-01  3.23363E+01
+ Step number:        100         Non-bonded count:  1350052
+ -1.49723E+04  7.45640E-01  3.23363E+01
+      Current coord. are written to file: "4ANQ-impref.min0_coord.rst"
+      Box dimensions not written
+      Current coordinates are read from file: "4ANQ-impref.init_coord.rst"
+      Box dimensions not read
+          read from "4ANQ-impref.init_coord.rst"
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     303
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coordinates are read from file: "4ANQ-impref.min0_coord.rst"
+      Box dimensions not read
+          read from "4ANQ-impref.min0_coord.rst"
+
+
+ Total number of atoms  =  5534
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1350052
+ E-pot        RMS grad     Max grad    
+ -1.37655E+04  2.62845E+00  3.31588E+01
+ Step number:         10         Non-bonded count:  1350052
+ -1.44014E+04  1.97619E+00  6.56874E+01
+ Step number:         20         Non-bonded count:  1350052
+ -1.44987E+04  1.63366E+00  1.13900E+02
+ Step number:         30         Non-bonded count:  1350052
+ -1.45416E+04  1.05538E+00  5.68188E+01
+ Step number:         40         Non-bonded count:  1350052
+ -1.45651E+04  8.54400E-01  5.40688E+01
+ Step number:         50         Non-bonded count:  1350052
+ -1.45873E+04  7.41336E-01  3.97744E+01
+ Step number:         60         Non-bonded count:  1350052
+ -1.46008E+04  4.98675E-01  2.81399E+01
+ Step number:         70         Non-bonded count:  1350052
+ -1.46081E+04  4.59141E-01  1.95349E+01
+ Step number:         80         Non-bonded count:  1350052
+ -1.46149E+04  4.40711E-01  2.26333E+01
+ Step number:         90         Non-bonded count:  1350052
+ -1.46208E+04  3.45400E-01  1.35821E+01
+ Step number:        100         Non-bonded count:  1350052
+ -1.46255E+04  3.08187E-01  1.21956E+01
+ Step number:        100         Non-bonded count:  1350052
+ -1.46255E+04  3.08187E-01  1.21956E+01
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     574
+
+
+Final Energy Reports:
+------------------------------------
+ Total Energy of the system...... -1.46255E+04 kcal/mol
+ Total Potential Energy.......... -1.46255E+04 kcal/mol
+ Total Kinetic Energy............  0.00000E+00 kcal/mol
+ Temperature of the system.......        0.000 K
+ Bond Stretch Energy.............  3.96731E+02 kcal/mol
+ Angle Bending Energy............  7.35446E+02 kcal/mol
+ Torsion Angle Energy............  3.02975E+02 kcal/mol
+ Restraining Energy for Torsions.  0.00000E+00 kcal/mol
+ 1,4 Lennard Jones Energy........  4.82461E+02 kcal/mol
+ 1,4 Electrostatic Energy........ -3.93615E+02 kcal/mol
+ Lennard Jones Energy............  4.97439E+01 kcal/mol
+ Electrostatic Energy............ -1.61993E+04 kcal/mol
+ H-bond Energy...................  0.00000E+00 kcal/mol
+ 
+ Exiting IMPACT execution environment 
+ Date: Thursday, December 01 2016, at 00:25:27 EST
+%IMPACT-I (timit): Total CPU time =      24.62 seconds (   0.4 minutes)
+Total elapsed time = 26 seconds
+  ** Completed refinement level 0      rmsd =  0.041
+
+** Refinement finished. Final level: 0
+
+** The refined complex file is 4ANQ-impref_ref.mae.

@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # walltime : maximum wall clock time (hh:mm:ss)
-#PBS -l walltime=72:00:00
+#PBS -l walltime=144:00:00
 #
 # join stdout and stderr
 #PBS -j oe
@@ -43,7 +43,7 @@
 
 # Change to working directory used for job submission
 cd $PBS_O_WORKDIR
-#source activate py27
+
 
 # Launch job 
-python PDBfinder.py --mode LigAll -l Imatinib --fix --ph 7.4
+python PDBfinder.py --mode LigAll -l Imatinib --fix --ph 7.4 --biological_unit

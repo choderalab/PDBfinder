@@ -1,0 +1,752 @@
+==============================================================================
+  Prime version 4.5 (r000) Refine Structure: Sidechain prediction
+==============================================================================
+        
+--------------------------------------------------------------------------------
+JobId          : cc05-0-583fce27
+Name           : 4zau-missing-side-chains
+Program        : RefineStructure
+MMshareExec    : /cbio/jclab/share/schrodinger/schrodinger2016-3/mmshare-v3.5/bin/Linux-x86_64
+Host           : cc05.local
+Dir            : /cbio/jclab/home/albaness/github/PDBfinder/pdbs/Osimertinib-EGFR/fixed/4ZAU-fixed
+HostEntry      : localhost
+JobHost        : cc05.local
+JobDir         : /scratch/albaness/4zau-missing-side-chains
+JobMMshareExec : /cbio/jclab/share/schrodinger/schrodinger2016-3/mmshare-v3.5/bin/Linux-x86_64
+Commandline    : /cbio/jclab/share/schrodinger/schrodinger2016-3/prime 4zau-missing-side-chains
+StartTime      : 2016-12-01-02:15:52
+--------------------------------------------------------------------------------
+Using the following input parameters:
+   EXT_DIEL	80.0
+   FIX_ATOM_NAMES	yes
+   JOB_TYPE	refine
+   NUM_SC_OUTPUT_STRUCT	1
+   RESIDUE_0	A:734
+   RESIDUE_1	A:737
+   RESIDUE_10	A:832
+   RESIDUE_11	A:831
+   RESIDUE_12	A:714
+   RESIDUE_13	A:723
+   RESIDUE_14	A:875
+   RESIDUE_15	A:868
+   RESIDUE_16	A:708
+   RESIDUE_17	A:861
+   RESIDUE_18	A:982
+   RESIDUE_19	A:866
+   RESIDUE_2	A:756
+   RESIDUE_20	A:867
+   RESIDUE_21	A:808
+   RESIDUE_22	A:806
+   RESIDUE_23	A:804
+   RESIDUE_24	A:929
+   RESIDUE_25	A:922
+   RESIDUE_3	A:757
+   RESIDUE_4	A:713
+   RESIDUE_5	A:776
+   RESIDUE_6	A:716
+   RESIDUE_7	A:872
+   RESIDUE_8	A:758
+   RESIDUE_9	A:759
+   SEED	0
+   SELECT	pick
+   STRUCT_FILE	4zau-missing-side-chains-in.mae
+   USE_CRYSTAL_SYMMETRY	no
+   USE_MEMBRANE	no
+   USE_RANDOM_SEED	no
+
+Number of CPU cores to use: 1
+
+Using OPLS version 2005 for force-field parameters.
+
+Pre-processing input
+  Treating with residue ID check...
+    Complete:  0 min  0 sec
+  Treating with asl parsing...
+    Complete:  0 min  0 sec
+  Treating with naming consistency detection...
+    Complete:  0 min  0 sec
+
+ Random Number Seed Set to:   1038481406
+ 
+ Contents of the control file:
+   
+   file outdir "/scratch/albaness/4zau-missing-side-chains/"
+   file datadir "/cbio/jclab/share/schrodinger/schrodinger2016-3/psp-v4.5/data/pop/"
+   file vddir "/cbio/jclab/share/schrodinger/schrodinger2016-3/psp-v4.5/data/pop/"
+   file tempdir "templates/"
+   file protempdir "templates/"
+   file usrtempdir "/scratch/albaness/4zau-missing-side-chains/"
+   file gluefile "params.glue"
+   file logfile stdout
+   
+   rand seed 0
+   
+   
+   load simple 4zau-missing-side-chains_0 Structure(37)  het yes ions yes wat yes mse2met no sym none   highest_occ no     opls_version 2005 fix_atom_names yes
+   
+   
+   
+   constraints load_from_ct
+   energy param solv vsgb2.0
+   
+   
+   
+   energy param nbcut2_nn  40.0
+   energy param nbcut2_cn  40.0
+   energy param nbcut2_cc  40.0
+   
+   energy param uselipo yes
+   
+   
+   
+   
+   
+   energy total
+   side predict asl "atom.i_psp_select_atom 1" ofac_min 0.0 native_opt no failsafe no iter 1 maefile SWIG_OUTPUT_STRUCTURE
+   
+   energy total
+   energy total
+   
+   
+   write mae SWIG_OUTPUT_STRUCTURE
+   
+--Checked out   8 PSP Plop Tokens--
+ Random number seed reset to :            0
+ 
+ Parameters chosen for PDB loading:
+   All protein chains will be loaded.
+   Sequence read from ATOM lines.
+   Ions from PDB file INCLUDED.
+   PDB file assumed to be experimental data.
+   Waters from PDB file INCLUDED.
+   HETATMs from PDB file INCLUDED.
+   Hydrogens from PDB file INCLUDED.
+   NO symmetry will be used.
+   Atoms not in PDB file will NOT be optimized.
+   Atomtyping Parameters (when reading directly from mae)
+      OPLS Version 2005                
+      Planarity       None
+      Using Force Field Charges
+      Changing atom names to canonical values
+ 
+ STARTING TO WORK ON FILE 4zau-missing-side-chains_0
+ Reading residue sequence from atoms in mae file
+ 
+ Amino acid sequence, chain: A A:ALA_698    A:GLU_746   
+    0 ALAB PRO  ASN  GLN  ALA  LEU  LEU  ARG  ILE  LEU 
+   10 LYS  GLU  THR  GLU  PHE  LYS  LYS  ILE  LYS  VAL 
+   20 LEU  GLY  SER  GLY  ALA  PHE  GLY  THR  VAL  TYR 
+   30 LYS  GLY  LEU  TRP  ILE  PRO  GLU  GLY  GLU  LYS 
+   40 VAL  LYS  ILE  PRO  VAL  ALA  ILE  LYS  GLUE
+ 
+ Amino acid sequence, chain: A A:ASN_756    A:LEU_862   
+    0 ASNB LYS  GLU  ILE  LEU  ASP  GLU  ALA  TYR  VAL 
+   10 MET  ALA  SER  VAL  ASP  ASN  PRO  HID  VAL  CYS 
+   20 ARG  LEU  LEU  GLY  ILE  CYS  LEU  THR  SER  THR 
+   30 VAL  GLN  LEU  ILE  THR  GLN  LEU  MET  PRO  PHE 
+   40 GLY  CYS  LEU  LEU  ASP  TYR  VAL  ARG  GLU  HID 
+   50 LYS  ASP  ASN  ILE  GLY  SER  GLN  TYR  LEU  LEU 
+   60 ASN  TRP  CYS  VAL  GLN  ILE  ALA  LYS  GLY  MET 
+   70 ASN  TYR  LEU  GLU  ASP  ARG  ARG  LEU  VAL  HID 
+   80 ARG  ASP  LEU  ALA  ALA  ARG  ASN  VAL  LEU  VAL 
+   90 LYS  THR  PRO  GLN  HID  VAL  LYS  ILE  THR  ASP 
+  100 PHE  GLY  LEU  ALA  LYS  LEU  LEUE
+ 
+ Amino acid sequence, chain: A A:GLU_866    A:GLU_872   
+    0 GLUB LYS  GLU  TYR  HID  ALA  GLUE
+ 
+ Amino acid sequence, chain: A A:LYS_875    A:ASP_984   
+    0 LYSB VAL  PRO  ILE  LYS  TRP  MET  ALA  LEU  GLU 
+   10 SER  ILE  LEU  HID  ARG  ILE  TYR  THR  HID  GLN 
+   20 SER  ASP  VAL  TRP  SER  TYR  GLY  VAL  THR  VAL 
+   30 TRP  GLU  LEU  MET  THR  PHE  GLY  SER  LYS  PRO 
+   40 TYR  ASP  GLY  ILE  PRO  ALA  SER  GLU  ILE  SER 
+   50 SER  ILE  LEU  GLU  LYS  GLY  GLU  ARG  LEU  PRO 
+   60 GLN  PRO  PRO  ILE  CYS  THR  ILE  ASP  VAL  TYR 
+   70 MET  ILE  MET  VAL  LYS  CYS  TRP  MET  ILE  ASP 
+   80 ALA  ASP  SER  ARG  PRO  LYS  PHE  ARG  GLU  LEU 
+   90 ILE  ILE  GLU  PHE  SER  LYS  MET  ALA  ARG  ASP 
+  100 PRO  GLN  ARG  TYR  LEU  VAL  ILE  GLN  GLY  ASPE
+ 
+ Amino acid sequence, chain: A A:ASP_1008   A:LEU_1017  
+    0 ASPB ASP  VAL  VAL  ASP  ALA  ASP  GLU  TYR  LEUE
+ 
+ Nonbonded initialization ...
+ Time for loading nb parameters:   4.999999999999005E-003
+ Build extended structure ...
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:ALA_698   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:GLU_746   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:ASN_756   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:LEU_862   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:GLU_866   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:GLU_872   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:LYS_875   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:ASP_984   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:ASP_1008  
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:LEU_1017  
+ Generating crosslinks ...
+ Initialize 1/4 list ...
+ Initialize parent/child list ...
+ Initialize covalent pointers ...
+ Initialize resinfo list ...
+ ATTN: hetero res type YY3 
+  not recognized - rotamer conformations will not be sampled.
+ Initialize special atoms ...
+ Initialize rank list ...
+ Initialize sparse atom list ...
+ 
+ Times for various book-keeping steps:
+     build   3.893s
+     cross   0.045s
+     child   0.015s
+      iper   0.000s
+       rev   0.017s
+      info   0.004s
+     resat   0.000s
+      rank   0.000s
+     covpt   0.000s
+    sparse   0.022s
+ 
+ Times for steps in loading structure:
+           Load sequence    0.09s
+    Initialize structure    4.04s
+      Assign coordinates    0.03s
+     Initialize symmetry    0.00s
+ 
+ Preparing for first energy calculation ...
+ 
+ Time for assigning nb parameters:    0.014s
+ 
+ Number of protein chains       5
+   Number of residues         283
+       (charged)               77
+        (polar)                85
+       (glycine)               15
+     (hydrophobic)            106
+ 
+ Number of RNA chains           0
+   Number of nucleotides        0
+ Number of DNA chains           0
+   Number of nucleotides        0
+ 
+ Number of waters               4
+ Number of ions                 0
+ Number of HET                  1
+ 
+ Number of atoms             4781
+   [sparse atoms]             387
+ 
+ Number of bonds             4834
+ Number of angles            8707
+ Number of torsions         13694
+ Number of 1/4s             12564
+ 
+ Partial charges and molecular weights:
+  HET group      A:YY3_1101       -0.0000     499.6
+  Protein chain            A       4.0000    5397.5
+  Protein chain            A       1.0000   12208.5
+  Protein chain            A      -2.0000     886.9
+  Protein chain            A      -1.0000   12819.1
+  Protein chain            A      -5.0000    1132.1
+  Entire system                   -3.0000   33015.8
+ 
+ Time for secondary structure initialization   0.002s
+ 
+ Results of parameter assignment
+    type    tot   time
+    BOND   4834   0.00
+    ANGL   8707   0.00
+    TORS  13694   0.02
+ 
+ Here are the parameters that will be used:
+                      Solvent model   SGB
+               Variable Dielectric:   ENABLED
+                               LYS:    3.85
+                               GLU:    2.78
+                               ASP:    2.44
+                               HIP:    2.86
+                               HIS:    1.00
+                               ARG:    2.11
+                      Penalty terms   EXCLUDED
+                Internal dielectric    1.00
+                 Solvent dielectric   80.00
+                 Ionic strength (M)    0.00
+                 Debye length (Ang)     Inf
+     Short NB cut (neutral/neutral)   10.00
+      Long NB cut (neutral/neutral)   40.00
+      Short NB cut (charge/neutral)   10.00
+       Long NB cut (charge/neutral)   40.00
+       Short NB cut (charge/charge)   15.00
+        Long NB cut (charge/charge)   40.00
+             Short NB cut (reduced)    6.00
+              Long NB cut (reduced)   36.00
+          Rotamer Frequency Scoring   OFF
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      306.982465      710.037889     1164.150552     2181.170906
+     SGB    19626.517210    -7926.004231    -6966.180963     4734.332016
+   TOTAL    19933.499675    -7215.966343    -5802.030411     6915.502921
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     2027.655334 ***************     -122.719640 ***************
+    LIPO        0.000000    -1664.396040        0.000000    -1664.396040
+      EL     8196.363645   -17038.219899      192.244829    -8649.611425
+     SGB    -6966.180963     7869.118800     -162.262010      740.675826
+   TOTAL     3257.838016 ***************      -92.736821 ***************
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14083.601277
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND      -88.206978
+ PACKING       -8.465633
+SelfCont      -87.192471
+ 
+ SUM:
+ SGB TOT    -1642.412472
+SOLV TOT    -1642.412472
+LIPO TOT    -1664.396040
+  TOTALE  0.1823993753456E+17
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      306.982465      710.037889     1164.150552     2181.170906
+     SGB    19626.517210    -7926.004231    -6966.180963     4734.332016
+   TOTAL    19933.499675    -7215.966343    -5802.030411     6915.502921
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     2027.655334 ***************     -122.719640 ***************
+    LIPO        0.000000    -1664.396040        0.000000    -1664.396040
+      EL     8196.363645   -17038.219899      192.244829    -8649.611425
+     SGB    -6966.180963     7869.118800     -162.262010      740.675826
+   TOTAL     3257.838016 ***************      -92.736821 ***************
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14083.601277
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND      -88.206978
+ PACKING       -8.465633
+SelfCont      -87.192471
+ 
+ SUM:
+ SGB TOT    -1642.412472
+SOLV TOT    -1642.412472
+LIPO TOT    -1664.396040
+  TOTALE  0.1823993753456E+17
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ Preparing for first energy calculation ...
+ 
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      306.982465      710.037889     1164.150552     2181.170906
+     SGB    19626.517210    -7926.004231    -6966.180963     4734.332016
+   TOTAL    19933.499675    -7215.966343    -5802.030411     6915.502921
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     2027.655334 ***************     -122.719640 ***************
+    LIPO        0.000000    -1664.396040        0.000000    -1664.396040
+      EL     8196.363645   -17038.219899      192.244829    -8649.611425
+     SGB    -6966.180963     7869.118800     -162.262010      740.675826
+   TOTAL     3257.838016 ***************      -92.736821 ***************
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14083.601277
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND      -88.206978
+ PACKING       -8.465633
+SelfCont      -87.192471
+ 
+ SUM:
+ SGB TOT    -1642.412472
+SOLV TOT    -1642.412472
+LIPO TOT    -1664.396040
+  TOTALE  0.1823993753456E+17
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ ATTN:  large bond energies found:
+      37      5 A:YY3_1101:_C8_          8 A:YY3_1101:_C9_         12.44
+      74     71 A:HOH_1201:_OW_         72 A:HOH_1201:_HW1         10.00
+      75     71 A:HOH_1201:_OW_         73 A:HOH_1201:_HW2         10.00
+      76     74 A:HOH_1202:_OW_         75 A:HOH_1202:_HW1         10.00
+      77     74 A:HOH_1202:_OW_         76 A:HOH_1202:_HW2         10.00
+      78     77 A:HOH_1203:_OW_         78 A:HOH_1203:_HW1         10.00
+      79     77 A:HOH_1203:_OW_         79 A:HOH_1203:_HW2         10.00
+      80     80 A:HOH_1204:_OW_         81 A:HOH_1204:_HW1         10.00
+      81     80 A:HOH_1204:_OW_         82 A:HOH_1204:_HW2         10.00
+ 
+ ATTN:  large angle energies found:
+ #,atoms,energy,angle,eq
+    1648 A:ASN_756:_HB2 A:ASN_756:_CB_ A:ASN_756:_CG_   23.8   62.2  109.5
+    1649 A:ASN_756:_HB3 A:ASN_756:_CB_ A:ASN_756:_CG_    6.0  133.2  109.5
+    3866 A:ARG_831:_HE_ A:ARG_831:_NE_ A:ARG_831:_CZ_   16.7   80.4  120.0
+    4866 A:GLU_866:_HB2 A:GLU_866:_CB_ A:GLU_866:_CG_   26.8   62.2  110.7
+    4867 A:GLU_866:_HB3 A:GLU_866:_CB_ A:GLU_866:_CG_    5.8  133.1  110.7
+    5058 A:GLU_872:_HB2 A:GLU_872:_CB_ A:GLU_872:_CG_    5.4   88.9  110.7
+    5091 A:LYS_875:_HB2 A:LYS_875:_CB_ A:LYS_875:_CG_   26.8   62.3  110.7
+    5092 A:LYS_875:_HB3 A:LYS_875:_CB_ A:LYS_875:_CG_    7.7  136.6  110.7
+ 
+ ATTN:  large 14 energies found:
+    1331 A:THR_725:_C__      A:THR_725:_OG1           5.67    -21.77     21.32
+    3431 A:THR_783:_C__      A:SER_784:_C__           8.99     15.33    -18.12
+    4834 A:ASN_816:_C__      A:TRP_817:_C__           5.73     14.81     -9.92
+    6908 A:GLU_866:_HB2      A:GLU_866:_HG3          18.25      0.39     -0.35
+    7209 A:LYS_875:_HB2      A:LYS_875:_HG3          10.21      0.37     -0.41
+    8919 A:PRO_914:_C__      A:TYR_915:_C__           5.33     14.73    -12.88
+   11937 A:GLY_983:_C__      A:ASP_984:_C__           5.64      5.46     -7.20
+ Cannot determine cbeta atoms for A:YY3_1101  
+ Cannot determine cbeta atoms for A:HOH_1201  
+ Cannot determine cbeta atoms for A:HOH_1202  
+ Cannot determine cbeta atoms for A:HOH_1203  
+ Cannot determine cbeta atoms for A:HOH_1204  
+ 
+ Here are the parameters chosen for side predict:
+ 
+  SC SCREENING PARAMETERS
+   Initial overlap factor:   0.750000000000000     
+   Minimum overlap factor:   0.000000000000000E+000
+   Rotamer library resolution:    10.0000000000000     
+   Total iterations:            1
+   SCs randomized prior to optimization.
+   Current SC rotamers NOT added to library.
+   DO NOT Remove SC Clashes Prior to Prediction
+   New tree-based energy routines used.
+   All energy components are used in rotamer ranking.
+   If sampling not succeed, will NOT revert to original structure.
+   Ecut for full energy updates:   -1.00000000000000     
+   Ecut for full minimizations:   -1.00000000000000     
+   SGB and LR updated after each cycle.
+   Option for SGB update:            1
+   Minimize after rotamer placement converged.
+ 
+  MINIMIZATION PARAMETERS
+   Desired final RMS gradient:  1.000000000000000E-002
+   Maximum number of iterations to achieve self-consistency:            2
+   Energy cutoff for determining self-consistency  0.100kcals/mol
+   Maximum number of TN iterations:           65
+   Iterations between NBlist/LR updates:            2
+   LR forces will be updated less frequently than SR.
+   NB list will NOT be updated during minim.
+   SGB will be updated during minim.
+   Option for SGB update:            1
+   Born alpha will NOT be updated during minim
+   NB Clashes will be used in the preconditioning
+ Total side chains to be optimized:           26
+ 
+ Side chains have been found that have no match in the rotamer library:
+ Residue:  A:ASN_756   
+     Actual angles   -7.97  180.00
+   Closest rotamer  -40.00 -180.00
+             Delta  -32.03    0.00
+ Residue:  A:GLU_866   
+     Actual angles   -7.97  180.00   90.04
+   Closest rotamer  -30.00  160.00   80.00
+             Delta  -22.03  -20.00  -10.04
+ Residue:  A:LYS_875   
+     Actual angles   -7.34  -90.06  180.00  180.00
+   Closest rotamer  -30.00  -80.00 -180.00 -180.00
+             Delta  -22.66   10.06    0.00    0.00
+ 
+ ------------------------------------------
+ NOW PRE-SCREENING ROTAMER STATES ...
+ (res, # after screen, # total, ofac, rmsd_min, rmsd_max, time)
+   A:LYS_708       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:LYS_713       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:LYS_714       2091    2091   0.00  -1.00  -1.00   0.03s
+   A:LYS_716       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:PHE_723        141     141   0.00  -1.00  -1.00   0.00s
+   A:GLU_734        958     958   0.00  -1.00  -1.00   0.00s
+   A:LYS_737       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:ASN_756        309     309   0.00  -1.00  -1.00   0.00s
+   A:LYS_757       2091    2091   0.00   0.13   4.00   0.02s
+   A:GLU_758        958     958   0.00  -1.00  -1.00   0.00s
+   A:ILE_759        178     178   0.00  -1.00  -1.00   0.00s
+   A:ARG_776       5237    5237   0.00  -1.00  -1.00   0.09s
+   A:GLU_804        958     958   0.00  -1.00  -1.00   0.01s
+   A:LYS_806       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:ASN_808        309     309   0.00  -1.00  -1.00   0.00s
+   A:ARG_831       5237    5237   0.00   0.14   5.00   0.08s
+   A:ARG_832       5237    5237   0.00  -1.00  -1.00   0.07s
+   A:LEU_861        171     171   0.00  -1.00  -1.00   0.00s
+   A:GLU_866        958     958   0.00  -1.00  -1.00   0.01s
+   A:LYS_867       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:GLU_868        958     958   0.00  -1.00  -1.00   0.01s
+   A:GLU_872        958     958   0.00  -1.00  -1.00   0.00s
+   A:LYS_875       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:GLU_922        958     958   0.00  -1.00  -1.00   0.01s
+   A:LYS_929       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:GLN_982        877     877   0.00  -1.00  -1.00   0.00s
+ 
+ Randomizing side chain positions ...
+ 
+ ------------------------------------------
+ NOW PICKING ROTAMER STATE BY ENERGY ...
+ (res, # rotamers, # evaluated, ofac, cluster #, 
+ rot #, old rot #, rmsd, elib, times)
+ nlist =           26
+one_lib:  A:LYS_708       8364    5723  0.75   13624 150287 145815 -1.0   -1372.76    0.42s ****
+one_lib:  A:LYS_713       8364    6251  0.75   1 609 146407 151179 -1.0   -1369.10    0.50s ****
+one_lib:  A:LYS_714       8364     852  0.75   2 157 151655 152611 -1.0   -1380.81    0.12s ****
+one_lib:  A:LYS_716       8364    2751  0.75   1 753 146407 153255 -1.0   -1366.44    0.21s ****
+one_lib:  A:PHE_723        141       6  0.75   1   3 214806 214966 -1.0   -1365.92    0.00s ****
+one_lib:  A:GLU_734        958     446  0.75   1 236 201325 202525 -1.0   -1373.94    0.05s ****
+one_lib:  A:LYS_737       8364    5743  0.75   2 674 147555 153031 -1.0   -1371.03    0.27s ****
+one_lib:  A:ASN_756        309     286  0.75   1  72   1235   1545 -1.0   -1348.26    0.04s ****
+one_lib:  A:LYS_757       8364    7865  0.75   2 237 145843 146015  1.2   -1371.51    0.38s ****
+one_lib:  A:GLU_758        958     904  0.75   1 640 201955 200302 -1.0   -1373.23    0.11s ****
+one_lib:  A:ILE_759        178       3  0.75   1   3 143967 143923 -1.0   -1352.70    0.00s ****
+one_lib:  A:ARG_776       5237      93  0.75   1  70  37833  44343 -1.0   -1369.84    0.08s ****
+one_lib:  A:GLU_804        958     503  0.75   1 389 201601 202642 -1.0   -1375.05    0.06s ****
+one_lib:  A:LYS_806       8364    2281  0.75   1 417 146279 150935 -1.0   -1372.37    0.22s ****
+one_lib:  A:ASN_808        309     246  0.75   1 217   1565   1167 -1.0   -1365.75    0.03s ****
+one_lib:  A:ARG_831       5237     301  0.75   1  59  26373  40463  1.7   -1355.43    0.18s ****
+one_lib:  A:ARG_832       5237     976  0.75   1 382  31533  24533 -1.0   -1356.98    0.36s ****
+one_lib:  A:LEU_861        171      72  0.75   1  41  18528  18628 -1.0   -1373.41    0.04s ****
+one_lib:  A:GLU_866        958     452  0.75   1 439 202030 201916 -1.0   -1359.08    0.05s ****
+one_lib:  A:LYS_867       8364    6479  0.75   15744 152563 149615 -1.0   -1367.37    0.40s ****
+one_lib:  A:GLU_868        958      32  0.75   1  27 202561 200095 -1.0   -1371.76    0.01s ****
+one_lib:  A:GLU_872        958     927  0.75   1 593 201835 201706 -1.0   -1374.86    0.06s ****
+one_lib:  A:LYS_875       8364    6244  0.75   11137 147899 149323 -1.0   -1352.99    0.37s ****
+one_lib:  A:GLU_922        958     579  0.75   1 501 201835 202306 -1.0   -1375.96    0.06s ****
+one_lib:  A:LYS_929       8364    5821  0.75   14132 150215 147347 -1.0   -1371.58    0.34s ****
+one_lib:  A:GLN_982        877     864  0.75   3 536   5382   5508 -1.0   -1375.71    0.07s ****
+Time for iteration:     5.21s
+Rotamer placement not converged; flips (rot,prot,tot):    26    0   26
+ 
+ ------------------------------------------
+ NOW PICKING ROTAMER STATE BY ENERGY ...
+ (res, # rotamers, # evaluated, ofac, cluster #, 
+ rot #, old rot #, rmsd, elib, times)
+ nlist =           26
+one_lib:  A:LYS_708       8364    5703  0.75   13924 150599 150287 -1.0   -1391.14    0.45s ****
+one_lib:  A:LYS_713       8364    6251  0.75   1 609 146407 146407 -1.0   -1387.38    0.55s
+one_lib:  A:LYS_714       8364     852  0.75   1 157 151655 151655 -1.0   -1398.03    0.13s
+one_lib:  A:LYS_716       8364    2751  0.75   1 753 146407 146407 -1.0   -1384.60    0.21s
+one_lib:  A:PHE_723        141       6  0.75   1   3 214806 214806 -1.0   -1383.55    0.00s
+one_lib:  A:GLU_734        958     516  0.75   2 283 201325 201325 -1.0   -1393.78    0.05s
+one_lib:  A:LYS_737       8364    5743  0.75   2 674 147555 147555 -1.0   -1389.12    0.27s
+one_lib:  A:ASN_756        309     286  0.75   1  72   1235   1235 -1.0   -1366.68    0.04s
+one_lib:  A:LYS_757       8364    7105  0.75   1 233 145843 145843  1.2   -1392.13    0.34s
+one_lib:  A:GLU_758        958     898  0.75   1 640 201955 201955 -1.0   -1391.83    0.11s
+one_lib:  A:ILE_759        178       3  0.75   1   3 143967 143967 -1.0   -1370.76    0.00s
+one_lib:  A:ARG_776       5237      93  0.75   1  76  38168  37833 -1.0   -1387.88    0.08s ****
+one_lib:  A:GLU_804        958     503  0.75   1 389 201601 201601 -1.0   -1393.05    0.07s
+one_lib:  A:LYS_806       8364    2281  0.75   1 417 146279 146279 -1.0   -1390.59    0.22s
+one_lib:  A:ASN_808        309     246  0.75   1 217   1565   1565 -1.0   -1384.65    0.03s
+one_lib:  A:ARG_831       5237     292  0.75   1  55  26373  26373  1.7   -1374.81    0.17s
+one_lib:  A:ARG_832       5237     976  0.75   1 382  31533  31533 -1.0   -1375.94    0.34s
+one_lib:  A:LEU_861        171      72  0.75   1  41  18528  18528 -1.0   -1391.76    0.04s
+one_lib:  A:GLU_866        958     452  0.75   1 439 202030 202030 -1.0   -1376.90    0.05s
+one_lib:  A:LYS_867       8364    6459  0.75   25736 152563 152563 -1.0   -1387.60    0.41s
+one_lib:  A:GLU_868        958      32  0.75   1  27 202561 202561 -1.0   -1389.44    0.01s
+one_lib:  A:GLU_872        958     927  0.75   1 593 201835 201835 -1.0   -1393.83    0.06s
+one_lib:  A:LYS_875       8364    6244  0.75   11137 147899 147899 -1.0   -1370.63    0.37s
+one_lib:  A:GLU_922        958     579  0.75   1 500 201832 201835 -1.0   -1394.38    0.06s ****
+one_lib:  A:LYS_929       8364    5821  0.75   14132 150215 150215 -1.0   -1389.93    0.34s
+one_lib:  A:GLN_982        877     864  0.75   3 536   5382   5382 -1.0   -1393.90    0.07s
+Time for iteration:     5.25s
+Rotamer placement not converged; flips (rot,prot,tot):     3    0    3
+ 
+ ------------------------------------------
+ NOW PICKING ROTAMER STATE BY ENERGY ...
+ (res, # rotamers, # evaluated, ofac, cluster #, 
+ rot #, old rot #, rmsd, elib, times)
+ nlist =           26
+one_lib:  A:LYS_708       8364    5703  0.75   13924 150599 150599 -1.0   -1391.04    0.42s
+one_lib:  A:LYS_713       8364    6251  0.75   1 609 146407 146407 -1.0   -1387.17    0.52s
+one_lib:  A:LYS_714       8364     852  0.75   1 157 151655 151655 -1.0   -1397.82    0.12s
+one_lib:  A:LYS_716       8364    2751  0.75   1 753 146407 146407 -1.0   -1384.39    0.21s
+one_lib:  A:PHE_723        141       6  0.75   1   3 214806 214806 -1.0   -1383.33    0.00s
+one_lib:  A:GLU_734        958     516  0.75   2 283 201325 201325 -1.0   -1393.63    0.06s
+one_lib:  A:LYS_737       8364    5743  0.75   2 674 147555 147555 -1.0   -1388.90    0.26s
+one_lib:  A:ASN_756        309     286  0.75   1  72   1235   1235 -1.0   -1366.46    0.04s
+one_lib:  A:LYS_757       8364    7105  0.75   1 233 145843 145843  1.2   -1391.91    0.34s
+one_lib:  A:GLU_758        958     898  0.75   1 640 201955 201955 -1.0   -1391.62    0.11s
+one_lib:  A:ILE_759        178       3  0.75   1   3 143967 143967 -1.0   -1370.55    0.00s
+one_lib:  A:ARG_776       5237      93  0.75   1  76  38168  38168 -1.0   -1386.89    0.08s
+one_lib:  A:GLU_804        958     503  0.75   1 389 201601 201601 -1.0   -1392.84    0.06s
+one_lib:  A:LYS_806       8364    2281  0.75   1 417 146279 146279 -1.0   -1390.38    0.22s
+one_lib:  A:ASN_808        309     246  0.75   1 217   1565   1565 -1.0   -1384.44    0.03s
+one_lib:  A:ARG_831       5237     292  0.75   1  55  26373  26373  1.7   -1374.58    0.17s
+one_lib:  A:ARG_832       5237     976  0.75   1 382  31533  31533 -1.0   -1375.72    0.35s
+one_lib:  A:LEU_861        171      72  0.75   1  41  18528  18528 -1.0   -1391.55    0.04s
+one_lib:  A:GLU_866        958     452  0.75   1 439 202030 202030 -1.0   -1376.69    0.05s
+one_lib:  A:LYS_867       8364    6459  0.75   25736 152563 152563 -1.0   -1387.39    0.41s
+one_lib:  A:GLU_868        958      32  0.75   1  27 202561 202561 -1.0   -1389.23    0.01s
+one_lib:  A:GLU_872        958     927  0.75   1 593 201835 201835 -1.0   -1393.62    0.06s
+one_lib:  A:LYS_875       8364    6244  0.75   11137 147899 147899 -1.0   -1370.41    0.37s
+one_lib:  A:GLU_922        958     579  0.75   1 500 201832 201832 -1.0   -1394.15    0.06s
+one_lib:  A:LYS_929       8364    5821  0.75   14132 150215 150215 -1.0   -1389.72    0.35s
+one_lib:  A:GLN_982        877     864  0.75   3 536   5382   5382 -1.0   -1393.68    0.07s
+Time for iteration:     5.16s
+ Rotamer placement converged. Now minimizing...
+Summary of library results(time,ener):    17.96       -9531.40    12.44       -9766.08
+SIDE_PRED Time:      32.31s
+ 
+ Preparing for first energy calculation ...
+ 
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      308.821807      563.442627     1177.048915     2049.313349
+     SGB    19582.457723    -7935.935212    -6902.343979     4744.178532
+   TOTAL    19891.279529    -7372.492585    -5725.295064     6793.491880
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1988.065067    -1514.709178     -123.481625      349.874264
+    LIPO        0.000000    -1653.926207        0.000000    -1653.926207
+      EL     8232.175438   -17123.663836      167.602877    -8723.885521
+     SGB    -6902.343979     7847.891545     -138.223238      807.324327
+   TOTAL     3317.896526   -12444.407676      -94.101986    -9220.613136
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14036.321617
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -102.737605
+ PACKING       -8.594660
+SelfCont      -93.657225
+ 
+ SUM:
+ SGB TOT    -1582.474778
+SOLV TOT    -1582.474778
+LIPO TOT    -1653.926207
+  TOTALE  -9766.088383815    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      308.821807      563.442627     1177.048915     2049.313349
+     SGB    19582.457723    -7935.935212    -6902.343979     4744.178532
+   TOTAL    19891.279529    -7372.492585    -5725.295064     6793.491880
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1988.065067    -1514.528260     -123.662445      349.874361
+    LIPO        0.000000    -1653.926207        0.000000    -1653.926207
+      EL     8232.175438   -17126.256656      169.658643    -8724.422575
+     SGB    -6902.343979     7849.650101     -138.294521      809.011601
+   TOTAL     3317.896526   -12445.061022      -92.298324    -9219.462820
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14036.321617
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -102.737605
+ PACKING       -8.075211
+SelfCont      -93.657225
+ 
+ SUM:
+ SGB TOT    -1580.787505
+SOLV TOT    -1580.787505
+LIPO TOT    -1653.926207
+  TOTALE  -9764.418619020    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ Preparing for first energy calculation ...
+ 
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      308.821807      563.442627     1177.048915     2049.313349
+     SGB    19582.457723    -7935.935212    -6902.343979     4744.178532
+   TOTAL    19891.279529    -7372.492585    -5725.295064     6793.491880
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1988.065067    -1514.528260     -123.662445      349.874361
+    LIPO        0.000000    -1653.926207        0.000000    -1653.926207
+      EL     8232.175438   -17126.256656      169.658643    -8724.422575
+     SGB    -6902.343979     7849.650101     -138.294521      809.011601
+   TOTAL     3317.896526   -12445.061022      -92.298324    -9219.462820
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14036.321617
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -102.737605
+ PACKING       -8.075211
+SelfCont      -93.657225
+ 
+ SUM:
+ SGB TOT    -1580.787505
+SOLV TOT    -1580.787505
+LIPO TOT    -1653.926207
+  TOTALE  -9764.418619020    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      308.821807      563.442627     1177.048915     2049.313349
+     SGB    19582.457723    -7935.935212    -6902.343979     4744.178532
+   TOTAL    19891.279529    -7372.492585    -5725.295064     6793.491880
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1988.065067    -1514.528260     -123.662445      349.874361
+    LIPO        0.000000    -1653.926207        0.000000    -1653.926207
+      EL     8232.175438   -17126.256656      169.658643    -8724.422575
+     SGB    -6902.343979     7849.650101     -138.294521      809.011601
+   TOTAL     3317.896526   -12445.061022      -92.298324    -9219.462820
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14036.321617
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -102.737605
+ PACKING       -8.075211
+SelfCont      -93.657225
+ 
+ SUM:
+ SGB TOT    -1580.787505
+SOLV TOT    -1580.787505
+LIPO TOT    -1653.926207
+  TOTALE  -9764.418619020    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ TOTAL TIME ELAPSED: 4zau-missing-side-chains_0          68.242s
+ RETURNED LICENSE
+Post-processing output...
+  Processing output structure #1
+Post-processing complete.
+
+

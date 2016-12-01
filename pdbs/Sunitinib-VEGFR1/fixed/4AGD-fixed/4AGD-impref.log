@@ -1,0 +1,144 @@
+
+** Heavy-atom coordinates will be fixed: maxlevel set to 0
+  **
+  ** Beginning refinement level 0
+  **
+
+%IMPACT-I (openwt): Request to open FORMATTED file 4AGD-impref_ref0.out on unit   2
+ Entering IMPACT execution environment 
+ Date: Wednesday, November 30 2016, at 23:38:27 EST
+ Impact version 72014
+ mmshare version        35014
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+
+ Host: Linux cc05.local 2.6.32-573.18.1.el6.x86_64 #1 SMP Tue Feb 9 22:46:17 UTC 2016 x86_64
+ Job Name: 4AGD-impref_ref0
+ SCHRODINGER  directory: /cbio/jclab/share/schrodinger/schrodinger2016-3
+ IMPACT_EXEC  directory: /cbio/jclab/share/schrodinger/schrodinger2016-3/impact-v7.2/bin/Linux-x86_64
+ MMSHARE_EXEC directory: /cbio/jclab/share/schrodinger/schrodinger2016-3/mmshare-v3.5/bin/Linux-x86_64
+
+ Clock-based global random seed:     1480567107
+%IMPACT-I(foldmain): calling OPLS_2005 atomtyping ...
+%IMPACT-I(foldmain): finished parameter assignment
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coord. are written to file: "4AGD-impref.init_coord.rst"
+      Box dimensions not written
+
+
+ Total number of atoms  =  5416
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1286431
+ E-pot        RMS grad     Max grad    
+  2.40155E+08  8.83808E+07  5.09384E+09
+ Step number:         10         Non-bonded count:  1286431
+ -7.96127E+03  6.13066E+00  1.84255E+02
+ Step number:         20         Non-bonded count:  1286431
+ -8.73850E+03  1.80952E+00  7.82796E+01
+ Step number:         30         Non-bonded count:  1286431
+ -8.91816E+03  1.32201E+00  5.82510E+01
+ Step number:         40         Non-bonded count:  1286431
+ -8.99572E+03  9.35978E-01  3.53423E+01
+ Step number:         50         Non-bonded count:  1286431
+ -9.04993E+03  7.86468E-01  2.37182E+01
+ Step number:         60         Non-bonded count:  1286431
+ -9.08292E+03  5.21918E-01  1.83681E+01
+ Step number:         70         Non-bonded count:  1286431
+ -9.10162E+03  4.42257E-01  2.30861E+01
+ Step number:         80         Non-bonded count:  1286431
+ -9.11393E+03  4.55501E-01  2.12744E+01
+ Step number:         90         Non-bonded count:  1286431
+ -9.12804E+03  4.87896E-01  1.57966E+01
+ Step number:        100         Non-bonded count:  1286431
+ -9.13817E+03  3.86505E-01  1.46311E+01
+ Step number:        100         Non-bonded count:  1286431
+ -9.13817E+03  3.86505E-01  1.46311E+01
+      Current coord. are written to file: "4AGD-impref.min0_coord.rst"
+      Box dimensions not written
+      Current coordinates are read from file: "4AGD-impref.init_coord.rst"
+      Box dimensions not read
+          read from "4AGD-impref.init_coord.rst"
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     314
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coordinates are read from file: "4AGD-impref.min0_coord.rst"
+      Box dimensions not read
+          read from "4AGD-impref.min0_coord.rst"
+
+
+ Total number of atoms  =  5416
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1286431
+ E-pot        RMS grad     Max grad    
+ -7.68174E+03  2.91629E+00  3.27165E+01
+ Step number:         10         Non-bonded count:  1286431
+ -8.48603E+03  2.38854E+00  1.77705E+02
+ Step number:         20         Non-bonded count:  1286431
+ -8.60907E+03  9.55012E-01  5.05116E+01
+ Step number:         30         Non-bonded count:  1286431
+ -8.64357E+03  5.76945E-01  3.24495E+01
+ Step number:         40         Non-bonded count:  1286431
+ -8.66058E+03  4.57924E-01  2.47472E+01
+ Step number:         50         Non-bonded count:  1286431
+ -8.66693E+03  2.88576E-01  9.61170E+00
+ Step number:         60         Non-bonded count:  1286431
+ -8.67264E+03  2.61779E-01  1.05422E+01
+ Step number:         70         Non-bonded count:  1286431
+ -8.67811E+03  2.90474E-01  1.68258E+01
+ Step number:         80         Non-bonded count:  1286431
+ -8.68150E+03  1.81466E-01  5.81348E+00
+ Step number:         90         Non-bonded count:  1286431
+ -8.68358E+03  2.04138E-01  1.04060E+01
+ Step number:        100         Non-bonded count:  1286431
+ -8.68571E+03  1.72527E-01  7.36885E+00
+ Step number:        100         Non-bonded count:  1286431
+ -8.68571E+03  1.72527E-01  7.36885E+00
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     584
+
+
+Final Energy Reports:
+------------------------------------
+ Total Energy of the system...... -8.68571E+03 kcal/mol
+ Total Potential Energy.......... -8.68571E+03 kcal/mol
+ Total Kinetic Energy............  0.00000E+00 kcal/mol
+ Temperature of the system.......        0.000 K
+ Bond Stretch Energy.............  7.36822E+01 kcal/mol
+ Angle Bending Energy............  8.25682E+02 kcal/mol
+ Torsion Angle Energy............  3.05985E+02 kcal/mol
+ Restraining Energy for Torsions.  0.00000E+00 kcal/mol
+ 1,4 Lennard Jones Energy........  5.32970E+02 kcal/mol
+ 1,4 Electrostatic Energy........ -4.15898E+02 kcal/mol
+ Lennard Jones Energy............  1.21506E+02 kcal/mol
+ Electrostatic Energy............ -1.01296E+04 kcal/mol
+ H-bond Energy...................  0.00000E+00 kcal/mol
+ 
+ Exiting IMPACT execution environment 
+ Date: Wednesday, November 30 2016, at 23:38:51 EST
+%IMPACT-I (timit): Total CPU time =      23.92 seconds (   0.4 minutes)
+Total elapsed time = 25 seconds
+  ** Completed refinement level 0      rmsd =  0.034
+
+** Refinement finished. Final level: 0
+
+** The refined complex file is 4AGD-impref_ref.mae.
