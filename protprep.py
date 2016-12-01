@@ -46,9 +46,9 @@ def protein_prep(input_file_path, output_file_path, pdbid, pH=7.4, fillsidechain
     # Normalize paths
     input_file_path = os.path.abspath(input_file_path)
     output_file_path = os.path.abspath(output_file_path)
-    output_dir = os.path.join(os.path.dirname(output_file_path), 'fixed')
+    output_dir = os.path.join(output_file_path, '%s-fixed' % pdbid)
 
-    output_file_name = '%s-fixed.pdb' % pdbid
+    output_file_name = '../%s-fixed.pdb' % pdbid
 
     # Check for output file pathway
     if not os.path.exists(output_dir):
