@@ -1,0 +1,144 @@
+
+** Heavy-atom coordinates will be fixed: maxlevel set to 0
+  **
+  ** Beginning refinement level 0
+  **
+
+%IMPACT-I (openwt): Request to open FORMATTED file 5AAC-impref_ref0.out on unit   2
+ Entering IMPACT execution environment 
+ Date: Thursday, December 01 2016, at 00:43:05 EST
+ Impact version 72014
+ mmshare version        35014
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+
+ Host: Linux cc05.local 2.6.32-573.18.1.el6.x86_64 #1 SMP Tue Feb 9 22:46:17 UTC 2016 x86_64
+ Job Name: 5AAC-impref_ref0
+ SCHRODINGER  directory: /cbio/jclab/share/schrodinger/schrodinger2016-3
+ IMPACT_EXEC  directory: /cbio/jclab/share/schrodinger/schrodinger2016-3/impact-v7.2/bin/Linux-x86_64
+ MMSHARE_EXEC directory: /cbio/jclab/share/schrodinger/schrodinger2016-3/mmshare-v3.5/bin/Linux-x86_64
+
+ Clock-based global random seed:     1480570985
+%IMPACT-I(foldmain): calling OPLS_2005 atomtyping ...
+%IMPACT-I(foldmain): finished parameter assignment
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coord. are written to file: "5AAC-impref.init_coord.rst"
+      Box dimensions not written
+
+
+ Total number of atoms  =  5602
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1367748
+ E-pot        RMS grad     Max grad    
+ -4.31840E+02  5.84324E+02  2.70704E+04
+ Step number:         10         Non-bonded count:  1367748
+ -1.65454E+04  2.04732E+00  5.86604E+01
+ Step number:         20         Non-bonded count:  1367748
+ -1.68959E+04  1.89716E+00  1.04013E+02
+ Step number:         30         Non-bonded count:  1367748
+ -1.70904E+04  1.28313E+00  3.71334E+01
+ Step number:         40         Non-bonded count:  1367748
+ -1.72052E+04  1.34082E+00  7.99501E+01
+ Step number:         50         Non-bonded count:  1367748
+ -1.72854E+04  8.11434E-01  1.84643E+01
+ Step number:         60         Non-bonded count:  1367748
+ -1.73396E+04  8.94559E-01  3.68683E+01
+ Step number:         70         Non-bonded count:  1367748
+ -1.73804E+04  5.87862E-01  1.45568E+01
+ Step number:         80         Non-bonded count:  1367748
+ -1.74117E+04  6.57525E-01  2.97918E+01
+ Step number:         90         Non-bonded count:  1367748
+ -1.74371E+04  5.21985E-01  1.57601E+01
+ Step number:        100         Non-bonded count:  1367748
+ -1.74573E+04  4.86295E-01  1.83858E+01
+ Step number:        100         Non-bonded count:  1367748
+ -1.74573E+04  4.86295E-01  1.83858E+01
+      Current coord. are written to file: "5AAC-impref.min0_coord.rst"
+      Box dimensions not written
+      Current coordinates are read from file: "5AAC-impref.init_coord.rst"
+      Box dimensions not read
+          read from "5AAC-impref.init_coord.rst"
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     305
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coordinates are read from file: "5AAC-impref.min0_coord.rst"
+      Box dimensions not read
+          read from "5AAC-impref.min0_coord.rst"
+
+
+ Total number of atoms  =  5602
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1367748
+ E-pot        RMS grad     Max grad    
+ -1.62435E+04  2.65727E+00  3.18201E+01
+ Step number:         10         Non-bonded count:  1367748
+ -1.69520E+04  1.86793E+00  1.09372E+02
+ Step number:         20         Non-bonded count:  1367748
+ -1.70759E+04  9.38027E-01  3.12353E+01
+ Step number:         30         Non-bonded count:  1367748
+ -1.71280E+04  5.84530E-01  1.43889E+01
+ Step number:         40         Non-bonded count:  1367748
+ -1.71565E+04  4.42166E-01  1.56157E+01
+ Step number:         50         Non-bonded count:  1367748
+ -1.71650E+04  2.44838E-01  6.28005E+00
+ Step number:         60         Non-bonded count:  1367748
+ -1.71698E+04  2.89227E-01  9.03416E+00
+ Step number:         70         Non-bonded count:  1367748
+ -1.71767E+04  2.69838E-01  1.00851E+01
+ Step number:         80         Non-bonded count:  1367748
+ -1.71814E+04  3.06135E-01  1.64194E+01
+ Step number:         90         Non-bonded count:  1367748
+ -1.71848E+04  2.12991E-01  9.18458E+00
+ Step number:        100         Non-bonded count:  1367748
+ -1.71872E+04  2.21791E-01  1.35506E+01
+ Step number:        100         Non-bonded count:  1367748
+ -1.71872E+04  2.21791E-01  1.35506E+01
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     580
+
+
+Final Energy Reports:
+------------------------------------
+ Total Energy of the system...... -1.71872E+04 kcal/mol
+ Total Potential Energy.......... -1.71872E+04 kcal/mol
+ Total Kinetic Energy............  0.00000E+00 kcal/mol
+ Temperature of the system.......        0.000 K
+ Bond Stretch Energy.............  4.95567E+01 kcal/mol
+ Angle Bending Energy............  4.75856E+02 kcal/mol
+ Torsion Angle Energy............  1.94357E+02 kcal/mol
+ Restraining Energy for Torsions.  0.00000E+00 kcal/mol
+ 1,4 Lennard Jones Energy........  4.58952E+02 kcal/mol
+ 1,4 Electrostatic Energy........ -3.95280E+02 kcal/mol
+ Lennard Jones Energy............ -3.15229E+02 kcal/mol
+ Electrostatic Energy............ -1.76555E+04 kcal/mol
+ H-bond Energy...................  0.00000E+00 kcal/mol
+ 
+ Exiting IMPACT execution environment 
+ Date: Thursday, December 01 2016, at 00:43:30 EST
+%IMPACT-I (timit): Total CPU time =      24.69 seconds (   0.4 minutes)
+Total elapsed time = 26 seconds
+  ** Completed refinement level 0      rmsd =  0.024
+
+** Refinement finished. Final level: 0
+
+** The refined complex file is 5AAC-impref_ref.mae.

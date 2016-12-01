@@ -1,0 +1,1842 @@
+==============================================================================
+  Prime version 4.5 (r000) Refine Structure: Energy calculation
+==============================================================================
+        
+--------------------------------------------------------------------------------
+JobId          : cc05-0-583fceaa
+Name           : 4zau-missing-loops
+Program        : RefineStructure
+MMshareExec    : /cbio/jclab/share/schrodinger/schrodinger2016-3/mmshare-v3.5/bin/Linux-x86_64
+Host           : cc05.local
+Dir            : /cbio/jclab/home/albaness/github/PDBfinder/pdbs/Osimertinib-EGFR/fixed/4ZAU-fixed
+HostEntry      : localhost
+JobHost        : cc05.local
+JobDir         : /scratch/albaness/4zau-missing-loops
+JobMMshareExec : /cbio/jclab/share/schrodinger/schrodinger2016-3/mmshare-v3.5/bin/Linux-x86_64
+Commandline    : /cbio/jclab/share/schrodinger/schrodinger2016-3/prime 4zau-missing-loops
+StartTime      : 2016-12-01-02:18:03
+--------------------------------------------------------------------------------
+Using the following input parameters:
+   BUILD_TAIL	no
+   EXT_DIEL	80.0
+   FIX_ATOM_NAMES	yes
+   INT_DIEL	1.0
+   SEED	0
+   SEQ_FILE	4zau.fasta
+   STRUCT_FILE	4zau-missing-loops-in.mae
+   USE_CRYSTAL_SYMMETRY	no
+   USE_MEMBRANE	no
+   USE_RANDOM_SEED	no
+   USE_SEQRES	yes
+
+Number of CPU cores to use: 1
+
+Using OPLS version 2005 for force-field parameters.
+
+Pre-processing input file: 4zau.fasta
+Pre-processing input
+  Treating with residue ID check...
+    Complete:  0 min  0 sec
+  Treating with asl parsing...
+    Complete:  0 min  0 sec
+  Treating with non-standard terminus detection...
+    Complete:  0 min  0 sec
+  Treating with naming consistency detection...
+    Complete:  0 min  0 sec
+  Treating with missing residue detection...
+    Complete:  0 min  0 sec
+
+ Random Number Seed Set to:   1039816580
+ 
+ Contents of the control file:
+   
+   file outdir "/scratch/albaness/4zau-missing-loops/"
+   file datadir "/cbio/jclab/share/schrodinger/schrodinger2016-3/psp-v4.5/data/pop/"
+   file vddir "/cbio/jclab/share/schrodinger/schrodinger2016-3/psp-v4.5/data/pop/"
+   file tempdir "templates/"
+   file protempdir "templates/"
+   file usrtempdir "/scratch/albaness/4zau-missing-loops/"
+   file gluefile "params.glue"
+   file logfile stdout
+   
+   rand seed 0
+   
+   
+   load simple 4zau-missing-loops_0 Structure(37)  het yes ions yes wat yes mse2met no sym none   highest_occ no seqres yes build_tail no   opls_version 2005 fix_atom_names yes
+   
+   
+   
+   constraints load_from_ct
+   energy param solv vsgb2.0
+   
+   
+   
+   energy param nbcut2_nn  40.0
+   energy param nbcut2_cn  40.0
+   energy param nbcut2_cc  40.0
+   
+   energy param uselipo yes
+   
+   
+   
+   
+   
+   energy byres beg end interaction_energy yes
+   
+   struct atom_SASA all res
+   
+   
+   
+   write mae SWIG_OUTPUT_STRUCTURE
+   
+--Checked out   8 PSP Plop Tokens--
+ Random number seed reset to :            0
+ 
+ Parameters chosen for PDB loading:
+   All protein chains will be loaded.
+   Sequence read from SEQRES lines.
+   Building gaps up to           20  residues
+   Ions from PDB file INCLUDED.
+   PDB file assumed to be experimental data.
+   Waters from PDB file INCLUDED.
+   HETATMs from PDB file INCLUDED.
+   Hydrogens from PDB file INCLUDED.
+   NO symmetry will be used.
+   Atoms not in PDB file will NOT be optimized.
+   Atomtyping Parameters (when reading directly from mae)
+      OPLS Version 2005                
+      Planarity       None
+      Using Force Field Charges
+      Changing atom names to canonical values
+ 
+ STARTING TO WORK ON FILE 4zau-missing-loops_0
+ Reading residue sequence from atoms in mae file
+ Reading residue sequence from atoms in mae file
+ Matched          283  residues of SEQRES chain A to input structure
+ Gap  A:GLU_985    --  A:MET_1007   is too long, skipping
+ 
+ Amino acid sequence, chain: A A:ALA_698    A:ASP_984   
+    0 ALAB PRO  ASN  GLN  ALA  LEU  LEU  ARG  ILE  LEU 
+   10 LYS  GLU  THR  GLU  PHE  LYS  LYS  ILE  LYS  VAL 
+   20 LEU  GLY  SER  GLY  ALA  PHE  GLY  THR  VAL  TYR 
+   30 LYS  GLY  LEU  TRP  ILE  PRO  GLU  GLY  GLU  LYS 
+   40 VAL  LYS  ILE  PRO  VAL  ALA  ILE  LYS  GLU  LEU 
+   50 ARG  GLU  ALA  THR  SER  PRO  LYS  ALA  ASN  LYS 
+   60 GLU  ILE  LEU  ASP  GLU  ALA  TYR  VAL  MET  ALA 
+   70 SER  VAL  ASP  ASN  PRO  HID  VAL  CYS  ARG  LEU 
+   80 LEU  GLY  ILE  CYS  LEU  THR  SER  THR  VAL  GLN 
+   90 LEU  ILE  THR  GLN  LEU  MET  PRO  PHE  GLY  CYS 
+  100 LEU  LEU  ASP  TYR  VAL  ARG  GLU  HID  LYS  ASP 
+  110 ASN  ILE  GLY  SER  GLN  TYR  LEU  LEU  ASN  TRP 
+  120 CYS  VAL  GLN  ILE  ALA  LYS  GLY  MET  ASN  TYR 
+  130 LEU  GLU  ASP  ARG  ARG  LEU  VAL  HID  ARG  ASP 
+  140 LEU  ALA  ALA  ARG  ASN  VAL  LEU  VAL  LYS  THR 
+  150 PRO  GLN  HID  VAL  LYS  ILE  THR  ASP  PHE  GLY 
+  160 LEU  ALA  LYS  LEU  LEU  GLY  ALA  GLU  GLU  LYS 
+  170 GLU  TYR  HID  ALA  GLU  GLY  GLY  LYS  VAL  PRO 
+  180 ILE  LYS  TRP  MET  ALA  LEU  GLU  SER  ILE  LEU 
+  190 HID  ARG  ILE  TYR  THR  HID  GLN  SER  ASP  VAL 
+  200 TRP  SER  TYR  GLY  VAL  THR  VAL  TRP  GLU  LEU 
+  210 MET  THR  PHE  GLY  SER  LYS  PRO  TYR  ASP  GLY 
+  220 ILE  PRO  ALA  SER  GLU  ILE  SER  SER  ILE  LEU 
+  230 GLU  LYS  GLY  GLU  ARG  LEU  PRO  GLN  PRO  PRO 
+  240 ILE  CYS  THR  ILE  ASP  VAL  TYR  MET  ILE  MET 
+  250 VAL  LYS  CYS  TRP  MET  ILE  ASP  ALA  ASP  SER 
+  260 ARG  PRO  LYS  PHE  ARG  GLU  LEU  ILE  ILE  GLU 
+  270 PHE  SER  LYS  MET  ALA  ARG  ASP  PRO  GLN  ARG 
+  280 TYR  LEU  VAL  ILE  GLN  GLY  ASPE
+ 
+ Amino acid sequence, chain: A A:ASP_1008   A:LEU_1017  
+    0 ASPB ASP  VAL  VAL  ASP  ALA  ASP  GLU  TYR  LEUE
+ 
+ Nonbonded initialization ...
+ Time for loading nb parameters:   3.999000000000308E-003
+ Build extended structure ...
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:ALA_698   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:ASP_984   
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:ASP_1008  
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:LEU_1017  
+ Generating crosslinks ...
+ Initialize 1/4 list ...
+ Initialize parent/child list ...
+ Initialize covalent pointers ...
+ Initialize resinfo list ...
+ ATTN: hetero res type YY3 
+  not recognized - rotamer conformations will not be sampled.
+ Initialize special atoms ...
+ Initialize rank list ...
+ Initialize sparse atom list ...
+ 
+ Times for various book-keeping steps:
+     build   3.544s
+     cross   0.050s
+     child   0.020s
+      iper   0.000s
+       rev   0.021s
+      info   0.003s
+     resat   0.000s
+      rank   0.001s
+     covpt   0.001s
+    sparse   0.024s
+ 
+ Times for steps in loading structure:
+           Load sequence    0.18s
+    Initialize structure    3.73s
+      Assign coordinates    0.03s
+     Initialize symmetry    0.00s
+ 
+ Found loops without PDB coordinates...
+           1  A:LEU_747    A:ALA_755   
+           2  A:GLY_863    A:GLU_865   
+           3  A:GLY_873    A:GLY_874   
+ Now trying to rebuild them...           3
+ 
+ Preparing for first energy calculation ...
+ 
+ Time for assigning nb parameters:    0.014s
+ 
+ Number of protein chains       2
+   Number of residues         297
+       (charged)               79
+        (polar)                89
+       (glycine)               18
+     (hydrophobic)            111
+ 
+ Number of RNA chains           0
+   Number of nucleotides        0
+ Number of DNA chains           0
+   Number of nucleotides        0
+ 
+ Number of waters               4
+ Number of ions                 0
+ Number of HET                  1
+ 
+ Number of atoms             4964
+   [sparse atoms]             403
+ 
+ Number of bonds             5021
+ Number of angles            9049
+ Number of torsions         14242
+ Number of 1/4s             13070
+ 
+ Partial charges and molecular weights:
+  HET group      A:YY3_1101       -0.0000     499.6
+  Protein chain            A       2.0000   32631.4
+  Protein chain            A      -5.0000    1132.1
+  Entire system                   -3.0000   34335.2
+ 
+ Time for secondary structure initialization   0.004s
+ 
+ Results of parameter assignment
+    type    tot   time
+    BOND   5021   0.00
+    ANGL   9049   0.00
+    TORS  14242   0.02
+ 
+ Here are the parameters that will be used:
+                      Solvent model   SGB
+                 Nonpolar estimator   SGB/NP
+              Variable Dielectric:    DISABLED
+                      Penalty terms   EXCLUDED
+                Internal dielectric    1.00
+                 Solvent dielectric   80.00
+                 Ionic strength (M)    0.00
+                 Debye length (Ang)     Inf
+     Short NB cut (neutral/neutral)   10.00
+      Long NB cut (neutral/neutral)   15.00
+      Short NB cut (charge/neutral)   10.00
+       Long NB cut (charge/neutral)   20.00
+       Short NB cut (charge/charge)   15.00
+        Long NB cut (charge/charge)   30.00
+             Short NB cut (reduced)    6.00
+              Long NB cut (reduced)   11.00
+          Rotamer Frequency Scoring   OFF
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV   434869.529941     1055.390741     1258.034014   437182.954697
+     SGB    26819.244518   -14113.134937    -5053.079356     7653.030225
+   TOTAL   461688.774459   -13057.744195    -3795.045342   444835.984921
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     2049.146983 ***************     -113.853712 ***************
+      EL     7009.193995   -18223.746847     -238.090466   -11452.643318
+     SGB    -5053.079356     8514.028589      274.735196     3735.684428
+   TOTAL     4005.261621 ***************      -77.208982 ***************
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -18989.293401
+NONPOLAR       67.453532
+PROT COR        0.000000
+ 
+ SUM:
+ SGB TOT    -2547.499392
+SOLV TOT    -2480.045859
+  TOTALE   472191279.7375    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ ATTN:  large bond energies found:
+      37      5 A:YY3_1101:_C8_          8 A:YY3_1101:_C9_         12.44
+      74     71 A:HOH_1201:_OW_         72 A:HOH_1201:_HW1         10.00
+      75     71 A:HOH_1201:_OW_         73 A:HOH_1201:_HW2         10.00
+      76     74 A:HOH_1202:_OW_         75 A:HOH_1202:_HW1         10.00
+      77     74 A:HOH_1202:_OW_         76 A:HOH_1202:_HW2         10.00
+      78     77 A:HOH_1203:_OW_         78 A:HOH_1203:_HW1         10.00
+      79     77 A:HOH_1203:_OW_         79 A:HOH_1203:_HW2         10.00
+      80     80 A:HOH_1204:_OW_         81 A:HOH_1204:_HW1         10.00
+      81     80 A:HOH_1204:_OW_         82 A:HOH_1204:_HW2         10.00
+    1043   1030 A:ALA_755:_C__        1036 A:ASN_756:_N__      338720.33
+    2859   2820 A:GLU_865:_C__        2833 A:GLU_866:_N__       84746.83
+    2998   2967 A:GLY_874:_C__        2969 A:LYS_875:_N__       11091.14
+ 
+ ATTN:  large angle energies found:
+ #,atoms,energy,angle,eq
+    1887 A:ALA_755:_CA_ A:ALA_755:_C__ A:ASN_756:_N__   74.2   57.6  116.6
+    1888 A:ALA_755:_O__ A:ALA_755:_C__ A:ASN_756:_N__   76.4  178.9  122.9
+    1889 A:ALA_755:_C__ A:ASN_756:_N__ A:ASN_756:_CA_    7.9   99.1  121.9
+    1890 A:ALA_755:_C__ A:ASN_756:_N__ A:ASN_756:_H__   55.2   47.8  119.8
+    5163 A:GLU_865:_CA_ A:GLU_865:_C__ A:GLU_866:_N__  211.0   17.1  116.6
+    5164 A:GLU_865:_O__ A:GLU_865:_C__ A:GLU_866:_N__    6.0  138.5  122.9
+    5165 A:GLU_865:_C__ A:GLU_866:_N__ A:GLU_866:_CA_    7.0  100.5  121.9
+    5166 A:GLU_865:_C__ A:GLU_866:_N__ A:GLU_866:_H__    7.1   93.9  119.8
+ 
+ ATTN:  large 14 energies found:
+    1331 A:THR_725:_C__      A:THR_725:_OG1           5.67    -21.77     21.42
+    3805 A:THR_783:_C__      A:SER_784:_C__           8.99     15.33    -17.22
+    5208 A:ASN_816:_C__      A:TRP_817:_C__           5.73     14.81     -9.93
+    9419 A:PRO_914:_C__      A:TYR_915:_C__           5.33     14.73    -12.86
+   12435 A:GLY_983:_C__      A:ASP_984:_C__           5.64     13.32    -17.94
+          Time for contact parameter loading:    0.00s
+              Time for sgb parameter loading:    0.00s
+          Time for dynamic memory allocation:    0.00s
+      Time for covalent parameter assignment:    0.14s
+       Time for nobonded list initialization:    0.06s
+       Time for covalent list initialization:    0.00s
+                 Time for sgb initialization:    2.20s
+ 
+ ============================================
+ Now working on new loop ...
+ ============================================
+  A:GLU_746    A:ASN_756             11
+ 
+ Starting loop conformation: 
+ A:GLU_746    -116.95 -144.40  167.58
+ ATTN:  above phi/psi not represented by library GEN   
+     Actual angles -116.95 -144.40
+   Closest rotamer -125.00 -170.00
+             Delta   -8.05  -25.60
+ A:LEU_747    -155.75 -145.24  162.16
+ ATTN:  above phi/psi not represented by library GEN   
+     Actual angles -155.75 -145.24
+   Closest rotamer -150.00 -165.00
+             Delta    5.75  -19.76
+ A:ARG_748    -138.01  127.58 -175.17
+ A:GLU_749    -149.78  149.89  173.14
+ A:ALA_750    -157.42   -2.31 -173.16
+ ATTN:  above phi/psi not represented by library GEN   
+     Actual angles -157.42   -2.31
+   Closest rotamer -135.00   -5.00
+             Delta   22.42   -2.69
+ A:THR_751     -84.35  -44.03 -173.02
+ A:SER_752     107.35  -79.40  175.37
+ ATTN:  above phi/psi not represented by library GEN   
+     Actual angles  107.35  -79.40
+   Closest rotamer   65.00 -115.00
+             Delta  -42.35  -35.60
+ A:PRO_753     -74.25  126.76 -178.00
+ A:LYS_754    -167.11  178.12  177.41
+ A:ALA_755    -131.96  115.47  -12.98
+ A:ASN_756      86.43  -36.05  167.01
+ ATTN:  above phi/psi not represented by library GEN   
+     Actual angles   86.43  -36.05
+   Closest rotamer   75.00    5.00
+             Delta  -11.43   41.05
+       Gamma turn in   A:SER_752         107.35      -79.40      175.37
+      Cis peptide in   A:ALA_755        -131.96      115.47      -12.98
+       Gamma turn in   A:ASN_756          86.43      -36.05      167.01
+ 
+ ============================================
+ End of initial setup ...
+ ============================================
+ Report energy breakdown by residues:
+ INFO: the following energy terms include both contributions from
+ each residue itself, and interactions between each residue with
+ other residues. Thus the sum of energies by residues will not be
+ equal to the total energy
+      residue      bond     angle torsional        el        lj       sgb  nonpolar      lipo       tot
+ A:YY3_1101       34.74     20.57     22.86   -160.23     16.04      2.85      3.27      0.00    -59.91
+ A:HOH_1201       20.00      0.00      0.00      2.66      2.45     -1.37     -1.05      0.00     22.69
+ A:HOH_1202       20.00      0.00      0.00      3.62     -0.74      0.74     -0.17      0.00     23.45
+ A:HOH_1203       20.00      0.00      0.00     -6.47     -1.17      1.39     -0.13      0.00     13.62
+ A:HOH_1204       20.00      0.00      0.00     -1.14     -1.10     -0.39     -0.98      0.00     16.38
+ large LJ energy for atom: A:ALA_698:_N__        30574.5779755722     
+ large LJ energy for atom: A:ALA_698:_HA_        1280.75673513737     
+ large LJ energy for atom: A:ALA_698:_CB_        13532.9625552126     
+ large LJ energy for atom: A:ALA_698:_HB2        32048.4721311900     
+ A:ALA_698         0.41      0.77      3.55     -2.38  79120.39     -0.40      0.09      0.00  79122.43
+ A:PRO_699         1.46      6.70      7.39    -15.70      5.22     -0.66      0.03      0.00      4.44
+ A:ASN_700         1.44      0.67      3.41    -61.60     14.65     -4.32     -3.40      0.00    -49.15
+ A:GLN_701         1.43      0.80      6.80    -61.85      6.65     -7.52      0.93      0.00    -52.77
+ A:ALA_702         0.52      1.08      1.73    -31.11      2.57     -1.60     -0.25      0.00    -27.07
+ A:LEU_703         1.29      1.62      4.84    -23.40      1.74     -2.09      0.11      0.00    -15.90
+ A:LEU_704         0.63      2.29      3.57    -24.15      0.66     -0.86     -0.20      0.00    -18.05
+ A:ARG_705         1.01      0.52      5.67    -92.40     -2.14      8.42     -7.81      0.00    -86.72
+ A:ILE_706         0.20      1.84      9.29    -23.30      1.45     -2.59      0.62      0.00    -12.49
+ A:LEU_707         0.32      1.42      5.00    -30.21     -1.73      1.96     -0.03      0.00    -23.27
+ A:LYS_708         0.36      1.36      3.80    -73.27     -1.04     -3.01      0.15      0.00    -71.64
+ A:GLU_709         0.50      0.89      4.72    -83.77      4.09     -9.42      9.80      0.00    -73.17
+ A:THR_710         0.37      0.55      0.73    -25.52      3.86     -4.38     -0.01      0.00    -24.39
+ A:GLU_711         0.58      3.60      6.96    -72.84     -1.15    -26.88      5.47      0.00    -84.25
+ A:PHE_712         1.79      2.41      1.34    -25.87      0.22     -1.31     -0.53      0.00    -21.95
+ A:LYS_713         0.99      0.86      1.58     -9.71     -3.21    -63.37     -0.02      0.00    -72.88
+ A:LYS_714         0.63      1.74      6.03    -35.93     -3.38    -30.27     -0.44      0.00    -61.63
+ A:ILE_715         0.74      1.80      9.25    -21.92      3.25     -1.11      1.22      0.00     -6.78
+ A:LYS_716         0.14      1.03      0.74    -14.06     -1.36    -64.14      0.07      0.00    -77.56
+ A:VAL_717         0.27      0.93      2.51    -26.41      1.09      1.33      0.08      0.00    -20.20
+ A:LEU_718         0.30      2.29      4.94    -25.29     -4.10     -2.08      0.34      0.00    -23.60
+ A:GLY_719         0.13      0.05      0.36    -35.35     -0.53      1.84     -0.31      0.00    -33.82
+ A:SER_720         0.38      0.37     -1.75    -18.53      1.81     -4.22     -0.83      0.00    -22.77
+ A:GLY_721         0.21      0.49      0.23    -27.42      1.29      0.14     -1.44      0.00    -26.49
+ A:ALA_722         0.14      0.56      3.48    -23.60      3.67     -3.24     -0.93      0.00    -19.92
+ A:PHE_723         0.92      2.28      6.03    -28.78      4.21     -0.37     -1.28      0.00    -16.99
+ A:GLY_724         0.14      1.15     -0.25    -34.47      2.34     -0.88     -0.38      0.00    -32.35
+ A:THR_725         0.48      0.52      1.08    -17.79     13.09      1.43     -0.92      0.00     -2.12
+ A:VAL_726         0.22      1.25      3.21    -25.17     -0.52      1.18     -0.44      0.00    -20.27
+ A:TYR_727         1.32      1.37      2.75    -35.42     -3.98     -3.09     -0.82      0.00    -37.85
+ A:LYS_728         0.36      0.66      4.41    -12.37      3.78    -60.78     -0.83      0.00    -64.77
+ A:GLY_729         0.22      1.29      0.04    -32.57     -2.44     -0.75     -0.25      0.00    -34.47
+ A:LEU_730         0.57      1.67      5.38    -28.80      0.64      0.53      0.73      0.00    -19.27
+ A:TRP_731         2.70      3.23      1.17    -39.84     -4.80      2.15     -0.68      0.00    -36.08
+ A:ILE_732         0.50      1.34     10.03    -15.71      4.04     -2.13      1.21      0.00     -0.71
+ A:PRO_733         1.07      6.02      4.87    -16.51      2.55     -0.16      0.02      0.00     -2.15
+ A:GLU_734         0.69      1.05      4.82    -73.66     -0.82    -39.08      8.92      0.00    -98.07
+ A:GLY_735         0.42      0.51      1.16    -21.37      1.18     -5.80     -1.25      0.00    -25.16
+ A:GLU_736         0.70      1.90      9.15    -23.25      5.74    -70.00      4.65      0.00    -71.12
+ A:LYS_737         0.57      1.92      3.09    -67.43      1.80    -12.11     -0.89      0.00    -73.04
+ A:VAL_738         1.26      2.67      4.33    -26.06      1.88      1.57     -0.39      0.00    -14.74
+ A:LYS_739         0.53      1.07      7.52    -43.96     -3.57    -32.42     -0.27      0.00    -71.10
+ A:ILE_740         0.35      1.50     12.00    -21.01      0.13      1.80     -0.08      0.00     -5.31
+ A:PRO_741         1.13      6.19      9.84    -14.64     -2.32     -2.13      0.53      0.00     -1.39
+ A:VAL_742         0.63      1.85      4.62    -29.42     -3.78      2.27     -0.08      0.00    -23.91
+ A:ALA_743         0.11      0.60      3.52    -30.86     -3.71     -0.80     -0.05      0.00    -31.18
+ A:ILE_744         0.24      1.62      8.98    -28.60     -2.62      1.86     -0.01      0.00    -18.53
+ A:LYS_745         0.28      0.66      5.23    -76.72     -4.73      8.67     -0.57      0.00    -67.19
+ large LJ energy for atom: A:GLU_746:_OE1        1244.02367335500     
+ A:GLU_746         0.52      3.04      5.29    -78.44   2511.20      7.87      1.01      0.00   2450.49
+ large LJ energy for atom: A:LEU_747:HD13        5792.17593424322     
+ large LJ energy for atom: A:LEU_747:_CD2        282222.491282094     
+ large LJ energy for atom: A:LEU_747:HD21        6780874.41927700     
+ A:LEU_747         0.28      7.01      4.91    -19.747070042.87     -1.02      0.51      0.007070034.80
+ A:ARG_748         0.39      6.32      5.53    -50.17     67.23    -29.65     -5.34      0.00     -5.69
+ A:GLU_749         0.11      3.02      6.01    -65.05      2.01    -43.46      3.60      0.00    -93.76
+ large LJ energy for atom: A:ALA_750:_O__        6714.91318010171     
+ large LJ energy for atom: A:ALA_750:_CB_        27496.4375181197     
+ large LJ energy for atom: A:ALA_750:_HB3        7035639.38052416     
+ A:ALA_750         0.29      2.79      2.83    -30.847069946.65      2.29     -0.73      0.007069923.28
+ A:THR_751         9.67      4.39      3.36    -24.11      6.27     -4.74     -0.96      0.00     -6.12
+ A:SER_752         0.38      4.81     11.61     -5.39    143.03     -5.14     -1.46      0.00    147.84
+ A:PRO_753         7.32     34.37     15.43    -12.83    127.13      0.05      0.37      0.00    171.84
+ A:LYS_754         0.10      2.53      6.34    -33.47    779.35    -18.76     -0.73      0.00    735.35
+ A:ALA_755         0.29      2.71      3.14    -24.92     14.01     -3.47      0.41      0.00     -7.82
+ A:ASN_756         0.15      3.26      1.58    -68.30    669.18     -4.92     -1.18      0.00    599.77
+ A:LYS_757         0.47      1.44      5.97   -105.28     -0.43     17.40      0.13      0.00    -80.30
+ A:GLU_758         1.02      1.31      5.11    -81.68     -0.61    -36.05      6.74      0.00   -104.16
+ A:ILE_759         0.65      2.98     12.22    -30.66    662.52     -2.53      0.36      0.00    645.55
+ A:LEU_760         0.16      1.34      4.95    -28.27      5.04     -0.72      1.22      0.00    -16.28
+ A:ASP_761         0.39      1.13     -1.42    -67.33      1.45    -42.55      5.90      0.00   -102.43
+ A:GLU_762         0.29      0.65      5.00    -68.10      0.35    -37.84      4.73      0.00    -94.93
+ A:ALA_763         0.19      0.21      3.13    -33.01      2.07     -0.99      0.03      0.00    -28.37
+ A:TYR_764         1.48      0.81      1.73    -36.06      8.09     -1.63     -0.74      0.00    -26.32
+ A:VAL_765         0.37      1.24      3.56    -25.17      3.89      0.80      0.12      0.00    -15.19
+ A:MET_766         0.68      2.14      7.38    -29.37      1.03     -2.38      0.01      0.00    -20.52
+ A:ALA_767         0.42      0.40      2.35    -35.59     -1.27     -1.72      0.53      0.00    -34.88
+ A:SER_768         0.31      0.32      6.48    -34.10      3.35      0.34     -0.87      0.00    -24.17
+ A:VAL_769         0.24      1.16      3.59    -19.29     -0.01     -3.48      0.12      0.00    -17.67
+ A:ASP_770         0.35      1.00      3.15    -60.26      1.59    -49.69      3.91      0.00    -99.95
+ A:ASN_771         0.99      1.19      3.11    -54.50      1.45     -3.88     -1.52      0.00    -53.18
+ A:PRO_772         0.88      8.33      6.74    -14.10      4.18      0.12      0.86      0.00      7.01
+ A:HID_773         1.31      9.64      2.19    -39.77     -6.46      3.03     -1.36      0.00    -31.43
+ A:VAL_774         0.36      1.18      3.28    -29.97      1.00      0.98     -0.01      0.00    -23.18
+ A:CYS_775         0.11      3.60      2.93    -23.91     -3.34     -0.97     -0.64      0.00    -22.21
+ A:ARG_776         1.83      4.38      7.77   -109.27     -7.90     17.62     -3.97      0.00    -89.53
+ A:LEU_777         1.19      2.05      4.50    -22.29      4.52     -2.80     -0.27      0.00    -13.10
+ A:LEU_778         0.46      1.24      5.30    -25.76     -2.32     -1.07      0.36      0.00    -21.78
+ A:GLY_779         0.22      0.16      0.78    -35.03     -3.08      0.63     -0.17      0.00    -36.48
+ A:ILE_780         0.63      1.50     10.62    -29.46      0.72     -0.57      0.21      0.00    -16.35
+ A:CYS_781         0.16      3.23     -1.17    -27.65     -6.43      1.35     -0.45      0.00    -30.95
+ A:LEU_782         0.63      1.91      5.33    -26.28      1.51     -1.82      0.85      0.00    -17.86
+ A:THR_783         0.77      0.57      3.77    -36.66     53.73      5.73     -0.35      0.00     27.55
+ A:SER_784         0.30      0.43      7.34    -26.00     29.58     -2.38     -0.58      0.00      8.69
+ A:THR_785         0.50      0.54      7.91    -15.97     31.80     -1.45     -0.89      0.00     22.44
+ A:VAL_786         0.21      0.97      2.52    -15.34    723.24     -1.05      0.03      0.00    710.59
+ large LJ energy for atom: A:GLN_787:_NE2        1218.85832993009     
+ A:GLN_787         0.23      0.66      5.58    -54.26   2481.23     -2.45     -1.17      0.00   2429.81
+ A:LEU_788         0.66      1.23      6.32    -29.29      1.19      1.57      0.01      0.00    -18.31
+ A:ILE_789         0.18      1.17      8.61    -31.24     12.01      0.52     -0.01      0.00     -8.77
+ A:THR_790         1.71      1.44      0.90    -29.34      3.32      2.45     -0.53      0.00    -20.06
+ A:GLN_791         0.63      0.67      0.52    -73.41     -1.94      2.45     -0.52      0.00    -71.59
+ A:LEU_792         0.23      1.53      3.07    -20.03     -6.75     -3.51      0.39      0.00    -25.07
+ A:MET_793         0.68      0.79      9.98    -18.05     -5.63     -0.63     -0.13      0.00    -12.98
+ A:PRO_794         1.63      8.19     10.12    -16.50     -1.29     -0.06      0.98      0.00      3.06
+ A:PHE_795         1.28      0.46      1.45    -28.17      3.10     -1.36      0.74      0.00    -22.51
+ A:GLY_796         0.16      0.77     -1.37    -35.61     -2.09      1.29     -0.16      0.00    -37.00
+ A:CYS_797         0.49      5.45     -0.85    -23.63     -3.28     -1.27     -1.45      0.00    -24.54
+ A:LEU_798         0.36      2.66      2.93    -25.12     -4.66      1.01     -0.03      0.00    -22.85
+ A:LEU_799         0.62      3.51      3.54    -27.08     -3.89      0.82      0.48      0.00    -22.01
+ A:ASP_800         1.76      0.48     -0.75    -50.43      0.91    -49.69      7.80      0.00    -89.92
+ A:TYR_801         1.62      0.89      1.71    -37.31      0.70     -3.10     -1.13      0.00    -36.61
+ A:VAL_802         0.25      1.72      3.89    -26.42     -1.12     -2.10      0.04      0.00    -23.74
+ A:ARG_803         0.51      0.81      6.66    -85.66     -2.91     -6.62     -3.74      0.00    -90.96
+ A:GLU_804         0.39      1.57      5.24    -37.31     -1.21    -76.61      5.03      0.00   -102.90
+ A:HID_805         1.97      9.87      2.58    -36.87      4.18     -1.75     -2.43      0.00    -22.45
+ A:LYS_806         0.60      0.89      1.49    -67.26      1.08     -6.39     -0.10      0.00    -69.68
+ A:ASP_807         0.57      2.20     -3.97    -32.34      4.65    -72.75      2.33      0.00    -99.31
+ A:ASN_808         0.51      1.43     -2.73    -64.76      3.13     -4.36     -0.77      0.00    -67.54
+ A:ILE_809         0.47      1.99      9.66    -23.20      2.31     -2.55     -0.50      0.00    -11.80
+ A:GLY_810         0.19      1.16     -1.45    -36.66     -1.72      2.12     -0.51      0.00    -36.86
+ A:SER_811         0.39      1.36      2.78    -29.29     -1.50      3.12     -0.58      0.00    -23.71
+ A:GLN_812         0.43      1.15      4.12    -63.99     -1.01     -2.65     -0.82      0.00    -62.77
+ A:TYR_813         2.88      1.32      3.26    -41.51      4.95      1.10     -0.78      0.00    -28.78
+ A:LEU_814         0.23      1.05      5.24    -28.56     -3.33      1.96      0.01      0.00    -23.39
+ A:LEU_815         0.24      1.62      4.84    -31.45     -5.58      1.59      0.02      0.00    -28.74
+ A:ASN_816         0.33      1.23      0.37    -63.83      6.59     -0.88      0.25      0.00    -55.94
+ A:TRP_817         3.33      3.52      1.22    -43.34      3.01      3.17     -0.67      0.00    -29.76
+ A:CYS_818         0.40      3.08      4.13    -30.34     -2.47     -0.49     -0.40      0.00    -26.10
+ A:VAL_819         0.58      1.18      3.35    -25.71      1.84      0.18      0.34      0.00    -18.23
+ A:GLN_820         0.72      0.98      3.34    -73.24     -1.23     -2.62     -0.68      0.00    -72.73
+ A:ILE_821         0.42      1.72      7.83    -28.39      2.83      0.76      0.09      0.00    -14.73
+ A:ALA_822         0.21      0.34      2.86    -33.42     -1.01     -1.38     -0.02      0.00    -32.42
+ A:LYS_823         0.66      1.30      2.90    -42.32     -0.41    -39.27     -0.28      0.00    -77.43
+ A:GLY_824         0.07      0.25      0.58    -34.31      3.77     -1.46     -0.08      0.00    -31.18
+ A:MET_825         0.84      0.77      6.10    -31.00     -2.42     -2.46     -0.03      0.00    -28.18
+ A:ASN_826         1.10      0.60      0.84    -64.17      2.51     -4.76     -0.92      0.00    -64.79
+ A:TYR_827         1.27      0.77      1.72    -37.16      4.03     -3.82     -0.57      0.00    -33.77
+ A:LEU_828         0.49      2.67      4.59    -30.31     -2.73      1.37      0.04      0.00    -23.89
+ A:GLU_829         1.25      2.81      8.71    -70.21     -0.05    -38.48      5.88      0.00    -90.07
+ A:ASP_830         0.45      1.44     -1.47    -45.85      7.81    -60.93      5.00      0.00    -93.55
+ A:ARG_831         0.35      1.81      8.24   -100.06      4.05      4.78     -5.18      0.00    -86.01
+ A:ARG_832         0.67      1.56      8.34   -109.69     -0.20     18.34     -5.45      0.00    -86.43
+ A:LEU_833         0.38      2.08      5.32    -25.41      2.13     -0.56     -0.00      0.00    -16.06
+ A:VAL_834         0.43      1.41      3.68    -30.43     -0.76      1.03     -0.03      0.00    -24.66
+ A:HID_835         0.81      8.62      3.20    -21.60     -6.65     -0.96     -0.09      0.00    -16.67
+ A:ARG_836         0.72      2.20      6.14    -79.09     -2.43     -4.91     -1.38      0.00    -78.75
+ A:ASP_837         0.41      1.31      2.05    -62.52      3.95    -31.13      3.89      0.00    -82.03
+ A:LEU_838         0.20      1.37      3.27    -24.14     -4.51      1.43     -0.01      0.00    -22.39
+ A:ALA_839         0.20      0.57      2.31    -32.69      0.56     -0.45     -0.11      0.00    -29.61
+ A:ALA_840         0.32      0.92      1.72    -35.60     -0.99     -0.48     -0.04      0.00    -34.16
+ A:ARG_841         0.29      1.42      6.75    -94.74     -0.01      2.93     -3.42      0.00    -86.79
+ A:ASN_842         0.27      0.96     -0.32    -66.34     -0.01     -0.38     -1.01      0.00    -66.83
+ A:VAL_843         0.21      1.22      3.69    -28.45     -3.28     -0.01     -0.01      0.00    -26.64
+ A:LEU_844         0.59      1.55      5.02    -30.11     -3.71      1.86      0.13      0.00    -24.67
+ A:VAL_845         0.62      1.02      3.78    -27.43     -4.70      0.68     -0.01      0.00    -26.04
+ A:LYS_846         0.70      1.43      3.41    -91.93     -2.83      8.18     -1.43      0.00    -82.47
+ A:THR_847         0.64      1.37      2.50    -21.86      4.48     -0.37     -0.20      0.00    -13.43
+ A:PRO_848         1.34      6.30      7.61    -14.60     -0.30      0.37      0.50      0.00      1.23
+ A:GLN_849         0.82      2.11      2.23    -69.06      1.97     -0.84     -0.43      0.00    -63.20
+ A:HID_850         0.93      8.87      3.09    -35.05     -3.22     -2.49     -1.28      0.00    -29.15
+ A:VAL_851         0.11      1.21      3.83    -28.18     -1.86      0.88     -0.01      0.00    -24.02
+ A:LYS_852         0.38      0.92      3.86    -97.20     -4.99     10.46     -0.11      0.00    -86.69
+ A:ILE_853         0.41      1.24      7.56    -32.05      1.62      1.42      0.04      0.00    -19.76
+ A:THR_854         0.36      0.71     -4.28    -15.52      2.82     -1.42     -0.68      0.00    -17.99
+ A:ASP_855         0.54      1.03      4.46    -29.37      0.94    -55.32      7.32      0.00    -70.38
+ A:PHE_856         1.28      0.48      1.67    -29.07      0.37      2.13     -0.73      0.00    -23.88
+ A:GLY_857         0.34      0.82     -0.78    -35.06      2.35      3.20      0.35      0.00    -28.78
+ A:LEU_858         0.59      1.41      4.97    -33.27      5.56      4.43      0.32      0.00    -15.99
+ A:ALA_859         0.21      0.32      1.88    -34.84      5.53      0.98     -0.05      0.00    -25.97
+ A:LYS_860         0.39      1.12      7.09    -71.85      1.93     -3.70     -0.73      0.00    -65.75
+ A:LEU_861         0.90      2.29      5.87    -22.05     -4.01     -2.90      0.36      0.00    -19.54
+ A:LEU_862         0.53      2.70      4.58    -21.95     -4.97     -1.86     -0.16      0.00    -21.12
+ A:GLY_863         0.04      0.31      0.04    -27.81      1.42     -0.26     -0.74      0.00    -26.99
+ A:ALA_864         0.29      2.75      2.28    -26.84     88.89     -1.90     -1.08      0.00     64.39
+ large LJ energy for atom: A:GLU_865:_N__        44614.5647045547     
+ large LJ energy for atom: A:GLU_865:_CA_        1780.49191666848     
+ large LJ energy for atom: A:GLU_865:_HA_        30810.3977921035     
+ large LJ energy for atom: A:GLU_865:_C__        1047.87227040105     
+ A:GLU_865     42373.52    152.33     10.55    -18.06  79033.14    -78.81     -2.12      0.00 121470.55
+ A:GLU_866     42373.69     83.57     11.69    -24.33     -0.81    -79.28      5.11      0.00  42369.64
+ A:LYS_867         1.54      1.74      0.88    -78.56     -1.51     -0.29     -0.36      0.00    -76.57
+ A:GLU_868         1.76      1.70      5.02    -35.19     -1.75    -70.32      8.52      0.00    -90.26
+ A:TYR_869         1.10      0.87      1.73    -34.80      0.19     -0.16     -0.47      0.00    -31.55
+ A:HID_870         1.14      8.81      3.04    -31.63     -3.96     -2.71     -3.47      0.00    -28.79
+ A:ALA_871         1.64      1.92      3.40    -24.43      0.47     -3.60     -0.13      0.00    -20.75
+ A:GLU_872         0.50      0.90      6.14    -62.42     -0.51    -49.30      9.61      0.00    -95.08
+ A:GLY_873         0.04      0.29      0.30    -29.00      1.19     -3.46     -2.59      0.00    -33.22
+ A:GLY_874      5545.60      2.15      9.41    -14.22     -0.29     -4.54     -2.92      0.00   5535.19
+ A:LYS_875      5545.82      5.08     12.57     -6.09     -0.85    -48.70      3.22      0.00   5511.06
+ A:VAL_876         0.62      2.45      5.08    -19.36      2.68      1.72     -0.05      0.00     -6.87
+ A:PRO_877         1.04      7.73     16.95    -11.80      1.33     -0.56      0.51      0.00     15.19
+ A:ILE_878         0.45      2.28     11.86    -13.47     16.01     -4.59     -0.00      0.00     12.56
+ A:LYS_879         0.21      0.64      4.47    -42.56     -1.39    -29.08     -0.71      0.00    -68.43
+ A:TRP_880         1.48      3.11      1.63    -39.54     -4.84      2.31      0.08      0.00    -35.78
+ A:MET_881         0.31      1.69      4.58    -31.32     -6.11      0.89      0.12      0.00    -29.84
+ A:ALA_882         0.16      0.53      1.66    -32.84     -0.44      3.05     -0.55      0.00    -28.44
+ A:LEU_883         0.21      1.41      3.66    -26.58      2.09      1.26      0.24      0.00    -17.71
+ A:GLU_884         0.69      2.18      6.26    -88.30      6.50    -25.18      4.32      0.00    -93.53
+ A:SER_885         0.32      0.54      6.39    -23.69      0.48     -2.32     -0.40      0.00    -18.67
+ A:ILE_886         0.21      1.41      8.75    -23.00      2.24     -1.07      0.82      0.00    -10.64
+ A:LEU_887         0.33      4.09      5.48    -28.51     -3.01     -0.58      1.54      0.00    -20.66
+ A:HID_888         1.23      9.21      3.65    -29.09     -0.15     -5.58     -2.38      0.00    -23.11
+ A:ARG_889         0.20      1.42      7.04   -106.95      4.27      9.09     -5.02      0.00    -89.94
+ A:ILE_890         0.94      1.80     10.57    -23.25     -0.19      2.38      0.85      0.00     -6.90
+ A:TYR_891         0.83      1.93      3.52    -41.05     -4.50      0.89     -0.95      0.00    -39.33
+ A:THR_892         0.55      0.74      0.54    -27.43      3.63      2.42     -0.32      0.00    -19.87
+ A:HID_893         0.59      8.73      3.69    -23.05     -3.85      0.26     -1.65      0.00    -15.28
+ A:GLN_894         0.30      0.75      5.07    -75.76     -0.92      1.89     -0.40      0.00    -69.07
+ A:SER_895         0.39      0.46     -1.32    -17.15     -0.75      0.67     -0.48      0.00    -18.18
+ A:ASP_896         1.55      1.38     -2.58    -70.83     -3.78    -26.70      1.21      0.00    -99.74
+ A:VAL_897         0.17      1.24      2.83    -30.80      1.71      1.75      0.00      0.00    -23.10
+ A:TRP_898         2.11      3.42      1.28    -41.55      3.95      4.58     -1.16      0.00    -27.37
+ A:SER_899         0.49      0.66      7.70    -33.02     -0.49      2.32     -0.47      0.00    -22.80
+ A:TYR_900         1.45      0.75      0.46    -33.90      0.27      2.36     -0.24      0.00    -28.87
+ A:GLY_901         0.12      0.22      0.62    -33.19     -1.24     -0.26     -0.02      0.00    -33.75
+ A:VAL_902         0.52      1.21      2.89    -31.32     -1.36      1.72      0.04      0.00    -26.30
+ A:THR_903         0.49      0.69      4.27    -28.87      1.02      2.43     -0.03      0.00    -20.00
+ A:VAL_904         0.46      1.42      3.18    -24.32      4.34      0.30      0.04      0.00    -14.58
+ A:TRP_905         2.75      3.52      1.02    -39.03     -6.22      1.75     -0.23      0.00    -36.44
+ A:GLU_906         0.70      1.97      8.69    -87.34     -4.30     -6.71      1.40      0.00    -85.58
+ A:LEU_907         0.27      2.16      4.86    -29.14     -2.75     -1.11      0.11      0.00    -25.59
+ A:MET_908         0.74      1.49      5.82    -33.15     -4.35     -2.34     -0.01      0.00    -31.81
+ A:THR_909         0.64      1.32      0.03    -28.13      2.63      0.10      0.28      0.00    -23.12
+ A:PHE_910         1.48      0.93      2.22    -27.60      0.03     -0.51     -0.67      0.00    -24.12
+ A:GLY_911         0.21      1.29      0.04    -42.07      1.53      1.58     -0.10      0.00    -37.52
+ A:SER_912         0.48      0.49      4.64    -20.79      2.25     -1.75     -0.10      0.00    -14.78
+ A:LYS_913         0.37      1.33      5.14    -20.57     -0.25    -44.71     -0.47      0.00    -59.16
+ A:PRO_914         1.39      7.82      5.11    -21.21      2.70      3.66      0.02      0.00     -0.50
+ A:TYR_915         1.10      1.54      4.47    -39.26      7.49      5.68     -1.61      0.00    -20.58
+ A:ASP_916         0.31      1.31      0.61    -86.06      6.32    -27.78      3.62      0.00   -101.67
+ A:GLY_917         0.09      0.67      0.69    -23.68      2.31     -5.76     -1.39      0.00    -27.07
+ A:ILE_918         0.83      1.95     10.00    -18.71      1.37      1.77     -0.38      0.00     -3.16
+ A:PRO_919         1.17      5.32      4.76     -9.69     -0.10     -1.93      0.48      0.00      0.01
+ A:ALA_920         0.20      0.38      2.35    -25.52     13.80     -4.78     -0.94      0.00    -14.52
+ A:SER_921         0.28      0.45     10.05    -33.87      5.87     -0.68     -0.34      0.00    -18.24
+ A:GLU_922         0.71      1.17      4.14    -65.24     -1.02    -47.61      4.33      0.00   -103.52
+ A:ILE_923         0.37      1.95      9.03    -26.96      7.87     -2.03     -0.03      0.00     -9.80
+ A:SER_924         0.38      0.47      0.98    -21.77     14.08     -1.49     -0.88      0.00     -8.24
+ A:SER_925         0.61      0.48     -1.30    -16.32      3.83     -2.53     -0.71      0.00    -15.94
+ A:ILE_926         0.33      1.58      9.46    -23.90      7.35     -1.07      0.70      0.00     -5.56
+ A:LEU_927         0.14      2.35      4.31    -32.33     -2.33      0.16      0.19      0.00    -27.51
+ A:GLU_928         0.34      1.66      8.47    -43.65      7.95    -64.59      7.72      0.00    -82.11
+ A:LYS_929         0.82      1.34      3.00    -69.07     -0.81    -12.35      0.77      0.00    -76.30
+ A:GLY_930         0.40      1.51     -0.17    -30.06      0.10     -0.78     -0.01      0.00    -29.01
+ A:GLU_931         0.30      1.71      4.06    -58.52      6.39    -50.04      6.33      0.00    -89.77
+ A:ARG_932         1.31      1.47      6.69    -98.82      0.19      6.64     -2.68      0.00    -85.21
+ A:LEU_933         0.26      2.11      5.69    -12.64     -0.80     -0.41     -0.51      0.00     -6.32
+ A:PRO_934         0.88      8.00      3.03    -16.04      1.28      1.72      0.90      0.00     -0.23
+ A:GLN_935         0.24      1.47      3.05    -50.24     -0.67     -4.23     -0.99      0.00    -51.38
+ A:PRO_936         0.88      7.29      7.67     -6.11      0.13     -1.11     -0.08      0.00      8.68
+ A:PRO_937         1.30      8.14      4.05    -11.96      3.06     -2.65      1.27      0.00      3.20
+ A:ILE_938         0.63      2.44     10.58    -27.34     -3.25      0.23     -0.49      0.00    -17.20
+ A:CYS_939         0.59      4.47      3.83    -35.20     -3.57     -0.84     -0.27      0.00    -31.00
+ A:THR_940         0.85      1.52      0.08    -25.42      6.07      3.96      0.08      0.00    -12.86
+ A:ILE_941         0.77      1.60      8.35    -21.03     10.97      0.11      0.40      0.00      1.16
+ A:ASP_942         1.23      1.58     -2.67    -65.23     -0.89    -39.25      4.77      0.00   -100.45
+ A:VAL_943         0.58      1.34      3.16    -30.36      0.24      1.13     -0.06      0.00    -23.97
+ A:TYR_944         1.75      1.04      1.04    -34.78      3.97      1.60     -0.29      0.00    -25.68
+ A:MET_945         0.39      0.88      4.40    -31.51      7.15     -0.96      0.84      0.00    -18.81
+ A:ILE_946         0.62      1.73      8.15    -25.99      3.99     -0.06      0.30      0.00    -11.27
+ A:MET_947         0.35      1.03      4.94    -31.04     -4.13      0.84     -0.05      0.00    -28.06
+ A:VAL_948         0.26      1.15      2.89    -28.08      3.64     -0.27      0.94      0.00    -19.46
+ A:LYS_949         0.82      2.09      7.06    -62.97      1.05    -13.22      0.17      0.00    -65.00
+ A:CYS_950         0.36      5.28      3.00    -32.07     -5.20     -0.64     -0.59      0.00    -29.86
+ A:TRP_951         1.66      3.80      0.57    -40.44     -8.85      2.60     -0.29      0.00    -40.95
+ A:MET_952         1.02      1.30      5.60    -31.74     11.04      1.31      0.83      0.00    -10.64
+ A:ILE_953         0.47      1.64      7.87    -19.98     14.46     -2.56      0.73      0.00      2.62
+ A:ASP_954         0.46      1.55      0.95    -33.38      4.28    -71.24      6.94      0.00    -90.44
+ A:ALA_955         0.54      1.41      2.18    -33.45      0.07      1.69     -0.61      0.00    -28.15
+ A:ASP_956         0.45      0.84     -4.59    -31.25      0.84    -78.05      2.82      0.00   -108.94
+ A:SER_957         0.27      0.72      4.43    -22.69      1.91     -5.00     -0.31      0.00    -20.66
+ A:ARG_958         0.81      2.73     10.27   -100.26      8.77     15.63     -1.47      0.00    -63.53
+ A:PRO_959         1.18      7.69      9.73    -16.48     -2.73      0.36      0.27      0.00      0.02
+ A:LYS_960         0.45      1.07      6.36   -108.38      4.94     23.00      0.04      0.00    -72.52
+ A:PHE_961         2.64      0.53      2.45    -33.73      4.12      5.87     -0.76      0.00    -18.87
+ A:ARG_962         0.54      1.64      7.92    -65.33      3.31    -15.12     -4.83      0.00    -71.87
+ A:GLU_963         0.22      1.01      7.62    -72.87      1.12    -38.42      3.45      0.00    -97.88
+ A:LEU_964         0.44      1.37      4.56    -33.16     -0.37      1.08      0.03      0.00    -26.04
+ A:ILE_965         0.29      1.80      8.19    -28.57      3.53      0.50      0.43      0.00    -13.83
+ A:ILE_966         0.34      1.46      8.61    -28.77      7.92      1.35      1.23      0.00     -7.87
+ A:GLU_967         0.41      2.98      6.14    -94.26     -1.52    -18.70      5.72      0.00    -99.22
+ A:PHE_968         2.36      1.24      3.14    -37.20     -1.09      0.62     -0.43      0.00    -31.36
+ A:SER_969         0.97      1.13      5.49    -23.05      1.70     -2.21     -0.12      0.00    -16.09
+ A:LYS_970         0.71      0.71      7.85    -59.87      2.93    -20.21      0.25      0.00    -67.63
+ A:MET_971         0.65      1.94      5.57    -30.18     -5.19     -2.08     -0.08      0.00    -29.36
+ A:ALA_972         1.08      1.56      1.44    -34.16     -0.74     -1.84      0.20      0.00    -32.47
+ A:ARG_973         0.74      1.53      5.97    -48.69      2.96    -39.97     -6.83      0.00    -84.29
+ A:ASP_974         0.26      1.04      6.04    -56.13      3.86    -46.74      8.09      0.00    -83.60
+ A:PRO_975         1.21      5.45     12.24    -16.42     -3.00      0.74      0.29      0.00      0.52
+ A:GLN_976         1.02      1.02      2.83    -62.83      0.95     -4.67     -0.98      0.00    -62.67
+ A:ARG_977         0.83      0.90      5.44    -85.00      3.15     -7.18     -6.66      0.00    -88.52
+ A:TYR_978         0.87      1.91      3.90    -34.73     -0.58      0.81     -1.22      0.00    -29.04
+ A:LEU_979         0.49      2.12      4.80    -26.21     -5.27     -1.15     -0.09      0.00    -25.31
+ A:VAL_980         0.35      1.42      4.09    -26.31      3.57      1.61      1.16      0.00    -14.11
+ A:ILE_981         0.32      1.74      9.17    -22.83      3.40      0.60     -0.47      0.00     -8.07
+ A:GLN_982         1.28      1.70      1.23    -58.23      4.24     -9.42     -1.29      0.00    -60.49
+ A:GLY_983         0.38      0.11      1.80    -27.55     14.71     -1.30     -1.31      0.00    -13.15
+ A:ASP_984         1.45      3.27      0.04    -27.63     11.49    -41.73      5.07      0.00    -48.04
+ A:ASP_1008        0.93      1.60      4.35    -20.43      2.46    -71.29      0.51      0.00    -81.86
+ A:ASP_1009        0.64      0.82     -3.17    -64.39      0.82    -45.93      7.96      0.00   -103.26
+ A:VAL_1010        0.11      1.21      2.50    -21.50      4.80     -6.02      0.62      0.00    -18.28
+ A:VAL_1011        0.25      2.05      3.85    -25.42      2.21      3.08      0.45      0.00    -13.53
+ A:ASP_1012        0.90      0.38      1.78    -70.85      4.11    -29.87      2.06      0.00    -91.48
+ A:ALA_1013        0.35      1.17      1.93    -23.66      1.87     -2.54     -0.05      0.00    -20.93
+ A:ASP_1014        0.44      0.86     -4.20   -108.63      0.72    -17.00      3.06      0.00   -124.74
+ A:GLU_1015        0.29      1.36      5.16    -53.58      2.24    -53.33      8.19      0.00    -89.67
+ A:TYR_1016        2.67      1.23      1.98    -25.40      9.12     -2.27     -1.76      0.00    -14.42
+ A:LEU_1017        0.55      2.76      4.55     -5.80     -0.56     -0.89      0.61      0.00      1.21
+ 
+ ============================================
+ Now working on new loop ...
+ ============================================
+  A:LEU_862    A:GLU_866              5
+ 
+ Starting loop conformation: 
+ A:LEU_862    -124.63  -10.87  178.51
+ A:GLY_863      78.55 -145.19   -4.12
+ A:ALA_864      82.27   45.74  176.69
+ ATTN:  above phi/psi not represented by library GEN   
+     Actual angles   82.27   45.74
+   Closest rotamer   75.00   35.00
+             Delta   -7.27  -10.74
+ A:GLU_865     134.86 -125.80 -168.46
+ ATTN:  above phi/psi not represented by library GEN   
+     Actual angles  134.86 -125.80
+   Closest rotamer   65.00 -125.00
+             Delta  -69.86    0.80
+ A:GLU_866     -32.03  146.36  175.27
+ ATTN:  above phi/psi not represented by library GEN   
+     Actual angles  -32.03  146.36
+   Closest rotamer  -45.00  150.00
+             Delta  -12.97    3.64
+      Cis peptide in   A:GLY_863          78.55     -145.19       -4.12
+       Gamma turn in   A:ALA_864          82.27       45.74      176.69
+ Left-handed turn in   A:GLU_865         134.86     -125.80     -168.46
+ 
+ ============================================
+ End of initial setup ...
+ ============================================
+ Report energy breakdown by residues:
+ INFO: the following energy terms include both contributions from
+ each residue itself, and interactions between each residue with
+ other residues. Thus the sum of energies by residues will not be
+ equal to the total energy
+      residue      bond     angle torsional        el        lj       sgb  nonpolar      lipo       tot
+ A:YY3_1101       34.74     20.57     22.86   -160.23     16.04      2.84      3.27      0.00    -59.91
+ A:HOH_1201       20.00      0.00      0.00      2.72      2.45     -1.43     -1.05      0.00     22.69
+ A:HOH_1202       20.00      0.00      0.00      3.64     -0.74      0.72     -0.17      0.00     23.45
+ A:HOH_1203       20.00      0.00      0.00     -6.49     -1.17      1.42     -0.13      0.00     13.63
+ A:HOH_1204       20.00      0.00      0.00     -1.11     -1.10     -0.42     -0.98      0.00     16.38
+ A:ALA_698         0.41      0.77      3.55      0.60      5.37     -4.28      0.27      0.00      6.69
+ A:PRO_699         1.46      6.70      7.39    -15.48      6.17     -0.69     -0.34      0.00      5.21
+ A:ASN_700         1.44      0.67      3.41    -61.49     14.79     -4.40     -3.56      0.00    -49.14
+ A:GLN_701         1.43      0.80      6.80    -62.17      6.68     -7.22      0.90      0.00    -52.79
+ A:ALA_702         0.52      1.08      1.73    -31.18      2.57     -1.54     -0.26      0.00    -27.07
+ A:LEU_703         1.29      1.62      4.84    -23.43      1.74     -2.07      0.11      0.00    -15.90
+ A:LEU_704         0.63      2.29      3.57    -24.16      0.67     -0.85     -0.21      0.00    -18.05
+ A:ARG_705         1.01      0.52      5.67    -91.11     -2.14      7.14     -7.81      0.00    -86.71
+ A:ILE_706         0.20      1.84      9.29    -23.32      1.45     -2.58      0.62      0.00    -12.49
+ A:LEU_707         0.32      1.42      5.00    -30.22     -1.73      1.97     -0.03      0.00    -23.27
+ A:LYS_708         0.36      1.36      3.80    -72.45     -1.04     -3.82      0.15      0.00    -71.63
+ A:GLU_709         0.50      0.89      4.72    -84.35      4.09     -8.85      9.80      0.00    -73.18
+ A:THR_710         0.37      0.55      0.73    -25.53      3.86     -4.37     -0.01      0.00    -24.39
+ A:GLU_711         0.58      3.60      6.96    -73.80     -1.15    -25.93      5.47      0.00    -84.26
+ A:PHE_712         1.79      2.41      1.34    -25.87      0.22     -1.31     -0.53      0.00    -21.95
+ A:LYS_713         0.99      0.86      1.58     -9.30     -3.21    -63.78     -0.02      0.00    -72.88
+ A:LYS_714         0.63      1.74      6.03    -35.46     -3.38    -30.74     -0.44      0.00    -61.62
+ A:ILE_715         0.74      1.80      9.25    -21.91      3.25     -1.12      1.22      0.00     -6.78
+ A:LYS_716         0.14      1.03      0.74    -13.82     -1.36    -64.37      0.07      0.00    -77.56
+ A:VAL_717         0.27      0.93      2.51    -26.40      1.09      1.33      0.08      0.00    -20.20
+ A:LEU_718         0.30      2.29      4.94    -25.28     -4.10     -2.10      0.34      0.00    -23.60
+ A:GLY_719         0.13      0.05      0.36    -35.37     -0.53      1.86     -0.31      0.00    -33.82
+ A:SER_720         0.38      0.37     -1.75    -18.53      1.81     -4.22     -0.83      0.00    -22.77
+ A:GLY_721         0.21      0.49      0.23    -27.44      1.29      0.16     -1.44      0.00    -26.49
+ A:ALA_722         0.14      0.56      3.48    -23.60      3.67     -3.24     -0.93      0.00    -19.92
+ A:PHE_723         0.92      2.28      6.03    -28.79      4.21     -0.36     -1.28      0.00    -16.99
+ A:GLY_724         0.14      1.15     -0.25    -34.45      2.34     -0.90     -0.38      0.00    -32.35
+ A:THR_725         0.48      0.52      1.08    -17.82     13.09      1.46     -0.92      0.00     -2.12
+ A:VAL_726         0.22      1.25      3.21    -25.15     -0.52      1.16     -0.44      0.00    -20.27
+ A:TYR_727         1.32      1.37      2.75    -35.43     -3.98     -3.08     -0.82      0.00    -37.85
+ A:LYS_728         0.36      0.66      4.41    -11.98      3.78    -61.16     -0.83      0.00    -64.76
+ A:GLY_729         0.22      1.29      0.04    -32.57     -2.44     -0.75     -0.25      0.00    -34.47
+ A:LEU_730         0.57      1.67      5.38    -28.79      0.64      0.52      0.73      0.00    -19.27
+ A:TRP_731         2.70      3.23      1.17    -39.83     -4.80      2.14     -0.68      0.00    -36.08
+ A:ILE_732         0.50      1.34     10.03    -15.71      4.04     -2.13      1.21      0.00     -0.71
+ A:PRO_733         1.07      6.02      4.87    -16.48      2.55     -0.18      0.02      0.00     -2.15
+ A:GLU_734         0.69      1.05      4.82    -74.44     -0.82    -38.30      8.92      0.00    -98.08
+ A:GLY_735         0.42      0.51      1.16    -21.40      1.18     -5.77     -1.25      0.00    -25.16
+ A:GLU_736         0.70      1.90      9.15    -24.31      5.74    -68.95      4.65      0.00    -71.13
+ A:LYS_737         0.57      1.92      3.09    -66.82      1.80    -12.71     -0.89      0.00    -73.03
+ A:VAL_738         1.26      2.67      4.33    -26.05      1.88      1.56     -0.39      0.00    -14.74
+ A:LYS_739         0.53      1.07      7.52    -43.40     -3.57    -32.97     -0.27      0.00    -71.09
+ A:ILE_740         0.35      1.50     12.00    -21.00      0.13      1.78     -0.08      0.00     -5.31
+ A:PRO_741         1.13      6.19      9.84    -14.67     -2.32     -2.10      0.53      0.00     -1.39
+ A:VAL_742         0.63      1.85      4.62    -29.40     -3.78      2.25     -0.08      0.00    -23.91
+ A:ALA_743         0.11      0.60      3.52    -30.89     -3.71     -0.77     -0.05      0.00    -31.18
+ A:ILE_744         0.24      1.62      8.98    -28.58     -2.62      1.84     -0.01      0.00    -18.53
+ A:LYS_745         0.28      0.66      5.23    -76.10     -4.73      8.06     -0.57      0.00    -67.18
+ large LJ energy for atom: A:GLU_746:_OE1        1244.02367465628     
+ A:GLU_746         0.52      3.04      5.29    -79.03   2511.20      8.45      1.01      0.00   2450.48
+ large LJ energy for atom: A:LEU_747:HD13        5792.17593433911     
+ large LJ energy for atom: A:LEU_747:_CD2        282222.491282468     
+ large LJ energy for atom: A:LEU_747:HD21        6780874.41927707     
+ A:LEU_747         0.28      7.01      4.91    -19.747070042.87     -1.03      0.51      0.007070034.80
+ A:ARG_748         0.39      6.32      5.53    -49.68     67.23    -30.13     -5.34      0.00     -5.69
+ A:GLU_749         0.11      3.02      6.01    -65.29      2.01    -43.22      3.60      0.00    -93.76
+ large LJ energy for atom: A:ALA_750:_O__        6714.91318042870     
+ large LJ energy for atom: A:ALA_750:_CB_        27496.4375183610     
+ large LJ energy for atom: A:ALA_750:_HB3        7035639.38052423     
+ A:ALA_750         0.29      2.79      2.83    -30.867069946.65      2.31     -0.73      0.007069923.28
+ A:THR_751         9.67      4.39      3.36    -24.11      6.27     -4.74     -0.96      0.00     -6.12
+ A:SER_752         0.38      4.81     11.61     -5.38    143.03     -5.15     -1.46      0.00    147.84
+ A:PRO_753         7.32     34.37     15.43    -12.86    127.13      0.07      0.37      0.00    171.84
+ A:LYS_754         0.10      2.53      6.34    -32.62    779.35    -19.60     -0.73      0.00    735.37
+ A:ALA_755         0.29      2.71      3.14    -24.90     14.01     -3.49      0.41      0.00     -7.82
+ A:ASN_756         0.15      3.26      1.58    -68.42    669.18     -4.81     -1.18      0.00    599.76
+ A:LYS_757         0.47      1.44      5.97   -104.41     -0.43     16.55      0.13      0.00    -80.28
+ A:GLU_758         1.02      1.31      5.11    -82.34     -0.61    -35.40      6.73      0.00   -104.18
+ A:ILE_759         0.65      2.98     12.22    -30.71    662.52     -2.48      0.36      0.00    645.55
+ A:LEU_760         0.16      1.34      4.95    -28.34      5.04     -0.66      1.22      0.00    -16.29
+ A:ASP_761         0.39      1.13     -1.42    -69.16      1.45    -40.76      5.89      0.00   -102.47
+ A:GLU_762         0.29      0.65      5.00    -68.95      0.35    -37.03      4.73      0.00    -94.97
+ A:ALA_763         0.19      0.21      3.13    -33.07      2.07     -0.95      0.03      0.00    -28.37
+ A:TYR_764         1.48      0.81      1.73    -36.03      8.11     -1.68     -0.74      0.00    -26.32
+ A:VAL_765         0.37      1.24      3.56    -25.28      3.90      0.89      0.12      0.00    -15.20
+ A:MET_766         0.68      2.14      7.38    -29.40      1.03     -2.35      0.01      0.00    -20.51
+ A:ALA_767         0.42      0.40      2.35    -35.60     -1.27     -1.70      0.53      0.00    -34.87
+ A:SER_768         0.31      0.32      6.48    -34.04      3.36      0.29     -0.87      0.00    -24.15
+ A:VAL_769         0.24      1.16      3.59    -19.31     -0.01     -3.46      0.12      0.00    -17.66
+ A:ASP_770         0.35      1.00      3.15    -62.31      1.60    -47.66      3.92      0.00    -99.97
+ A:ASN_771         0.99      1.19      3.11    -54.37      1.45     -4.02     -1.52      0.00    -53.18
+ A:PRO_772         0.88      8.33      6.74    -14.05      4.18      0.08      0.86      0.00      7.02
+ A:HID_773         1.31      9.64      2.19    -39.75     -6.46      3.01     -1.36      0.00    -31.43
+ A:VAL_774         0.36      1.18      3.28    -29.98      1.00      0.98     -0.01      0.00    -23.18
+ A:CYS_775         0.11      3.60      2.93    -23.97     -3.34     -0.90     -0.64      0.00    -22.21
+ A:ARG_776         1.83      4.38      7.77   -107.85     -7.90     16.22     -3.97      0.00    -89.52
+ A:LEU_777         1.19      2.05      4.50    -22.32      4.52     -2.77     -0.27      0.00    -13.10
+ A:LEU_778         0.46      1.24      5.30    -25.82     -2.32     -1.02      0.36      0.00    -21.79
+ A:GLY_779         0.22      0.16      0.78    -35.01     -3.08      0.61     -0.17      0.00    -36.48
+ A:ILE_780         0.63      1.50     10.62    -29.48      0.72     -0.56      0.21      0.00    -16.35
+ A:CYS_781         0.16      3.23     -1.17    -27.65     -6.43      1.36     -0.45      0.00    -30.95
+ A:LEU_782         0.63      1.91      5.33    -26.27      1.51     -1.83      0.85      0.00    -17.86
+ A:THR_783         0.77      0.57      3.77    -36.69     53.73      5.77     -0.35      0.00     27.55
+ A:SER_784         0.30      0.43      7.34    -26.03     29.58     -2.35     -0.58      0.00      8.69
+ A:THR_785         0.50      0.54      7.91    -15.98     31.80     -1.44     -0.89      0.00     22.44
+ A:VAL_786         0.21      0.97      2.52    -15.29    723.24     -1.10      0.03      0.00    710.59
+ large LJ energy for atom: A:GLN_787:_NE2        1218.85833177224     
+ A:GLN_787         0.23      0.66      5.58    -54.32   2481.23     -2.40     -1.17      0.00   2429.81
+ A:LEU_788         0.66      1.23      6.32    -29.25      1.19      1.53      0.01      0.00    -18.31
+ A:ILE_789         0.18      1.17      8.61    -31.28     12.01      0.55     -0.01      0.00     -8.77
+ A:THR_790         1.71      1.44      0.90    -29.30      3.32      2.40     -0.53      0.00    -20.06
+ A:GLN_791         0.63      0.67      0.52    -73.42     -1.94      2.46     -0.52      0.00    -71.59
+ A:LEU_792         0.23      1.53      3.07    -20.05     -6.75     -3.49      0.39      0.00    -25.07
+ A:MET_793         0.68      0.79      9.98    -18.06     -5.63     -0.62     -0.13      0.00    -12.98
+ A:PRO_794         1.63      8.19     10.12    -16.49     -1.29     -0.08      0.98      0.00      3.06
+ A:PHE_795         1.28      0.46      1.45    -28.15      3.10     -1.37      0.74      0.00    -22.51
+ A:GLY_796         0.16      0.77     -1.37    -35.61     -2.09      1.30     -0.16      0.00    -37.00
+ A:CYS_797         0.49      5.45     -0.85    -23.62     -3.28     -1.28     -1.45      0.00    -24.54
+ A:LEU_798         0.36      2.66      2.93    -25.11     -4.66      1.00     -0.03      0.00    -22.85
+ A:LEU_799         0.62      3.51      3.54    -27.08     -3.89      0.81      0.48      0.00    -22.01
+ A:ASP_800         1.76      0.48     -0.75    -50.45      0.91    -49.67      7.80      0.00    -89.92
+ A:TYR_801         1.62      0.89      1.71    -37.32      0.70     -3.10     -1.13      0.00    -36.61
+ A:VAL_802         0.25      1.72      3.89    -26.42     -1.12     -2.10      0.04      0.00    -23.74
+ A:ARG_803         0.51      0.81      6.66    -85.81     -2.91     -6.47     -3.74      0.00    -90.97
+ A:GLU_804         0.39      1.57      5.24    -37.33     -1.21    -76.59      5.03      0.00   -102.90
+ A:HID_805         1.97      9.87      2.58    -36.88      4.18     -1.74     -2.43      0.00    -22.45
+ A:LYS_806         0.60      0.89      1.49    -67.40      1.08     -6.24     -0.10      0.00    -69.68
+ A:ASP_807         0.57      2.20     -3.97    -32.33      4.65    -72.76      2.33      0.00    -99.31
+ A:ASN_808         0.51      1.43     -2.73    -64.75      3.13     -4.36     -0.77      0.00    -67.54
+ A:ILE_809         0.47      1.99      9.66    -23.19      2.31     -2.56     -0.50      0.00    -11.80
+ A:GLY_810         0.19      1.16     -1.45    -36.66     -1.72      2.12     -0.51      0.00    -36.86
+ A:SER_811         0.39      1.36      2.78    -29.30     -1.50      3.14     -0.58      0.00    -23.71
+ A:GLN_812         0.43      1.15      4.12    -63.99     -1.01     -2.65     -0.82      0.00    -62.77
+ A:TYR_813         2.88      1.32      3.26    -41.53      4.95      1.13     -0.78      0.00    -28.78
+ A:LEU_814         0.23      1.05      5.24    -28.57     -3.33      1.97      0.01      0.00    -23.39
+ A:LEU_815         0.24      1.62      4.84    -31.45     -5.58      1.59      0.02      0.00    -28.74
+ A:ASN_816         0.33      1.23      0.37    -63.83      6.59     -0.88      0.25      0.00    -55.95
+ A:TRP_817         3.33      3.52      1.22    -43.36      3.01      3.18     -0.67      0.00    -29.76
+ A:CYS_818         0.40      3.08      4.13    -30.34     -2.47     -0.49     -0.40      0.00    -26.10
+ A:VAL_819         0.58      1.18      3.35    -25.72      1.84      0.18      0.34      0.00    -18.24
+ A:GLN_820         0.72      0.98      3.34    -73.28     -1.23     -2.58     -0.68      0.00    -72.73
+ A:ILE_821         0.42      1.72      7.83    -28.43      2.83      0.77      0.09      0.00    -14.76
+ A:ALA_822         0.21      0.34      2.86    -33.45     -1.01     -1.35     -0.02      0.00    -32.42
+ A:LYS_823         0.66      1.30      2.90    -41.57     -0.41    -40.02     -0.28      0.00    -77.43
+ A:GLY_824         0.07      0.25      0.58    -34.40      3.77     -1.36     -0.08      0.00    -31.18
+ A:MET_825         0.84      0.77      6.10    -31.14     -2.42     -2.35     -0.03      0.00    -28.21
+ A:ASN_826         1.10      0.60      0.84    -64.06      2.52     -4.90     -0.92      0.00    -64.82
+ A:TYR_827         1.27      0.77      1.72    -37.32      4.04     -3.72     -0.57      0.00    -33.82
+ A:LEU_828         0.49      2.67      4.59    -30.56     -2.72      1.49      0.04      0.00    -24.00
+ A:GLU_829         1.25      2.81      8.71    -69.89     -0.05    -39.01      5.96      0.00    -90.21
+ A:ASP_830         0.45      1.44     -1.47    -48.23      7.84    -58.63      5.03      0.00    -93.56
+ A:ARG_831         0.35      1.81      8.24    -97.28      4.27      1.84     -5.15      0.00    -85.91
+ A:ARG_832         0.67      1.56      8.34   -107.23    536.53     18.60     -4.07      0.00    454.40
+ A:LEU_833         0.38      2.08      5.32    -25.39      2.23     -0.56     -0.01      0.00    -15.94
+ A:VAL_834         0.43      1.41      3.68    -30.66     -0.46      1.16      0.04      0.00    -24.39
+ A:HID_835         0.81      8.62      3.20    -21.83     -6.64     -0.74     -0.09      0.00    -16.68
+ A:ARG_836         0.72      2.20      6.14    -80.33     -2.42     -3.62     -1.38      0.00    -78.69
+ A:ASP_837         0.41      1.31      2.05    -62.24      3.95    -31.37      3.87      0.00    -82.01
+ A:LEU_838         0.20      1.37      3.27    -24.08     -4.51      1.38     -0.02      0.00    -22.38
+ A:ALA_839         0.20      0.57      2.31    -32.71      0.56     -0.42     -0.11      0.00    -29.61
+ A:ALA_840         0.32      0.92      1.72    -35.64     -0.99     -0.44     -0.04      0.00    -34.16
+ A:ARG_841         0.29      1.42      6.75    -95.11     -0.01      3.27     -3.42      0.00    -86.81
+ A:ASN_842         0.27      0.96     -0.32    -66.42     -0.01     -0.29     -1.01      0.00    -66.81
+ A:VAL_843         0.21      1.22      3.69    -28.43     -3.28     -0.04     -0.01      0.00    -26.64
+ A:LEU_844         0.59      1.55      5.02    -30.11     -3.71      1.85      0.13      0.00    -24.67
+ A:VAL_845         0.62      1.02      3.78    -27.43     -4.70      0.68     -0.01      0.00    -26.04
+ A:LYS_846         0.70      1.43      3.41    -91.12     -2.83      7.38     -1.43      0.00    -82.46
+ A:THR_847         0.64      1.37      2.50    -21.87      4.48     -0.36     -0.20      0.00    -13.43
+ A:PRO_848         1.34      6.30      7.61    -14.59     -0.30      0.37      0.50      0.00      1.23
+ A:GLN_849         0.82      2.11      2.23    -69.08      1.97     -0.82     -0.43      0.00    -63.20
+ A:HID_850         0.93      8.87      3.09    -35.07     -3.22     -2.47     -1.28      0.00    -29.15
+ A:VAL_851         0.11      1.21      3.83    -28.21     -1.86      0.91     -0.01      0.00    -24.02
+ A:LYS_852         0.38      0.92      3.86    -96.17     -4.99      9.44     -0.11      0.00    -86.67
+ A:ILE_853         0.41      1.24      7.56    -32.11      1.63      1.48      0.04      0.00    -19.77
+ A:THR_854         0.36      0.71     -4.28    -15.52      2.82     -1.43     -0.68      0.00    -18.00
+ A:ASP_855         0.54      1.03      4.46    -29.57      0.94    -55.14      7.32      0.00    -70.41
+ A:PHE_856         1.28      0.48      1.67    -29.12      0.37      2.17     -0.73      0.00    -23.88
+ A:GLY_857         0.34      0.82     -0.78    -35.10      2.35      3.23      0.35      0.00    -28.79
+ A:LEU_858         0.59      1.41      4.97    -33.22      5.56      4.37      0.32      0.00    -16.00
+ A:ALA_859         0.21      0.32      1.88    -34.89      5.54      1.08     -0.05      0.00    -25.92
+ A:LYS_860         0.39      1.12      7.09    -70.62      2.16     -5.04     -0.72      0.00    -65.61
+ A:LEU_861         0.90      2.29      5.88    -21.91     -4.38     -3.36      0.46      0.00    -20.11
+ A:LEU_862         0.63      6.92      8.82    -22.39    545.04     -2.33     -0.34      0.00    536.35
+ A:GLY_863         0.04      0.39      0.92    -26.41      3.59     -2.06     -0.89      0.00    -24.41
+ A:ALA_864         1.46     17.30      4.69    -26.73      3.90     -0.37     -1.41      0.00     -1.16
+ A:GLU_865         0.11      3.22      5.82    -17.98      5.16    -94.03     -2.28      0.00    -99.97
+ large LJ energy for atom: A:GLU_866:_OE2        2428.37422523499     
+ A:GLU_866         0.22      3.04      2.24      7.83   2481.66    -77.91      2.79      0.00   2419.86
+ A:LYS_867         1.54      1.74      0.61    -94.93     -2.50     13.34      0.51      0.00    -79.70
+ large LJ energy for atom: A:GLU_868:_OE2        1634.38961889085     
+ A:GLU_868         1.76      1.70      5.02     15.11   2476.06    -86.06      7.91      0.00   2421.51
+ A:TYR_869         1.10      0.87      1.73    -33.87      0.18     -0.25     -0.43      0.00    -30.67
+ A:HID_870         1.14      8.81      3.04    -31.56     -4.00     -2.56     -3.46      0.00    -28.60
+ A:ALA_871         1.64      1.92      3.40    -24.12      0.46     -3.80     -0.13      0.00    -20.64
+ A:GLU_872         0.50      0.90      6.14    -60.19     -0.51    -51.47      9.60      0.00    -95.04
+ A:GLY_873         0.04      0.29      0.30    -29.00      1.19     -3.46     -2.58      0.00    -33.22
+ A:GLY_874      5545.60      2.15      9.41    -14.25     -0.29     -4.51     -2.92      0.00   5535.19
+ A:LYS_875      5545.82      5.08     12.57     -7.10     -0.85    -47.70      3.22      0.00   5511.05
+ A:VAL_876         0.62      2.45      5.08    -19.36      2.68      1.72     -0.05      0.00     -6.87
+ A:PRO_877         1.04      7.73     16.95    -11.75      1.33     -0.61      0.51      0.00     15.20
+ A:ILE_878         0.45      2.28     11.86    -13.41     16.01     -4.64     -0.00      0.00     12.56
+ A:LYS_879         0.21      0.64      4.47    -43.17     -1.39    -28.47     -0.71      0.00    -68.43
+ A:TRP_880         1.48      3.11      1.63    -39.50     -4.84      2.25      0.08      0.00    -35.79
+ A:MET_881         0.31      1.69      4.58    -31.47     -6.11      1.05      0.12      0.00    -29.83
+ A:ALA_882         0.16      0.53      1.66    -32.87     -0.44      3.08     -0.56      0.00    -28.44
+ A:LEU_883         0.21      1.41      3.66    -26.57      2.09      1.25      0.24      0.00    -17.71
+ A:GLU_884         0.69      2.18      6.26    -84.76      6.50    -28.68      4.33      0.00    -93.49
+ A:SER_885         0.32      0.54      6.39    -23.40      0.48     -2.56     -0.41      0.00    -18.63
+ A:ILE_886         0.21      1.41      8.75    -22.97      2.24     -1.09      0.82      0.00    -10.63
+ A:LEU_887         0.33      4.09      5.48    -28.58     -3.01     -0.51      1.53      0.00    -20.67
+ A:HID_888         1.23      9.21      3.65    -29.03     -0.15     -5.65     -2.38      0.00    -23.13
+ A:ARG_889         0.20      1.42      7.04   -109.14      4.27     11.33     -5.02      0.00    -89.89
+ A:ILE_890         0.94      1.80     10.57    -24.00     -0.23      2.95      0.85      0.00     -7.12
+ A:TYR_891         0.83      1.93      3.52    -40.58     -4.48      0.73     -0.95      0.00    -39.01
+ A:THR_892         0.55      0.74      0.54    -28.04      3.67      3.05     -0.32      0.00    -19.81
+ A:HID_893         0.59      8.73      3.69    -23.63     -3.86      0.62     -1.59      0.00    -15.46
+ A:GLN_894         0.30      0.75      5.07    -76.20     -0.92      2.28     -0.40      0.00    -69.12
+ A:SER_895         0.39      0.46     -1.32    -17.55     -0.75      1.04     -0.48      0.00    -18.21
+ A:ASP_896         1.55      1.38     -2.58    -69.99     -3.78    -27.83      1.23      0.00   -100.01
+ A:VAL_897         0.17      1.24      2.83    -30.93      1.71      1.88      0.00      0.00    -23.10
+ A:TRP_898         2.11      3.42      1.28    -41.66      3.95      4.68     -1.16      0.00    -27.38
+ A:SER_899         0.49      0.66      7.70    -33.00     -0.49      2.29     -0.47      0.00    -22.81
+ A:TYR_900         1.45      0.75      0.46    -34.00      0.27      2.45     -0.24      0.00    -28.87
+ A:GLY_901         0.12      0.22      0.62    -33.27     -1.24     -0.17     -0.02      0.00    -33.74
+ A:VAL_902         0.52      1.21      2.89    -31.37     -1.36      1.76      0.04      0.00    -26.31
+ A:THR_903         0.49      0.69      4.27    -28.85      1.02      2.42     -0.03      0.00    -19.99
+ A:VAL_904         0.46      1.42      3.18    -24.35      4.34      0.33      0.04      0.00    -14.58
+ A:TRP_905         2.75      3.52      1.02    -39.07     -6.22      1.79     -0.23      0.00    -36.44
+ A:GLU_906         0.70      1.97      8.69    -87.05     -4.30     -7.01      1.40      0.00    -85.59
+ A:LEU_907         0.27      2.16      4.86    -29.15     -2.75     -1.10      0.11      0.00    -25.59
+ A:MET_908         0.74      1.49      5.82    -33.18     -4.35     -2.31     -0.01      0.00    -31.81
+ A:THR_909         0.64      1.32      0.03    -28.14      2.63      0.12      0.28      0.00    -23.12
+ A:PHE_910         1.48      0.93      2.22    -27.60      0.03     -0.51     -0.67      0.00    -24.12
+ A:GLY_911         0.21      1.29      0.04    -42.07      1.53      1.59     -0.10      0.00    -37.52
+ A:SER_912         0.48      0.49      4.64    -20.81      2.25     -1.73     -0.10      0.00    -14.78
+ A:LYS_913         0.37      1.33      5.14    -20.84     -0.25    -44.44     -0.47      0.00    -59.17
+ A:PRO_914         1.39      7.82      5.11    -21.21      2.70      3.66      0.02      0.00     -0.50
+ A:TYR_915         1.10      1.54      4.47    -39.24      7.49      5.66     -1.61      0.00    -20.58
+ A:ASP_916         0.31      1.31      0.61    -85.67      6.32    -28.17      3.62      0.00   -101.67
+ A:GLY_917         0.09      0.67      0.69    -23.68      2.31     -5.76     -1.39      0.00    -27.07
+ A:ILE_918         0.83      1.95     10.00    -18.72      1.37      1.79     -0.38      0.00     -3.16
+ A:PRO_919         1.17      5.32      4.76     -9.67     -0.10     -1.96      0.48      0.00      0.01
+ A:ALA_920         0.20      0.38      2.35    -25.48     13.80     -4.83     -0.94      0.00    -14.52
+ A:SER_921         0.28      0.45     10.05    -33.83      5.87     -0.72     -0.34      0.00    -18.24
+ A:GLU_922         0.71      1.17      4.14    -64.25     -1.02    -48.59      4.33      0.00   -103.51
+ A:ILE_923         0.37      1.95      9.03    -26.95      7.87     -2.04     -0.03      0.00     -9.80
+ A:SER_924         0.38      0.47      0.98    -21.81     14.08     -1.45     -0.88      0.00     -8.24
+ A:SER_925         0.61      0.48     -1.30    -16.27      3.83     -2.58     -0.71      0.00    -15.94
+ A:ILE_926         0.33      1.58      9.46    -23.89      7.35     -1.08      0.70      0.00     -5.56
+ A:LEU_927         0.14      2.35      4.31    -32.35     -2.33      0.18      0.20      0.00    -27.51
+ A:GLU_928         0.34      1.66      8.47    -41.74      7.95    -66.48      7.72      0.00    -82.08
+ A:LYS_929         0.82      1.34      3.00    -70.09     -0.81    -11.34      0.77      0.00    -76.32
+ A:GLY_930         0.40      1.51     -0.17    -30.08      0.10     -0.76     -0.01      0.00    -29.01
+ A:GLU_931         0.30      1.71      4.06    -57.64      6.39    -50.91      6.33      0.00    -89.76
+ A:ARG_932         1.31      1.47      6.69   -100.22      0.19      8.01     -2.68      0.00    -85.23
+ A:LEU_933         0.26      2.11      5.69    -12.62     -0.80     -0.43     -0.51      0.00     -6.32
+ A:PRO_934         0.88      8.00      3.03    -16.03      1.28      1.72      0.90      0.00     -0.23
+ A:GLN_935         0.24      1.47      3.05    -50.22     -0.67     -4.25     -0.99      0.00    -51.37
+ A:PRO_936         0.88      7.29      7.67     -6.11      0.13     -1.11     -0.08      0.00      8.68
+ A:PRO_937         1.30      8.14      4.05    -11.96      3.06     -2.65      1.27      0.00      3.20
+ A:ILE_938         0.63      2.44     10.58    -27.35     -3.25      0.24     -0.49      0.00    -17.20
+ A:CYS_939         0.59      4.47      3.83    -35.20     -3.57     -0.83     -0.27      0.00    -31.00
+ A:THR_940         0.85      1.52      0.08    -25.40      6.07      3.94      0.08      0.00    -12.86
+ A:ILE_941         0.77      1.60      8.35    -21.01     10.97      0.10      0.40      0.00      1.16
+ A:ASP_942         1.23      1.58     -2.67    -64.97     -0.89    -39.51      4.77      0.00   -100.45
+ A:VAL_943         0.58      1.34      3.16    -30.33      0.24      1.10     -0.06      0.00    -23.97
+ A:TYR_944         1.75      1.04      1.04    -34.74      3.97      1.56     -0.29      0.00    -25.68
+ A:MET_945         0.39      0.88      4.40    -31.43      7.15     -1.04      0.84      0.00    -18.81
+ A:ILE_946         0.62      1.73      8.15    -25.93      3.99     -0.12      0.30      0.00    -11.27
+ A:MET_947         0.35      1.03      4.94    -30.97     -4.13      0.77     -0.05      0.00    -28.06
+ A:VAL_948         0.26      1.15      2.89    -28.01      3.64     -0.33      0.94      0.00    -19.46
+ A:LYS_949         0.82      2.09      7.06    -63.52      1.05    -12.67      0.17      0.00    -65.01
+ A:CYS_950         0.36      5.28      3.00    -32.01     -5.20     -0.70     -0.59      0.00    -29.86
+ A:TRP_951         1.66      3.80      0.57    -40.42     -8.85      2.58     -0.29      0.00    -40.95
+ A:MET_952         1.02      1.30      5.60    -31.69     11.04      1.25      0.83      0.00    -10.65
+ A:ILE_953         0.47      1.64      7.87    -19.84     14.46     -2.71      0.73      0.00      2.62
+ A:ASP_954         0.46      1.55      0.95    -30.54      4.28    -74.05      6.95      0.00    -90.40
+ A:ALA_955         0.54      1.41      2.18    -33.69      0.07      1.93     -0.61      0.00    -28.17
+ A:ASP_956         0.45      0.84     -4.59    -27.12      0.84    -82.13      2.82      0.00   -108.89
+ A:SER_957         0.27      0.72      4.43    -22.75      1.91     -4.94     -0.31      0.00    -20.67
+ A:ARG_958         0.81      2.73     10.27   -102.74      8.77     18.10     -1.47      0.00    -63.54
+ A:PRO_959         1.18      7.69      9.73    -16.37     -2.73      0.24      0.27      0.00      0.02
+ A:LYS_960         0.45      1.07      6.36   -109.64      4.94     24.29      0.05      0.00    -72.49
+ A:PHE_961         2.64      0.53      2.45    -33.73      4.12      5.83     -0.76      0.00    -18.91
+ A:ARG_962         0.54      1.64      7.92    -64.91      3.31    -15.54     -4.83      0.00    -71.88
+ A:GLU_963         0.22      1.01      7.62    -72.30      1.12    -39.00      3.45      0.00    -97.88
+ A:LEU_964         0.44      1.37      4.56    -33.18     -0.37      1.11      0.03      0.00    -26.04
+ A:ILE_965         0.29      1.80      8.19    -28.55      3.53      0.48      0.43      0.00    -13.83
+ A:ILE_966         0.34      1.46      8.61    -28.79      7.92      1.37      1.23      0.00     -7.87
+ A:GLU_967         0.41      2.98      6.14    -94.16     -1.52    -18.79      5.72      0.00    -99.22
+ A:PHE_968         2.36      1.24      3.14    -37.20     -1.09      0.61     -0.43      0.00    -31.37
+ A:SER_969         0.97      1.13      5.49    -23.04      1.70     -2.22     -0.12      0.00    -16.10
+ A:LYS_970         0.71      0.71      7.85    -59.86      2.93    -20.22      0.25      0.00    -67.63
+ A:MET_971         0.65      1.94      5.57    -30.18     -5.19     -2.08     -0.08      0.00    -29.36
+ A:ALA_972         1.08      1.56      1.44    -34.16     -0.74     -1.84      0.20      0.00    -32.47
+ A:ARG_973         0.74      1.53      5.97    -48.28      2.96    -40.38     -6.83      0.00    -84.28
+ A:ASP_974         0.26      1.04      6.04    -56.20      3.86    -46.68      8.09      0.00    -83.60
+ A:PRO_975         1.21      5.45     12.24    -16.40     -3.00      0.73      0.29      0.00      0.52
+ A:GLN_976         1.02      1.02      2.83    -62.81      0.95     -4.69     -0.98      0.00    -62.67
+ A:ARG_977         0.83      0.90      5.44    -85.03      3.15     -7.15     -6.66      0.00    -88.52
+ A:TYR_978         0.87      1.91      3.90    -34.70     -0.58      0.78     -1.22      0.00    -29.04
+ A:LEU_979         0.49      2.12      4.80    -26.22     -5.27     -1.14     -0.09      0.00    -25.31
+ A:VAL_980         0.35      1.42      4.09    -26.31      3.57      1.60      1.16      0.00    -14.11
+ A:ILE_981         0.32      1.74      9.17    -22.83      3.40      0.60     -0.47      0.00     -8.07
+ A:GLN_982         1.28      1.70      1.23    -58.25      4.24     -9.40     -1.29      0.00    -60.49
+ A:GLY_983         0.38      0.11      1.80    -27.55     14.71     -1.30     -1.31      0.00    -13.15
+ A:ASP_984         1.45      3.27      0.04    -27.68     11.49    -41.68      5.07      0.00    -48.04
+ A:ASP_1008        0.93      1.60      4.35    -20.95      2.46    -70.77      0.51      0.00    -81.87
+ A:ASP_1009        0.64      0.82     -3.17    -65.04      0.82    -45.29      7.96      0.00   -103.27
+ A:VAL_1010        0.11      1.21      2.50    -21.50      4.80     -6.02      0.62      0.00    -18.28
+ A:VAL_1011        0.25      2.05      3.85    -25.42      2.21      3.08      0.45      0.00    -13.53
+ A:ASP_1012        0.90      0.38      1.78    -71.67      4.11    -29.06      2.06      0.00    -91.49
+ A:ALA_1013        0.35      1.17      1.93    -23.70      1.87     -2.50     -0.05      0.00    -20.93
+ A:ASP_1014        0.44      0.86     -4.20   -109.67      0.72    -15.97      3.06      0.00   -124.76
+ A:GLU_1015        0.29      1.36      5.16    -54.52      2.24    -52.41      8.19      0.00    -89.68
+ A:TYR_1016        2.67      1.23      1.98    -25.40      9.12     -2.27     -1.76      0.00    -14.42
+ A:LEU_1017        0.55      2.76      4.55     -5.83     -0.56     -0.87      0.61      0.00      1.21
+ 
+ ============================================
+ Now working on new loop ...
+ ============================================
+  A:GLU_872    A:LYS_875              4
+ 
+ Starting loop conformation: 
+ A:GLU_872    -132.69   20.16 -174.05
+ A:GLY_873    -108.29  161.95  173.68
+ A:GLY_874    -166.48  150.91   -8.77
+ ATTN:  above phi/psi not represented by library GLY   
+     Actual angles -166.48  150.91
+   Closest rotamer -170.00  160.00
+             Delta   -3.52    9.09
+ A:LYS_875     -60.63  160.91  177.90
+      Cis peptide in   A:GLY_874        -166.48      150.91       -8.77
+ 
+ ============================================
+ End of initial setup ...
+ ============================================
+ Report energy breakdown by residues:
+ INFO: the following energy terms include both contributions from
+ each residue itself, and interactions between each residue with
+ other residues. Thus the sum of energies by residues will not be
+ equal to the total energy
+      residue      bond     angle torsional        el        lj       sgb  nonpolar      lipo       tot
+ A:YY3_1101       34.74     20.57     22.86   -160.13     16.04      2.75      3.27      0.00    -59.90
+ A:HOH_1201       20.00      0.00      0.00      2.73      2.45     -1.44     -1.05      0.00     22.69
+ A:HOH_1202       20.00      0.00      0.00      3.64     -0.74      0.73     -0.17      0.00     23.45
+ A:HOH_1203       20.00      0.00      0.00     -6.35     -1.17      1.29     -0.13      0.00     13.64
+ A:HOH_1204       20.00      0.00      0.00     -1.12     -1.10     -0.41     -0.98      0.00     16.38
+ A:ALA_698         0.41      0.77      3.55      0.58      5.37     -4.26      0.27      0.00      6.69
+ A:PRO_699         1.46      6.70      7.39    -15.48      6.17     -0.69     -0.34      0.00      5.21
+ A:ASN_700         1.44      0.67      3.41    -61.47     14.79     -4.42     -3.56      0.00    -49.14
+ A:GLN_701         1.43      0.80      6.80    -62.17      6.68     -7.22      0.90      0.00    -52.79
+ A:ALA_702         0.52      1.08      1.73    -31.17      2.57     -1.55     -0.26      0.00    -27.07
+ A:LEU_703         1.29      1.62      4.84    -23.44      1.74     -2.05      0.11      0.00    -15.90
+ A:LEU_704         0.63      2.29      3.57    -24.14      0.67     -0.86     -0.21      0.00    -18.05
+ A:ARG_705         1.01      0.52      5.67    -90.63     -2.14      6.67     -7.81      0.00    -86.70
+ A:ILE_706         0.20      1.84      9.29    -23.30      1.45     -2.59      0.62      0.00    -12.49
+ A:LEU_707         0.32      1.42      5.00    -30.22     -1.73      1.97     -0.03      0.00    -23.27
+ A:LYS_708         0.36      1.36      3.80    -72.02     -1.04     -4.25      0.15      0.00    -71.63
+ A:GLU_709         0.50      0.89      4.72    -85.27      4.09     -7.93      9.80      0.00    -73.19
+ A:THR_710         0.37      0.55      0.73    -25.54      3.86     -4.36     -0.01      0.00    -24.39
+ A:GLU_711         0.58      3.60      6.96    -74.36     -1.15    -25.38      5.47      0.00    -84.27
+ A:PHE_712         1.79      2.41      1.34    -25.87      0.22     -1.31     -0.53      0.00    -21.95
+ A:LYS_713         0.99      0.86      1.58     -8.65     -3.21    -64.42     -0.02      0.00    -72.87
+ A:LYS_714         0.63      1.74      6.03    -34.09     -3.38    -32.09     -0.44      0.00    -61.60
+ A:ILE_715         0.74      1.80      9.25    -21.89      3.25     -1.14      1.22      0.00     -6.78
+ A:LYS_716         0.14      1.03      0.74    -12.81     -1.36    -65.37      0.07      0.00    -77.55
+ A:VAL_717         0.27      0.93      2.51    -26.30      1.09      1.23      0.08      0.00    -20.20
+ A:LEU_718         0.30      2.29      4.94    -25.24     -4.10     -2.14      0.34      0.00    -23.60
+ A:GLY_719         0.13      0.05      0.36    -35.23     -0.53      1.73     -0.31      0.00    -33.81
+ A:SER_720         0.38      0.37     -1.75    -18.76      1.81     -3.99     -0.83      0.00    -22.77
+ A:GLY_721         0.21      0.49      0.23    -26.87      1.29     -0.39     -1.44      0.00    -26.47
+ A:ALA_722         0.14      0.56      3.48    -23.40      3.63     -3.42     -0.92      0.00    -19.93
+ A:PHE_723         0.92      2.28      6.03    -29.02      4.20     -0.16     -1.26      0.00    -17.01
+ A:GLY_724         0.14      1.15     -0.25    -34.70      2.34     -0.65     -0.38      0.00    -32.34
+ A:THR_725         0.48      0.52      1.08    -17.76     13.09      1.40     -0.92      0.00     -2.12
+ A:VAL_726         0.22      1.25      3.21    -25.14     -0.52      1.15     -0.44      0.00    -20.27
+ A:TYR_727         1.32      1.37      2.75    -35.53     -3.98     -2.97     -0.82      0.00    -37.85
+ A:LYS_728         0.36      0.66      4.41    -11.11      3.78    -62.03     -0.83      0.00    -64.75
+ A:GLY_729         0.22      1.29      0.04    -32.58     -2.44     -0.74     -0.25      0.00    -34.47
+ A:LEU_730         0.57      1.67      5.38    -28.80      0.64      0.54      0.73      0.00    -19.27
+ A:TRP_731         2.70      3.23      1.17    -39.83     -4.80      2.14     -0.68      0.00    -36.08
+ A:ILE_732         0.50      1.34     10.03    -15.71      4.04     -2.13      1.21      0.00     -0.71
+ A:PRO_733         1.07      6.02      4.87    -16.48      2.55     -0.19      0.02      0.00     -2.15
+ A:GLU_734         0.69      1.05      4.82    -74.87     -0.82    -37.87      8.92      0.00    -98.08
+ A:GLY_735         0.42      0.51      1.16    -21.40      1.18     -5.78     -1.25      0.00    -25.16
+ A:GLU_736         0.70      1.90      9.15    -24.69      5.74    -68.57      4.65      0.00    -71.13
+ A:LYS_737         0.57      1.92      3.09    -66.52      1.80    -13.01     -0.89      0.00    -73.03
+ A:VAL_738         1.26      2.67      4.33    -26.05      1.88      1.56     -0.39      0.00    -14.74
+ A:LYS_739         0.53      1.07      7.52    -42.93     -3.57    -33.44     -0.27      0.00    -71.09
+ A:ILE_740         0.35      1.50     12.00    -21.01      0.13      1.80     -0.08      0.00     -5.31
+ A:PRO_741         1.13      6.19      9.84    -14.66     -2.32     -2.11      0.53      0.00     -1.39
+ A:VAL_742         0.63      1.85      4.62    -29.39     -3.78      2.24     -0.08      0.00    -23.91
+ A:ALA_743         0.11      0.60      3.52    -30.83     -3.71     -0.83     -0.05      0.00    -31.18
+ A:ILE_744         0.24      1.62      8.98    -28.61     -2.62      1.87     -0.01      0.00    -18.53
+ A:LYS_745         0.28      0.66      5.23    -73.16     -4.73      5.15     -0.57      0.00    -67.15
+ large LJ energy for atom: A:GLU_746:_OE1        1244.02367523871     
+ A:GLU_746         0.52      3.04      5.29    -80.46   2511.20      9.86      1.01      0.00   2450.47
+ large LJ energy for atom: A:LEU_747:HD13        5792.17593423781     
+ large LJ energy for atom: A:LEU_747:_CD2        282222.491271273     
+ large LJ energy for atom: A:LEU_747:HD21        6780874.41927408     
+ A:LEU_747         0.28      7.01      4.91    -19.737070042.87     -1.04      0.51      0.007070034.80
+ A:ARG_748         0.39      6.32      5.53    -48.71     67.23    -31.09     -5.34      0.00     -5.67
+ A:GLU_749         0.11      3.02      6.01    -66.84      2.01    -41.69      3.60      0.00    -93.78
+ large LJ energy for atom: A:ALA_750:_O__        6714.91317849965     
+ large LJ energy for atom: A:ALA_750:_CB_        27496.4375078217     
+ large LJ energy for atom: A:ALA_750:_HB3        7035639.38052143     
+ A:ALA_750         0.29      2.79      2.83    -30.827069946.65      2.27     -0.73      0.007069923.28
+ A:THR_751         9.67      4.39      3.36    -24.26      6.27     -4.58     -0.96      0.00     -6.12
+ A:SER_752         0.38      4.81     11.61     -5.31    143.03     -5.22     -1.46      0.00    147.84
+ A:PRO_753         7.32     34.37     15.43    -12.81    127.14      0.03      0.37      0.00    171.84
+ A:LYS_754         0.10      2.53      6.34    -31.72    779.35    -20.50     -0.73      0.00    735.37
+ A:ALA_755         0.29      2.71      3.14    -24.84     14.02     -3.55      0.41      0.00     -7.82
+ A:ASN_756         0.15      3.26      1.58    -68.20    669.18     -5.03     -1.19      0.00    599.75
+ A:LYS_757         0.47      1.44      5.97   -106.26     -0.41     18.42      0.13      0.00    -80.25
+ A:GLU_758         1.02      1.31      5.11    -81.22     -0.51    -36.89      6.97      0.00   -104.21
+ A:ILE_759         0.65      2.98     12.22    -30.65    662.52     -2.53      0.36      0.00    645.55
+ A:LEU_760         0.16      1.34      4.95    -28.39      5.04     -0.61      1.22      0.00    -16.29
+ A:ASP_761         0.39      1.13     -1.42    -68.95      1.45    -40.99      5.95      0.00   -102.43
+ A:GLU_762         0.29      0.65      5.00    -71.16      0.35    -34.84      4.74      0.00    -94.98
+ A:ALA_763         0.19      0.21      3.13    -33.05      2.07     -0.95      0.03      0.00    -28.37
+ A:TYR_764         1.48      0.81      1.73    -36.02      8.11     -1.69     -0.74      0.00    -26.33
+ A:VAL_765         0.37      1.24      3.56    -25.25      3.90      0.86      0.12      0.00    -15.20
+ A:MET_766         0.68      2.14      7.38    -29.34      1.03     -2.40      0.01      0.00    -20.51
+ A:ALA_767         0.42      0.40      2.35    -35.59     -1.27     -1.72      0.53      0.00    -34.87
+ A:SER_768         0.31      0.32      6.48    -34.03      3.37      0.28     -0.87      0.00    -24.15
+ A:VAL_769         0.24      1.16      3.59    -19.32     -0.01     -3.45      0.12      0.00    -17.66
+ A:ASP_770         0.35      1.00      3.15    -62.72      1.60    -47.27      3.92      0.00    -99.97
+ A:ASN_771         0.99      1.19      3.11    -54.39      1.45     -4.01     -1.52      0.00    -53.18
+ A:PRO_772         0.88      8.33      6.74    -14.07      4.18      0.09      0.86      0.00      7.02
+ A:HID_773         1.31      9.64      2.19    -39.72     -6.46      2.98     -1.36      0.00    -31.43
+ A:VAL_774         0.36      1.18      3.28    -29.96      1.00      0.96     -0.01      0.00    -23.18
+ A:CYS_775         0.11      3.60      2.93    -23.92     -3.34     -0.95     -0.64      0.00    -22.20
+ A:ARG_776         1.83      4.38      7.77   -107.44     -7.90     15.81     -3.97      0.00    -89.52
+ A:LEU_777         1.19      2.05      4.50    -22.29      4.52     -2.81     -0.27      0.00    -13.10
+ A:LEU_778         0.46      1.24      5.30    -25.78     -2.32     -1.05      0.36      0.00    -21.79
+ A:GLY_779         0.22      0.16      0.78    -35.04     -3.08      0.65     -0.17      0.00    -36.48
+ A:ILE_780         0.63      1.50     10.62    -29.44      0.72     -0.60      0.21      0.00    -16.35
+ A:CYS_781         0.16      3.23     -1.17    -27.67     -6.43      1.37     -0.45      0.00    -30.95
+ A:LEU_782         0.63      1.91      5.33    -26.26      1.51     -1.84      0.85      0.00    -17.86
+ A:THR_783         0.77      0.57      3.77    -36.72     53.73      5.79     -0.35      0.00     27.55
+ A:SER_784         0.30      0.43      7.34    -26.00     29.58     -2.38     -0.58      0.00      8.69
+ A:THR_785         0.50      0.54      7.91    -15.85     31.80     -1.57     -0.89      0.00     22.44
+ A:VAL_786         0.21      0.97      2.52    -15.40    723.24     -0.99      0.03      0.00    710.59
+ large LJ energy for atom: A:GLN_787:_NE2        1218.85833247968     
+ A:GLN_787         0.23      0.66      5.58    -54.18   2481.23     -2.54     -1.17      0.00   2429.81
+ A:LEU_788         0.66      1.23      6.32    -29.27      1.19      1.55      0.01      0.00    -18.31
+ A:ILE_789         0.18      1.17      8.61    -31.27     12.01      0.55     -0.01      0.00     -8.77
+ A:THR_790         1.71      1.44      0.90    -29.31      3.32      2.42     -0.53      0.00    -20.06
+ A:GLN_791         0.63      0.67      0.52    -73.50     -1.94      2.54     -0.52      0.00    -71.59
+ A:LEU_792         0.23      1.53      3.07    -20.00     -6.75     -3.54      0.39      0.00    -25.07
+ A:MET_793         0.68      0.79      9.98    -18.07     -5.63     -0.61     -0.13      0.00    -12.98
+ A:PRO_794         1.63      8.19     10.12    -16.51     -1.29     -0.06      0.98      0.00      3.06
+ A:PHE_795         1.28      0.46      1.45    -28.15      3.10     -1.38      0.74      0.00    -22.51
+ A:GLY_796         0.16      0.77     -1.37    -35.51     -2.09      1.19     -0.16      0.00    -37.00
+ A:CYS_797         0.49      5.45     -0.85    -23.53     -3.28     -1.36     -1.44      0.00    -24.53
+ A:LEU_798         0.36      2.66      2.93    -25.10     -4.66      0.99     -0.03      0.00    -22.85
+ A:LEU_799         0.62      3.51      3.54    -27.00     -3.89      0.74      0.48      0.00    -22.00
+ A:ASP_800         1.76      0.48     -0.75    -51.60      0.91    -48.52      7.78      0.00    -89.93
+ A:TYR_801         1.62      0.89      1.71    -37.31      0.70     -3.11     -1.13      0.00    -36.61
+ A:VAL_802         0.25      1.72      3.89    -26.42     -1.12     -2.10      0.04      0.00    -23.74
+ A:ARG_803         0.51      0.81      6.66    -85.75     -2.91     -6.54     -3.75      0.00    -90.97
+ A:GLU_804         0.39      1.57      5.24    -37.80     -1.21    -76.13      5.03      0.00   -102.91
+ A:HID_805         1.97      9.87      2.58    -36.89      4.18     -1.73     -2.43      0.00    -22.45
+ A:LYS_806         0.60      0.89      1.49    -67.85      1.08     -5.81     -0.10      0.00    -69.69
+ A:ASP_807         0.57      2.20     -3.97    -32.23      4.65    -72.86      2.33      0.00    -99.31
+ A:ASN_808         0.51      1.43     -2.73    -64.76      3.13     -4.35     -0.77      0.00    -67.54
+ A:ILE_809         0.47      1.99      9.66    -23.18      2.31     -2.57     -0.50      0.00    -11.80
+ A:GLY_810         0.19      1.16     -1.45    -36.66     -1.72      2.12     -0.51      0.00    -36.86
+ A:SER_811         0.39      1.36      2.78    -29.32     -1.50      3.15     -0.58      0.00    -23.71
+ A:GLN_812         0.43      1.15      4.12    -63.98     -1.01     -2.65     -0.82      0.00    -62.77
+ A:TYR_813         2.88      1.32      3.26    -41.55      4.95      1.14     -0.78      0.00    -28.78
+ A:LEU_814         0.23      1.05      5.24    -28.58     -3.33      1.99      0.01      0.00    -23.39
+ A:LEU_815         0.24      1.62      4.84    -31.45     -5.58      1.59      0.02      0.00    -28.74
+ A:ASN_816         0.33      1.23      0.37    -63.80      6.59     -0.91      0.25      0.00    -55.94
+ A:TRP_817         3.33      3.52      1.22    -43.36      3.01      3.19     -0.67      0.00    -29.76
+ A:CYS_818         0.40      3.08      4.13    -30.35     -2.47     -0.49     -0.40      0.00    -26.10
+ A:VAL_819         0.58      1.18      3.35    -25.72      1.84      0.18      0.34      0.00    -18.24
+ A:GLN_820         0.72      0.98      3.34    -73.31     -1.23     -2.55     -0.68      0.00    -72.73
+ A:ILE_821         0.42      1.72      7.83    -28.46      2.83      0.80      0.09      0.00    -14.76
+ A:ALA_822         0.21      0.34      2.86    -33.47     -1.01     -1.33     -0.02      0.00    -32.42
+ A:LYS_823         0.66      1.30      2.90    -41.51     -0.41    -40.08     -0.28      0.00    -77.43
+ A:GLY_824         0.07      0.25      0.58    -34.42      3.77     -1.35     -0.08      0.00    -31.18
+ A:MET_825         0.84      0.77      6.10    -31.22     -2.42     -2.26     -0.02      0.00    -28.21
+ A:ASN_826         1.10      0.60      0.84    -64.06      2.52     -4.91     -0.92      0.00    -64.82
+ A:TYR_827         1.27      0.77      1.72    -37.35      4.04     -3.69     -0.57      0.00    -33.82
+ A:LEU_828         0.49      2.67      4.59    -30.59     -2.72      1.52      0.04      0.00    -24.01
+ A:GLU_829         1.25      2.81      8.71    -69.96     -0.05    -38.94      5.96      0.00    -90.21
+ A:ASP_830         0.45      1.44     -1.47    -48.46      7.84    -58.40      5.03      0.00    -93.57
+ A:ARG_831         0.35      1.81      8.24    -96.89      4.27      1.45     -5.15      0.00    -85.91
+ A:ARG_832         0.67      1.56      8.34   -106.48    536.53     17.87     -4.07      0.00    454.42
+ A:LEU_833         0.38      2.08      5.32    -25.35      2.23     -0.60     -0.01      0.00    -15.95
+ A:VAL_834         0.43      1.41      3.68    -30.71     -0.46      1.21      0.04      0.00    -24.39
+ A:HID_835         0.81      8.62      3.20    -22.09     -6.64     -0.50     -0.09      0.00    -16.69
+ A:ARG_836         0.72      2.20      6.14    -80.60     -2.42     -3.33     -1.38      0.00    -78.67
+ A:ASP_837         0.41      1.31      2.05    -63.05      3.94    -30.48      3.80      0.00    -82.01
+ A:LEU_838         0.20      1.37      3.27    -23.82     -4.51      1.12     -0.02      0.00    -22.38
+ A:ALA_839         0.20      0.57      2.31    -32.84      0.56     -0.30     -0.11      0.00    -29.60
+ A:ALA_840         0.32      0.92      1.72    -35.76     -0.99     -0.32     -0.04      0.00    -34.17
+ A:ARG_841         0.29      1.42      6.75    -95.24     -0.01      3.41     -3.42      0.00    -86.81
+ A:ASN_842         0.27      0.96     -0.32    -66.78     -0.01      0.07     -1.01      0.00    -66.81
+ A:VAL_843         0.21      1.22      3.69    -28.48     -3.28      0.02     -0.01      0.00    -26.64
+ A:LEU_844         0.59      1.55      5.02    -30.05     -3.71      1.80      0.13      0.00    -24.66
+ A:VAL_845         0.62      1.02      3.78    -27.46     -4.70      0.71     -0.01      0.00    -26.04
+ A:LYS_846         0.70      1.43      3.41    -90.71     -2.83      6.97     -1.43      0.00    -82.46
+ A:THR_847         0.64      1.37      2.50    -21.87      4.48     -0.35     -0.20      0.00    -13.43
+ A:PRO_848         1.34      6.30      7.61    -14.58     -0.30      0.35      0.50      0.00      1.23
+ A:GLN_849         0.82      2.11      2.23    -69.09      1.97     -0.81     -0.43      0.00    -63.20
+ A:HID_850         0.93      8.87      3.09    -35.10     -3.22     -2.45     -1.28      0.00    -29.15
+ A:VAL_851         0.11      1.21      3.83    -28.19     -1.86      0.89     -0.01      0.00    -24.02
+ A:LYS_852         0.38      0.92      3.86    -95.66     -4.99      8.94     -0.11      0.00    -86.66
+ A:ILE_853         0.41      1.24      7.56    -32.15      1.63      1.51      0.04      0.00    -19.78
+ A:THR_854         0.36      0.71     -4.28    -15.42      2.82     -1.54     -0.68      0.00    -18.00
+ A:ASP_855         0.54      1.03      4.46    -32.75      0.94    -51.93      7.28      0.00    -70.42
+ A:PHE_856         1.28      0.48      1.67    -29.03      0.37      2.07     -0.73      0.00    -23.88
+ A:GLY_857         0.34      0.82     -0.78    -34.78      2.36      2.90      0.36      0.00    -28.79
+ A:LEU_858         0.59      1.41      4.97    -33.27      5.58      4.44      0.32      0.00    -15.96
+ A:ALA_859         0.21      0.32      1.88    -34.83      5.54      1.03     -0.05      0.00    -25.91
+ A:LYS_860         0.39      1.12      7.09    -70.66      2.18     -5.12     -0.68      0.00    -65.68
+ A:LEU_861         0.90      2.29      5.88    -22.01     -4.38     -3.26      0.46      0.00    -20.11
+ A:LEU_862         0.63      6.92      8.82    -22.47    545.04     -2.24     -0.33      0.00    536.35
+ A:GLY_863         0.04      0.39      0.92    -26.39      3.59     -2.08     -0.89      0.00    -24.42
+ A:ALA_864         1.46     17.30      4.69    -26.66      3.90     -0.44     -1.42      0.00     -1.16
+ A:GLU_865         0.11      3.22      5.82    -19.01      5.16    -93.02     -2.28      0.00    -99.99
+ large LJ energy for atom: A:GLU_866:_OE2        2428.37443928041     
+ A:GLU_866         0.22      3.04      2.24      5.48   2481.66    -75.64      2.80      0.00   2419.80
+ A:LYS_867         1.54      1.74      0.61    -93.79     -2.50     12.22      0.51      0.00    -79.68
+ large LJ energy for atom: A:GLU_868:_OE2        1634.38997201288     
+ A:GLU_868         1.76      1.70      5.02     12.49   2476.06    -83.49      7.94      0.00   2421.48
+ A:TYR_869         1.10      0.87      1.73    -33.72      0.23     -0.49     -0.43      0.00    -30.72
+ A:HID_870         1.14      8.81      3.04    -28.58     -3.48     -4.73     -3.37      0.00    -27.17
+ A:ALA_871         1.64      1.92      3.17    -28.48      1.00     -1.50     -0.23      0.00    -22.49
+ A:GLU_872         0.31      3.15      4.78    -48.83      0.22    -62.83     -1.42      0.00   -104.63
+ A:GLY_873        31.42     14.55     -1.18    -26.69     -1.02     -4.65     -1.69      0.00     10.74
+ A:GLY_874         0.04      0.26     -1.07    -24.78      2.61     -1.88     -1.19      0.00    -26.01
+ A:LYS_875         0.15      2.61      0.52    -27.44      0.99    -45.95     -0.21      0.00    -69.32
+ A:VAL_876         0.62      2.45      5.39    -16.34      3.52     -0.46     -0.77      0.00     -5.60
+ A:PRO_877         1.04      7.73     16.95    -12.82      1.41      0.05      0.50      0.00     14.86
+ A:ILE_878         0.45      2.28     11.86    -16.39     16.52     -2.31      0.10      0.00     12.52
+ A:LYS_879         0.21      0.64      4.47    -50.52     -1.37    -21.03     -0.72      0.00    -68.32
+ A:TRP_880         1.48      3.11      1.63    -40.03     -4.84      2.80      0.08      0.00    -35.78
+ A:MET_881         0.31      1.69      4.58    -30.22     -6.12      0.28      0.11      0.00    -29.37
+ A:ALA_882         0.16      0.53      1.66    -32.29     -0.44      2.59     -0.56      0.00    -28.35
+ A:LEU_883         0.21      1.41      3.66    -26.31      2.09      1.01      0.24      0.00    -17.69
+ A:GLU_884         0.69      2.18      6.26    -83.51      6.49    -29.93      4.32      0.00    -93.49
+ A:SER_885         0.32      0.54      6.39    -24.16      0.47     -1.93     -0.41      0.00    -18.76
+ A:ILE_886         0.21      1.41      8.75    -23.29      2.23     -0.73      0.82      0.00    -10.60
+ A:LEU_887         0.33      4.09      5.48    -28.63     -3.02     -0.42      1.53      0.00    -20.64
+ A:HID_888         1.23      9.21      3.65    -29.72     -0.16     -4.99     -2.38      0.00    -23.15
+ A:ARG_889         0.20      1.42      7.04    -91.44      3.99     -2.43     -4.13      0.00    -85.35
+ A:ILE_890         0.94      1.80     10.57    -23.71     -0.23      2.62      0.85      0.00     -7.15
+ A:TYR_891         0.83      1.93      3.52    -40.91     -4.51      1.02     -0.95      0.00    -39.07
+ A:THR_892         0.55      0.74      0.54    -27.88      3.67      2.89     -0.32      0.00    -19.80
+ A:HID_893         0.59      8.73      3.69    -23.57     -3.86      0.56     -1.59      0.00    -15.46
+ A:GLN_894         0.30      0.75      5.07    -76.13     -0.92      2.20     -0.40      0.00    -69.12
+ A:SER_895         0.39      0.46     -1.32    -17.15     -0.75      0.64     -0.48      0.00    -18.21
+ A:ASP_896         1.55      1.38     -2.58    -69.45     -3.78    -28.38      1.23      0.00   -100.02
+ A:VAL_897         0.17      1.24      2.83    -30.87      1.71      1.82      0.00      0.00    -23.10
+ A:TRP_898         2.11      3.42      1.28    -41.74      3.95      4.77     -1.16      0.00    -27.37
+ A:SER_899         0.49      0.66      7.70    -32.86     -0.49      2.16     -0.47      0.00    -22.80
+ A:TYR_900         1.45      0.75      0.46    -34.02      0.27      2.48     -0.24      0.00    -28.86
+ A:GLY_901         0.12      0.22      0.62    -33.37     -1.24     -0.08     -0.02      0.00    -33.75
+ A:VAL_902         0.52      1.21      2.89    -31.51     -1.36      1.90      0.04      0.00    -26.31
+ A:THR_903         0.49      0.69      4.27    -28.74      1.02      2.31     -0.03      0.00    -19.99
+ A:VAL_904         0.46      1.42      3.18    -24.40      4.34      0.38      0.04      0.00    -14.58
+ A:TRP_905         2.75      3.52      1.02    -39.15     -6.22      1.86     -0.23      0.00    -36.44
+ A:GLU_906         0.70      1.97      8.69    -86.08     -4.30     -7.92      1.39      0.00    -85.54
+ A:LEU_907         0.27      2.16      4.86    -29.16     -2.75     -1.08      0.11      0.00    -25.59
+ A:MET_908         0.74      1.49      5.82    -33.25     -4.35     -2.24     -0.01      0.00    -31.81
+ A:THR_909         0.64      1.32      0.03    -28.21      2.63      0.19      0.28      0.00    -23.12
+ A:PHE_910         1.48      0.93      2.22    -27.61      0.03     -0.50     -0.67      0.00    -24.12
+ A:GLY_911         0.21      1.29      0.04    -42.12      1.53      1.63     -0.10      0.00    -37.52
+ A:SER_912         0.48      0.49      4.64    -20.91      2.25     -1.63     -0.10      0.00    -14.78
+ A:LYS_913         0.37      1.33      5.14    -21.53     -0.25    -43.75     -0.47      0.00    -59.16
+ A:PRO_914         1.39      7.82      5.11    -20.94      2.70      3.41      0.02      0.00     -0.49
+ A:TYR_915         1.10      1.54      4.47    -39.01      7.50      5.46     -1.61      0.00    -20.55
+ A:ASP_916         0.31      1.31      0.61    -83.57      6.32    -30.24      3.61      0.00   -101.64
+ A:GLY_917         0.09      0.67      0.69    -23.82      2.31     -5.62     -1.39      0.00    -27.07
+ A:ILE_918         0.83      1.95     10.00    -18.46      1.38      1.54     -0.38      0.00     -3.15
+ A:PRO_919         1.17      5.32      4.76    -10.13     -0.09     -1.61      0.47      0.00     -0.11
+ A:ALA_920         0.20      0.38      2.35    -27.39     14.04     -3.46     -0.90      0.00    -14.78
+ A:SER_921         0.28      0.45     10.05    -32.74      5.90     -1.44     -0.43      0.00    -17.93
+ A:GLU_922         0.71      1.17      4.14    -58.93     -1.02    -53.80      4.32      0.00   -103.41
+ A:ILE_923         0.37      1.95      9.03    -28.06      7.89     -1.03     -0.03      0.00     -9.89
+ A:SER_924         0.38      0.47      0.98    -22.58     14.08     -0.65     -0.89      0.00     -8.21
+ A:SER_925         0.61      0.48     -1.30    -16.74      3.83     -2.11     -0.71      0.00    -15.94
+ A:ILE_926         0.33      1.58      9.46    -24.25      7.35     -0.73      0.70      0.00     -5.58
+ A:LEU_927         0.14      2.35      4.31    -32.66     -2.33      0.50      0.20      0.00    -27.50
+ A:GLU_928         0.34      1.66      8.47    -38.98      7.95    -69.21      7.73      0.00    -82.05
+ A:LYS_929         0.82      1.34      3.00    -73.21     -0.81     -8.27      0.77      0.00    -76.37
+ A:GLY_930         0.40      1.51     -0.17    -30.19      0.10     -0.65     -0.01      0.00    -29.01
+ A:GLU_931         0.30      1.71      4.06    -54.70      6.39    -53.83      6.34      0.00    -89.73
+ A:ARG_932         1.31      1.47      6.69   -102.54      0.19     10.31     -2.69      0.00    -85.26
+ A:LEU_933         0.26      2.11      5.69    -12.70     -0.80     -0.36     -0.52      0.00     -6.32
+ A:PRO_934         0.88      8.00      3.03    -16.01      1.28      1.70      0.90      0.00     -0.23
+ A:GLN_935         0.24      1.47      3.05    -50.16     -0.67     -4.31     -0.99      0.00    -51.37
+ A:PRO_936         0.88      7.29      7.67     -6.13      0.13     -1.09     -0.08      0.00      8.68
+ A:PRO_937         1.30      8.14      4.05    -11.98      3.06     -2.63      1.27      0.00      3.20
+ A:ILE_938         0.63      2.44     10.58    -27.36     -3.25      0.25     -0.49      0.00    -17.20
+ A:CYS_939         0.59      4.47      3.83    -35.21     -3.57     -0.82     -0.27      0.00    -31.00
+ A:THR_940         0.85      1.52      0.08    -25.35      6.07      3.89      0.08      0.00    -12.86
+ A:ILE_941         0.77      1.60      8.35    -20.99     10.97      0.07      0.40      0.00      1.16
+ A:ASP_942         1.23      1.58     -2.67    -64.53     -0.89    -39.94      4.77      0.00   -100.45
+ A:VAL_943         0.58      1.34      3.16    -30.30      0.24      1.07     -0.06      0.00    -23.97
+ A:TYR_944         1.75      1.04      1.04    -34.65      3.97      1.46     -0.29      0.00    -25.68
+ A:MET_945         0.39      0.88      4.40    -31.37      7.15     -1.10      0.84      0.00    -18.81
+ A:ILE_946         0.62      1.73      8.15    -25.90      3.99     -0.15      0.30      0.00    -11.27
+ A:MET_947         0.35      1.03      4.94    -30.89     -4.13      0.69     -0.05      0.00    -28.06
+ A:VAL_948         0.26      1.15      2.89    -27.96      3.64     -0.38      0.94      0.00    -19.46
+ A:LYS_949         0.82      2.09      7.06    -64.07      1.05    -12.14      0.17      0.00    -65.01
+ A:CYS_950         0.36      5.28      3.00    -32.03     -5.20     -0.68     -0.59      0.00    -29.86
+ A:TRP_951         1.66      3.80      0.57    -40.34     -8.85      2.50     -0.29      0.00    -40.96
+ A:MET_952         1.02      1.30      5.60    -31.64     11.04      1.20      0.83      0.00    -10.65
+ A:ILE_953         0.47      1.64      7.87    -19.88     14.46     -2.66      0.73      0.00      2.62
+ A:ASP_954         0.46      1.55      0.95    -30.14      4.28    -74.44      6.94      0.00    -90.39
+ A:ALA_955         0.54      1.41      2.18    -33.67      0.07      1.91     -0.61      0.00    -28.16
+ A:ASP_956         0.45      0.84     -4.59    -27.16      0.84    -82.08      2.82      0.00   -108.89
+ A:SER_957         0.27      0.72      4.43    -22.82      1.91     -4.88     -0.31      0.00    -20.67
+ A:ARG_958         0.81      2.73     10.27   -104.15      8.77     19.49     -1.48      0.00    -63.57
+ A:PRO_959         1.18      7.69      9.73    -16.34     -2.73      0.22      0.27      0.00      0.02
+ A:LYS_960         0.45      1.07      6.36   -109.61      4.94     24.25      0.05      0.00    -72.49
+ A:PHE_961         2.64      0.53      2.45    -33.71      4.12      5.82     -0.76      0.00    -18.91
+ A:ARG_962         0.54      1.64      7.92    -64.94      3.31    -15.52     -4.83      0.00    -71.88
+ A:GLU_963         0.22      1.01      7.62    -72.07      1.12    -39.22      3.45      0.00    -97.87
+ A:LEU_964         0.44      1.37      4.56    -33.19     -0.37      1.11      0.03      0.00    -26.04
+ A:ILE_965         0.29      1.80      8.19    -28.54      3.53      0.47      0.43      0.00    -13.83
+ A:ILE_966         0.34      1.46      8.61    -28.79      7.92      1.37      1.23      0.00     -7.87
+ A:GLU_967         0.41      2.98      6.14    -93.91     -1.52    -19.04      5.72      0.00    -99.22
+ A:PHE_968         2.36      1.24      3.14    -37.20     -1.09      0.61     -0.43      0.00    -31.37
+ A:SER_969         0.97      1.13      5.49    -23.04      1.70     -2.22     -0.12      0.00    -16.10
+ A:LYS_970         0.71      0.71      7.85    -60.06      2.93    -20.02      0.25      0.00    -67.64
+ A:MET_971         0.65      1.94      5.57    -30.18     -5.19     -2.08     -0.08      0.00    -29.36
+ A:ALA_972         1.08      1.56      1.44    -34.17     -0.74     -1.83      0.20      0.00    -32.47
+ A:ARG_973         0.74      1.53      5.97    -48.33      2.96    -40.32     -6.83      0.00    -84.28
+ A:ASP_974         0.26      1.04      6.04    -56.02      3.86    -46.86      8.09      0.00    -83.60
+ A:PRO_975         1.21      5.45     12.24    -16.39     -3.00      0.71      0.29      0.00      0.52
+ A:GLN_976         1.02      1.02      2.83    -62.79      0.95     -4.71     -0.98      0.00    -62.67
+ A:ARG_977         0.83      0.90      5.44    -85.26      3.15     -6.92     -6.66      0.00    -88.52
+ A:TYR_978         0.87      1.91      3.90    -34.67     -0.58      0.75     -1.22      0.00    -29.04
+ A:LEU_979         0.49      2.12      4.80    -26.23     -5.27     -1.13     -0.09      0.00    -25.31
+ A:VAL_980         0.35      1.42      4.09    -26.29      3.57      1.59      1.16      0.00    -14.11
+ A:ILE_981         0.32      1.74      9.17    -22.84      3.40      0.61     -0.47      0.00     -8.07
+ A:GLN_982         1.28      1.70      1.23    -58.27      4.24     -9.38     -1.29      0.00    -60.49
+ A:GLY_983         0.38      0.11      1.80    -27.54     14.71     -1.31     -1.31      0.00    -13.15
+ A:ASP_984         1.45      3.27      0.04    -27.51     11.49    -41.85      5.07      0.00    -48.04
+ A:ASP_1008        0.93      1.60      4.35    -21.26      2.46    -70.47      0.51      0.00    -81.87
+ A:ASP_1009        0.64      0.82     -3.17    -65.39      0.82    -44.94      7.96      0.00   -103.27
+ A:VAL_1010        0.11      1.21      2.50    -21.49      4.80     -6.04      0.62      0.00    -18.28
+ A:VAL_1011        0.25      2.05      3.85    -25.43      2.21      3.09      0.45      0.00    -13.53
+ A:ASP_1012        0.90      0.38      1.78    -72.20      4.11    -28.54      2.06      0.00    -91.50
+ A:ALA_1013        0.35      1.17      1.93    -23.68      1.87     -2.52     -0.05      0.00    -20.93
+ A:ASP_1014        0.44      0.86     -4.20   -110.15      0.72    -15.50      3.06      0.00   -124.76
+ A:GLU_1015        0.29      1.36      5.16    -54.89      2.24    -52.05      8.19      0.00    -89.69
+ A:TYR_1016        2.67      1.23      1.98    -25.40      9.12     -2.27     -1.76      0.00    -14.42
+ A:LEU_1017        0.55      2.76      4.55     -5.84     -0.56     -0.86      0.61      0.00      1.21
+ 
+ Preparing for first energy calculation ...
+ 
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      359.570663      680.310005     1248.494469     2288.375137
+     SGB    20461.009392    -8316.253617    -7384.108531     4760.647244
+   TOTAL    20820.580055    -7635.943612    -6135.614062     7049.022381
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     2310.172253 14152473.719457     -128.735290 14154655.156421
+    LIPO        0.000000    -1695.101375        0.000000    -1695.101375
+      EL     8683.789388   -17957.183221      187.739090    -9085.654743
+     SGB    -7384.108531     8344.879344     -156.335623      804.435190
+   TOTAL     3609.853111 14141166.314205      -97.331823 14144678.835493
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -18739.867272
+NONPOLAR       68.997865
+PROT COR        0.000000
+   HBOND     -100.995644
+ PACKING       -8.075211
+SelfCont     -100.472202
+ 
+ SUM:
+ SGB TOT    -5790.676307
+SOLV TOT    -5721.678441
+LIPO TOT    -1695.101375
+  TOTALE   14140231.55394    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ Report energy breakdown by residues:
+ INFO: the following energy terms include both contributions from
+ each residue itself, and interactions between each residue with
+ other residues. Thus the sum of energies by residues will not be
+ equal to the total energy
+      residue      bond     angle torsional        el        lj       sgb  nonpolar      lipo     hbond    pipack  selfcont       tot
+ A:YY3_1101       34.74     20.57     22.86   -161.36     16.04      3.54      0.00    -27.37     -0.45     -0.00      0.00    -91.44
+ A:HOH_1201       20.00      0.00      0.00      2.84      2.45     -1.72      0.00      0.00     -0.00      0.00      0.00     23.58
+ A:HOH_1202       20.00      0.00      0.00      3.64     -0.74      0.38      0.00      0.00     -0.31      0.00      0.00     22.97
+ A:HOH_1203       20.00      0.00      0.00     -2.19     -1.17      0.50      0.00      0.00     -0.59      0.00      0.00     16.56
+ A:HOH_1204       20.00      0.00      0.00     -1.52     -1.10     -0.55      0.00      0.00     -0.00      0.00      0.00     16.82
+ A:ALA_698         0.41      0.77      3.55     -0.10      5.37     -3.60      0.00     -0.81      0.00      0.00      0.00      5.59
+ A:PRO_699         1.46      6.70      7.39    -15.46      6.17     -0.71      0.00     -1.91     -0.02      0.00      0.00      3.62
+ A:ASN_700         1.44      0.67      3.41    -60.43     14.79     -5.45      0.00     -1.61     -0.32     -0.00     -0.21    -47.71
+ A:GLN_701         1.43      0.80      6.80    -62.30      6.68     -7.10      0.00     -1.65     -0.02      0.00     -0.01    -55.36
+ A:ALA_702         0.52      1.08      1.73    -30.53      2.57     -2.19      0.00     -2.21     -0.15      0.00      0.00    -29.17
+ A:LEU_703         1.29      1.62      4.84    -23.92      1.74     -1.57      0.00     -1.38     -0.00      0.00      0.00    -17.39
+ A:LEU_704         0.63      2.29      3.57    -23.72      0.67     -1.20      0.00     -5.80     -0.00      0.00      0.00    -23.56
+ A:ARG_705         1.01      0.52      5.67    -45.89     -2.14    -11.43      0.00     -5.38     -0.41     -0.22      0.00    -58.27
+ A:ILE_706         0.20      1.84      9.29    -23.97      1.45     -1.93      0.00     -6.76     -0.00      0.00      0.00    -19.87
+ A:LEU_707         0.32      1.42      5.00    -27.64     -1.73      0.91      0.00    -10.01     -0.12      0.00      0.00    -31.85
+ A:LYS_708         0.36      1.36      3.80    -27.59     -1.04    -10.78      0.00      0.00     -1.39      0.00      0.00    -35.27
+ A:GLU_709         0.50      0.89      4.72    -39.29      4.09    -11.23      0.00     -3.59     -0.26      0.00      0.00    -44.15
+ A:THR_710         0.37      0.55      0.73    -26.19      3.86     -3.95      0.00     -1.68     -0.03      0.00     -3.21    -29.53
+ A:GLU_711         0.58      3.60      6.96    -37.80     -1.15    -15.92      0.00     -5.05     -1.08      0.00      0.00    -49.85
+ A:PHE_712         1.79      2.41      1.34    -26.75      0.22     -0.84      0.00     -9.61     -0.13     -0.09      0.00    -31.67
+ A:LYS_713         0.99      0.86      1.58     -9.60     -3.21    -27.73      0.00      0.00     -0.20      0.00      0.00    -37.31
+ A:LYS_714         0.63      1.74      6.03    -12.47     -3.38    -25.12      0.00      0.00     -0.27      0.00      0.00    -32.84
+ A:ILE_715         0.74      1.80      9.25    -21.45      3.25     -1.69      0.00     -1.94     -0.12      0.00      0.00    -10.16
+ A:LYS_716         0.14      1.03      0.74    -14.38     -1.36    -28.03      0.00      0.00     -0.18      0.00      0.00    -42.03
+ A:VAL_717         0.27      0.93      2.51    -23.54      1.09     -1.39      0.00     -4.14     -0.00      0.00      0.00    -24.28
+ A:LEU_718         0.30      2.29      4.94    -24.94     -4.10     -2.28      0.00     -8.52     -0.12      0.00      0.00    -32.42
+ A:GLY_719         0.13      0.05      0.36    -34.84     -0.53      1.34      0.00     -1.39     -0.15      0.00      0.00    -35.03
+ A:SER_720         0.38      0.37     -1.75    -19.00      1.81     -3.76      0.00     -1.76     -0.03      0.00     -2.13    -25.87
+ A:GLY_721         0.21      0.49      0.23    -27.31      1.29      0.05      0.00     -0.68     -0.24      0.00      0.00    -25.96
+ A:ALA_722         0.14      0.56      3.48    -24.45      3.63     -2.39      0.00     -0.78     -0.00      0.00      0.00    -19.81
+ A:PHE_723         0.92      2.28      6.03    -28.68      4.20     -0.53      0.00     -2.90     -0.01     -0.00      0.00    -18.70
+ A:GLY_724         0.14      1.15     -0.25    -34.89      2.34     -0.42      0.00     -1.34     -0.20      0.00      0.00    -33.47
+ A:THR_725         0.48      0.52      1.08    -17.72     13.09      1.33      0.00     -4.28     -0.24      0.00     -4.77    -10.51
+ A:VAL_726         0.22      1.25      3.21    -24.28     -0.52      0.32      0.00     -7.69     -0.27      0.00      0.00    -27.76
+ A:TYR_727         1.32      1.37      2.75    -36.58     -3.98     -0.91      0.00     -7.19     -0.31     -0.00      0.00    -43.52
+ A:LYS_728         0.36      0.66      4.41    -13.21      3.78    -27.77      0.00      0.00     -0.30      0.00      0.00    -32.07
+ A:GLY_729         0.22      1.29      0.04    -32.86     -2.44     -0.42      0.00     -2.09     -0.24      0.00      0.00    -36.51
+ A:LEU_730         0.57      1.67      5.38    -28.51      0.64      0.39      0.00     -5.86     -0.20      0.00      0.00    -25.91
+ A:TRP_731         2.70      3.23      1.17    -37.56     -4.80      0.99      0.00    -17.19     -0.61     -0.49      0.00    -52.55
+ A:ILE_732         0.50      1.34     10.03    -16.33      4.04     -1.35      0.00     -4.48     -0.12      0.00      0.00     -6.37
+ A:PRO_733         1.07      6.02      4.87    -14.46      2.55     -0.64      0.00    -10.07     -0.01      0.00      0.00    -10.67
+ A:GLU_734         0.69      1.05      4.82    -31.48     -0.82    -22.63      0.00     -2.04     -1.38      0.00      0.00    -51.78
+ A:GLY_735         0.42      0.51      1.16    -22.01      1.18     -5.38      0.00     -0.54     -0.03      0.00      0.00    -24.70
+ A:GLU_736         0.70      1.90      9.15    -14.68      5.74    -33.06      0.00     -3.61     -0.01      0.00      0.00    -33.88
+ A:LYS_737         0.57      1.92      3.09    -29.27      1.80    -12.25      0.00      0.00     -0.00      0.00      0.00    -34.13
+ A:VAL_738         1.26      2.67      4.33    -25.42      1.88      0.76      0.00     -6.46     -0.01      0.00      0.00    -20.98
+ A:LYS_739         0.53      1.07      7.52    -23.68     -3.57    -17.83      0.00      0.00     -0.20      0.00      0.00    -36.16
+ A:ILE_740         0.35      1.50     12.00    -19.62      0.13      0.54      0.00    -12.99     -0.24      0.00      0.00    -18.32
+ A:PRO_741         1.13      6.19      9.84    -16.71     -2.32     -0.53      0.00     -7.39     -0.20      0.00      0.00     -9.99
+ A:VAL_742         0.63      1.85      4.62    -28.19     -3.78      0.95      0.00    -11.07     -0.24      0.00      0.00    -35.22
+ A:ALA_743         0.11      0.60      3.52    -31.40     -3.71     -0.33      0.00     -4.95     -0.24      0.00      0.00    -36.40
+ A:ILE_744         0.24      1.62      8.98    -27.98     -2.62      1.22      0.00     -9.92     -0.24      0.00      0.00    -28.71
+ A:LYS_745         0.28      0.66      5.23    -26.14     -4.73    -11.25      0.00      0.00     -0.63      0.00      0.00    -36.59
+ large LJ energy for atom: A:GLU_746:_OE1        1244.02367523871     
+ A:GLU_746         0.52      3.04      5.29    -36.66   2511.20     -3.63      0.00     -5.69     -0.68      0.00      0.00   2473.40
+ large LJ energy for atom: A:LEU_747:HD13        5792.17593423781     
+ large LJ energy for atom: A:LEU_747:_CD2        282222.491271273     
+ large LJ energy for atom: A:LEU_747:HD21        6780874.41927408     
+ A:LEU_747         0.28      7.01      4.91    -19.277070042.87     -1.11      0.00     -7.74     -0.12      0.00      0.007070026.82
+ A:ARG_748         0.39      6.32      5.53    -21.33     67.23    -32.60      0.00     -4.44     -0.09     -0.00      0.00     21.01
+ A:GLU_749         0.11      3.02      6.01    -30.80      2.01    -23.79      0.00     -2.05     -0.01      0.00      0.00    -45.49
+ large LJ energy for atom: A:ALA_750:_O__        6714.91317849965     
+ large LJ energy for atom: A:ALA_750:_CB_        27496.4375078217     
+ large LJ energy for atom: A:ALA_750:_HB3        7035639.38052143     
+ A:ALA_750         0.29      2.79      2.83    -30.507069946.65      1.45      0.00     -2.98     -0.00      0.00      0.007069920.53
+ A:THR_751         9.67      4.39      3.36    -25.07      6.27     -3.88      0.00     -1.92     -0.00      0.00     -2.57     -9.75
+ A:SER_752         0.38      4.81     11.61     -5.01    143.03     -5.54      0.00     -2.73     -0.01      0.00     -4.30    142.24
+ A:PRO_753         7.32     34.37     15.43    -12.31    127.14     -0.44      0.00     -1.25      0.00      0.00      0.00    170.24
+ A:LYS_754         0.10      2.53      6.34    -12.60    779.35    -16.69      0.00      0.00     -0.01      0.00      0.00    759.02
+ A:ALA_755         0.29      2.71      3.14    -27.44     14.02     -2.03      0.00     -0.76     -0.01      0.00      0.00    -10.10
+ A:ASN_756         0.15      3.26      1.58    -68.65    669.18     -4.25      0.00     -2.99     -0.13      0.00     -0.00    598.15
+ A:LYS_757         0.47      1.44      5.97    -37.21     -0.41     -6.24      0.00      0.00     -2.99      0.00      0.00    -38.97
+ A:GLU_758         1.02      1.31      5.11    -37.81     -0.51    -23.55      0.00     -1.72     -1.86      0.00      0.00    -58.02
+ A:ILE_759         0.65      2.98     12.22    -32.08    662.52     -1.22      0.00     -8.23     -0.18      0.00      0.00    636.67
+ A:LEU_760         0.16      1.34      4.95    -28.67      5.04     -0.08      0.00     -5.21     -0.27      0.00      0.00    -22.75
+ A:ASP_761         0.39      1.13     -1.42    -38.39      1.45    -24.50      0.00     -2.21     -1.35      0.00      0.00    -64.90
+ A:GLU_762         0.29      0.65      5.00    -34.11      0.35    -21.90      0.00     -6.24     -0.85      0.00      0.00    -56.80
+ A:ALA_763         0.19      0.21      3.13    -33.67      2.07     -0.47      0.00     -5.82     -0.26      0.00      0.00    -34.61
+ A:TYR_764         1.48      0.81      1.73    -34.98      8.11     -2.63      0.00     -4.80     -0.29     -0.00      0.00    -30.58
+ A:VAL_765         0.37      1.24      3.56    -24.34      3.90     -0.03      0.00     -9.26     -0.25      0.00      0.00    -24.81
+ A:MET_766         0.68      2.14      7.38    -29.00      1.03     -2.53      0.00    -13.46     -0.23      0.00      0.00    -33.99
+ A:ALA_767         0.42      0.40      2.35    -35.52     -1.27     -1.80      0.00     -3.77     -0.18      0.00      0.00    -39.37
+ A:SER_768         0.31      0.32      6.48    -31.44      3.37     -0.71      0.00     -3.31     -0.64      0.00     -1.90    -27.52
+ A:VAL_769         0.24      1.16      3.59    -19.23     -0.01     -3.36      0.00     -8.10     -0.10      0.00      0.00    -25.80
+ A:ASP_770         0.35      1.00      3.15    -33.87      1.60    -25.70      0.00     -1.75     -0.93      0.00      0.00    -56.15
+ A:ASN_771         0.99      1.19      3.11    -54.80      1.45     -3.70      0.00     -4.19     -0.24     -0.17     -0.01    -56.38
+ A:PRO_772         0.88      8.33      6.74    -13.86      4.18      0.19      0.00     -2.75     -0.01      0.00      0.00      3.70
+ A:HID_773         1.31      9.64      2.19    -37.70     -6.46      1.30      0.00     -4.54     -0.38     -0.21      0.00    -34.84
+ A:VAL_774         0.36      1.18      3.28    -28.58      1.00     -0.04      0.00     -9.29     -0.14      0.00      0.00    -32.21
+ A:CYS_775         0.11      3.60      2.93    -23.83     -3.34     -1.25      0.00     -3.34     -0.11      0.00      0.00    -25.22
+ A:ARG_776         1.83      4.38      7.77    -57.27     -7.90     -3.53      0.00     -5.09     -2.22     -0.00      0.00    -62.04
+ A:LEU_777         1.19      2.05      4.50    -22.35      4.52     -2.66      0.00    -11.63     -0.03      0.00      0.00    -24.41
+ A:LEU_778         0.46      1.24      5.30    -25.76     -2.32     -1.22      0.00    -10.52     -0.10      0.00      0.00    -32.92
+ A:GLY_779         0.22      0.16      0.78    -35.22     -3.08      0.90      0.00     -3.24     -0.22      0.00      0.00    -39.69
+ A:ILE_780         0.63      1.50     10.62    -29.93      0.72     -0.20      0.00    -11.36     -0.24      0.00      0.00    -28.25
+ A:CYS_781         0.16      3.23     -1.17    -26.90     -6.43      0.83      0.00     -5.16     -0.29      0.00      0.00    -35.74
+ A:LEU_782         0.63      1.91      5.33    -26.48      1.51     -2.16      0.00     -5.49     -0.00      0.00      0.00    -24.75
+ A:THR_783         0.77      0.57      3.77    -31.77     53.73      2.48      0.00     -3.20     -0.35      0.00     -1.76     24.23
+ A:SER_784         0.30      0.43      7.34    -25.36     29.58     -2.88      0.00     -1.14     -0.00      0.00     -3.41      4.85
+ A:THR_785         0.50      0.54      7.91    -19.17     31.80     -1.67      0.00     -5.79     -0.18      0.00     -1.46     12.47
+ A:VAL_786         0.21      0.97      2.52    -17.24    723.24     -0.12      0.00     -7.15     -0.01      0.00      0.00    702.43
+ large LJ energy for atom: A:GLN_787:_NE2        1218.85833247968     
+ A:GLN_787         0.23      0.66      5.58    -59.70   2481.23     -2.46      0.00     -6.90     -0.41     -0.05     -0.59   2417.58
+ A:LEU_788         0.66      1.23      6.32    -29.07      1.19      1.08      0.00    -10.25     -0.23      0.00      0.00    -29.06
+ A:ILE_789         0.18      1.17      8.61    -31.61     12.01      0.62      0.00    -14.05     -0.32      0.00      0.00    -23.39
+ A:THR_790         1.71      1.44      0.90    -28.05      3.32      1.14      0.00     -6.98     -0.23      0.00     -3.48    -30.24
+ A:GLN_791         0.63      0.67      0.52    -62.60     -1.94      1.42      0.00     -6.51     -1.35     -0.00     -0.01    -69.16
+ A:LEU_792         0.23      1.53      3.07    -22.07     -6.75     -2.05      0.00     -9.54     -0.13      0.00      0.00    -35.72
+ A:MET_793         0.68      0.79      9.98    -17.98     -5.63     -0.78      0.00     -9.29     -0.53      0.00      0.00    -22.76
+ A:PRO_794         1.63      8.19     10.12    -15.51     -1.29     -1.06      0.00     -5.94     -0.00      0.00      0.00     -3.86
+ A:PHE_795         1.28      0.46      1.45    -28.24      3.10     -1.20      0.00     -8.02     -0.13     -0.00      0.00    -31.31
+ A:GLY_796         0.16      0.77     -1.37    -35.30     -2.09      1.07      0.00     -2.40     -0.25      0.00      0.00    -39.40
+ A:CYS_797         0.49      5.45     -0.85    -24.40     -3.28     -1.62      0.00     -3.91     -0.23      0.00      0.00    -28.36
+ A:LEU_798         0.36      2.66      2.93    -24.71     -4.66      0.42      0.00    -13.93     -0.28      0.00      0.00    -37.22
+ A:LEU_799         0.62      3.51      3.54    -25.86     -3.89     -0.51      0.00     -8.80     -0.23      0.00      0.00    -31.62
+ A:ASP_800         1.76      0.48     -0.75    -34.40      0.91    -26.40      0.00     -3.98     -0.21      0.00      0.00    -62.59
+ A:TYR_801         1.62      0.89      1.71    -36.99      0.70     -3.32      0.00    -10.34     -0.34     -0.09      0.00    -46.14
+ A:VAL_802         0.25      1.72      3.89    -25.87     -1.12     -2.29      0.00    -10.32     -0.23      0.00      0.00    -33.97
+ A:ARG_803         0.51      0.81      6.66    -45.57     -2.91    -17.43      0.00     -6.31     -0.68      0.00      0.00    -64.92
+ A:GLU_804         0.39      1.57      5.24    -24.79     -1.21    -36.04      0.00     -2.88     -0.14      0.00      0.00    -57.87
+ A:HID_805         1.97      9.87      2.58    -35.87      4.18     -2.74      0.00     -3.78     -0.36     -0.07      0.00    -24.24
+ A:LYS_806         0.60      0.89      1.49    -29.58      1.08     -8.70      0.00      0.00     -0.20      0.00      0.00    -34.42
+ A:ASP_807         0.57      2.20     -3.97    -23.53      4.65    -36.61      0.00     -0.79     -0.00      0.00      0.00    -57.50
+ A:ASN_808         0.51      1.43     -2.73    -65.20      3.13     -3.82      0.00     -1.56     -0.13     -0.00     -4.69    -73.06
+ A:ILE_809         0.47      1.99      9.66    -23.54      2.31     -2.23      0.00     -8.59     -0.09      0.00      0.00    -20.01
+ A:GLY_810         0.19      1.16     -1.45    -33.51     -1.72      1.00      0.00     -1.94     -0.19      0.00      0.00    -36.45
+ A:SER_811         0.39      1.36      2.78    -27.95     -1.50      2.26      0.00     -5.79     -0.61      0.00     -3.03    -32.08
+ A:GLN_812         0.43      1.15      4.12    -63.27     -1.01     -3.59      0.00     -4.05     -0.30     -0.06      0.00    -66.57
+ A:TYR_813         2.88      1.32      3.26    -40.29      4.95      0.03      0.00     -8.03     -0.27     -0.01      0.00    -36.17
+ A:LEU_814         0.23      1.05      5.24    -28.05     -3.33      1.55      0.00    -14.00     -0.25      0.00      0.00    -37.55
+ A:LEU_815         0.24      1.62      4.84    -31.09     -5.58      1.18      0.00    -13.70     -0.29      0.00      0.00    -42.79
+ A:ASN_816         0.33      1.23      0.37    -63.14      6.59     -1.53      0.00     -3.47     -0.33     -0.06     -4.68    -64.68
+ A:TRP_817         3.33      3.52      1.22    -43.45      3.01      3.17      0.00    -15.21     -0.39     -0.02      0.00    -44.82
+ A:CYS_818         0.40      3.08      4.13    -31.20     -2.47      0.27      0.00     -5.39     -0.28      0.00      0.00    -31.48
+ A:VAL_819         0.58      1.18      3.35    -26.72      1.84      1.17      0.00     -7.33     -0.30      0.00      0.00    -26.22
+ A:GLN_820         0.72      0.98      3.34    -75.08     -1.23     -0.71      0.00     -5.22     -0.55     -0.24     -0.01    -78.00
+ A:ILE_821         0.42      1.72      7.83    -28.93      2.83      0.98      0.00    -11.38     -0.28      0.00      0.00    -26.81
+ A:ALA_822         0.21      0.34      2.86    -35.17     -1.01     -0.07      0.00     -6.04     -0.30      0.00      0.00    -39.19
+ A:LYS_823         0.66      1.30      2.90    -24.51     -0.41    -23.07      0.00      0.00     -0.29      0.00      0.00    -43.43
+ A:GLY_824         0.07      0.25      0.58    -34.93      3.77     -0.78      0.00     -2.81     -0.29      0.00      0.00    -34.14
+ A:MET_825         0.84      0.77      6.10    -31.19     -2.42     -1.70      0.00    -15.36     -0.30      0.00      0.00    -43.25
+ A:ASN_826         1.10      0.60      0.84    -67.51      2.52     -2.72      0.00     -3.98     -0.32     -0.00     -0.06    -69.53
+ A:TYR_827         1.27      0.77      1.72    -38.44      4.04     -2.58      0.00     -8.81     -0.38     -0.42      0.00    -42.85
+ A:LEU_828         0.49      2.67      4.59    -29.61     -2.72      0.55      0.00    -13.05     -0.33      0.00      0.00    -37.42
+ A:GLU_829         1.25      2.81      8.71    -35.33     -0.05    -21.86      0.00     -3.93     -1.21      0.00      0.00    -49.60
+ A:ASP_830         0.45      1.44     -1.47    -33.79      7.84    -29.07      0.00     -2.11     -0.22      0.00      0.00    -56.92
+ A:ARG_831         0.35      1.81      8.24    -52.92      4.27    -13.30      0.00     -6.81     -0.54     -0.05      0.00    -58.94
+ A:ARG_832         0.67      1.56      8.34    -52.37    536.53     -9.69      0.00     -6.34     -0.90      0.00      0.00    477.80
+ A:LEU_833         0.38      2.08      5.32    -26.64      2.23      0.14      0.00    -12.81     -0.12      0.00      0.00    -29.42
+ A:VAL_834         0.43      1.41      3.68    -26.72     -0.46     -0.09      0.00     -7.08     -0.25      0.00      0.00    -29.07
+ A:HID_835         0.81      8.62      3.20    -14.40     -6.64     -1.80      0.00     -7.03     -0.51     -0.05      0.00    -17.79
+ A:ARG_836         0.72      2.20      6.14    -33.03     -2.42    -20.73      0.00    -10.26     -0.88     -0.13      0.00    -58.40
+ A:ASP_837         0.41      1.31      2.05    -36.33      3.94    -17.36      0.00     -3.14     -1.42      0.00      0.00    -50.54
+ A:LEU_838         0.20      1.37      3.27    -23.55     -4.51      0.57      0.00    -11.31     -0.13      0.00      0.00    -34.08
+ A:ALA_839         0.20      0.57      2.31    -30.93      0.56     -0.04      0.00     -5.23     -0.10      0.00      0.00    -32.65
+ A:ALA_840         0.32      0.92      1.72    -31.81     -0.99     -0.22      0.00     -6.25     -0.63      0.00      0.00    -36.94
+ A:ARG_841         0.29      1.42      6.75    -40.70     -0.01    -20.05      0.00     -6.16     -1.13     -0.98      0.00    -60.57
+ A:ASN_842         0.27      0.96     -0.32    -64.75     -0.01     -1.34      0.00     -4.21     -0.53     -0.37     -4.55    -74.85
+ A:VAL_843         0.21      1.22      3.69    -29.13     -3.28      0.22      0.00    -10.05     -0.25      0.00      0.00    -37.38
+ A:LEU_844         0.59      1.55      5.02    -30.24     -3.71      1.75      0.00    -10.28     -0.25      0.00      0.00    -35.56
+ A:VAL_845         0.62      1.02      3.78    -27.36     -4.70      0.47      0.00    -10.17     -0.24      0.00      0.00    -36.57
+ A:LYS_846         0.70      1.43      3.41    -33.04     -2.83     -9.40      0.00      0.00     -1.14      0.00      0.00    -40.86
+ A:THR_847         0.64      1.37      2.50    -22.59      4.48      0.33      0.00     -4.34     -0.32      0.00     -4.21    -22.13
+ A:PRO_848         1.34      6.30      7.61    -14.96     -0.30      0.74      0.00     -6.47     -0.11      0.00      0.00     -5.86
+ A:GLN_849         0.82      2.11      2.23    -68.89      1.97     -1.03      0.00     -3.12     -0.24     -0.00     -0.26    -66.40
+ A:HID_850         0.93      8.87      3.09    -35.72     -3.22     -1.75      0.00     -3.12     -0.34     -0.15      0.00    -31.40
+ A:VAL_851         0.11      1.21      3.83    -27.25     -1.86      0.00      0.00     -8.68     -0.24      0.00      0.00    -32.87
+ A:LYS_852         0.38      0.92      3.86    -41.19     -4.99     -7.98      0.00      0.00     -2.04      0.00      0.00    -51.04
+ A:ILE_853         0.41      1.24      7.56    -30.72      1.63      0.33      0.00    -11.74     -0.21      0.00      0.00    -31.52
+ A:THR_854         0.36      0.71     -4.28    -16.67      2.82     -0.42      0.00     -5.93     -0.20      0.00     -2.20    -25.80
+ A:ASP_855         0.54      1.03      4.46    -17.44      0.94    -27.31      0.00     -2.51     -0.38      0.00      0.00    -40.65
+ A:PHE_856         1.28      0.48      1.67    -26.55      0.37      0.37      0.00    -12.09     -0.27     -0.05      0.00    -34.79
+ A:GLY_857         0.34      0.82     -0.78    -29.69      2.36     -0.43      0.00     -1.30     -0.28      0.00      0.00    -28.95
+ A:LEU_858         0.59      1.41      4.97    -29.87      5.58      2.51      0.00     -5.46     -0.36      0.00      0.00    -20.64
+ A:ALA_859         0.21      0.32      1.88    -30.64      5.54     -1.57      0.00     -4.53     -0.16      0.00      0.00    -28.95
+ A:LYS_860         0.39      1.12      7.09    -30.62      2.18    -11.83      0.00      0.00     -0.30      0.00      0.00    -31.97
+ A:LEU_861         0.90      2.29      5.88    -22.76     -4.38     -2.44      0.00     -6.65     -0.00      0.00      0.00    -27.15
+ A:LEU_862         0.63      6.92      8.82    -23.60    545.04     -1.53      0.00     -6.98     -0.09      0.00      0.00    529.21
+ A:GLY_863         0.04      0.39      0.92    -25.94      3.59     -2.57      0.00     -0.64      0.00      0.00      0.00    -24.21
+ A:ALA_864         1.46     17.30      4.69    -25.55      3.90     -1.63      0.00     -0.99     -0.08      0.00      0.00     -0.89
+ A:GLU_865         0.11      3.22      5.82    -16.34      5.16    -39.32      0.00     -1.12     -0.00      0.00      0.00    -42.47
+ large LJ energy for atom: A:GLU_866:_OE2        2428.37443928041     
+ A:GLU_866         0.22      3.04      2.24     -8.93   2481.66    -31.83      0.00     -2.94     -1.09      0.00      0.00   2442.37
+ A:LYS_867         1.54      1.74      0.61    -34.59     -2.50     -6.72      0.00      0.00     -0.18      0.00      0.00    -40.10
+ large LJ energy for atom: A:GLU_868:_OE2        1634.38997201288     
+ A:GLU_868         1.76      1.70      5.02     -6.90   2476.06    -35.82      0.00     -4.38     -0.37      0.00      0.00   2437.08
+ A:TYR_869         1.10      0.87      1.73    -34.01      0.23     -0.93      0.00     -5.72     -0.18     -0.06      0.00    -36.97
+ A:HID_870         1.14      8.81      3.04    -28.48     -3.48     -5.30      0.00     -3.20     -0.01     -0.05      0.00    -27.53
+ A:ALA_871         1.64      1.92      3.17    -26.09      1.00     -1.86      0.00     -3.47     -0.43      0.00      0.00    -24.13
+ A:GLU_872         0.31      3.15      4.78    -24.78      0.22    -30.50      0.00     -1.05     -0.01      0.00      0.00    -47.90
+ A:GLY_873        31.42     14.55     -1.18    -27.12     -1.02     -4.10      0.00     -1.05     -0.00      0.00      0.00     11.50
+ A:GLY_874         0.04      0.26     -1.07    -25.52      2.61     -1.17      0.00     -0.25     -0.02      0.00      0.00    -25.13
+ A:LYS_875         0.15      2.61      0.52     -9.45      0.99    -27.65      0.00      0.00     -0.00      0.00      0.00    -32.82
+ A:VAL_876         0.62      2.45      5.39    -14.93      3.52     -1.55      0.00     -5.42     -0.03      0.00      0.00     -9.95
+ A:PRO_877         1.04      7.73     16.95    -13.64      1.41      0.67      0.00     -5.75     -0.10      0.00      0.00      8.31
+ A:ILE_878         0.45      2.28     11.86    -18.00     16.52     -0.87      0.00     -8.26     -0.13      0.00      0.00      3.87
+ A:LYS_879         0.21      0.64      4.47    -21.20     -1.37    -19.07      0.00      0.00     -0.79      0.00      0.00    -37.11
+ A:TRP_880         1.48      3.11      1.63    -34.96     -4.84      2.24      0.00     -9.72     -0.50     -0.98      0.00    -42.55
+ A:MET_881         0.31      1.69      4.58    -28.53     -6.12     -0.96      0.00    -12.49     -0.12      0.00      0.00    -41.65
+ A:ALA_882         0.16      0.53      1.66    -30.30     -0.44      1.29      0.00     -5.01     -0.19      0.00      0.00    -32.31
+ A:LEU_883         0.21      1.41      3.66    -25.80      2.09      0.61      0.00    -10.93     -0.16      0.00      0.00    -28.91
+ A:GLU_884         0.69      2.18      6.26    -45.57      6.49    -16.63      0.00     -5.22     -1.68      0.00      0.00    -53.49
+ A:SER_885         0.32      0.54      6.39    -23.84      0.47     -2.76      0.00     -6.02     -0.34      0.00     -3.67    -28.90
+ A:ILE_886         0.21      1.41      8.75    -22.09      2.23     -1.76      0.00    -10.99     -0.16      0.00      0.00    -22.41
+ A:LEU_887         0.33      4.09      5.48    -26.94     -3.02     -2.08      0.00     -6.59     -0.15      0.00      0.00    -28.88
+ A:HID_888         1.23      9.21      3.65    -27.91     -0.16     -6.57      0.00     -3.72     -0.16      0.00      0.00    -24.43
+ A:ARG_889         0.20      1.42      7.04    -49.00      3.99    -16.06      0.00     -5.32     -0.54     -0.04      0.00    -58.30
+ A:ILE_890         0.94      1.80     10.57    -23.31     -0.23      1.79      0.00     -7.54     -0.04      0.00      0.00    -16.02
+ A:TYR_891         0.83      1.93      3.52    -37.25     -4.51     -0.94      0.00    -11.45     -0.28     -0.15      0.00    -48.30
+ A:THR_892         0.55      0.74      0.54    -28.89      3.67      1.30      0.00     -5.02     -0.35      0.00     -4.57    -32.03
+ A:HID_893         0.59      8.73      3.69    -23.67     -3.86     -1.31      0.00     -5.35     -0.14      0.00      0.00    -21.32
+ A:GLN_894         0.30      0.75      5.07    -73.57     -0.92      0.88      0.00     -5.27     -0.65     -0.00     -1.52    -74.92
+ A:SER_895         0.39      0.46     -1.32    -15.26     -0.75     -0.60      0.00     -4.04     -0.45      0.00     -2.37    -23.95
+ A:ASP_896         1.55      1.38     -2.58    -42.53     -3.78    -15.09      0.00     -4.61     -1.49      0.00      0.00    -67.15
+ A:VAL_897         0.17      1.24      2.83    -30.12      1.71      0.97      0.00     -9.86     -0.29      0.00      0.00    -33.35
+ A:TRP_898         2.11      3.42      1.28    -41.05      3.95      3.80      0.00    -13.95     -0.37     -0.69      0.00    -41.50
+ A:SER_899         0.49      0.66      7.70    -31.33     -0.49      0.41      0.00     -4.64     -0.34      0.00     -1.44    -28.97
+ A:TYR_900         1.45      0.75      0.46    -33.14      0.27      1.38      0.00    -12.51     -0.31     -0.27      0.00    -41.92
+ A:GLY_901         0.12      0.22      0.62    -33.11     -1.24     -0.31      0.00     -2.88     -0.33      0.00      0.00    -36.91
+ A:VAL_902         0.52      1.21      2.89    -31.06     -1.36      1.07      0.00     -9.21     -0.26      0.00      0.00    -36.19
+ A:THR_903         0.49      0.69      4.27    -28.93      1.02      1.00      0.00     -8.33     -0.30      0.00     -3.50    -33.60
+ A:VAL_904         0.46      1.42      3.18    -24.44      4.34      0.07      0.00    -10.12     -0.30      0.00      0.00    -25.38
+ A:TRP_905         2.75      3.52      1.02    -38.36     -6.22      1.36      0.00    -17.49     -0.41     -0.00      0.00    -53.82
+ A:GLU_906         0.70      1.97      8.69    -43.42     -4.30    -10.09      0.00     -7.18     -1.16      0.00      0.00    -54.78
+ A:LEU_907         0.27      2.16      4.86    -28.52     -2.75     -1.69      0.00    -12.18     -0.26      0.00      0.00    -38.11
+ A:MET_908         0.74      1.49      5.82    -32.80     -4.35     -2.65      0.00    -16.86     -0.16      0.00      0.00    -48.79
+ A:THR_909         0.64      1.32      0.03    -27.41      2.63     -0.51      0.00     -6.38     -0.34      0.00     -3.36    -33.38
+ A:PHE_910         1.48      0.93      2.22    -26.88      0.03     -1.05      0.00     -7.25     -0.13      0.00      0.00    -30.64
+ A:GLY_911         0.21      1.29      0.04    -38.36      1.53      0.44      0.00     -2.46     -0.57      0.00      0.00    -37.89
+ A:SER_912         0.48      0.49      4.64    -21.92      2.25     -0.91      0.00     -2.17     -0.17      0.00     -3.50    -20.81
+ A:LYS_913         0.37      1.33      5.14     -1.77     -0.25    -26.67      0.00      0.00     -0.03      0.00      0.00    -21.88
+ A:PRO_914         1.39      7.82      5.11    -16.93      2.70      1.60      0.00     -7.65     -0.23      0.00      0.00     -6.17
+ A:TYR_915         1.10      1.54      4.47    -34.62      7.50      4.07      0.00     -9.78     -0.28     -0.00      0.00    -26.01
+ A:ASP_916         0.31      1.31      0.61    -41.19      6.32    -21.81      0.00     -1.05     -0.17      0.00      0.00    -55.67
+ A:GLY_917         0.09      0.67      0.69    -24.69      2.31     -4.75      0.00     -0.66     -0.15      0.00      0.00    -26.49
+ A:ILE_918         0.83      1.95     10.00    -15.92      1.38      0.51      0.00     -6.32     -0.32      0.00      0.00     -7.90
+ A:PRO_919         1.17      5.32      4.76    -11.29     -0.09     -0.45      0.00     -4.29     -0.09      0.00      0.00     -4.95
+ A:ALA_920         0.20      0.38      2.35    -28.51     14.04     -2.14      0.00     -3.50     -0.12      0.00      0.00    -17.31
+ A:SER_921         0.28      0.45     10.05    -31.69      5.90     -1.82      0.00     -1.95     -0.06      0.00     -1.50    -20.34
+ A:GLU_922         0.71      1.17      4.14    -33.61     -1.02    -24.68      0.00     -4.04     -0.20      0.00      0.00    -57.53
+ A:ILE_923         0.37      1.95      9.03    -28.55      7.89     -0.52      0.00    -10.17     -0.30      0.00      0.00    -20.31
+ A:SER_924         0.38      0.47      0.98    -22.69     14.08     -0.99      0.00     -4.49     -0.21      0.00     -4.79    -17.26
+ A:SER_925         0.61      0.48     -1.30    -16.37      3.83     -2.51      0.00     -2.40     -0.20      0.00     -2.36    -20.23
+ A:ILE_926         0.33      1.58      9.46    -23.37      7.35     -1.41      0.00     -7.31     -0.34      0.00      0.00    -13.72
+ A:LEU_927         0.14      2.35      4.31    -29.53     -2.33     -0.89      0.00    -10.12     -0.58      0.00      0.00    -36.67
+ A:GLU_928         0.34      1.66      8.47    -26.60      7.95    -31.10      0.00     -3.92     -0.15      0.00      0.00    -43.35
+ A:LYS_929         0.82      1.34      3.00    -33.92     -0.81    -12.38      0.00      0.00     -0.15      0.00      0.00    -42.11
+ A:GLY_930         0.40      1.51     -0.17    -30.52      0.10     -1.10      0.00     -0.68     -0.15      0.00      0.00    -30.61
+ A:GLU_931         0.30      1.71      4.06    -29.87      6.39    -23.70      0.00     -3.23     -0.44      0.00      0.00    -44.79
+ A:ARG_932         1.31      1.47      6.69    -53.02      0.19    -11.81      0.00     -7.96     -1.17     -0.06      0.00    -64.37
+ A:LEU_933         0.26      2.11      5.69    -12.47     -0.80     -0.61      0.00    -12.11     -0.00      0.00      0.00    -17.95
+ A:PRO_934         0.88      8.00      3.03    -16.50      1.28      2.15      0.00     -3.89     -0.12      0.00      0.00     -5.17
+ A:GLN_935         0.24      1.47      3.05    -49.16     -0.67     -5.30      0.00     -5.01     -0.12     -0.35     -0.01    -55.86
+ A:PRO_936         0.88      7.29      7.67     -6.41      0.13     -0.83      0.00    -10.39     -0.12      0.00      0.00     -1.77
+ A:PRO_937         1.30      8.14      4.05    -12.29      3.06     -2.30      0.00     -2.94     -0.01      0.00      0.00     -1.00
+ A:ILE_938         0.63      2.44     10.58    -27.78     -3.25      0.57      0.00    -11.60     -0.13      0.00      0.00    -28.53
+ A:CYS_939         0.59      4.47      3.83    -34.84     -3.57     -1.18      0.00     -5.85     -0.25      0.00      0.00    -36.80
+ A:THR_940         0.85      1.52      0.08    -24.24      6.07      2.75      0.00     -4.54     -0.40      0.00     -3.20    -21.12
+ A:ILE_941         0.77      1.60      8.35    -20.19     10.97     -0.42      0.00     -4.70     -0.14      0.00      0.00     -3.77
+ A:ASP_942         1.23      1.58     -2.67    -39.95     -0.89    -20.81      0.00     -4.14     -0.13      0.00      0.00    -65.78
+ A:VAL_943         0.58      1.34      3.16    -29.92      0.24      0.77      0.00    -11.45     -0.26      0.00      0.00    -35.54
+ A:TYR_944         1.75      1.04      1.04    -34.88      3.97      1.72      0.00    -11.43     -0.32     -0.71      0.00    -37.81
+ A:MET_945         0.39      0.88      4.40    -32.21      7.15     -0.97      0.00     -5.83     -0.28      0.00      0.00    -26.47
+ A:ILE_946         0.62      1.73      8.15    -26.04      3.99      0.15      0.00     -8.38     -0.26      0.00      0.00    -20.05
+ A:MET_947         0.35      1.03      4.94    -31.27     -4.13      0.99      0.00    -14.95     -0.23      0.00      0.00    -43.27
+ A:VAL_948         0.26      1.15      2.89    -28.63      3.64      0.30      0.00     -5.99     -0.26      0.00      0.00    -26.64
+ A:LYS_949         0.82      2.09      7.06    -31.71      1.05    -13.59      0.00      0.00     -0.25      0.00      0.00    -34.52
+ A:CYS_950         0.36      5.28      3.00    -33.04     -5.20     -0.07      0.00     -5.44     -0.18      0.00      0.00    -35.29
+ A:TRP_951         1.66      3.80      0.57    -36.96     -8.85      1.50      0.00    -15.66     -0.68     -0.10      0.00    -54.71
+ A:MET_952         1.02      1.30      5.60    -31.13     11.04      1.34      0.00     -6.11     -0.24      0.00      0.00    -17.19
+ A:ILE_953         0.47      1.64      7.87    -22.39     14.46     -0.36      0.00     -4.17     -0.05      0.00      0.00     -2.54
+ A:ASP_954         0.46      1.55      0.95    -26.42      4.28    -32.73      0.00     -2.46     -0.44      0.00      0.00    -54.80
+ A:ALA_955         0.54      1.41      2.18    -31.46      0.07     -0.05      0.00     -3.42     -0.24      0.00      0.00    -30.97
+ A:ASP_956         0.45      0.84     -4.59    -26.38      0.84    -38.39      0.00     -1.50     -0.27      0.00      0.00    -69.00
+ A:SER_957         0.27      0.72      4.43    -23.96      1.91     -4.36      0.00     -3.16     -0.16      0.00     -4.29    -28.58
+ A:ARG_958         0.81      2.73     10.27    -38.66      8.77    -13.17      0.00    -11.01     -1.88     -0.31      0.00    -42.46
+ A:PRO_959         1.18      7.69      9.73    -15.34     -2.73      0.78      0.00     -6.06     -0.12      0.00      0.00     -4.86
+ A:LYS_960         0.45      1.07      6.36    -37.84      4.94     -5.93      0.00      0.00     -1.53      0.00      0.00    -32.49
+ A:PHE_961         2.64      0.53      2.45    -30.96      4.12      2.58      0.00    -13.07     -0.20     -0.24      0.00    -32.14
+ A:ARG_962         0.54      1.64      7.92    -26.21      3.31    -27.24      0.00     -4.50     -0.12      0.00      0.00    -44.67
+ A:GLU_963         0.22      1.01      7.62    -40.25      1.12    -19.72      0.00     -4.78     -0.63      0.00      0.00    -55.41
+ A:LEU_964         0.44      1.37      4.56    -31.95     -0.37     -0.09      0.00    -11.56     -0.29      0.00      0.00    -37.88
+ A:ILE_965         0.29      1.80      8.19    -27.68      3.53     -0.24      0.00     -7.59     -0.25      0.00      0.00    -21.95
+ A:ILE_966         0.34      1.46      8.61    -27.31      7.92      0.39      0.00     -5.12     -0.25      0.00      0.00    -13.96
+ A:GLU_967         0.41      2.98      6.14    -47.28     -1.52    -13.90      0.00     -4.73     -0.53      0.00      0.00    -58.42
+ A:PHE_968         2.36      1.24      3.14    -37.22     -1.09      0.35      0.00    -13.07     -0.26     -0.00      0.00    -44.55
+ A:SER_969         0.97      1.13      5.49    -23.51      1.70     -1.80      0.00     -3.06     -0.17      0.00     -4.49    -23.74
+ A:LYS_970         0.71      0.71      7.85    -25.13      2.93    -17.06      0.00      0.00     -0.52      0.00      0.00    -30.51
+ A:MET_971         0.65      1.94      5.57    -30.73     -5.19     -1.62      0.00    -13.96     -0.27      0.00      0.00    -43.61
+ A:ALA_972         1.08      1.56      1.44    -34.38     -0.74     -1.58      0.00     -4.43     -0.25      0.00      0.00    -37.30
+ A:ARG_973         0.74      1.53      5.97    -28.84      2.96    -31.91      0.00     -2.31     -0.14      0.00      0.00    -52.00
+ A:ASP_974         0.26      1.04      6.04    -31.70      3.86    -22.69      0.00     -2.77     -0.36      0.00      0.00    -46.33
+ A:PRO_975         1.21      5.45     12.24    -16.47     -3.00      0.81      0.00     -7.32     -0.24      0.00      0.00     -7.32
+ A:GLN_976         1.02      1.02      2.83    -59.33      0.95     -7.23      0.00     -3.09     -0.07      0.00     -0.01    -63.92
+ A:ARG_977         0.83      0.90      5.44    -45.36      3.15    -17.54      0.00     -4.67     -0.17     -0.15      0.00    -57.57
+ A:TYR_978         0.87      1.91      3.90    -33.88     -0.58     -0.52      0.00    -12.65     -0.22     -0.23      0.00    -41.40
+ A:LEU_979         0.49      2.12      4.80    -27.05     -5.27     -0.67      0.00    -14.66     -0.13      0.00      0.00    -40.36
+ A:VAL_980         0.35      1.42      4.09    -25.45      3.57      1.14      0.00     -3.28     -0.12      0.00      0.00    -18.29
+ A:ILE_981         0.32      1.74      9.17    -23.10      3.40      0.34      0.00     -8.53     -0.09      0.00      0.00    -16.75
+ A:GLN_982         1.28      1.70      1.23    -59.74      4.24     -8.17      0.00     -1.03     -0.00      0.00     -2.39    -62.88
+ A:GLY_983         0.38      0.11      1.80    -22.42     14.71     -1.92      0.00     -0.55     -0.00      0.00      0.00     -7.88
+ A:ASP_984         1.45      3.27      0.04    -11.42     11.49    -22.34      0.00     -1.52     -0.55      0.00      0.00    -19.59
+ A:ASP_1008        0.93      1.60      4.35     -9.55      2.46    -37.89      0.00     -0.90     -0.04      0.00      0.00    -39.04
+ A:ASP_1009        0.64      0.82     -3.17    -40.78      0.82    -26.73      0.00     -1.63     -0.09      0.00      0.00    -70.14
+ A:VAL_1010        0.11      1.21      2.50    -22.26      4.80     -5.15      0.00     -3.63     -0.04      0.00      0.00    -22.46
+ A:VAL_1011        0.25      2.05      3.85    -24.26      2.21      2.04      0.00     -6.21     -0.11      0.00      0.00    -20.17
+ A:ASP_1012        0.90      0.38      1.78    -33.74      4.11    -22.11      0.00     -3.07     -1.21      0.00      0.00    -52.95
+ A:ALA_1013        0.35      1.17      1.93    -22.52      1.87     -2.27      0.00     -4.80     -0.29      0.00      0.00    -24.56
+ A:ASP_1014        0.44      0.86     -4.20    -47.30      0.72    -17.20      0.00     -2.28     -4.43      0.00      0.00    -73.39
+ A:GLU_1015        0.29      1.36      5.16    -30.01      2.24    -28.64      0.00     -3.03     -0.17      0.00      0.00    -52.80
+ A:TYR_1016        2.67      1.23      1.98    -26.63      9.12     -1.11      0.00     -8.47     -0.36     -0.13      0.00    -21.72
+ A:LEU_1017        0.55      2.76      4.55     -6.44     -0.56     -0.03      0.00     -1.60     -0.03      0.00      0.00     -0.81
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      359.570663      680.310005     1248.494469     2288.375137
+     SGB    20461.009392    -8316.253617    -7384.108531     4760.647244
+   TOTAL    20820.580055    -7635.943612    -6135.614062     7049.022381
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     2310.172253 14152473.719457     -128.735290 14154655.156421
+    LIPO        0.000000    -1695.101375        0.000000    -1695.101375
+      EL     8683.789388   -17957.183221      187.739090    -9085.654743
+     SGB    -7384.108531     8344.879344     -156.335623      804.435190
+   TOTAL     3609.853111 14141166.314205      -97.331823 14144678.835493
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14651.513803
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -100.995644
+ PACKING       -8.075211
+SelfCont     -100.472202
+ 
+ SUM:
+ SGB TOT    -1702.322837
+SOLV TOT    -1702.322837
+LIPO TOT    -1695.101375
+  TOTALE   14144250.90954    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ Preparing for first energy calculation ...
+ 
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV      359.570663      680.310005     1248.494469     2288.375137
+     SGB    20461.009392    -8316.253617    -7384.108531     4760.647244
+   TOTAL    20820.580055    -7635.943612    -6135.614062     7049.022381
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     2310.172253 14152473.719457     -128.735290 14154655.156421
+    LIPO        0.000000    -1695.101375        0.000000    -1695.101375
+      EL     8683.789388   -17957.183221      187.739090    -9085.654743
+     SGB    -7384.108531     8344.879344     -156.335623      804.435190
+   TOTAL     3609.853111 14141166.314205      -97.331823 14144678.835493
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -14651.513803
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -100.995644
+ PACKING       -8.075211
+SelfCont     -100.472202
+ 
+ SUM:
+ SGB TOT    -1702.322837
+SOLV TOT    -1702.322837
+LIPO TOT    -1695.101375
+  TOTALE   14144250.90954    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ ATTN:  large bond energies found:
+      37      5 A:YY3_1101:_C8_          8 A:YY3_1101:_C9_         12.44
+      74     71 A:HOH_1201:_OW_         72 A:HOH_1201:_HW1         10.00
+      75     71 A:HOH_1201:_OW_         73 A:HOH_1201:_HW2         10.00
+      76     74 A:HOH_1202:_OW_         75 A:HOH_1202:_HW1         10.00
+      77     74 A:HOH_1202:_OW_         76 A:HOH_1202:_HW2         10.00
+      78     77 A:HOH_1203:_OW_         78 A:HOH_1203:_HW1         10.00
+      79     77 A:HOH_1203:_OW_         79 A:HOH_1203:_HW2         10.00
+      80     80 A:HOH_1204:_OW_         81 A:HOH_1204:_HW1         10.00
+      81     80 A:HOH_1204:_OW_         82 A:HOH_1204:_HW2         10.00
+     974    967 A:THR_751:_CA_         969 A:THR_751:_C__           9.06
+     998    990 A:PRO_753:_N__        1001 A:PRO_753:_CD_           7.31
+    2985   2955 A:GLY_873:_N__        2957 A:GLY_873:_CA_          18.75
+    2987   2957 A:GLY_873:_CA_        2960 A:GLY_873:_C__          12.66
+ 
+ ATTN:  large angle energies found:
+ #,atoms,energy,angle,eq
+    1800 A:SER_752:_C__ A:PRO_753:_N__ A:PRO_753:_CD_   11.1   94.9  121.9
+    1805 A:PRO_753:_N__ A:PRO_753:_CD_ A:PRO_753:_HD2    8.9  138.4  109.5
+    1806 A:PRO_753:_N__ A:PRO_753:_CD_ A:PRO_753:_HD3   12.0   76.0  109.5
+    5120 A:ALA_864:_N__ A:ALA_864:_CA_ A:ALA_864:_C__   12.3  135.4  110.1
+    5386 A:GLY_873:_N__ A:GLY_873:_CA_ A:GLY_873:_C__   11.7  134.8  110.1
+ 
+ ATTN:  large 14 energies found:
+    1331 A:THR_725:_C__      A:THR_725:_OG1           5.67    -21.77     20.38
+    2546 A:SER_752:_C__      A:PRO_753:_HD3         238.05      3.09     -2.69
+    3805 A:THR_783:_C__      A:SER_784:_C__           8.99     15.33    -15.94
+    5208 A:ASN_816:_C__      A:TRP_817:_C__           5.73     14.81     -9.93
+    9419 A:PRO_914:_C__      A:TYR_915:_C__           5.33     14.73    -12.86
+   12435 A:GLY_983:_C__      A:ASP_984:_C__           5.64      5.46     -7.22
+ 
+ Now report atom based SASA 
+ (written to output structure)
+        Total Area: 14970.31
+ End of SASA report
+ TOTAL TIME ELAPSED: 4zau-missing-loops_0         102.040s
+ RETURNED LICENSE
+Post-processing output...
+  Processing output structure #1
+Post-processing complete.
+
+
