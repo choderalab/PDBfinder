@@ -60,9 +60,11 @@ def protein_prep(input_file_path, output_file_path, pdbid, pH=7.4, fillsidechain
     wiz_args['fillsidechains'] = '-fillsidechains' if fillsidechains else ''
     wiz_args['fillloops'] = '-fillloops' if fillloops else ''
     wiz_args['pht'] = tolerance
+    wiz_args['rehtreat'] = '-rehtreat' if rehtreat else ''
+    wiz_args['water_hbond_cutoff'] = 3
 
     cmd = [prepwiz_path]
-    cmd += '-captermini -mse -propka_pH {ph} {fillsidechains} {fillloops} -keepfarwat -disulfides -ms {ms} -minimize_adj_h -epik_pH {ph} -epik_pHt {pht} -fix -NOJOBID'.format(**wiz_args).split()
+    cmd += '-captermini -mse -propka_pH {ph} {fillsidechains} {fillloops} {rehtreat} -delwater_hbond_cutoff {water_hbond_cutoff} -keepfarwat -disulfides -ms {ms} -minimize_adj_h -epik_pH {ph} -epik_pHt {pht} -fix -NOJOBID'.format(**wiz_args).split()
     cmd.append(input_file_path)
     cmd.append(output_file_name)
 
