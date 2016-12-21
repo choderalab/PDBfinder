@@ -29,9 +29,9 @@ in that script. Briefly:
     * 4G5P, 4WKQ, 4XE0, 4ZAU had missing loops longer than 20 residues, so were ommited
     * Small organic molecules, such as DMSO, were automatically deleted
     * The `amber99sbildn`, `gaff`, and `TIP3P` forcefields were used
-* The minimized structures are located in the `explicit_water_minimized/` directories.
+* The minimized structures are located in the `pdbs/*/explicit_water_minimized/` directories.
 
-The following structures have been ommitied from refinement with
+The following structures have been omitted from refinement with
 `OpenMM` due to tricky structures, which do not work with `MCCE`:
 * 4AN2 and 4LMN have cobimetinib bound with ATP and a metal ion
 * 3CJG has (presumably) post translation modifications to protein without `CONECT` records
