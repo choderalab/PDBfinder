@@ -5,6 +5,8 @@ from openmoltools.forcefield_generators import gaffTemplateGenerator
 from glob import glob
 import os
 
+# Written by G. A. Ross
+
 #------Functions used to clean and minimizing with openmm------#
 def discard_organic(model, verbose=True):
     """
