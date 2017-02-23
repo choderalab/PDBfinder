@@ -31,14 +31,18 @@ in that script. Briefly:
     * The `amber99sbildn`, `gaff`, and `TIP3P` forcefields were used
 * The minimized structures are located in the `pdbs/*/explicit_water_minimized/` directories.
 
-The following structures have been omitted from refinement with
-`OpenMM` due to tricky structures, which do not work with `MCCE`:
-* 4AN2 and 4LMN have cobimetinib bound with ATP and a metal ion
-* 3CJG has (presumably) post translation modifications to protein without `CONECT` records
+##### Structures that did not surive the pipeline
+The following structures did not work with `OpenMM` refinement script, or were omitted due to tricky structures:
+* Cobimetinib-MEK, 4AN2 and 4LMN. Ligand bound with ATP and a metal ion, no parameters for residue ACP
+* Afatinib-EGFR, 4G5P. Loop of over 20 residues missing. Appears to be missing capping residue NME.
+* Osimertinib-EGFR: 4ZAU. Loop of over 20 residues missing. Appears to be missing capping reside NME.
+* Idelalisib-PI3K: 4XEO. Loop of over 20 residues missing. Appears to have minimized anyway.
+* Gefitinib-EGFR: 4WKQ. Loop of over 20 residues missing. Also include post-translational modification CSX.
+* Pazopanib-VEGFR1: 3CJG. Missing template for post-translational modification CSO.
 
-Structure `Imatinib-BCR-ABL/fixed/3PYY-fixed.pdb` has an activating cofactor bound, so may also be 
-inappropriate with `MCCE`.
 
 ##### Notes
+* Structure `Imatinib-BCR-ABL/fixed/3PYY-fixed.pdb` has an activating cofactor bound, so may also be 
+inappropriate with `MCCE`.
 * The first attempt to refine the structures with `OpenMM` was made using `old_vacuum_refinement.ipynb`. Minimizations
 were performed in vacuum, and no effort was made to fix the simulations that failed. The results of these runs are located in the `minimized/` directories.
