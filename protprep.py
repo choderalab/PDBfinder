@@ -38,7 +38,8 @@ def write_file(filename, contents):
         outfile.write(contents)
 
 @need_schrodinger
-def protein_prep(input_file_path, output_file_path, pdbid, pH=7.4, fillsidechains=True, fillloops=True, max_states=32, tolerance=0):
+def protein_prep(input_file_path, output_file_path, pdbid, pH=7.4, fillsidechains=True, fillloops=True,
+                 noepik=False, rehtreat=True, max_states=32, tolerance=0):
 
     # Locate PrepWizard executable
     prepwiz_path = os.path.join(os.environ['SCHRODINGER'], 'utilities', 'prepwizard')
@@ -60,9 +61,14 @@ def protein_prep(input_file_path, output_file_path, pdbid, pH=7.4, fillsidechain
     wiz_args['fillsidechains'] = '-fillsidechains' if fillsidechains else ''
     wiz_args['fillloops'] = '-fillloops' if fillloops else ''
     wiz_args['pht'] = tolerance
+    wiz_args['rehtreat'] = '-rehtreat' if rehtreat else ''
+    wiz_args['water_hbond_cutoff'] = 3
+    wiz_args['noepik'] = '-noepik' if noepik else ''
 
     cmd = [prepwiz_path]
-    cmd += '-captermini -mse -propka_pH {ph} {fillsidechains} {fillloops} -keepfarwat -disulfides -ms {ms} -minimize_adj_h -epik_pH {ph} -epik_pHt {pht} -fix -NOJOBID'.format(**wiz_args).split()
+    cmd += '-captermini -mse -propka_pH {ph} {fillsidechains} {fillloops} {rehtreat} {noepik} -delwater_hbond_cutoff {water_hbond_cutoff} ' \
+           '-keepfarwat -disulfides -ms {ms} -minimize_adj_h -epik_pH {ph} -epik_pHt {pht} -fix -NOJOBID'.format(**wiz_args).split()
+
     cmd.append(input_file_path)
     cmd.append(output_file_name)
 
