@@ -62,7 +62,7 @@ def get_pdb_biological_unit(pdb_id):
 
     """
 
-    fullurl = 'http://www.rcsb.org/pdb/files/' + pdb_id + '.pdb1'
+    fullurl = 'https://files.rcsb.org/download/' + pdb_id + '.pdb1'
     req = urllib.request.Request(fullurl)
     f = urllib.request.urlopen(req)
     result = f.read()
