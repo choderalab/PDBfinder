@@ -1,5 +1,5 @@
 # Implemented by SKA, Chodera Lab
-# Last edited: 5/2/16
+# Last edited: 9/15/17
 # TO DO: If we ever publish something with this script, check how to cite PyPDB, the query and search functions
 #        are based on (but very much altered from) the code in that repo
 
@@ -345,6 +345,7 @@ def ligand_target_search_mode(inhibitor_list, dictionary, ligname, pH, fixpdb):
     accessions_list = accessions.split()
     targets = dictionary['approved_target'][dictionary['inhibitor'].index(ligand)]
     targets_list = targets.split()
+
     print('The FDA approved targets for %s are:' % args.lig)
     for i, ac_id in enumerate(accessions_list):  # loop through all of the ids in the human target list
         print('(%s)  %s: %s' % (i + 1, targets_list[i], ac_id))
@@ -436,7 +437,7 @@ def convert_csv_to_dict(filename):
 if __name__ == '__main__':
 
     # Assert that query_mode is an implemented search typ
-    assert query_mode in {'Lig', 'LigAndTarget', 'LigAll', 'Apo'}
+    assert query_mode in {'Lig', 'LigAndTarget', 'LigAll'}
 
     # Open and read csv file containing list of approved inhibitors and targets
     main_dictionary = convert_csv_to_dict('approved/clinical-kinase-inhibitors.csv')
@@ -452,14 +453,15 @@ if __name__ == '__main__':
     # Query Mode LigAndTarget searches for all inhibitor:approved target PDB files
     elif query_mode == 'LigAndTarget':
         chem_id_list = make_chem_id_list(main_dictionary, ligand)
-        ligand_target_search_mode(chem_id_list, main_dictionary, ligand, ph, fix)
+        list_of_PDBS = ligand_target_search_mode(chem_id_list, main_dictionary, ligand, ph, fix)
 
     # LigAll downloads all ligands and their HUMAN targets
     elif query_mode == 'LigAll':
         all_ligand_search_mode(main_dictionary, ph, fix)
 
-    elif query_mode == 'Apo':
-        apo_search_mode(main_dictionary, ph, fix)
+
 
     else:
         warnings.warn("I think you've specified a search mode that isn't supported yet! Check --mode")
+
+    apo_search_mode(main_dictionary, ph, fix)
