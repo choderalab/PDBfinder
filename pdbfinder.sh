@@ -46,4 +46,4 @@ cd $PBS_O_WORKDIR
 
 
 # Launch job 
-python PDBfinder.py --mode LigAll -l Imatinib --fix --ph 7.4 --biological_unit
+python PDBfinder.py -l Imatinib --mode Apo --biological --fix --ph 7.4

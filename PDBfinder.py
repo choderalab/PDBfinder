@@ -408,7 +408,7 @@ def apo_search_mode(dictionary, pH, fixpdb):
         if len(found_pdb) > 0:
             print('found %s PDB(s) for %s' % (len(found_pdb), accession_id))
             for s in found_pdb:
-                pathway = 'pdbs/apo'
+                pathway = 'pdbs/apo/%s' % accession_id
                 download_pdb(s, pathway)
                 if fixpdb is True:
                     pdb_fix_schrodinger(s, pathway, pH)
@@ -437,7 +437,7 @@ def convert_csv_to_dict(filename):
 if __name__ == '__main__':
 
     # Assert that query_mode is an implemented search typ
-    assert query_mode in {'Lig', 'LigAndTarget', 'LigAll'}
+    assert query_mode in {'Lig', 'LigAndTarget', 'LigAll', 'Apo'}
 
     # Open and read csv file containing list of approved inhibitors and targets
     main_dictionary = convert_csv_to_dict('approved/clinical-kinase-inhibitors.csv')
@@ -459,9 +459,8 @@ if __name__ == '__main__':
     elif query_mode == 'LigAll':
         all_ligand_search_mode(main_dictionary, ph, fix)
 
-
+    elif query_mode == 'Apo':
+        apo_search_mode(main_dictionary, ph, fix)
 
     else:
         warnings.warn("I think you've specified a search mode that isn't supported yet! Check --mode")
-
-    apo_search_mode(main_dictionary, ph, fix)
