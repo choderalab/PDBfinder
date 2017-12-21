@@ -1,5 +1,5 @@
 # Implemented by SKA, Chodera Lab
-# Last edited: 5/2/16
+# Last edited: 9/15/17
 # TO DO: If we ever publish something with this script, check how to cite PyPDB, the query and search functions
 #        are based on (but very much altered from) the code in that repo
 
@@ -62,7 +62,7 @@ def get_pdb_biological_unit(pdb_id):
 
     """
 
-    fullurl = 'http://www.rcsb.org/pdb/files/' + pdb_id + '.pdb1'
+    fullurl = 'https://files.rcsb.org/download/' + pdb_id + '.pdb1'
     req = urllib.request.Request(fullurl)
     f = urllib.request.urlopen(req)
     result = f.read()
@@ -345,6 +345,7 @@ def ligand_target_search_mode(inhibitor_list, dictionary, ligname, pH, fixpdb):
     accessions_list = accessions.split()
     targets = dictionary['approved_target'][dictionary['inhibitor'].index(ligand)]
     targets_list = targets.split()
+
     print('The FDA approved targets for %s are:' % args.lig)
     for i, ac_id in enumerate(accessions_list):  # loop through all of the ids in the human target list
         print('(%s)  %s: %s' % (i + 1, targets_list[i], ac_id))
@@ -407,7 +408,7 @@ def apo_search_mode(dictionary, pH, fixpdb):
         if len(found_pdb) > 0:
             print('found %s PDB(s) for %s' % (len(found_pdb), accession_id))
             for s in found_pdb:
-                pathway = 'pdbs/apo'
+                pathway = 'pdbs/apo/%s' % accession_id
                 download_pdb(s, pathway)
                 if fixpdb is True:
                     pdb_fix_schrodinger(s, pathway, pH)
@@ -452,7 +453,7 @@ if __name__ == '__main__':
     # Query Mode LigAndTarget searches for all inhibitor:approved target PDB files
     elif query_mode == 'LigAndTarget':
         chem_id_list = make_chem_id_list(main_dictionary, ligand)
-        ligand_target_search_mode(chem_id_list, main_dictionary, ligand, ph, fix)
+        list_of_PDBS = ligand_target_search_mode(chem_id_list, main_dictionary, ligand, ph, fix)
 
     # LigAll downloads all ligands and their HUMAN targets
     elif query_mode == 'LigAll':

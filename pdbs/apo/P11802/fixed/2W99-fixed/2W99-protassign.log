@@ -1,0 +1,2057 @@
+  Running PropKa to get pKas
+
+Clusters to optimize:
+    Cluster 1:
+        A:ASN 24 
+        A:HID 163 
+    Cluster 2:
+        A:GLN 49 
+    Cluster 3:
+        A:GLN 71 
+        A:TYR 127 : HH 
+    Cluster 4:
+        A:ASN 83 
+    Cluster 5:
+        A:GLN 100 
+        A:SER 131 : HG 
+    Cluster 6:
+        A:ASN 130 
+    Cluster 7:
+        A:GLN 139 
+    Cluster 8:
+        A:ASN 146 
+    Cluster 9:
+        A:ASN 151 
+        A:THR 37 : HG1
+    Cluster 10:
+        A:ASN 174 
+        A:SER 219 : HG 
+        A:ASN 222 
+    Cluster 11:
+        A:GLN 176 
+        A:GLU 172 
+    Cluster 12:
+        A:GLN 183 
+        A:HID 158 
+    Cluster 13:
+        A:ASN 198 
+        A:CYS 247 : HG 
+        A:LYS 194 
+    Cluster 14:
+        A:GLN 213 
+        A:GLU 252 
+        A:GLN 248 
+    Cluster 15:
+        A:ASN 216 
+        A:TYR 226 : HH 
+    Cluster 16:
+        A:ASN 221 
+    Cluster 17:
+        A:GLN 250 
+    Cluster 18:
+        A:GLN 261 
+        A:LYS 58 
+    Cluster 19:
+        A:GLN 263 
+    Cluster 20:
+        A:GLN 264 
+        A:ASN 265 
+    Cluster 21:
+        B:ASN 41 
+    Cluster 22:
+        B:ASN 70 
+        B:HID 68 
+    Cluster 23:
+        B:GLN 98 
+    Cluster 24:
+        B:GLN 123 
+        B:ASP 119 
+    Cluster 25:
+        B:ASN 134 
+    Cluster 26:
+        B:ASN 145 
+        B:ASP 158 
+        B:HID 138 
+        B:LYS 35 
+    Cluster 27:
+        B:GLN 168 
+    Cluster 28:
+        B:GLN 188 
+    Cluster 29:
+        B:ASN 217 
+    Cluster 30:
+        B:GLN 222 
+    Cluster 31:
+        B:GLN 258 
+    Cluster 32:
+        B:GLN 270 
+    Cluster 33:
+        B:ASN 279 
+        B:ASP 237 
+        B:HID 281 
+    Cluster 34:
+        B:GLN 291 
+    Cluster 35:
+        A:LYS 33 
+        B:GLU 67 
+    Cluster 36:
+        A:LYS 46 
+    Cluster 37:
+        A:LYS 50 
+    Cluster 38:
+        A:LYS 72 
+    Cluster 39:
+        A:LYS 95 
+    Cluster 40:
+        A:LYS 96 
+    Cluster 41:
+        A:LYS 112 
+        A:GLU 141 
+    Cluster 42:
+        A:LYS 114 
+    Cluster 43:
+        A:LYS 123 
+    Cluster 44:
+        A:LYS 147 
+        A:GLU 92 
+    Cluster 45:
+        A:LYS 149 
+        B:ASP 76 
+        B:TYR 6 : HH 
+    Cluster 46:
+        A:LYS 167 
+    Cluster 47:
+        A:LYS 175 
+    Cluster 48:
+        A:LYS 180 
+    Cluster 49:
+        A:LYS 238 
+    Cluster 50:
+        B:LYS 22 
+        B:HID 95 
+    Cluster 51:
+        B:LYS 88 
+    Cluster 52:
+        B:LYS 106 
+    Cluster 53:
+        B:LYS 118 
+        B:GLU 265 
+    Cluster 54:
+        B:LYS 142 
+        B:ASP 140 
+        B:TYR 17 : HH 
+    Cluster 55:
+        B:LYS 155 
+    Cluster 56:
+        B:LYS 211 
+    Cluster 57:
+        B:LYS 225 
+        B:ASP 221 
+    Cluster 58:
+        B:LYS 282 
+    Cluster 59:
+        A:HID 181 
+    Cluster 60:
+        B:HID 27 
+        B:ASP 25 
+    Cluster 61:
+        B:HID 30 
+        B:SER 28 : HG 
+    Cluster 62:
+        B:HID 132 
+        B:ASP 196 
+        B:THR 193 : HG1
+    Cluster 63:
+        B:HID 292 
+        B:GLU 274 
+    Cluster 64:
+        A:CYS 38 : HG 
+    Cluster 65:
+        A:SER 41 : HG 
+    Cluster 66:
+        A:SER 43 : HG 
+    Cluster 67:
+        A:TYR 44 : HH 
+        A:ASP 86 
+    Cluster 68:
+        A:CYS 47 : HG 
+    Cluster 69:
+        A:SER 55 : HG 
+    Cluster 70:
+        A:THR 62 : HG1
+    Cluster 71:
+        A:CYS 68 : HG 
+    Cluster 72:
+        A:CYS 73 : HG 
+        A:GLU 115 
+        A:SER 111 : HG 
+    Cluster 73:
+        A:TYR 84 : HH 
+    Cluster 74:
+        A:SER 90 : HG 
+    Cluster 75:
+        A:SER 97 : HG 
+    Cluster 76:
+        A:THR 105 : HG1
+    Cluster 77:
+        A:CYS 106 : HG 
+    Cluster 78:
+        A:THR 116 : HG1
+    Cluster 79:
+        A:THR 120 : HG1
+    Cluster 80:
+        A:CYS 125 : HG 
+    Cluster 81:
+        A:THR 128 : HG1
+    Cluster 82:
+        A:THR 156 : HG1
+        A:ASP 159 
+    Cluster 83:
+        A:SER 166 : HG 
+    Cluster 84:
+        A:THR 184 : HG1
+    Cluster 85:
+        A:CYS 189 : HG 
+    Cluster 86:
+        A:THR 191 : HG1
+    Cluster 87:
+        A:SER 197 : HG 
+    Cluster 88:
+        A:SER 201 : HG 
+        A:GLU 35 
+    Cluster 89:
+        A:SER 207 : HG 
+    Cluster 90:
+        A:SER 225 : HG 
+        A:GLU 170 
+    Cluster 91:
+        A:TYR 227 : HH 
+    Cluster 92:
+        A:THR 230 : HG1
+    Cluster 93:
+        A:SER 234 : HG 
+    Cluster 94:
+        A:CYS 239 : HG 
+    Cluster 95:
+        A:CYS 243 : HG 
+        A:ASP 242 
+        A:ASP 240 
+    Cluster 96:
+        A:SER 257 : HG 
+    Cluster 97:
+        A:SER 258 : HG 
+    Cluster 98:
+        B:THR 3 : HG1
+    Cluster 99:
+        B:SER 4 : HG 
+    Cluster 100:
+        B:THR 19 : HG1
+    Cluster 101:
+        B:TYR 21 : HH 
+    Cluster 102:
+        B:SER 36 : HG 
+    Cluster 103:
+        B:SER 52 : HG 
+    Cluster 104:
+        B:THR 53 : HG1
+    Cluster 105:
+        B:CYS 78 : HG 
+    Cluster 106:
+        B:THR 80 : HG1
+    Cluster 107:
+        B:SER 81 : HG 
+    Cluster 108:
+        B:THR 83 : HG1
+    Cluster 109:
+        B:THR 90 : HG1
+    Cluster 110:
+        B:THR 102 : HG1
+        B:ASP 99 
+    Cluster 111:
+        B:TYR 103 : HH 
+    Cluster 112:
+        B:THR 116 : HG1
+    Cluster 113:
+        B:CYS 135 : HG 
+    Cluster 114:
+        B:THR 149 : HG1
+    Cluster 115:
+        B:SER 150 : HG 
+    Cluster 116:
+        B:THR 153 : HG1
+    Cluster 117:
+        B:TYR 165 : HH 
+    Cluster 118:
+        B:SER 166 : HG 
+    Cluster 119:
+        B:TYR 167 : HH 
+        B:GLU 86 
+    Cluster 120:
+        B:THR 177 : HG1
+    Cluster 121:
+        B:TYR 180 : HH 
+        B:GLU 206 
+    Cluster 122:
+        B:SER 189 : HG 
+    Cluster 123:
+        B:THR 190 : HG1
+    Cluster 124:
+        B:TYR 191 : HH 
+    Cluster 125:
+        B:SER 199 : HG 
+    Cluster 126:
+        B:CYS 202 : HG 
+    Cluster 127:
+        B:CYS 215 : HG 
+    Cluster 128:
+        B:SER 218 : HG 
+    Cluster 129:
+        B:SER 243 : HG 
+    Cluster 130:
+        B:SER 259 : HG 
+    Cluster 131:
+        B:SER 267 : HG 
+    Cluster 132:
+        B:THR 277 : HG1
+    Cluster 133:
+        B:SER 285 : HG 
+    Cluster 134:
+        B:SER 293 : HG 
+    Cluster 135:
+        B:TYR 294 : HH 
+    Cluster 136:
+        A:ASP 25 
+    Cluster 137:
+        A:GLU 36 
+    Cluster 138:
+        A:GLU 51 
+    Cluster 139:
+        A:GLU 66 
+    Cluster 140:
+        A:GLU 69 
+    Cluster 141:
+        A:GLU 70 
+    Cluster 142:
+        A:GLU 74 
+    Cluster 143:
+        A:GLU 75 
+    Cluster 144:
+        A:GLU 76 
+    Cluster 145:
+        A:GLU 122 
+    Cluster 146:
+        A:ASP 129 
+    Cluster 147:
+        A:GLU 135 
+    Cluster 148:
+        A:GLU 136 
+    Cluster 149:
+        A:GLU 162 
+    Cluster 150:
+        A:GLU 173 
+    Cluster 151:
+        A:ASP 192 
+    Cluster 152:
+        A:GLU 249 
+    Cluster 153:
+        A:GLU 256 
+    Cluster 154:
+        A:ASP 267 
+    Cluster 155:
+        B:GLU 7 
+    Cluster 156:
+        B:GLU 11 
+    Cluster 157:
+        B:GLU 43 
+    Cluster 158:
+        B:GLU 44 
+    Cluster 159:
+        B:GLU 56 
+    Cluster 160:
+        B:GLU 64 
+    Cluster 161:
+        B:ASP 84 
+    Cluster 162:
+        B:GLU 94 
+    Cluster 163:
+        B:ASP 97 
+    Cluster 164:
+        B:ASP 105 
+    Cluster 165:
+        B:GLU 115 
+    Cluster 166:
+        B:ASP 129 
+    Cluster 167:
+        B:GLU 144 
+    Cluster 168:
+        B:GLU 184 
+    Cluster 169:
+        B:GLU 219 
+    Cluster 170:
+        B:ASP 228 
+    Cluster 171:
+        B:GLU 235 
+    Cluster 172:
+        B:ASP 236 
+    Cluster 173:
+        B:ASP 241 
+    Cluster 174:
+        B:GLU 263 
+    Cluster 175:
+        B:GLU 266 
+
+Working on cluster #1...
+    A:ASN 24  : 2 states
+    A:HID 163  : 6 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    A:ASN 24  : Flip
+    A:HID 163  : Flip HIE (pKa = 4.99)
+
+Working on cluster #2...
+    A:GLN 49  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    A:GLN 49  : No Flip
+
+Working on cluster #3...
+    A:GLN 71  : 2 states
+    A:TYR 127 : HH  : 3 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:GLN 71  : Flip
+    A:TYR 127 : HH  : Orientation 1/2 (pKa = 10.53)
+
+Working on cluster #4...
+    A:ASN 83  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    A:ASN 83  : No Flip
+
+Working on cluster #5...
+    A:GLN 100  : 2 states
+    A:SER 131 : HG  : 5 states
+
+  Scoring exhaustively (10 potential combinations)...
+
+  Cluster results:
+    A:GLN 100  : No Flip
+    A:SER 131 : HG  : Stagger 1 3/5
+
+Working on cluster #6...
+    A:ASN 130  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    A:ASN 130  : Flip
+
+Working on cluster #7...
+    A:GLN 139  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    A:GLN 139  : Flip
+
+Working on cluster #8...
+    A:ASN 146  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    A:ASN 146  : No Flip
+
+Working on cluster #9...
+    A:ASN 151  : 2 states
+    A:THR 37 : HG1 : 7 states
+
+  Scoring exhaustively (14 potential combinations)...
+
+  Cluster results:
+    A:ASN 151  : No Flip
+    A:THR 37 : HG1 : Stagger 3 7/7
+
+Working on cluster #10...
+    A:ASN 174  : 2 states
+    A:SER 219 : HG  : 6 states
+    A:ASN 222  : 2 states
+
+  Scoring exhaustively (24 potential combinations)...
+
+  Cluster results:
+    A:ASN 174  : Flip
+    A:SER 219 : HG  : Orientation 2/6
+    A:ASN 222  : Flip
+
+Working on cluster #11...
+    A:GLN 176  : 2 states
+    A:GLU 172  : 3 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:GLN 176  : No Flip
+    A:GLU 172  : Charged (pKa = 4.35)
+
+Working on cluster #12...
+    A:GLN 183  : 2 states
+    A:HID 158  : 6 states
+
+  Scoring exhaustively (12 potential combinations)...
+    No valid conformations found. Trying again with less strict requirements.
+
+  Cluster results:
+    A:GLN 183  : No Flip
+    A:HID 158  : HIE (pKa = 4.0)
+
+Working on cluster #13...
+    A:ASN 198  : 2 states
+    A:CYS 247 : HG  : 8 states
+    A:LYS 194  : 16 states
+
+  Scoring exhaustively (256 potential combinations)...
+
+  Cluster results:
+    A:ASN 198  : No Flip
+    A:CYS 247 : HG  : Orientation 2/7 (pKa = 10.32)
+    A:LYS 194  : Orientation 3/3 (pKa = 10.36)
+
+Working on cluster #14...
+    A:GLN 213  : 2 states
+    A:GLU 252  : 3 states
+    A:GLN 248  : 2 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    A:GLN 213  : No Flip
+    A:GLU 252  : Charged (pKa = 5.9)
+    A:GLN 248  : No Flip
+
+Working on cluster #15...
+    A:ASN 216  : 2 states
+    A:TYR 226 : HH  : 4 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    A:ASN 216  : Flip
+    A:TYR 226 : HH  : Orientation 1/3 (pKa = 10.43)
+
+Working on cluster #16...
+    A:ASN 221  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    A:ASN 221  : Flip
+
+Working on cluster #17...
+    A:GLN 250  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    A:GLN 250  : No Flip
+
+Working on cluster #18...
+    A:GLN 261  : 2 states
+    A:LYS 58  : 12 states
+
+  Scoring exhaustively (24 potential combinations)...
+
+  Cluster results:
+    A:GLN 261  : No Flip
+    A:LYS 58  : Orientation 1/2 (pKa = 9.74)
+
+Working on cluster #19...
+    A:GLN 263  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    A:GLN 263  : No Flip
+
+Working on cluster #20...
+    A:GLN 264  : 2 states
+    A:ASN 265  : 2 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    A:GLN 264  : Flip
+    A:ASN 265  : No Flip
+
+Working on cluster #21...
+    B:ASN 41  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:ASN 41  : No Flip
+
+Working on cluster #22...
+    B:ASN 70  : 2 states
+    B:HID 68  : 6 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    B:ASN 70  : No Flip
+    B:HID 68  : HIE (pKa = 4.63)
+
+Working on cluster #23...
+    B:GLN 98  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:GLN 98  : No Flip
+
+Working on cluster #24...
+    B:GLN 123  : 2 states
+    B:ASP 119  : 3 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:GLN 123  : Flip
+    B:ASP 119  : Charged (pKa = 4.23)
+
+Working on cluster #25...
+    B:ASN 134  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:ASN 134  : Flip
+
+Working on cluster #26...
+    B:ASN 145  : 2 states
+    B:ASP 158  : 3 states
+    B:HID 138  : 6 states
+    B:LYS 35  : 8 states
+
+  Scoring exhaustively (288 potential combinations)...
+
+  Cluster results:
+    B:ASN 145  : No Flip
+    B:ASP 158  : Charged (pKa = 4.3)
+    B:HID 138  : HIE (pKa = 5.83)
+    B:LYS 35  : Stagger (pKa = 10.08)
+
+Working on cluster #27...
+    B:GLN 168  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:GLN 168  : No Flip
+
+Working on cluster #28...
+    B:GLN 188  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:GLN 188  : No Flip
+
+Working on cluster #29...
+    B:ASN 217  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:ASN 217  : Flip
+
+Working on cluster #30...
+    B:GLN 222  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:GLN 222  : Flip
+
+Working on cluster #31...
+    B:GLN 258  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:GLN 258  : Flip
+
+Working on cluster #32...
+    B:GLN 270  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:GLN 270  : Flip
+
+Working on cluster #33...
+    B:ASN 279  : 2 states
+    B:ASP 237  : 3 states
+    B:HID 281  : 6 states
+
+  Scoring exhaustively (36 potential combinations)...
+
+  Cluster results:
+    B:ASN 279  : No Flip
+    B:ASP 237  : Charged (pKa = 3.75)
+    B:HID 281  : HID (pKa = 6.33)
+
+Working on cluster #34...
+    B:GLN 291  : 2 states
+
+  Scoring exhaustively (2 potential combinations)...
+
+  Cluster results:
+    B:GLN 291  : Flip
+
+Working on cluster #35...
+    A:LYS 33  : 8 states
+    B:GLU 67  : 3 states
+
+  Scoring exhaustively (24 potential combinations)...
+
+  Cluster results:
+    A:LYS 33  : Orientation 1/1 (pKa = 10.5)
+    B:GLU 67  : Charged (pKa = 4.08)
+
+Working on cluster #36...
+    A:LYS 46  : 12 states
+
+  Scoring exhaustively (12 potential combinations)...
+    No valid conformations found. Trying again with less strict requirements.
+    No valid conformations found. Trying again with less strict requirements.
+
+  Cluster results:
+    A:LYS 46  : Stagger (pKa = 10.65)
+
+Working on cluster #37...
+    A:LYS 50  : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    A:LYS 50  : Stagger (pKa = 10.42)
+
+Working on cluster #38...
+    A:LYS 72  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    A:LYS 72  : Orientation 1/1 (pKa = 10.54)
+
+Working on cluster #39...
+    A:LYS 95  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+    No valid conformations found. Trying again with less strict requirements.
+    No valid conformations found. Trying again with less strict requirements.
+    Still failed to find any valid conformations. Scoring again while tolerating some clashes.
+
+  Cluster results:
+    A:LYS 95  : Stagger (pKa = 9.23)
+
+Working on cluster #40...
+    A:LYS 96  : 12 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    A:LYS 96  : Orientation 2/2 (pKa = 10.52)
+
+Working on cluster #41...
+    A:LYS 112  : 12 states
+    A:GLU 141  : 3 states
+
+  Scoring exhaustively (36 potential combinations)...
+
+  Cluster results:
+    A:LYS 112  : Orientation 1/2 (pKa = 9.55)
+    A:GLU 141  : Charged (pKa = 5.53)
+
+Working on cluster #42...
+    A:LYS 114  : 12 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    A:LYS 114  : Orientation 2/2 (pKa = 9.44)
+
+Working on cluster #43...
+    A:LYS 123  : 12 states
+
+  Scoring exhaustively (12 potential combinations)...
+    No valid conformations found. Trying again with less strict requirements.
+    No valid conformations found. Trying again with less strict requirements.
+
+  Cluster results:
+    A:LYS 123  : Stagger (pKa = 10.4)
+
+Working on cluster #44...
+    A:LYS 147  : 8 states
+    A:GLU 92  : 3 states
+
+  Scoring exhaustively (24 potential combinations)...
+
+  Cluster results:
+    A:LYS 147  : Orientation 1/1 (pKa = 10.29)
+    A:GLU 92  : Charged (pKa = 4.39)
+
+Working on cluster #45...
+    A:LYS 149  : 12 states
+    B:ASP 76  : 3 states
+    B:TYR 6 : HH  : 5 states
+
+  Scoring exhaustively (180 potential combinations)...
+
+  Cluster results:
+    A:LYS 149  : Orientation 2/2 (pKa = 9.65)
+    B:ASP 76  : Charged (pKa = 4.31)
+    B:TYR 6 : HH  : Default 2 4/4 (pKa = 12.19)
+
+Working on cluster #46...
+    A:LYS 167  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+    No valid conformations found. Trying again with less strict requirements.
+
+  Cluster results:
+    A:LYS 167  : Orientation 1/1 (pKa = 9.8)
+
+Working on cluster #47...
+    A:LYS 175  : 12 states
+
+  Scoring exhaustively (12 potential combinations)...
+    No valid conformations found. Trying again with less strict requirements.
+    No valid conformations found. Trying again with less strict requirements.
+    Still failed to find any valid conformations. Scoring again while tolerating some clashes.
+
+  Cluster results:
+    A:LYS 175  : Orientation 2/2 (pKa = 10.28)
+
+Working on cluster #48...
+    A:LYS 180  : 16 states
+
+  Scoring exhaustively (16 potential combinations)...
+
+  Cluster results:
+    A:LYS 180  : Orientation 1/3 (pKa = 10.38)
+
+Working on cluster #49...
+    A:LYS 238  : 12 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    A:LYS 238  : Stagger (pKa = 10.0)
+
+Working on cluster #50...
+    B:LYS 22  : 8 states
+    B:HID 95  : 6 states
+
+  Scoring exhaustively (48 potential combinations)...
+
+  Cluster results:
+    B:LYS 22  : Orientation 1/1 (pKa = 10.09)
+    B:HID 95  : HID (pKa = 4.5)
+
+Working on cluster #51...
+    B:LYS 88  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+    No valid conformations found. Trying again with less strict requirements.
+
+  Cluster results:
+    B:LYS 88  : Orientation 1/1 (pKa = 9.85)
+
+Working on cluster #52...
+    B:LYS 106  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    B:LYS 106  : Orientation 1/1 (pKa = 10.38)
+
+Working on cluster #53...
+    B:LYS 118  : 8 states
+    B:GLU 265  : 3 states
+
+  Scoring exhaustively (24 potential combinations)...
+
+  Cluster results:
+    B:LYS 118  : Orientation 1/1 (pKa = 11.32)
+    B:GLU 265  : Charged (pKa = 3.82)
+
+Working on cluster #54...
+    B:LYS 142  : 8 states
+    B:ASP 140  : 3 states
+    B:TYR 17 : HH  : 4 states
+
+  Scoring exhaustively (96 potential combinations)...
+    No valid conformations found. Trying again with less strict requirements.
+
+  Cluster results:
+    B:LYS 142  : Orientation 1/1 (pKa = 9.87)
+    B:ASP 140  : Charged (pKa = 2.04)
+    B:TYR 17 : HH  : Default 1 2/3 (pKa = 14.93)
+
+Working on cluster #55...
+    B:LYS 155  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    B:LYS 155  : Orientation 1/1 (pKa = 9.88)
+
+Working on cluster #56...
+    B:LYS 211  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    B:LYS 211  : Orientation 1/1 (pKa = 10.41)
+
+Working on cluster #57...
+    B:LYS 225  : 8 states
+    B:ASP 221  : 3 states
+
+  Scoring exhaustively (24 potential combinations)...
+
+  Cluster results:
+    B:LYS 225  : Stagger (pKa = 11.1)
+    B:ASP 221  : Charged (pKa = 3.34)
+
+Working on cluster #58...
+    B:LYS 282  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    B:LYS 282  : Orientation 1/1 (pKa = 10.65)
+
+Working on cluster #59...
+    A:HID 181  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:HID 181  : HIE (pKa = 5.92)
+
+Working on cluster #60...
+    B:HID 27  : 6 states
+    B:ASP 25  : 3 states
+
+  Scoring exhaustively (18 potential combinations)...
+
+  Cluster results:
+    B:HID 27  : HID (pKa = 6.87)
+    B:ASP 25  : Charged (pKa = 3.26)
+
+Working on cluster #61...
+    B:HID 30  : 6 states
+    B:SER 28 : HG  : 5 states
+
+  Scoring exhaustively (30 potential combinations)...
+
+  Cluster results:
+    B:HID 30  : Flip HID (pKa = 6.37)
+    B:SER 28 : HG  : Stagger 1 3/5
+
+Working on cluster #62...
+    B:HID 132  : 6 states
+    B:ASP 196  : 3 states
+    B:THR 193 : HG1 : 6 states
+
+  Scoring exhaustively (108 potential combinations)...
+
+  Cluster results:
+    B:HID 132  : HIE (pKa = 6.74)
+    B:ASP 196  : Charged (pKa = 4.15)
+    B:THR 193 : HG1 : Orientation 1/6
+
+Working on cluster #63...
+    B:HID 292  : 6 states
+    B:GLU 274  : 3 states
+
+  Scoring exhaustively (18 potential combinations)...
+
+  Cluster results:
+    B:HID 292  : HIE (pKa = 6.1)
+    B:GLU 274  : Charged (pKa = 4.88)
+
+Working on cluster #64...
+    A:CYS 38 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:CYS 38 : HG  : Stagger 1 3/5 (pKa = 9.26)
+
+Working on cluster #65...
+    A:SER 41 : HG  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    A:SER 41 : HG  : Orientation 3/8
+
+Working on cluster #66...
+    A:SER 43 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:SER 43 : HG  : Orientation 3/6
+
+Working on cluster #67...
+    A:TYR 44 : HH  : 5 states
+    A:ASP 86  : 3 states
+
+  Scoring exhaustively (15 potential combinations)...
+
+  Cluster results:
+    A:TYR 44 : HH  : Orientation 1/4 (pKa = 15.07)
+    A:ASP 86  : Charged (pKa = 4.37)
+
+Working on cluster #68...
+    A:CYS 47 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:CYS 47 : HG  : Stagger 3 5/5 (pKa = 9.09)
+
+Working on cluster #69...
+    A:SER 55 : HG  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    A:SER 55 : HG  : Orientation 2/8
+
+Working on cluster #70...
+    A:THR 62 : HG1 : 9 states
+
+  Scoring exhaustively (9 potential combinations)...
+
+  Cluster results:
+    A:THR 62 : HG1 : Orientation 6/9
+
+Working on cluster #71...
+    A:CYS 68 : HG  : 7 states
+
+  Scoring exhaustively (7 potential combinations)...
+
+  Cluster results:
+    A:CYS 68 : HG  : Orientation 1/6 (pKa = 16.57)
+
+Working on cluster #72...
+    A:CYS 73 : HG  : 7 states
+    A:GLU 115  : 3 states
+    A:SER 111 : HG  : 8 states
+
+  Scoring exhaustively (168 potential combinations)...
+
+  Cluster results:
+    A:CYS 73 : HG  : Orientation 1/6 (pKa = 8.61)
+    A:GLU 115  : Charged (pKa = 4.26)
+    A:SER 111 : HG  : Stagger 1 6/8
+
+Working on cluster #73...
+    A:TYR 84 : HH  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:TYR 84 : HH  : Orientation 1/2 (pKa = 14.05)
+
+Working on cluster #74...
+    A:SER 90 : HG  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    A:SER 90 : HG  : Stagger 1 6/8
+
+Working on cluster #75...
+    A:SER 97 : HG  : 7 states
+
+  Scoring exhaustively (7 potential combinations)...
+
+  Cluster results:
+    A:SER 97 : HG  : Orientation 1/7
+
+Working on cluster #76...
+    A:THR 105 : HG1 : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    A:THR 105 : HG1 : Orientation 1/4
+
+Working on cluster #77...
+    A:CYS 106 : HG  : 7 states
+
+  Scoring exhaustively (7 potential combinations)...
+
+  Cluster results:
+    A:CYS 106 : HG  : Orientation 1/6 (pKa = 13.32)
+
+Working on cluster #78...
+    A:THR 116 : HG1 : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    A:THR 116 : HG1 : Stagger 1 2/4
+
+Working on cluster #79...
+    A:THR 120 : HG1 : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    A:THR 120 : HG1 : Orientation 1/8
+
+Working on cluster #80...
+    A:CYS 125 : HG  : 7 states
+
+  Scoring exhaustively (7 potential combinations)...
+
+  Cluster results:
+    A:CYS 125 : HG  : Orientation 1/6 (pKa = 10.98)
+
+Working on cluster #81...
+    A:THR 128 : HG1 : 12 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    A:THR 128 : HG1 : Orientation 1/12
+
+Working on cluster #82...
+    A:THR 156 : HG1 : 5 states
+    A:ASP 159  : 3 states
+
+  Scoring exhaustively (15 potential combinations)...
+
+  Cluster results:
+    A:THR 156 : HG1 : Stagger 3 5/5
+    A:ASP 159  : Charged (pKa = 3.93)
+
+Working on cluster #83...
+    A:SER 166 : HG  : 9 states
+
+  Scoring exhaustively (9 potential combinations)...
+
+  Cluster results:
+    A:SER 166 : HG  : Orientation 5/9
+
+Working on cluster #84...
+    A:THR 184 : HG1 : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    A:THR 184 : HG1 : Stagger 2 3/4
+
+Working on cluster #85...
+    A:CYS 189 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:CYS 189 : HG  : Orientation 1/5 (pKa = 12.36)
+
+Working on cluster #86...
+    A:THR 191 : HG1 : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    A:THR 191 : HG1 : Stagger 1 2/4
+
+Working on cluster #87...
+    A:SER 197 : HG  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    A:SER 197 : HG  : Orientation 2/5
+
+Working on cluster #88...
+    A:SER 201 : HG  : 11 states
+    A:GLU 35  : 3 states
+
+  Scoring exhaustively (33 potential combinations)...
+
+  Cluster results:
+    A:SER 201 : HG  : Orientation 6/11
+    A:GLU 35  : Charged (pKa = 6.86)
+
+Working on cluster #89...
+    A:SER 207 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:SER 207 : HG  : Orientation 1/6
+
+Working on cluster #90...
+    A:SER 225 : HG  : 3 states
+    A:GLU 170  : 3 states
+
+  Scoring exhaustively (9 potential combinations)...
+
+  Cluster results:
+    A:SER 225 : HG  : Stagger 3 3/3
+    A:GLU 170  : Charged (pKa = 6.1)
+
+Working on cluster #91...
+    A:TYR 227 : HH  : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    A:TYR 227 : HH  : Default 1 2/3 (pKa = 9.96)
+
+Working on cluster #92...
+    A:THR 230 : HG1 : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    A:THR 230 : HG1 : Orientation 3/6
+
+Working on cluster #93...
+    A:SER 234 : HG  : 7 states
+
+  Scoring exhaustively (7 potential combinations)...
+
+  Cluster results:
+    A:SER 234 : HG  : Orientation 4/7
+
+Working on cluster #94...
+    A:CYS 239 : HG  : 7 states
+
+  Scoring exhaustively (7 potential combinations)...
+
+  Cluster results:
+    A:CYS 239 : HG  : Default 3/6 (pKa = 11.05)
+
+Working on cluster #95...
+    A:CYS 243 : HG  : 6 states
+    A:ASP 242  : 3 states
+    A:ASP 240  : 3 states
+
+  Scoring exhaustively (54 potential combinations)...
+
+  Cluster results:
+    A:CYS 243 : HG  : Stagger 2 4/5 (pKa = 9.95)
+    A:ASP 242  : Charged (pKa = 3.75)
+    A:ASP 240  : Charged (pKa = 4.16)
+
+Working on cluster #96...
+    A:SER 257 : HG  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    A:SER 257 : HG  : Stagger 2 4/5
+
+Working on cluster #97...
+    A:SER 258 : HG  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    A:SER 258 : HG  : Orientation 1/5
+
+Working on cluster #98...
+    B:THR 3 : HG1 : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:THR 3 : HG1 : Stagger 2 4/5
+
+Working on cluster #99...
+    B:SER 4 : HG  : 7 states
+
+  Scoring exhaustively (7 potential combinations)...
+
+  Cluster results:
+    B:SER 4 : HG  : Stagger 3 7/7
+
+Working on cluster #100...
+    B:THR 19 : HG1 : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    B:THR 19 : HG1 : Stagger 2 3/4
+
+Working on cluster #101...
+    B:TYR 21 : HH  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:TYR 21 : HH  : Default 1 1/2 (pKa = 10.82)
+
+Working on cluster #102...
+    B:SER 36 : HG  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:SER 36 : HG  : Stagger 2 4/5
+
+Working on cluster #103...
+    B:SER 52 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:SER 52 : HG  : Stagger 2 5/6
+
+Working on cluster #104...
+    B:THR 53 : HG1 : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:THR 53 : HG1 : Stagger 1 3/5
+
+Working on cluster #105...
+    B:CYS 78 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:CYS 78 : HG  : Stagger 3 5/5 (pKa = 10.7)
+
+Working on cluster #106...
+    B:THR 80 : HG1 : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    B:THR 80 : HG1 : Stagger 2 7/8
+
+Working on cluster #107...
+    B:SER 81 : HG  : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    B:SER 81 : HG  : Stagger 3 4/4
+
+Working on cluster #108...
+    B:THR 83 : HG1 : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:THR 83 : HG1 : Stagger 1 3/5
+
+Working on cluster #109...
+    B:THR 90 : HG1 : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:THR 90 : HG1 : Stagger 1 1/3
+
+Working on cluster #110...
+    B:THR 102 : HG1 : 5 states
+    B:ASP 99  : 3 states
+
+  Scoring exhaustively (15 potential combinations)...
+
+  Cluster results:
+    B:THR 102 : HG1 : Orientation 1/5
+    B:ASP 99  : Charged (pKa = 3.93)
+
+Working on cluster #111...
+    B:TYR 103 : HH  : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    B:TYR 103 : HH  : Orientation 1/3 (pKa = 10.75)
+
+Working on cluster #112...
+    B:THR 116 : HG1 : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:THR 116 : HG1 : Stagger 1 3/5
+
+Working on cluster #113...
+    B:CYS 135 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:CYS 135 : HG  : Stagger 1 3/5 (pKa = 9.25)
+
+Working on cluster #114...
+    B:THR 149 : HG1 : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:THR 149 : HG1 : Orientation 3/5
+
+Working on cluster #115...
+    B:SER 150 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:SER 150 : HG  : Default 5/6
+
+Working on cluster #116...
+    B:THR 153 : HG1 : 7 states
+
+  Scoring exhaustively (7 potential combinations)...
+
+  Cluster results:
+    B:THR 153 : HG1 : Orientation 3/7
+
+Working on cluster #117...
+    B:TYR 165 : HH  : 4 states
+
+  Scoring exhaustively (4 potential combinations)...
+
+  Cluster results:
+    B:TYR 165 : HH  : Orientation 1/3 (pKa = 14.28)
+
+Working on cluster #118...
+    B:SER 166 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:SER 166 : HG  : Stagger 1 4/6
+
+Working on cluster #119...
+    B:TYR 167 : HH  : 4 states
+    B:GLU 86  : 3 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    B:TYR 167 : HH  : Default 2 3/3 (pKa = 10.94)
+    B:GLU 86  : Charged (pKa = 3.86)
+
+Working on cluster #120...
+    B:THR 177 : HG1 : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:THR 177 : HG1 : Stagger 2 4/5
+
+Working on cluster #121...
+    B:TYR 180 : HH  : 4 states
+    B:GLU 206  : 3 states
+
+  Scoring exhaustively (12 potential combinations)...
+
+  Cluster results:
+    B:TYR 180 : HH  : Orientation 1/3 (pKa = 14.39)
+    B:GLU 206  : Charged (pKa = 5.99)
+
+Working on cluster #122...
+    B:SER 189 : HG  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:SER 189 : HG  : Stagger 1 3/5
+
+Working on cluster #123...
+    B:THR 190 : HG1 : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:THR 190 : HG1 : Orientation 2/6
+
+Working on cluster #124...
+    B:TYR 191 : HH  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:TYR 191 : HH  : Orientation 1/2 (pKa = 10.41)
+
+Working on cluster #125...
+    B:SER 199 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:SER 199 : HG  : Stagger 2 5/6
+
+Working on cluster #126...
+    B:CYS 202 : HG  : 9 states
+
+  Scoring exhaustively (9 potential combinations)...
+
+  Cluster results:
+    B:CYS 202 : HG  : Orientation 1/8 (pKa = 12.57)
+
+Working on cluster #127...
+    B:CYS 215 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:CYS 215 : HG  : Stagger 1 3/5 (pKa = 9.54)
+
+Working on cluster #128...
+    B:SER 218 : HG  : 8 states
+
+  Scoring exhaustively (8 potential combinations)...
+
+  Cluster results:
+    B:SER 218 : HG  : Orientation 3/8
+
+Working on cluster #129...
+    B:SER 243 : HG  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:SER 243 : HG  : Stagger 1 3/5
+
+Working on cluster #130...
+    B:SER 259 : HG  : 10 states
+
+  Scoring exhaustively (10 potential combinations)...
+
+  Cluster results:
+    B:SER 259 : HG  : Orientation 1/10
+
+Working on cluster #131...
+    B:SER 267 : HG  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:SER 267 : HG  : Stagger 2 4/5
+
+Working on cluster #132...
+    B:THR 277 : HG1 : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:THR 277 : HG1 : Stagger 1 4/6
+
+Working on cluster #133...
+    B:SER 285 : HG  : 6 states
+
+  Scoring exhaustively (6 potential combinations)...
+
+  Cluster results:
+    B:SER 285 : HG  : Stagger 2 5/6
+
+Working on cluster #134...
+    B:SER 293 : HG  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:SER 293 : HG  : Stagger 2 4/5
+
+Working on cluster #135...
+    B:TYR 294 : HH  : 5 states
+
+  Scoring exhaustively (5 potential combinations)...
+
+  Cluster results:
+    B:TYR 294 : HH  : Default 2 4/4 (pKa = 11.87)
+
+Working on cluster #136...
+    A:ASP 25  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:ASP 25  : Charged (pKa = 2.48)
+
+Working on cluster #137...
+    A:GLU 36  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 36  : Charged (pKa = 5.08)
+
+Working on cluster #138...
+    A:GLU 51  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 51  : Charged (pKa = 3.77)
+
+Working on cluster #139...
+    A:GLU 66  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 66  : Charged (pKa = 4.9)
+
+Working on cluster #140...
+    A:GLU 69  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 69  : Charged (pKa = 5.36)
+
+Working on cluster #141...
+    A:GLU 70  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 70  : Charged (pKa = 4.55)
+
+Working on cluster #142...
+    A:GLU 74  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 74  : Charged (pKa = 4.89)
+
+Working on cluster #143...
+    A:GLU 75  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 75  : Charged (pKa = 5.29)
+
+Working on cluster #144...
+    A:GLU 76  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 76  : Charged (pKa = 6.24)
+
+Working on cluster #145...
+    A:GLU 122  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 122  : Charged (pKa = 4.6)
+
+Working on cluster #146...
+    A:ASP 129  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:ASP 129  : Charged (pKa = 3.97)
+
+Working on cluster #147...
+    A:GLU 135  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 135  : Charged (pKa = 4.42)
+
+Working on cluster #148...
+    A:GLU 136  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 136  : Charged (pKa = 4.96)
+
+Working on cluster #149...
+    A:GLU 162  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 162  : Charged (pKa = 4.63)
+
+Working on cluster #150...
+    A:GLU 173  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 173  : Charged (pKa = 4.43)
+
+Working on cluster #151...
+    A:ASP 192  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:ASP 192  : Charged (pKa = 3.96)
+
+Working on cluster #152...
+    A:GLU 249  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 249  : Charged (pKa = 4.69)
+
+Working on cluster #153...
+    A:GLU 256  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:GLU 256  : Charged (pKa = 4.72)
+
+Working on cluster #154...
+    A:ASP 267  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    A:ASP 267  : Charged (pKa = 3.66)
+
+Working on cluster #155...
+    B:GLU 7  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 7  : Charged (pKa = 4.68)
+
+Working on cluster #156...
+    B:GLU 11  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 11  : Charged (pKa = 4.66)
+
+Working on cluster #157...
+    B:GLU 43  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 43  : Charged (pKa = 4.66)
+
+Working on cluster #158...
+    B:GLU 44  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 44  : Charged (pKa = 5.13)
+
+Working on cluster #159...
+    B:GLU 56  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 56  : Charged (pKa = 4.97)
+
+Working on cluster #160...
+    B:GLU 64  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 64  : Charged (pKa = 5.34)
+
+Working on cluster #161...
+    B:ASP 84  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:ASP 84  : Charged (pKa = 3.81)
+
+Working on cluster #162...
+    B:GLU 94  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 94  : Charged (pKa = 5.12)
+
+Working on cluster #163...
+    B:ASP 97  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:ASP 97  : Charged (pKa = 3.6)
+
+Working on cluster #164...
+    B:ASP 105  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:ASP 105  : Charged (pKa = 4.07)
+
+Working on cluster #165...
+    B:GLU 115  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 115  : Charged (pKa = 4.66)
+
+Working on cluster #166...
+    B:ASP 129  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:ASP 129  : Charged (pKa = 4.79)
+
+Working on cluster #167...
+    B:GLU 144  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 144  : Charged (pKa = 5.14)
+
+Working on cluster #168...
+    B:GLU 184  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 184  : Charged (pKa = 6.6)
+
+Working on cluster #169...
+    B:GLU 219  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 219  : Charged (pKa = 4.36)
+
+Working on cluster #170...
+    B:ASP 228  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:ASP 228  : Charged (pKa = 4.21)
+
+Working on cluster #171...
+    B:GLU 235  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 235  : Charged (pKa = 4.58)
+
+Working on cluster #172...
+    B:ASP 236  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:ASP 236  : Charged (pKa = 3.99)
+
+Working on cluster #173...
+    B:ASP 241  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:ASP 241  : Charged (pKa = 4.02)
+
+Working on cluster #174...
+    B:GLU 263  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 263  : Charged (pKa = 4.71)
+
+Working on cluster #175...
+    B:GLU 266  : 3 states
+
+  Scoring exhaustively (3 potential combinations)...
+
+  Cluster results:
+    B:GLU 266  : Charged (pKa = 4.7)
+
+
+Recalculating pKas to identify changes in protonation penalties...
+  Running PropKa to get pKas
+    No changes in protonation penalties found.
+
+Minimizing hydrogens...
+
+Total score for structure: -44.1597154954
+
+Final pKas:
+  A:LYS 33  : 10.50
+  A:LYS 46  : 10.65
+  A:LYS 50  : 10.42
+  A:LYS 58  : 9.74
+  A:LYS 72  : 10.52
+  A:LYS 95  : 9.23
+  A:LYS 96  : 10.52
+  A:LYS 112  : 9.55
+  A:LYS 114  : 9.44
+  A:LYS 123  : 10.40
+  A:LYS 147  : 10.29
+  A:LYS 149  : 9.65
+  A:LYS 167  : 9.80
+  A:LYS 175  : 10.28
+  A:LYS 180  : 10.38
+  A:LYS 194  : 10.36
+  A:LYS 238  : 10.00
+  B:LYS 22  : 10.09
+  B:LYS 35  : 10.08
+  B:LYS 88  : 9.85
+  B:LYS 106  : 10.38
+  B:LYS 118  : 11.32
+  B:LYS 142  : 9.87
+  B:LYS 155  : 9.88
+  B:LYS 211  : 10.41
+  B:LYS 225  : 11.10
+  B:LYS 282  : 10.65
+  A:HID 158  : 4.00
+  A:HID 163  : 4.99
+  A:HID 181  : 5.92
+  B:HID 27  : 6.87
+  B:HID 30  : 6.70
+  B:HID 68  : 4.63
+  B:HID 95  : 4.50
+  B:HID 132  : 6.74
+  B:HID 138  : 5.83
+  B:HID 281  : 6.33
+  B:HID 292  : 6.10
+  A:CYS 38 : HG  : 9.26
+  A:TYR 44 : HH  : 15.07
+  A:CYS 47 : HG  : 9.09
+  A:CYS 68 : HG  : 16.57
+  A:CYS 73 : HG  : 8.61
+  A:TYR 84 : HH  : 14.05
+  A:CYS 106 : HG  : 13.32
+  A:CYS 125 : HG  : 10.98
+  A:TYR 127 : HH  : 11.23
+  A:CYS 189 : HG  : 12.36
+  A:TYR 226 : HH  : 10.28
+  A:TYR 227 : HH  : 9.96
+  A:CYS 239 : HG  : 11.05
+  A:CYS 243 : HG  : 9.95
+  A:CYS 247 : HG  : 10.32
+  B:TYR 6 : HH  : 12.19
+  B:TYR 17 : HH  : 14.93
+  B:TYR 21 : HH  : 10.82
+  B:CYS 78 : HG  : 10.70
+  B:TYR 103 : HH  : 10.75
+  B:CYS 135 : HG  : 9.25
+  B:TYR 165 : HH  : 14.28
+  B:TYR 167 : HH  : 10.94
+  B:TYR 180 : HH  : 14.39
+  B:TYR 191 : HH  : 10.41
+  B:CYS 202 : HG  : 12.57
+  B:CYS 215 : HG  : 9.54
+  B:TYR 294 : HH  : 11.87
+  A:ASP 25  : 2.48
+  A:GLU 35  : 6.86
+  A:GLU 36  : 5.08
+  A:GLU 51  : 3.77
+  A:GLU 66  : 4.90
+  A:GLU 69  : 5.36
+  A:GLU 70  : 4.55
+  A:GLU 74  : 4.89
+  A:GLU 75  : 5.29
+  A:GLU 76  : 6.24
+  A:ASP 86  : 4.37
+  A:GLU 92  : 4.39
+  A:GLU 115  : 4.26
+  A:GLU 122  : 4.60
+  A:ASP 129  : 3.97
+  A:GLU 135  : 4.42
+  A:GLU 136  : 4.96
+  A:GLU 141  : 5.53
+  A:ASP 159  : 3.93
+  A:GLU 162  : 4.63
+  A:GLU 170  : 6.10
+  A:GLU 172  : 4.35
+  A:GLU 173  : 4.43
+  A:ASP 192  : 3.96
+  A:ASP 240  : 4.16
+  A:ASP 242  : 3.75
+  A:GLU 249  : 4.69
+  A:GLU 252  : 5.90
+  A:GLU 256  : 4.72
+  A:ASP 267  : 3.66
+  B:GLU 7  : 4.68
+  B:GLU 11  : 4.66
+  B:ASP 25  : 3.26
+  B:GLU 43  : 4.66
+  B:GLU 44  : 5.13
+  B:GLU 56  : 4.97
+  B:GLU 64  : 5.34
+  B:GLU 67  : 4.08
+  B:ASP 76  : 4.31
+  B:ASP 84  : 3.81
+  B:GLU 86  : 3.86
+  B:GLU 94  : 5.12
+  B:ASP 97  : 3.60
+  B:ASP 99  : 3.93
+  B:ASP 105  : 4.07
+  B:GLU 115  : 4.66
+  B:ASP 119  : 3.96
+  B:ASP 129  : 4.79
+  B:ASP 140  : 2.04
+  B:GLU 144  : 5.14
+  B:ASP 158  : 4.30
+  B:GLU 184  : 6.60
+  B:ASP 196  : 4.15
+  B:GLU 206  : 5.99
+  B:GLU 219  : 4.36
+  B:ASP 221  : 3.34
+  B:ASP 228  : 4.21
+  B:GLU 235  : 4.58
+  B:ASP 236  : 3.99
+  B:ASP 237  : 3.75
+  B:ASP 241  : 4.02
+  B:GLU 263  : 4.71
+  B:GLU 265  : 3.82
+  B:GLU 266  : 4.70
+  B:GLU 274  : 4.88
+Structure extracted from file: 2W99-protassign.mae
+Output structure will be written to: 2W99-protassign-out.mae
+
+Complete. Output file: 2W99-protassign-out.mae

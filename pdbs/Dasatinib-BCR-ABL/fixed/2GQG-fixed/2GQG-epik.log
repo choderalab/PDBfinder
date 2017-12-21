@@ -1,0 +1,65 @@
+COMMAND:
+ /data/chodera/schrodinger/schrodinger2017-3-advanced/epik-v4.1/bin/Linux-x86_64/epik_app -imae 2GQG-epik.mae -omae 2GQG-epik-out.mae -ms 32 -ph 7.4 -pht 0.0 -cg 0.3 0.3 -metal_binding
+SCHRODINGER: /data/chodera/schrodinger/schrodinger2017-3-advanced
+
+Running Epik version     4.1016
+Epik. Copyright Schrodinger, LLC. All rights reserved.
+
+Input file name:                        2GQG-epik.mae
+Output file name:                       2GQG-epik-out.mae
+Maximum number of states set to: 32
+Structure adjustment calculation requested.
+  Target pH set to 7.400
+pHt tolerance set to 0.000000e+00
+Both connectivity and geometry used in determining redundant structures.
+  Structures are distinct if: 
+    any position differs by more than 3.000000e-01
+    the rms difference in positions is larger than 3.000000e-01
+Metal binding mode turned on.
+
+Adjusting structures for pH 7.400000e+00 and minimum probability 1.000000e+00
+Solvent model name:                     water
+Jobcontrol is not being used for this specific Epik calculation.
+---------------------------
+Processing Input Structure #1
+        Title: 
+reseting state penalty to 0
+                                              Calculated pKas
+                                                 Conjugate
+                                          Atom   Acid/Base  pKa
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 1
+                                            59   Conj_Acid 14.82
+                                            53   Conj_Acid 12.40
+                                            20   Conj_Base  2.05
+                                             4   Conj_Base  6.99
+                                            60   Conj_Acid  5.64
+                                            29   Conj_Base -2.87
+                                            52   Conj_Acid 11.19
+                                            33   Conj_Base  0.09
+ pKa penalty:                                 2.60 kcal/mol
+     Charging penalty:                        2.41 kcal/mol
+     Neutralization penalty:                  0.20 kcal/mol
+ Overall Penalty (tautomerization included):  0.33 kcal/mol
+ Total Charge: 1
+ Metal Penalty:                               3.56 kcal/mol
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 2
+                                            59   Conj_Acid 14.82
+                                            53   Conj_Acid 12.40
+                                            20   Conj_Base  2.05
+                                             4   Conj_Base  6.99
+                                            30   Conj_Base -0.33
+                                            28   Conj_Base  5.64
+                                            29   Conj_Base  8.19
+                                            52   Conj_Acid 13.50
+                                            33   Conj_Base  0.09
+ pKa penalty:                                 1.37 kcal/mol
+     Charging penalty:                        0.00 kcal/mol
+     Neutralization penalty:                  1.37 kcal/mol
+ Overall Penalty (tautomerization included):  0.00 kcal/mol
+ Total Charge: 0
+ Metal Penalty:                               0.00 kcal/mol
+ Structure generated due to metal binding treatment.
+ Notes:   Reset negative state penalty to 0 from Metal Processing
+---------------------------

@@ -1,0 +1,83 @@
+
+Working on structure 1
+Fixing common structure mistakes...
+  No mistakes were found
+Pre-treating metals...
+Done treating metals
+Assigning bond orders...
+  Using CCD: True
+CCD template assignment successfully used for HET "LEV "
+CCD template assignment successfully used for HET "DTT "
+CCD template assignment successfully used for HET "DTT "
+CCD template assignment successfully used for HET "DTT "
+CCD template assignment successfully used for HET "DTT "
+CCD template assignment successfully used for HET "EDO "
+CCD template assignment successfully used for HET "EDO "
+CCD template assignment successfully used for HET "EDO "
+CCD template assignment successfully used for HET "EDO "
+  Assigned the following bonds (format: atom1, atom2, order): set([(2237, 2238, 2), (2241, 2246, 2), (2235, 2236, 2), (2243, 2242, 2), (2248, 2249, 2), (2245, 2244, 2), (2229, 2234, 2), (2232, 2233, 2), (2230, 2231, 2), (2227, 2228, 2)])
+Removing and re-adding hydrogens...
+Treating metals...
+Creating di-sulfur bonds...
+Converting Selenomethionines...
+Filling missing loops using Prime...
+Attempting to build missing loops with Knowledge-Based Methods
+    A:  841 -- A:  846   RGAF
+    A: 1050 -- A: 1067   RDIYKDPDYVRKGDAR
+Generating models for each loop... 
+Total number of loops: 2
+Working on loop 0 - A:841,A:846,RGAF
+Number of returned models for loop 0 : 2
+Working on loop 1 - A:1050,A:1067,RDIYKDPDYVRKGDAR
+Number of returned models for loop 1 : 2
+Combining models from all loops... 
+Combination index: [0, 0]
+Side chain optimizing...
+Minimizing...
+Accept model # 0
+Detecting missing residue atoms...
+Finding het groups...
+Coloring atoms by element (green carbons in hets)...
+Finding het groups (for Epik)...
+Processing 11 het groups...
+  Using Epik with pH: 7.4
+        and pH Range: 0.0
+  Max states per het: 32
+Running Epik on 11 het groups...
+  Waiting for epik...
+  Het A:LEV (1201): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 4.
+  Het A:DTT (1202): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 0.
+  Het A:DTT (1203): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 1.
+  Het A:DTT (1204): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 1.
+  Het A:DTT (1205): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 1.
+  Het A:EDO (1206): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 0.
+  Het A:EDO (1207): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 2.
+  Het A:EDO (1208): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 0.
+  Het A:EDO (1209): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 1.
+  Het A:GOL (1210): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 2.
+  Het A:SO4 (1211): keeping all 1 state(s):
+    State penalty: -0.00 kcal/mol; H-Bond count: 2.
+Running ProtAssign...
+  Uses -minimize option in ProtAssign
+  Using PROPKA with pH: 7.4
+  RUNNING: /data/chodera/schrodinger/schrodinger2017-3-advanced/utilities/protassign 3WZD-protassign.mae 3WZD-protassign-out.mae -NOJOBID -nowater -minimize -propka_pH 7.4
+Optimize H-bond job completed.
+Deleting non-bridging waters...
+  Deleted waters: A:3001, A:3002, A:3003, A:3004, A:3005, A:3006, A:3007, A:3008, A:3009, A:3010, A:3011, A:3012, A:3013, A:3014, A:3015, A:3016, A:3017, A:3018, A:3019, A:3020, A:3021, A:3022, A:3023, A:3024, A:3025, A:3026, A:3027, A:3028, A:3029, A:3030, A:3031, A:3032, A:3033, A:3034, A:3035, A:3036, A:3037, A:3038, A:3039, A:3040, A:3041, A:3042, A:3043, A:3044, A:3045, A:3046, A:3047, A:3048, A:3049, A:3050, A:3051, A:3052, A:3053, A:3054, A:3055, A:3056, A:3057, A:3058, A:3059, A:3060, A:3061, A:3062, A:3063, A:3064, A:3065, A:3066, A:3067, A:3068, A:3069, A:3070, A:3071, A:3072, A:3073, A:3075, A:3076, A:3077, A:3078, A:3079, A:3080, A:3081, A:3082, A:3083, A:3084, A:3085, A:3086, A:3087, A:3088, A:3089, A:3090, A:3091, A:3092, A:3093, A:3094, A:3095, A:3096, A:3097, A:3098, A:3099, A:3100, A:3101, A:3102, A:3103, A:3104, A:3105, A:3106, A:3107, A:3108, A:3109, A:3110, A:3111, A:3112, A:3113, A:3114, A:3115, A:3116, A:3117, A:3118, A:3119, A:3120, A:3121, A:3122, A:3123, A:3124, A:3125, A:3126, A:3127, A:3128, A:3129, A:3130, A:3131, A:3133, A:3134, A:3135, A:3136, A:3137, A:3138, A:3139, A:3140, A:3141, A:3142, A:3143, A:3144, A:3145, A:3146, A:3147, A:3148, A:3149, A:3150, A:3151, A:3152, A:3153, A:3154, A:3155, A:3156, A:3157, A:3158, A:3159, A:3160, A:3161, A:3162, A:3163, A:3164, A:3165, A:3166, A:3167, A:3168, A:3169, A:3170, A:3171, A:3172, A:3173, A:3174, A:3175, A:3176, A:3177, A:3178, A:3179, A:3180, A:3181, A:3182, A:3183, A:3184, A:3185, A:3186, A:3187, A:3188, A:3189, A:3190, A:3191, A:3192, A:3193, A:3194, A:3195, A:3196, A:3197, A:3198, A:3199, A:3200, A:3201, A:3202, A:3203, A:3204, A:3205, A:3206, A:3207, A:3208, A:3209, A:3210, A:3211, A:3212, A:3213
+Running restrained minimization...
+  RMSD: 0.3
+  Force field: 3
+  hydrogens only
+done with preparation
+Writing to file...
+DONE. Output file: ../3WZD-fixed.pdb

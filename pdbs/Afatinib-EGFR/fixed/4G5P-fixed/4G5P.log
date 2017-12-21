@@ -1,0 +1,133 @@
+
+Working on structure 1
+Fixing common structure mistakes...
+  No mistakes were found
+Pre-treating metals...
+Done treating metals
+Assigning bond orders...
+  Using CCD: True
+CCD template assignment successfully used for HET "0WN "
+  Assigned the following bonds (format: atom1, atom2, order): set([(2398, 2399, 2), (2418, 2420, 2), (2397, 2396, 2), (2403, 2405, 2), (2401, 2400, 2), (2406, 2404, 2), (2407, 2408, 2), (2395, 2393, 2), (2392, 2394, 2)])
+Removing and re-adding hydrogens...
+Treating metals...
+Creating di-sulfur bonds...
+Converting Selenomethionines...
+Filling missing loops using Prime...
+Attempting to build missing loops with Knowledge-Based Methods
+    A:  986 -- A: 1009   MHLPSPTDSNFYRALMDEEDMD
+Generating models for each loop... 
+Total number of loops: 1
+Working on loop 0 - A:986,A:1009,MHLPSPTDSNFYRALMDEEDMD
+Now trying to expand the loop...
+Closing loop: 985 - 1009
+Closing loop: 985 - 1010
+Closing loop: 984 - 1010
+Closing loop: 984 - 1011
+Closing loop: 983 - 1011
+Closing loop: 983 - 1012
+WARNING: Fail to generate any model for ('A', 986, 1009, 'MHLPSPTDSNFYRALMDEEDMD')
+No new loop built successfully.
+Using Energy-Based Modeling to Fill in Remaining Loops and Tail Regions
+    A:986 -- A:1009   MHLPSPTDSNFYRALMDEEDMD
+==============================================================================
+  Prime version 4.9 (r016) Refine Structure: Energy calculation
+==============================================================================
+        
+Using the following input parameters:
+   FIX_ATOM_NAMES	yes
+   USE_SEQRES	yes
+
+Number of CPU cores to use: 1
+
+Using OPLS version OPLS3 for force-field parameters.
+
+Pre-processing input
+  Treating with residue ID check...
+    Complete:  0 min  0 sec
+  Treating with asl parsing...
+    Complete:  0 min  0 sec
+  Treating with naming consistency detection...
+    Complete:  0 min  0 sec
+
+ Random Number Seed Set to:    832165708
+ 
+ Contents of the control file:
+   
+   
+   file outdir "/lila/home/albaness/PDBfinder/pdbs/Afatinib-EGFR/fixed/4G5P-fixed/"
+   file datadir "/data/chodera/schrodinger/schrodinger2017-3-advanced/psp-v4.9/data/pop/"
+   file vddir "/data/chodera/schrodinger/schrodinger2017-3-advanced/psp-v4.9/data/pop/"
+   file tempdir "templates/"
+   file protempdir "templates/"
+   file usrtempdir "/lila/home/albaness/PDBfinder/pdbs/Afatinib-EGFR/fixed/4G5P-fixed/"
+   file gluefile "params.glue"
+   file logfile stdout
+   
+   rand seed 0
+   
+   
+   load simple BUILD_MISSING_LOOPS_0 Structure(126)  het yes ions yes wat yes mse2met no sym no   highest_occ no seqres yes    opls_version OPLS3 fix_atom_names yes
+   
+   
+   
+   constraints load_from_ct
+   energy param solv vsgb2.1
+   
+   
+   
+   energy param nbcut2_nn  40.0
+   energy param nbcut2_cn  40.0
+   energy param nbcut2_cc  40.0
+   
+   
+   
+   
+   
+   
+   
+   energy byres beg end interaction_energy yes
+   
+   struct atom_SASA all res
+   
+   
+   
+   write mae SWIG_OUTPUT_STRUCTURE
+   finalize yes
+   
+--Checked out   8 PSP Plop Tokens--
+ Random number seed reset to :            0
+ 
+ Parameters chosen for PDB loading:
+   All protein chains will be loaded.
+   Sequence read from SEQRES lines.
+   Building gaps up to           20  residues
+   Ions from PDB file INCLUDED.
+   PDB file assumed to be experimental data.
+   Waters from PDB file INCLUDED.
+   HETATMs from PDB file INCLUDED.
+   Hydrogens from PDB file INCLUDED.
+   NO symmetry will be used.
+   Atoms not in PDB file will NOT be optimized.
+   Atomtyping Parameters (when reading directly from mae)
+      OPLS Version OPLS3               
+      Planarity       None
+      Using Force Field Charges
+      Changing atom names to canonical values
+ 
+ STARTING TO WORK ON FILE BUILD_MISSING_LOOPS_0
+ Reading residue sequence from atoms in mae file
+ Reading residue sequence from atoms in mae file
+ Matched          299  residues of SEQRES chain A to input structure
+ ERROR: Cannot match SEQRES of chain B to input structure.
+ ERROR: Check to make sure all residues (including capping groups)
+ ERROR: in the input structure are included in the SEQRES
+ RETURNED LICENSE
+Error code in backend -1
+Entry        0|4G5P Failed ERROR: Non-zero exit status from backend program
+********************************************************************************
+**** Job Failed for the Following Entries                                   ****
+********************************************************************************
+****      Entry | Title                                                     ****
+****          0 | 4G5P                                                      ****
+********************************************************************************
+

@@ -66,8 +66,8 @@ def protein_prep(input_file_path, output_file_path, pdbid, pH=7.4, fillsidechain
     wiz_args['noepik'] = '-noepik' if noepik else ''
 
     cmd = [prepwiz_path]
-    cmd += '-captermini -mse -propka_pH {ph} {fillsidechains} {fillloops} {rehtreat} {noepik} -delwater_hbond_cutoff {water_hbond_cutoff} ' \
-           '-keepfarwat -disulfides -ms {ms} -minimize_adj_h -epik_pH {ph} -epik_pHt {pht} -fix -NOJOBID'.format(**wiz_args).split()
+    cmd += '-mse -propka_pH {ph} {fillsidechains} {fillloops} {rehtreat} {noepik} -delwater_hbond_cutoff {water_hbond_cutoff} ' \
+           '-keepfarwat -disulfides -ms {ms} -minimize_adj_h -epik_pH {ph} -f 3 -epik_pHt {pht} -fix -NOJOBID'.format(**wiz_args).split()
 
     cmd.append(input_file_path)
     cmd.append(output_file_name)
