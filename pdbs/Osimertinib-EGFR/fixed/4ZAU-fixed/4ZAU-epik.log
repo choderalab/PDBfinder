@@ -1,0 +1,45 @@
+COMMAND:
+ /data/chodera/schrodinger/schrodinger2017-3-advanced/epik-v4.1/bin/Linux-x86_64/epik_app -imae 4ZAU-epik.mae -omae 4ZAU-epik-out.mae -ms 32 -ph 7.4 -pht 0.0 -cg 0.3 0.3 -metal_binding
+SCHRODINGER: /data/chodera/schrodinger/schrodinger2017-3-advanced
+
+Running Epik version     4.1016
+Epik. Copyright Schrodinger, LLC. All rights reserved.
+
+Input file name:                        4ZAU-epik.mae
+Output file name:                       4ZAU-epik-out.mae
+Maximum number of states set to: 32
+Structure adjustment calculation requested.
+  Target pH set to 7.400
+pHt tolerance set to 0.000000e+00
+Both connectivity and geometry used in determining redundant structures.
+  Structures are distinct if: 
+    any position differs by more than 3.000000e-01
+    the rms difference in positions is larger than 3.000000e-01
+Metal binding mode turned on.
+
+Adjusting structures for pH 7.400000e+00 and minimum probability 1.000000e+00
+Solvent model name:                     water
+Jobcontrol is not being used for this specific Epik calculation.
+---------------------------
+Processing Input Structure #1
+        Title: 
+                                              Calculated pKas
+                                                 Conjugate
+                                          Atom   Acid/Base  pKa
+. . . . . . . . . . . . . . . . . . . . . . .
+Variation: 1
+                                            55   Conj_Acid 14.02
+                                            71   Conj_Acid  9.19
+                                            21   Conj_Base -1.22
+                                            23   Conj_Base  2.75
+                                            24   Conj_Base  3.11
+                                             6   Conj_Base  3.83
+                                            60   Conj_Acid 16.12
+                                            16   Conj_Base  0.89
+ pKa penalty:                                 0.01 kcal/mol
+     Charging penalty:                        0.01 kcal/mol
+     Neutralization penalty:                  0.00 kcal/mol
+ Overall Penalty (tautomerization included): -0.00 kcal/mol
+ Total Charge: 1
+ Metal Penalty:                              -0.00 kcal/mol
+---------------------------

@@ -1,0 +1,752 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ i_m_ct_format
+ :::
+ "" 
+  1
+  1
+  W2NIXTFuW2NIXVtjSF1bY0hdYzEtYzJbY0hdW2NIXW5jKG4yKVtOSF1jM2MoW0NIM10pW2NIXVtjSF1jKFtjSF0zKVtOSF1DKD1PKWM0W2NIXVtjSF1jKFtjSF1bY0hdNClbQ0gyXU41W0NIMl1bQ0gyXU4oW0NIM10pW0NIMl1bQ0gyXTU= 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzNQWVktZXBpay5tYWUnLCAnLW9tYWUnLCAnM1BZWS1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+  1
+    0.0388 
+    0.0381 
+    0.0007 
+   -0.0000 
+  0.0380757402063178
+  1
+  1
+   -0.0000 
+  0
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[69] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_color_rgb
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  s_ppw_CCD_assignment_status
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  r_epik_Metal_State_Penalty
+  :::
+  1 2 11.666000 2.963000 -10.894000 3 A 10 -0.18195 -0.18195 "STI " " C1 " 6 0 1EE11E  1 21.49 4 2153 1 1 "CCD match"  <> <> <>
+  2 2 12.017000 1.683000 -10.526000 3 A 10 -0.06106 -0.06106 "STI " " C6 " 6 0 1EE11E  1 22.87 4 2154 2 1 "CCD match"  <> <> <>
+  3 2 13.285000 1.433000 -10.045000 3 A 10 -0.09199 -0.09199 "STI " " C5 " 6 0 1EE11E  1 20.28 4 2155 3 1 "CCD match"  <> <> <>
+  4 2 14.148000 2.507000 -9.980000 3 A 10 0.12413 0.12413 "STI " " C4 " 6 0 1EE11E  1 20.85 4 2156 4 1 "CCD match"  <> <> <>
+  5 25 13.849000 3.768000 -10.319000 3 A 38 -0.47762 -0.47762 "STI " " N3 " 7 0 2E2EFF  1 20.3 4 2157 5 1 "CCD match"    3.887    0.738   -0.0000 
+  6 2 12.605000 3.962000 -10.769000 3 A 10 0.10485 0.10485 "STI " " C2 " 6 0 1EE11E  1 22.06 4 2158 6 1 "CCD match"  <> <> <>
+  7 2 13.707000 0.096000 -9.678000 3 A 10 0.32743 0.32743 "STI " " C7 " 6 0 1EE11E  1 21.74 4 2159 7 1 "CCD match"  <> <> <>
+  8 2 12.845000 -0.975000 -9.740000 3 A 10 -0.26757 -0.26757 "STI " " C12" 6 0 1EE11E  1 18.11 4 2160 8 1 "CCD match"  <> <> <>
+  9 2 13.354000 -2.201000 -9.393000 3 A 10 0.23650 0.23650 "STI " " C11" 6 0 1EE11E  1 19.58 4 2161 9 1 "CCD match"  <> <> <>
+  10 25 14.627000 -2.384000 -9.024000 3 A 38 -0.66385 -0.66385 "STI " " N10" 7 0 2E2EFF  1 18.01 4 2162 10 1 "CCD match"    3.112    2.220    0.0002 
+  11 2 15.391000 -1.288000 -9.000000 3 A 10 0.72541 0.72541 "STI " " C9 " 6 0 1EE11E  1 19.95 4 2163 11 1 "CCD match"  <> <> <>
+  12 25 14.983000 -0.051000 -9.299000 3 A 38 -0.65299 -0.65299 "STI " " N8 " 7 0 2E2EFF  1 18.24 4 2164 12 1 "CCD match"    2.752    2.220    0.0002 
+  13 25 16.730000 -1.419000 -8.607000 3 A 38 -0.60295 -0.60295 "STI " " N13" 7 0 2E2EFF  1 19.89 4 2165 13 1 "CCD match"  <> <> <>
+  14 2 17.346000 -2.644000 -8.319000 3 A 10 0.22618 0.22618 "STI " " C14" 6 0 1EE11E  1 21.73 4 2166 14 1 "CCD match"  <> <> <>
+  15 2 17.279000 -3.121000 -7.026000 3 A 10 -0.10667 -0.10667 "STI " " C19" 6 0 1EE11E  1 22.73 4 2167 15 1 "CCD match"  <> <> <>
+  16 2 17.886000 -4.308000 -6.691000 3 A 10 -0.09736 -0.09736 "STI " " C18" 6 0 1EE11E  1 21.55 4 2168 16 1 "CCD match"  <> <> <>
+  17 2 18.567000 -5.021000 -7.650000 3 A 10 -0.14172 -0.14172 "STI " " C17" 6 0 1EE11E  1 22.13 4 2169 17 1 "CCD match"  <> <> <>
+  18 2 18.642000 -4.556000 -8.941000 3 A 10 0.04726 0.04726 "STI " " C16" 6 0 1EE11E  1 21.65 4 2170 18 1 "CCD match"  <> <> <>
+  19 2 18.032000 -3.361000 -9.283000 3 A 10 -0.15228 -0.15228 "STI " " C15" 6 0 1EE11E  1 20.63 4 2171 19 1 "CCD match"  <> <> <>
+  20 25 19.371000 -5.346000 -9.848000 3 A 38 -0.38366 -0.38366 "STI " " N21" 7 0 2E2EFF  1 21.69 4 2172 20 1 "CCD match"  <> <> <>
+  21 2 19.669000 -4.966000 -11.133000 3 A 10 0.55029 0.55029 "STI " " C22" 6 0 1EE11E  1 25.14 4 2173 21 1 "CCD match"  <> <> <>
+  22 2 20.718000 -5.768000 -11.794000 3 A 10 -0.15998 -0.15998 "STI " " C23" 6 0 1EE11E  1 24.03 4 2174 22 1 "CCD match"  <> <> <>
+  23 2 21.311000 -5.238000 -12.911000 3 A 10 -0.09944 -0.09944 "STI " " C25" 6 0 1EE11E  1 24.12 4 2175 23 1 "CCD match"  <> <> <>
+  24 2 22.285000 -5.951000 -13.574000 3 A 10 -0.12071 -0.12071 "STI " " C26" 6 0 1EE11E  1 29.16 4 2176 24 1 "CCD match"  <> <> <>
+  25 2 22.675000 -7.192000 -13.123000 3 A 10 -0.06728 -0.06728 "STI " " C27" 6 0 1EE11E  1 32.49 4 2177 25 1 "CCD match"  <> <> <>
+  26 2 22.073000 -7.715000 -11.999000 3 A 10 -0.12071 -0.12071 "STI " " C28" 6 0 1EE11E  1 31.18 4 2178 26 1 "CCD match"  <> <> <>
+  27 2 21.090000 -7.009000 -11.330000 3 A 10 -0.09944 -0.09944 "STI " " C29" 6 0 1EE11E  1 28.15 4 2179 27 1 "CCD match"  <> <> <>
+  28 3 23.743000 -7.934000 -13.867000 3 A 10 0.14490 0.14490 "STI " " C46" 6 0 1EE11E  1 32.02 4 2180 28 1 "CCD match"  <> <> <>
+  29 32 23.358000 -9.333000 -14.211000 3 A 38 -0.69346 -0.69346 "STI " " N48" 7 1 2E2EFF  1 30.67 4 2181 29 1 "CCD match"  <> <> <>
+  30 3 22.116000 -9.417000 -15.013000 3 A 10 0.09616 0.09616 "STI " " C53" 6 0 1EE11E  1 30.06 4 2182 30 1 "CCD match"  <> <> <>
+  31 3 21.673000 -10.861000 -14.980000 3 A 10 0.09671 0.09671 "STI " " C52" 6 0 1EE11E  1 28.51 4 2183 31 1 "CCD match"  <> <> <>
+  32 26 22.769000 -11.659000 -15.584000 3 A 38 -0.69862 -0.69862 "STI " " N51" 7 0 2E2EFF  1 31.69 4 2184 32 1 "CCD match"    4.341    2.220  <>
+  33 3 22.365000 -13.068000 -15.787000 3 A 10 0.05464 0.05464 "STI " " C54" 6 0 1EE11E  1 29.38 4 2185 33 1 "CCD match"  <> <> <>
+  34 3 24.045000 -11.552000 -14.827000 3 A 10 0.09671 0.09671 "STI " " C50" 6 0 1EE11E  1 31.6 4 2186 34 1 "CCD match"  <> <> <>
+  35 3 24.464000 -10.099000 -14.837000 3 A 10 0.09616 0.09616 "STI " " C49" 6 0 1EE11E  1 33.82 4 2187 35 1 "CCD match"  <> <> <>
+  36 15 19.135000 -4.060000 -11.762000 3 A 70 -0.50249 -0.50249 "STI " " O29" 8 0 FF2E2E  1 24.3 4 2188 36 1 "CCD match"  <> <> <>
+  37 3 16.546000 -2.356000 -5.978000 3 A 10 -0.12280 -0.12280 "STI " " C20" 6 0 1EE11E  1 21.79 4 2189 37 1 "CCD match"  <> <> <>
+  38 41 10.673764 3.163805 -11.270224 3 A 21 0.14723 0.14723 "STI " " H1 " 1 0 FFFFFF  <> <> <> <> 38 <> <> <> <> <>
+  39 41 11.300339 0.879923 -10.614681 3 A 21 0.14113 0.14113 "STI " " H6 " 1 0 FFFFFF  <> <> <> <> 39 <> <> <> <> <>
+  40 41 15.160641 2.365754 -9.632137 3 A 21 0.16384 0.16384 "STI " " H4 " 1 0 FFFFFF  <> <> <> <> 40 <> <> <> <> <>
+  41 41 12.354103 4.976222 -11.042505 3 A 21 0.16093 0.16093 "STI " " H2 " 1 0 FFFFFF  <> <> <> <> 41 <> <> <> <> <>
+  42 41 11.888909 -0.891917 -10.021046 3 A 21 0.16155 0.16155 "STI " " H12" 1 0 FFFFFF  <> <> <> <> 42 <> <> <> <> <>
+  43 41 12.765592 -3.009405 -9.409057 3 A 21 0.16729 0.16729 "STI " " H11" 1 0 FFFFFF  <> <> <> <> 43 <> <> <> <> <>
+  44 43 17.364287 -0.525674 -8.508769 3 A 21 0.32824 0.32824 "STI " "HN13" 1 0 FFFFFF  <> <> <> <> 44 <> <>  15.866    2.000  <>
+  45 41 17.827143 -4.677540 -5.677898 3 A 21 0.13668 0.13668 "STI " " H18" 1 0 FFFFFF  <> <> <> <> 45 <> <> <> <> <>
+  46 41 19.047273 -5.952902 -7.390585 3 A 21 0.13754 0.13754 "STI " " H17" 1 0 FFFFFF  <> <> <> <> 46 <> <> <> <> <>
+  47 41 18.089195 -2.987793 -10.294852 3 A 21 0.15271 0.15271 "STI " " H15" 1 0 FFFFFF  <> <> <> <> 47 <> <> <> <> <>
+  48 43 19.740665 -6.335717 -9.541718 3 A 21 0.30133 0.30133 "STI " "HN21" 1 0 FFFFFF  <> <> <> <> 48 <> <>  12.630    1.474    0.0037 
+  49 41 21.013997 -4.263351 -13.269117 3 A 21 0.13881 0.13881 "STI " " H25" 1 0 FFFFFF  <> <> <> <> 49 <> <> <> <> <>
+  50 41 22.750525 -5.537520 -14.456452 3 A 21 0.13652 0.13652 "STI " " H26" 1 0 FFFFFF  <> <> <> <> 50 <> <> <> <> <>
+  51 41 22.367679 -8.686757 -11.631232 3 A 21 0.13652 0.13652 "STI " " H28" 1 0 FFFFFF  <> <> <> <> 51 <> <> <> <> <>
+  52 41 20.615455 -7.421791 -10.452042 3 A 21 0.13881 0.13881 "STI " " H29" 1 0 FFFFFF  <> <> <> <> 52 <> <> <> <> <>
+  53 41 23.965300 -7.410347 -14.808472 3 A 21 0.06690 0.06690 "STI " "H461" 1 0 FFFFFF  <> <> <> <> 53 <> <> <> <> <>
+  54 41 24.652910 -7.982594 -13.250800 3 A 21 0.06690 0.06690 "STI " "H462" 1 0 FFFFFF  <> <> <> <> 54 <> <> <> <> <>
+  55 41 21.349611 -8.762904 -14.571632 3 A 21 0.06849 0.06849 "STI " "H531" 1 0 FFFFFF  <> <> <> <> 55 <> <> <> <> <>
+  56 41 22.322983 -9.095175 -16.044303 3 A 21 0.06849 0.06849 "STI " "H532" 1 0 FFFFFF  <> <> <> <> 56 <> <> <> <> <>
+  57 41 21.495634 -11.166381 -13.938230 3 A 21 0.06964 0.06964 "STI " "H521" 1 0 FFFFFF  <> <> <> <> 57 <> <> <> <> <>
+  58 41 20.743864 -10.972813 -15.558104 3 A 21 0.06964 0.06964 "STI " "H522" 1 0 FFFFFF  <> <> <> <> 58 <> <> <> <> <>
+  59 41 21.419926 -13.101124 -16.348905 3 A 21 0.06045 0.06045 "STI " "H541" 1 0 FFFFFF  <> <> <> <> 59 <> <> <> <> <>
+  60 41 22.227970 -13.554527 -14.810008 3 A 21 0.06045 0.06045 "STI " "H542" 1 0 FFFFFF  <> <> <> <> 60 <> <> <> <> <>
+  61 41 23.146805 -13.595681 -16.352980 3 A 21 0.06045 0.06045 "STI " "H543" 1 0 FFFFFF  <> <> <> <> 61 <> <> <> <> <>
+  62 41 23.889027 -11.898380 -13.794676 3 A 21 0.06964 0.06964 "STI " "H501" 1 0 FFFFFF  <> <> <> <> 62 <> <> <> <> <>
+  63 41 24.811745 -12.174899 -15.310837 3 A 21 0.06964 0.06964 "STI " "H502" 1 0 FFFFFF  <> <> <> <> 63 <> <> <> <> <>
+  64 41 24.619697 -9.743345 -15.866207 3 A 21 0.06849 0.06849 "STI " "H491" 1 0 FFFFFF  <> <> <> <> 64 <> <> <> <> <>
+  65 41 25.386152 -9.953277 -14.255278 3 A 21 0.06849 0.06849 "STI " "H492" 1 0 FFFFFF  <> <> <> <> 65 <> <> <> <> <>
+  66 41 16.126661 -1.439600 -6.418870 3 A 21 0.07416 0.07416 "STI " "H201" 1 0 FFFFFF  <> <> <> <> 66 <> <> <> <> <>
+  67 41 17.239265 -2.088695 -5.166870 3 A 21 0.07416 0.07416 "STI " "H202" 1 0 FFFFFF  <> <> <> <> 67 <> <> <> <> <>
+  68 41 15.731052 -2.975065 -5.574740 3 A 21 0.07416 0.07416 "STI " "H203" 1 0 FFFFFF  <> <> <> <> 68 <> <> <> <> <>
+  69 44 23.137175 -9.819880 -13.249655 3 A 21 0.00000 0.00000 "STI " "    " 1 0 <> <> <> <> <> <> <> <>   8.578    2.220  <>
+  :::
+ } 
+ m_bond[73] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 6 2
+  3 1 38 1
+  4 2 3 2
+  5 2 39 1
+  6 3 4 1
+  7 3 7 1
+  8 4 5 2
+  9 4 40 1
+  10 5 6 1
+  11 6 41 1
+  12 7 8 1
+  13 7 12 2
+  14 8 9 2
+  15 8 42 1
+  16 9 10 1
+  17 9 43 1
+  18 10 11 2
+  19 11 12 1
+  20 11 13 1
+  21 13 14 1
+  22 13 44 1
+  23 14 15 1
+  24 14 19 2
+  25 15 16 2
+  26 15 37 1
+  27 16 17 1
+  28 16 45 1
+  29 17 18 2
+  30 17 46 1
+  31 18 19 1
+  32 18 20 1
+  33 19 47 1
+  34 20 21 1
+  35 20 48 1
+  36 21 22 1
+  37 21 36 2
+  38 22 23 2
+  39 22 27 1
+  40 23 24 1
+  41 23 49 1
+  42 24 25 2
+  43 24 50 1
+  44 25 26 1
+  45 25 28 1
+  46 26 27 2
+  47 26 51 1
+  48 27 52 1
+  49 28 29 1
+  50 28 53 1
+  51 28 54 1
+  52 29 30 1
+  53 29 35 1
+  54 29 69 1
+  55 30 31 1
+  56 30 55 1
+  57 30 56 1
+  58 31 32 1
+  59 31 57 1
+  60 31 58 1
+  61 32 33 1
+  62 32 34 1
+  63 33 59 1
+  64 33 60 1
+  65 33 61 1
+  66 34 35 1
+  67 34 62 1
+  68 34 63 1
+  69 35 64 1
+  70 35 65 1
+  71 37 66 1
+  72 37 67 1
+  73 37 68 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ i_m_ct_format
+ :::
+ "" 
+  2
+  2
+  Tz1TKD1PKShbTy1dKVtPLV0= 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzNQWVktZXBpay5tYWUnLCAnLW9tYWUnLCAnM1BZWS1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+  1
+    0.0000 
+    0.0000 
+    0.0000 
+   -0.0000 
+  1.96190151679993e-06
+  -2
+  2
+   -0.0000 
+  0
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[5] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_color_rgb
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  :::
+  1 113 9.795000 6.501000 -43.809000 4 A 143 1.60477 1.60477 "SO4 " " S  " 16 0 FFFF6B  1 42.93 2143 69 2 <> <>
+  2 15 10.163000 5.836000 -45.060000 4 A 70 -0.90119 -0.90119 "SO4 " " O1 " 8 0 FF2E2E  1 51.11 2144 70 2 <> <>
+  3 15 8.468000 6.065000 -43.409000 4 A 70 -0.90119 -0.90119 "SO4 " " O2 " 8 0 FF2E2E  1 45.7 2145 71 2 <> <>
+  4 18 10.773000 6.178000 -42.788000 4 A 70 -0.90119 -0.90119 "SO4 " " O3 " 8 -1 FF2E2E  1 39.4 2146 72 2   1.920    2.220 
+  5 18 9.810000 7.942000 -44.032000 4 A 70 -0.90119 -0.90119 "SO4 " " O4 " 8 -1 FF2E2E  1 53.27 2147 73 2   1.920    2.220 
+  :::
+ } 
+ m_bond[4] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 2
+  2 1 3 2
+  3 1 4 1
+  4 1 5 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ i_m_ct_format
+ :::
+ "" 
+  3
+  3
+  Tz1TKD1PKShbTy1dKVtPLV0= 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzNQWVktZXBpay5tYWUnLCAnLW9tYWUnLCAnM1BZWS1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+  1
+    0.0000 
+    0.0000 
+    0.0000 
+   -0.0000 
+  1.96190151679993e-06
+  -2
+  2
+   -0.0000 
+  0
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[5] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_color_rgb
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  :::
+  1 113 20.879000 -9.676000 -43.786000 5 A 143 1.60477 1.60477 "SO4 " " S  " 16 0 FFFF6B  1 66.04 2148 74 3 <> <>
+  2 15 21.938000 -9.063000 -44.590000 5 A 70 -0.90119 -0.90119 "SO4 " " O1 " 8 0 FF2E2E  1 57.73 2149 75 3 <> <>
+  3 15 19.609000 -9.612000 -44.512000 5 A 70 -0.90119 -0.90119 "SO4 " " O2 " 8 0 FF2E2E  1 58.32 2150 76 3 <> <>
+  4 18 21.216000 -11.076000 -43.509000 5 A 70 -0.90119 -0.90119 "SO4 " " O3 " 8 -1 FF2E2E  1 57.1 2151 77 3   1.920    2.220 
+  5 18 20.754000 -8.948000 -42.522000 5 A 70 -0.90119 -0.90119 "SO4 " " O4 " 8 -1 FF2E2E  1 55.12 2152 78 3   1.920    2.220 
+  :::
+ } 
+ m_bond[4] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 2
+  2 1 3 2
+  3 1 4 1
+  4 1 5 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ i_m_ct_format
+ :::
+ "" 
+  4
+  4
+  W2NIXTFbY0hdW2NIXVtjSF1bY0hdYzEtbihbY0hdYzJbQ0BIXShDMz1PKVtOSF1DKD1PKVtOSF0zKW5jMi1jNFtjSF1bY0hdYyhGKVtjSF1bY0hdNA== 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzNQWVktZXBpay5tYWUnLCAnLW9tYWUnLCAnM1BZWS1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+  1
+    0.0685 
+    0.0000 
+    0.0685 
+   -0.0000 
+  0
+  0
+  0
+    0.4431 
+  0
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[38] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  s_m_color_rgb
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  i_psp_added_missing_loops
+  s_ppw_CCD_assignment_status
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  r_epik_Metal_State_Penalty
+  :::
+  1 2 18.109000 11.827000 -38.090000 538 A 10 -0.11232 -0.11232 "3YY " " C1 " 6 1EE11E  1 33.8 4 2190 4721 4 1 "CCD match"  <> <> <>
+  2 2 16.790000 11.560000 -38.378000 538 A 10 -0.12575 -0.12575 "3YY " " C2 " 6 1EE11E  1 32.98 4 2191 4722 4 1 "CCD match"  <> <> <>
+  3 2 18.768000 11.136000 -37.098000 538 A 10 -0.12575 -0.12575 "3YY " " C3 " 6 1EE11E  1 32.08 4 2192 4723 4 1 "CCD match"  <> <> <>
+  4 2 15.656000 5.016000 -33.760000 538 A 10 -0.08231 -0.08231 "3YY " " C4 " 6 1EE11E  1 21.37 4 2193 4724 4 1 "CCD match"  <> <> <>
+  5 2 17.320000 6.492000 -32.898000 538 A 10 -0.08231 -0.08231 "3YY " " C5 " 6 1EE11E  1 18.81 4 2194 4725 4 1 "CCD match"  <> <> <>
+  6 2 16.117000 10.590000 -37.670000 538 A 10 -0.10497 -0.10497 "3YY " " C6 " 6 1EE11E  1 26.71 4 2195 4726 4 1 "CCD match"  <> <> <>
+  7 2 18.105000 10.166000 -36.381000 538 A 10 -0.10497 -0.10497 "3YY " " C7 " 6 1EE11E  1 25.74 4 2196 4727 4 1 "CCD match"  <> <> <>
+  8 2 16.093000 4.038000 -32.893000 538 A 10 -0.16901 -0.16901 "3YY " " C8 " 6 1EE11E  1 19.98 4 2197 4728 4 1 "CCD match"  <> <> <>
+  9 2 17.754000 5.508000 -32.027000 538 A 10 -0.16901 -0.16901 "3YY " " C9 " 6 1EE11E  1 19.22 4 2198 4729 4 1 "CCD match"  <> <> <>
+  10 2 14.768000 8.789000 -35.881000 538 A 10 -0.13528 -0.13528 "3YY " " C10" 6 1EE11E  1 21.63 4 2199 4730 4 1 "CCD match"  <> <> <>
+  11 2 16.268000 6.247000 -33.764000 538 A 10 -0.03619 -0.03619 "3YY " " C11" 6 1EE11E  1 21.57 4 2200 4731 4 1 "CCD match"  <> <> <>
+  12 2 14.554000 7.725000 -35.033000 538 A 10 -0.12111 -0.12111 "3YY " " C12" 6 1EE11E  1 20.95 4 2201 4732 4 1 "CCD match"  <> <> <>
+  13 2 16.793000 9.910000 -36.689000 538 A 10 -0.03142 -0.03142 "3YY " " C13" 6 1EE11E  1 24.76 4 2202 4733 4 1 "CCD match"  <> <> <>
+  14 2 17.138000 4.278000 -32.030000 538 A 10 0.22085 0.22085 "3YY " " C14" 6 1EE11E  1 21.54 4 2203 4734 4 1 "CCD match"  <> <> <>
+  15 2 15.854000 7.295000 -34.653000 538 A 10 0.07582 0.07582 "3YY " " C15" 6 1EE11E  1 20.26 4 2204 4735 4 1 "CCD match"  <> <> <>
+  16 2 12.663000 6.258000 -35.660000 538 A 10 0.41064 0.41064 "3YY " " C16" 6 1EE11E  1 21.39 4 2205 4736 4 1 "CCD match"  <> <> <>
+  17 2 11.216000 7.982000 -35.504000 538 A 10 0.41935 0.41935 "3YY " " C17" 6 1EE11E  1 24.87 4 2206 4737 4 1 "CCD match"  <> <> <>
+  18 3 13.247000 7.186000 -34.625000 538 A 10 0.03226 0.03226 "3YY " " C18" 6 1EE11E  1 22.01 4 2207 4738 4 1 "CCD match"  <> <> <>
+  19 25 16.804000 8.043000 -35.229000 538 A 38 -0.42048 -0.42048 "3YY " " N19" 7 2E2EFF  1 22.86 4 2208 4739 4 1 "CCD match"    0.762    1.300    0.4431 
+  20 25 16.122000 8.930000 -35.962000 538 A 38 0.31882 0.31882 "3YY " " N20" 7 2E2EFF  1 23.86 4 2209 4740 4 1 "CCD match"  <> <> <>
+  21 25 11.510000 6.806000 -36.132000 538 A 38 -0.21817 -0.21817 "3YY " " N21" 7 2E2EFF  1 22.52 4 2210 4741 4 1 "CCD match"  <> <> <>
+  22 25 12.259000 8.246000 -34.656000 538 A 38 -0.31984 -0.31984 "3YY " " N22" 7 2E2EFF  1 21.41 4 2211 4742 4 1 "CCD match"  <> <> <>
+  23 15 13.124000 5.174000 -35.974000 538 A 70 -0.48907 -0.48907 "3YY " " O23" 8 FF2E2E  1 20.8 4 2212 4743 4 1 "CCD match"  <> <> <>
+  24 15 10.216000 8.657000 -35.692000 538 A 70 -0.52244 -0.52244 "3YY " " O24" 8 FF2E2E  1 25.85 4 2213 4744 4 1 "CCD match"    2.445    1.474  <>
+  25 56 17.546000 3.301000 -31.179000 538 A 141 -0.21868 -0.21868 "3YY " " F25" 9 6BFFB5  1 22.25 4 2214 4745 4 1 "CCD match"  <> <> <>
+  26 41 18.639843 12.586449 -38.644836 538 A 21 0.13778 0.13778 "3YY " " H1 " 1 FFFFFF  <> <> <> <> 4746 <> 1 <> <> <> <>
+  27 41 16.285332 12.110925 -39.157867 538 A 21 0.14082 0.14082 "3YY " " H2 " 1 FFFFFF  <> <> <> <> 4747 <> 1 <> <> <> <>
+  28 41 19.803495 11.355435 -36.883525 538 A 21 0.14082 0.14082 "3YY " " H3 " 1 FFFFFF  <> <> <> <> 4748 <> 1 <> <> <> <>
+  29 41 14.835726 4.813914 -34.432839 538 A 21 0.14178 0.14178 "3YY " " H4 " 1 FFFFFF  <> <> <> <> 4749 <> 1 <> <> <> <>
+  30 41 17.802585 7.458159 -32.904960 538 A 21 0.14178 0.14178 "3YY " " H5 " 1 FFFFFF  <> <> <> <> 4750 <> 1 <> <> <> <>
+  31 41 15.081252 10.379889 -37.892442 538 A 21 0.14744 0.14744 "3YY " " H6 " 1 FFFFFF  <> <> <> <> 4751 <> 1 <> <> <> <>
+  32 41 18.618259 9.627804 -35.597859 538 A 21 0.14744 0.14744 "3YY " " H7 " 1 FFFFFF  <> <> <> <> 4752 <> 1 <> <> <> <>
+  33 41 15.614371 3.069879 -32.885492 538 A 21 0.14758 0.14758 "3YY " " H8 " 1 FFFFFF  <> <> <> <> 4753 <> 1 <> <> <> <>
+  34 41 18.571660 5.708073 -31.350389 538 A 21 0.14758 0.14758 "3YY " " H9 " 1 FFFFFF  <> <> <> <> 4754 <> 1 <> <> <> <>
+  35 41 13.990329 9.270379 -36.285354 538 A 21 0.16854 0.16854 "3YY " " H10" 1 FFFFFF  <> <> <> <> 4755 <> 1 <> <> <> <>
+  36 41 13.424627 6.736235 -33.636992 538 A 21 0.08084 0.08084 "3YY " " H18" 1 FFFFFF  <> <> <> <> 4756 <> 1 <> <> <> <>
+  37 43 10.943744 6.296888 -36.925825 538 A 21 0.28387 0.28387 "3YY " "HN21" 1 FFFFFF  <> <> <> <> 4757 <> 1 <>   8.314    2.220    3.2252 
+  38 43 12.396104 9.143972 -34.035638 538 A 21 0.28508 0.28508 "3YY " "HN22" 1 FFFFFF  <> <> <> <> 4758 <> 1 <>  10.543    2.220    0.7638 
+  :::
+ } 
+ m_bond[41] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 2
+  2 1 3 1
+  3 1 26 1
+  4 2 6 1
+  5 2 27 1
+  6 3 7 2
+  7 3 28 1
+  8 4 8 1
+  9 4 11 2
+  10 4 29 1
+  11 5 9 2
+  12 5 11 1
+  13 5 30 1
+  14 6 13 2
+  15 6 31 1
+  16 7 13 1
+  17 7 32 1
+  18 8 14 2
+  19 8 33 1
+  20 9 14 1
+  21 9 34 1
+  22 10 12 2
+  23 10 20 1
+  24 10 35 1
+  25 11 15 1
+  26 12 15 1
+  27 12 18 1
+  28 13 20 1
+  29 14 25 1
+  30 15 19 2
+  31 16 18 1
+  32 16 21 1
+  33 16 23 2
+  34 17 21 1
+  35 17 22 1
+  36 17 24 2
+  37 18 22 1
+  38 18 36 1
+  39 19 20 1
+  40 21 37 1
+  41 22 38 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ i_m_ct_format
+ :::
+ "" 
+  4
+  4
+  W2NIXTFbY0hdW2NIXVtjSF1bY0hdYzEtbihbY0hdYzJbQ0BIXShDMz1PKVtOSF1DKD1PKVtOSF0zKW5jMi1jNFtjSF1bY0hdYyhGKVtjSF1bY0hdNA== 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzNQWVktZXBpay5tYWUnLCAnLW9tYWUnLCAnM1BZWS1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+  1
+    1.3156 
+    1.3156 
+    0.0000 
+    1.2475 
+  2.5630284529832
+  -1
+  1
+    0.3799 
+  1
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[37] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_color_rgb
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  i_psp_added_missing_loops
+  s_ppw_CCD_assignment_status
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  r_epik_Metal_State_Penalty
+  :::
+  1 2 18.109000 11.827000 -38.090000 538 A 10 -0.11232 -0.11232 "3YY " " C1 " 6 0 1EE11E  1 33.8 4 2190 4721 4 1 "CCD match"  <> <> <>
+  2 2 16.790000 11.560000 -38.378000 538 A 10 -0.12575 -0.12575 "3YY " " C2 " 6 0 1EE11E  1 32.98 4 2191 4722 4 1 "CCD match"  <> <> <>
+  3 2 18.768000 11.136000 -37.098000 538 A 10 -0.12575 -0.12575 "3YY " " C3 " 6 0 1EE11E  1 32.08 4 2192 4723 4 1 "CCD match"  <> <> <>
+  4 2 15.656000 5.016000 -33.760000 538 A 10 -0.08231 -0.08231 "3YY " " C4 " 6 0 1EE11E  1 21.37 4 2193 4724 4 1 "CCD match"  <> <> <>
+  5 2 17.320000 6.492000 -32.898000 538 A 10 -0.08231 -0.08231 "3YY " " C5 " 6 0 1EE11E  1 18.81 4 2194 4725 4 1 "CCD match"  <> <> <>
+  6 2 16.117000 10.590000 -37.670000 538 A 10 -0.10497 -0.10497 "3YY " " C6 " 6 0 1EE11E  1 26.71 4 2195 4726 4 1 "CCD match"  <> <> <>
+  7 2 18.105000 10.166000 -36.381000 538 A 10 -0.10497 -0.10497 "3YY " " C7 " 6 0 1EE11E  1 25.74 4 2196 4727 4 1 "CCD match"  <> <> <>
+  8 2 16.093000 4.038000 -32.893000 538 A 10 -0.16901 -0.16901 "3YY " " C8 " 6 0 1EE11E  1 19.98 4 2197 4728 4 1 "CCD match"  <> <> <>
+  9 2 17.754000 5.508000 -32.027000 538 A 10 -0.16901 -0.16901 "3YY " " C9 " 6 0 1EE11E  1 19.22 4 2198 4729 4 1 "CCD match"  <> <> <>
+  10 2 14.768000 8.789000 -35.881000 538 A 10 -0.13528 -0.13528 "3YY " " C10" 6 0 1EE11E  1 21.63 4 2199 4730 4 1 "CCD match"  <> <> <>
+  11 2 16.268000 6.247000 -33.764000 538 A 10 -0.03619 -0.03619 "3YY " " C11" 6 0 1EE11E  1 21.57 4 2200 4731 4 1 "CCD match"  <> <> <>
+  12 2 14.554000 7.725000 -35.033000 538 A 10 -0.12111 -0.12111 "3YY " " C12" 6 0 1EE11E  1 20.95 4 2201 4732 4 1 "CCD match"  <> <> <>
+  13 2 16.793000 9.910000 -36.689000 538 A 10 -0.03142 -0.03142 "3YY " " C13" 6 0 1EE11E  1 24.76 4 2202 4733 4 1 "CCD match"  <> <> <>
+  14 2 17.138000 4.278000 -32.030000 538 A 10 0.22085 0.22085 "3YY " " C14" 6 0 1EE11E  1 21.54 4 2203 4734 4 1 "CCD match"  <> <> <>
+  15 2 15.854000 7.295000 -34.653000 538 A 10 0.07582 0.07582 "3YY " " C15" 6 0 1EE11E  1 20.26 4 2204 4735 4 1 "CCD match"  <> <> <>
+  16 2 12.663000 6.258000 -35.660000 538 A 10 0.41064 0.41064 "3YY " " C16" 6 0 1EE11E  1 21.39 4 2205 4736 4 1 "CCD match"  <> <> <>
+  17 2 11.216000 7.982000 -35.504000 538 A 10 0.41935 0.41935 "3YY " " C17" 6 0 1EE11E  1 24.87 4 2206 4737 4 1 "CCD match"  <> <> <>
+  18 3 13.247000 7.186000 -34.625000 538 A 10 0.03226 0.03226 "3YY " " C18" 6 0 1EE11E  1 22.01 4 2207 4738 4 1 "CCD match"  <> <> <>
+  19 25 16.804000 8.043000 -35.229000 538 A 38 -0.42048 -0.42048 "3YY " " N19" 7 0 2E2EFF  1 22.86 4 2208 4739 4 1 "CCD match"    0.887    1.300    1.6906 
+  20 25 16.122000 8.930000 -35.962000 538 A 38 0.31882 0.31882 "3YY " " N20" 7 0 2E2EFF  1 23.86 4 2209 4740 4 1 "CCD match"  <> <> <>
+  21 25 11.510000 6.806000 -36.132000 538 A 38 -0.21817 -0.21817 "3YY " " N21" 7 0 2E2EFF  1 22.52 4 2210 4741 4 1 "CCD match"    8.314    2.220    0.3799 
+  22 25 12.259000 8.246000 -34.656000 538 A 38 -0.31984 -0.31984 "3YY " " N22" 7 0 2E2EFF  1 21.41 4 2211 4742 4 1 "CCD match"   -1.709    2.000  <>
+  23 18 13.124000 5.174000 -35.974000 538 A 70 -0.48907 -0.48907 "3YY " " O23" 8 -1 FF2E2E  1 20.8 4 2212 4743 4 1 "CCD match"  <> <> <>
+  24 15 10.216000 8.657000 -35.692000 538 A 70 -0.52244 -0.52244 "3YY " " O24" 8 0 FF2E2E  1 25.85 4 2213 4744 4 1 "CCD match"    1.615    2.220  <>
+  25 56 17.546000 3.301000 -31.179000 538 A 141 -0.21868 -0.21868 "3YY " " F25" 9 0 6BFFB5  1 22.25 4 2214 4745 4 1 "CCD match"  <> <> <>
+  26 41 18.639843 12.586449 -38.644836 538 A 21 0.13778 0.13778 "3YY " " H1 " 1 0 FFFFFF  <> <> <> <> 4746 <> 1 <> <> <> <>
+  27 41 16.285332 12.110925 -39.157867 538 A 21 0.14082 0.14082 "3YY " " H2 " 1 0 FFFFFF  <> <> <> <> 4747 <> 1 <> <> <> <>
+  28 41 19.803495 11.355435 -36.883525 538 A 21 0.14082 0.14082 "3YY " " H3 " 1 0 FFFFFF  <> <> <> <> 4748 <> 1 <> <> <> <>
+  29 41 14.835726 4.813914 -34.432839 538 A 21 0.14178 0.14178 "3YY " " H4 " 1 0 FFFFFF  <> <> <> <> 4749 <> 1 <> <> <> <>
+  30 41 17.802585 7.458159 -32.904960 538 A 21 0.14178 0.14178 "3YY " " H5 " 1 0 FFFFFF  <> <> <> <> 4750 <> 1 <> <> <> <>
+  31 41 15.081252 10.379889 -37.892442 538 A 21 0.14744 0.14744 "3YY " " H6 " 1 0 FFFFFF  <> <> <> <> 4751 <> 1 <> <> <> <>
+  32 41 18.618259 9.627804 -35.597859 538 A 21 0.14744 0.14744 "3YY " " H7 " 1 0 FFFFFF  <> <> <> <> 4752 <> 1 <> <> <> <>
+  33 41 15.614371 3.069879 -32.885492 538 A 21 0.14758 0.14758 "3YY " " H8 " 1 0 FFFFFF  <> <> <> <> 4753 <> 1 <> <> <> <>
+  34 41 18.571660 5.708073 -31.350389 538 A 21 0.14758 0.14758 "3YY " " H9 " 1 0 FFFFFF  <> <> <> <> 4754 <> 1 <> <> <> <>
+  35 41 13.990329 9.270379 -36.285354 538 A 21 0.16854 0.16854 "3YY " " H10" 1 0 FFFFFF  <> <> <> <> 4755 <> 1 <> <> <> <>
+  36 41 13.424627 6.736235 -33.636992 538 A 21 0.08084 0.08084 "3YY " " H18" 1 0 FFFFFF  <> <> <> <> 4756 <> 1 <> <> <> <>
+  37 43 12.396104 9.143972 -34.035638 538 A 21 0.28508 0.28508 "3YY " "HN22" 1 0 FFFFFF  <> <> <> <> 4758 <> 1 <> <> <>   1.6906 
+  :::
+ } 
+ m_bond[40] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 2
+  2 1 3 1
+  3 1 26 1
+  4 2 6 1
+  5 2 27 1
+  6 3 7 2
+  7 3 28 1
+  8 4 8 1
+  9 4 11 2
+  10 4 29 1
+  11 5 9 2
+  12 5 11 1
+  13 5 30 1
+  14 6 13 2
+  15 6 31 1
+  16 7 13 1
+  17 7 32 1
+  18 8 14 2
+  19 8 33 1
+  20 9 14 1
+  21 9 34 1
+  22 10 12 2
+  23 10 20 1
+  24 10 35 1
+  25 11 15 1
+  26 12 15 1
+  27 12 18 1
+  28 13 20 1
+  29 14 25 1
+  30 15 19 2
+  31 16 18 1
+  32 16 21 2
+  33 16 23 1
+  34 17 21 1
+  35 17 22 1
+  36 17 24 2
+  37 18 22 1
+  38 18 36 1
+  39 19 20 1
+  40 22 37 1
+  :::
+ } 
+} 
+

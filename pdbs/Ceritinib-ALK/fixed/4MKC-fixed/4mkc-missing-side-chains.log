@@ -1,0 +1,1106 @@
+==============================================================================
+  Prime version 4.9 (r016) Refine Structure: Sidechain prediction
+==============================================================================
+        
+--------------------------------------------------------------------------------
+JobId          : ls04-0-59d29552
+Name           : 4mkc-missing-side-chains
+Program        : RefineStructure
+MMshareExec    : /data/chodera/schrodinger/schrodinger2017-3-advanced/mmshare-v3.9/bin/Linux-x86_64
+Host           : ls04.hpc.private
+Dir            : /lila/home/albaness/PDBfinder/pdbs/Ceritinib-ALK/fixed/4MKC-fixed
+HostEntry      : localhost
+JobHost        : ls04.hpc.private
+JobDir         : /data/chodera/schrodinger/tmpdir/albaness/4mkc-missing-side-chains
+JobMMshareExec : /data/chodera/schrodinger/schrodinger2017-3-advanced/mmshare-v3.9/bin/Linux-x86_64
+Commandline    : /data/chodera/schrodinger/schrodinger2017-3-advanced/prime 4mkc-missing-side-chains
+StartTime      : 2017-10-02-15:36:51
+--------------------------------------------------------------------------------
+Using the following input parameters:
+   EXT_DIEL	80.0
+   FIX_ATOM_NAMES	yes
+   JOB_TYPE	refine
+   NUM_SC_OUTPUT_STRUCT	1
+   RESIDUE_0	A:1101
+   RESIDUE_1	A:1109
+   SEED	0
+   SELECT	pick
+   STRUCT_FILE	4mkc-missing-side-chains-in.mae
+   USE_CRYSTAL_SYMMETRY	no
+   USE_MEMBRANE	no
+   USE_RANDOM_SEED	no
+
+Number of CPU cores to use: 1
+
+Using OPLS version OPLS3 for force-field parameters.
+
+Pre-processing input
+  Treating with residue ID check...
+    Complete:  0 min  0 sec
+  Treating with asl parsing...
+    Complete:  0 min  0 sec
+  Treating with naming consistency detection...
+    Complete:  0 min  0 sec
+
+ Random Number Seed Set to:    863124865
+ 
+ Contents of the control file:
+   
+   
+   file outdir "/lila/data/chodera/schrodinger/tmpdir/albaness/4mkc-missing-side-chains/"
+   file datadir "/data/chodera/schrodinger/schrodinger2017-3-advanced/psp-v4.9/data/pop/"
+   file vddir "/data/chodera/schrodinger/schrodinger2017-3-advanced/psp-v4.9/data/pop/"
+   file tempdir "templates/"
+   file protempdir "templates/"
+   file usrtempdir "/lila/data/chodera/schrodinger/tmpdir/albaness/4mkc-missing-side-chains/"
+   file gluefile "params.glue"
+   file logfile stdout
+   
+   rand seed 0
+   
+   
+   load simple 4mkc-missing-side-chains_0 Structure(37)  het yes ions yes wat yes mse2met no sym none   highest_occ no     opls_version OPLS3 fix_atom_names yes
+   
+   
+   
+   constraints load_from_ct
+   energy param solv vsgb2.1
+   
+   
+   
+   energy param nbcut2_nn  40.0
+   energy param nbcut2_cn  40.0
+   energy param nbcut2_cc  40.0
+   
+   
+   
+   
+   
+   
+   
+   energy total
+   side predict asl "atom.i_psp_select_atom 1" ofac_min 0.0 native_opt no failsafe no iter 1  maefile SWIG_OUTPUT_STRUCTURE
+   
+   energy total
+   energy total
+   
+   
+   write mae SWIG_OUTPUT_STRUCTURE
+   finalize yes
+   
+--Checked out   8 PSP Plop Tokens--
+ Random number seed reset to :            0
+ 
+ Parameters chosen for PDB loading:
+   All protein chains will be loaded.
+   Sequence read from ATOM lines.
+   Ions from PDB file INCLUDED.
+   PDB file assumed to be experimental data.
+   Waters from PDB file INCLUDED.
+   HETATMs from PDB file INCLUDED.
+   Hydrogens from PDB file INCLUDED.
+   NO symmetry will be used.
+   Atoms not in PDB file will NOT be optimized.
+   Atomtyping Parameters (when reading directly from mae)
+      OPLS Version OPLS3               
+      Planarity       None
+      Using Force Field Charges
+      Changing atom names to canonical values
+ 
+ STARTING TO WORK ON FILE 4mkc-missing-side-chains_0
+ Reading residue sequence from atoms in mae file
+ 
+ Amino acid sequence, chain: A A:ASN_1093   A:TYR_1401  
+    0 ASNB PRO  ASN  TYR  CYS  PHE  ALA  GLY  LYS  THR 
+   10 SER  SER  ILE  SER  ASP  LEU  LYS  GLU  VAL  PRO 
+   20 ARG  LYS  ASN  ILE  THR  LEU  ILE  ARG  GLY  LEU 
+   30 GLY  HID  GLY  ALA  PHE  GLY  GLU  VAL  TYR  GLU 
+   40 GLY  GLN  VAL  SER  GLY  MET  PRO  ASN  ASP  PRO 
+   50 SER  PRO  LEU  GLN  VAL  ALA  VAL  LYS  THR  LEU 
+   60 PRO  GLU  VAL  CYS  SER  GLU  GLN  ASP  GLU  LEU 
+   70 ASP  PHE  LEU  MET  GLU  ALA  LEU  ILE  ILE  SER 
+   80 LYS  PHE  ASN  HID  GLN  ASN  ILE  VAL  ARG  CYS 
+   90 ILE  GLY  VAL  SER  LEU  GLN  SER  LEU  PRO  ARG 
+  100 PHE  ILE  LEU  LEU  GLU  LEU  MET  ALA  GLY  GLY 
+  110 ASP  LEU  LYS  SER  PHE  LEU  ARG  GLU  THR  ARG 
+  120 PRO  ARG  PRO  SER  GLN  PRO  SER  SER  LEU  ALA 
+  130 MET  LEU  ASP  LEU  LEU  HID  VAL  ALA  ARG  ASP 
+  140 ILE  ALA  CYS  GLY  CYS  GLN  TYR  LEU  GLU  GLU 
+  150 ASN  HID  PHE  ILE  HID  ARG  ASP  ILE  ALA  ALA 
+  160 ARG  ASN  CYS  LEU  LEU  THR  CYS  PRO  GLY  PRO 
+  170 GLY  ARG  VAL  ALA  LYS  ILE  GLY  ASP  PHE  GLY 
+  180 MET  ALA  ARG  ASP  ILE  TYR  ARG  ALA  GLY  TYR 
+  190 TYR  ARG  LYS  GLY  GLY  CYS  ALA  MET  LEU  PRO 
+  200 VAL  LYS  TRP  MET  PRO  PRO  GLU  ALA  PHE  MET 
+  210 GLU  GLY  ILE  PHE  THR  SER  LYS  THR  ASP  THR 
+  220 TRP  SER  PHE  GLY  VAL  LEU  LEU  TRP  GLU  ILE 
+  230 PHE  SER  LEU  GLY  TYR  MET  PRO  TYR  PRO  SER 
+  240 LYS  SER  ASN  GLN  GLU  VAL  LEU  GLU  PHE  VAL 
+  250 THR  SER  GLY  GLY  ARG  MET  ASP  PRO  PRO  LYS 
+  260 ASN  CYS  PRO  GLY  PRO  VAL  TYR  ARG  ILE  MET 
+  270 THR  GLN  CYS  TRP  GLN  HID  GLN  PRO  GLU  ASP 
+  280 ARG  PRO  ASN  PHE  ALA  ILE  ILE  LEU  GLU  ARG 
+  290 ILE  GLU  TYR  CYS  THR  GLN  ASP  PRO  ASP  VAL 
+  300 ILE  ASN  THR  ALA  LEU  PRO  ILE  GLU  TYRE
+ 
+ Nonbonded initialization ...
+ Time for loading nb parameters:   3.528000000001086E-003
+ Build extended structure ...
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:ASN_1093  
+ Charged terminal template did not match, trying neutral terminal template for 
+  A:TYR_1401  
+ Generating crosslinks ...
+ Initialize 1/4 list ...
+ Initialize parent/child list ...
+ Initialize covalent pointers ...
+ Initialize resinfo list ...
+ ATTN: hetero res type GO1 
+  not recognized - rotamer conformations will not be sampled.
+ ATTN: hetero res type GOL 
+  not recognized - rotamer conformations will not be sampled.
+ ATTN: hetero res type 4MK 
+  not recognized - rotamer conformations will not be sampled.
+ Initialize special atoms ...
+ Initialize rank list ...
+ Initialize sparse atom list ...
+ 
+ Times for various book-keeping steps:
+     build   2.515s
+     cross   0.049s
+     child   0.022s
+      iper   0.000s
+       rev   0.023s
+      info   0.006s
+     resat   0.000s
+      rank   0.000s
+     covpt   0.001s
+    sparse   0.037s
+ 
+ Times for steps in loading structure:
+           Load sequence    1.01s
+    Initialize structure    2.69s
+      Assign coordinates    0.07s
+     Initialize symmetry    0.00s
+ 
+ Preparing for first energy calculation ...
+ 
+ Time for assigning nb parameters:    0.008s
+ 
+ Number of protein chains       1
+   Number of residues         309
+       (charged)               67
+        (polar)               110
+       (glycine)               24
+     (hydrophobic)            108
+ 
+ Number of RNA chains           0
+   Number of nucleotides        0
+ Number of DNA chains           0
+   Number of nucleotides        0
+ 
+ Number of waters             175
+ Number of ions                 0
+ Number of HET                  3
+ 
+ Number of atoms             5541
+   [sparse atoms]             588
+ 
+ Number of bonds             5436
+ Number of angles            9324
+ Number of torsions         14498
+ Number of 1/4s             13224
+ 
+ Partial charges and molecular weights:
+  HET group      A:GOL_1501        0.0000      92.1
+  HET group      A:GOL_1502        0.0000      92.1
+  HET group      A:4MK_1503        0.0000     558.1
+  Protein chain            A      -5.0000   34680.4
+  Entire system                   -5.0000   38575.4
+ 
+ Time for secondary structure initialization   0.002s
+ 
+ Results of parameter assignment
+    type    tot   time
+    BOND   5436   0.00
+    ANGL   9324   0.01
+    TORS  14860   0.05
+ 
+ Here are the parameters that will be used:
+                      Solvent model   SGB
+               Variable Dielectric:   ENABLED
+                               LYS:    4.33
+                               GLU:    2.39
+                               ASP:    2.29
+                               HIP:    2.00
+                               HIS:    1.00
+                               ARG:    2.01
+                      Penalty terms   EXCLUDED
+                Internal dielectric    1.00
+                 Solvent dielectric   80.00
+                 Ionic strength (M)    0.00
+                 Debye length (Ang)     Inf
+     Short NB cut (neutral/neutral)   10.00
+      Long NB cut (neutral/neutral)   40.00
+      Short NB cut (charge/neutral)   10.00
+       Long NB cut (charge/neutral)   40.00
+       Short NB cut (charge/charge)   15.00
+        Long NB cut (charge/charge)   40.00
+             Short NB cut (reduced)    6.00
+              Long NB cut (reduced)   36.00
+          Rotamer Frequency Scoring   OFF
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV     3737.593686      839.267708      767.262823     5344.124218
+     SGB    32296.437467   -11607.534065    -5964.416857    14724.486545
+   TOTAL    36034.031153   -10768.266356    -5197.154034    20068.610763
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1770.805733     7820.951091     -148.591115     9443.165709
+    LIPO        0.000000     -789.390429        0.000000     -789.390429
+      EL     8182.449363   -17690.724169      147.254109    -9361.020698
+     SGB    -5964.416857     7454.677367       33.640235     1523.900745
+   TOTAL     3988.838239    -3204.486141       32.303229      816.655327
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -23640.699975
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -273.895300
+ PACKING      -28.007627
+SelfCont      -36.944980
+ 
+ SUM:
+ SGB TOT    -1427.895828
+SOLV TOT    -1427.895828
+LIPO TOT     -789.390429
+  TOTALE   2870.135064877    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV     3737.593686      839.267708      767.262823     5344.124218
+     SGB    32296.437467   -11607.534065    -5964.416857    14724.486545
+   TOTAL    36034.031153   -10768.266356    -5197.154034    20068.610763
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1770.805733     7820.951091     -148.591115     9443.165709
+    LIPO        0.000000     -789.390429        0.000000     -789.390429
+      EL     8182.449363   -17690.724169      147.254109    -9361.020698
+     SGB    -5964.416857     7454.677367       33.640235     1523.900745
+   TOTAL     3988.838239    -3204.486141       32.303229      816.655327
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -23640.699975
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -273.895300
+ PACKING      -28.007627
+SelfCont      -36.944980
+ 
+ SUM:
+ SGB TOT    -1427.895828
+SOLV TOT    -1427.895828
+LIPO TOT     -789.390429
+  TOTALE   2870.135064877    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ Preparing for first energy calculation ...
+ 
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV     3737.593686      839.267708      767.262823     5344.124218
+     SGB    32296.437467   -11607.534065    -5964.416857    14724.486545
+   TOTAL    36034.031153   -10768.266356    -5197.154034    20068.610763
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1770.805733     7820.951091     -148.591115     9443.165709
+    LIPO        0.000000     -789.390429        0.000000     -789.390429
+      EL     8182.449363   -17690.724169      147.254109    -9361.020698
+     SGB    -5964.416857     7454.677367       33.640235     1523.900745
+   TOTAL     3988.838239    -3204.486141       32.303229      816.655327
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -23640.699975
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -273.895300
+ PACKING      -28.007627
+SelfCont      -36.944980
+ 
+ SUM:
+ SGB TOT    -1427.895828
+SOLV TOT    -1427.895828
+LIPO TOT     -789.390429
+  TOTALE   2870.135064877    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ ATTN:  large bond energies found:
+     104    103 A:HOH_1601:_OW_        104 A:HOH_1601:_HW1         10.00
+     105    103 A:HOH_1601:_OW_        105 A:HOH_1601:_HW2         10.00
+     106    106 A:HOH_1602:_OW_        107 A:HOH_1602:_HW1         10.00
+     107    106 A:HOH_1602:_OW_        108 A:HOH_1602:_HW2         10.00
+     108    109 A:HOH_1603:_OW_        110 A:HOH_1603:_HW1         10.00
+     109    109 A:HOH_1603:_OW_        111 A:HOH_1603:_HW2         10.00
+     110    112 A:HOH_1604:_OW_        113 A:HOH_1604:_HW1         10.00
+     111    112 A:HOH_1604:_OW_        114 A:HOH_1604:_HW2         10.00
+     112    115 A:HOH_1605:_OW_        116 A:HOH_1605:_HW1         10.00
+     113    115 A:HOH_1605:_OW_        117 A:HOH_1605:_HW2         10.00
+     114    118 A:HOH_1606:_OW_        119 A:HOH_1606:_HW1         10.00
+     115    118 A:HOH_1606:_OW_        120 A:HOH_1606:_HW2         10.00
+     116    121 A:HOH_1607:_OW_        122 A:HOH_1607:_HW1         10.00
+     117    121 A:HOH_1607:_OW_        123 A:HOH_1607:_HW2         10.00
+     118    124 A:HOH_1608:_OW_        125 A:HOH_1608:_HW1         10.00
+     119    124 A:HOH_1608:_OW_        126 A:HOH_1608:_HW2         10.00
+     120    127 A:HOH_1609:_OW_        128 A:HOH_1609:_HW1         10.00
+     121    127 A:HOH_1609:_OW_        129 A:HOH_1609:_HW2         10.00
+     122    130 A:HOH_1610:_OW_        131 A:HOH_1610:_HW1         10.00
+     123    130 A:HOH_1610:_OW_        132 A:HOH_1610:_HW2         10.00
+     124    133 A:HOH_1611:_OW_        134 A:HOH_1611:_HW1         10.00
+     125    133 A:HOH_1611:_OW_        135 A:HOH_1611:_HW2         10.00
+     126    136 A:HOH_1612:_OW_        137 A:HOH_1612:_HW1         10.00
+     127    136 A:HOH_1612:_OW_        138 A:HOH_1612:_HW2         10.00
+     128    139 A:HOH_1613:_OW_        140 A:HOH_1613:_HW1         10.00
+     129    139 A:HOH_1613:_OW_        141 A:HOH_1613:_HW2         10.00
+     130    142 A:HOH_1614:_OW_        143 A:HOH_1614:_HW1         10.00
+     131    142 A:HOH_1614:_OW_        144 A:HOH_1614:_HW2         10.00
+     132    145 A:HOH_1615:_OW_        146 A:HOH_1615:_HW1         10.00
+     133    145 A:HOH_1615:_OW_        147 A:HOH_1615:_HW2         10.00
+     134    148 A:HOH_1616:_OW_        149 A:HOH_1616:_HW1         10.00
+     135    148 A:HOH_1616:_OW_        150 A:HOH_1616:_HW2         10.00
+     136    151 A:HOH_1617:_OW_        152 A:HOH_1617:_HW1         10.00
+     137    151 A:HOH_1617:_OW_        153 A:HOH_1617:_HW2         10.00
+     138    154 A:HOH_1618:_OW_        155 A:HOH_1618:_HW1         10.00
+     139    154 A:HOH_1618:_OW_        156 A:HOH_1618:_HW2         10.00
+     140    157 A:HOH_1619:_OW_        158 A:HOH_1619:_HW1         10.00
+     141    157 A:HOH_1619:_OW_        159 A:HOH_1619:_HW2         10.00
+     142    160 A:HOH_1620:_OW_        161 A:HOH_1620:_HW1         10.00
+     143    160 A:HOH_1620:_OW_        162 A:HOH_1620:_HW2         10.00
+     144    163 A:HOH_1621:_OW_        164 A:HOH_1621:_HW1         10.00
+     145    163 A:HOH_1621:_OW_        165 A:HOH_1621:_HW2         10.00
+     146    166 A:HOH_1622:_OW_        167 A:HOH_1622:_HW1         10.00
+     147    166 A:HOH_1622:_OW_        168 A:HOH_1622:_HW2         10.00
+     148    169 A:HOH_1623:_OW_        170 A:HOH_1623:_HW1         10.00
+     149    169 A:HOH_1623:_OW_        171 A:HOH_1623:_HW2         10.00
+     150    172 A:HOH_1624:_OW_        173 A:HOH_1624:_HW1         10.00
+     151    172 A:HOH_1624:_OW_        174 A:HOH_1624:_HW2         10.00
+     152    175 A:HOH_1625:_OW_        176 A:HOH_1625:_HW1         10.00
+     153    175 A:HOH_1625:_OW_        177 A:HOH_1625:_HW2         10.00
+     154    178 A:HOH_1626:_OW_        179 A:HOH_1626:_HW1         10.00
+     155    178 A:HOH_1626:_OW_        180 A:HOH_1626:_HW2         10.00
+     156    181 A:HOH_1627:_OW_        182 A:HOH_1627:_HW1         10.00
+     157    181 A:HOH_1627:_OW_        183 A:HOH_1627:_HW2         10.00
+     158    184 A:HOH_1628:_OW_        185 A:HOH_1628:_HW1         10.00
+     159    184 A:HOH_1628:_OW_        186 A:HOH_1628:_HW2         10.00
+     160    187 A:HOH_1629:_OW_        188 A:HOH_1629:_HW1         10.00
+     161    187 A:HOH_1629:_OW_        189 A:HOH_1629:_HW2         10.00
+     162    190 A:HOH_1630:_OW_        191 A:HOH_1630:_HW1         10.00
+     163    190 A:HOH_1630:_OW_        192 A:HOH_1630:_HW2         10.00
+     164    193 A:HOH_1631:_OW_        194 A:HOH_1631:_HW1         10.00
+     165    193 A:HOH_1631:_OW_        195 A:HOH_1631:_HW2         10.00
+     166    196 A:HOH_1632:_OW_        197 A:HOH_1632:_HW1         10.00
+     167    196 A:HOH_1632:_OW_        198 A:HOH_1632:_HW2         10.00
+     168    199 A:HOH_1633:_OW_        200 A:HOH_1633:_HW1         10.00
+     169    199 A:HOH_1633:_OW_        201 A:HOH_1633:_HW2         10.00
+     170    202 A:HOH_1634:_OW_        203 A:HOH_1634:_HW1         10.00
+     171    202 A:HOH_1634:_OW_        204 A:HOH_1634:_HW2         10.00
+     172    205 A:HOH_1635:_OW_        206 A:HOH_1635:_HW1         10.00
+     173    205 A:HOH_1635:_OW_        207 A:HOH_1635:_HW2         10.00
+     174    208 A:HOH_1636:_OW_        209 A:HOH_1636:_HW1         10.00
+     175    208 A:HOH_1636:_OW_        210 A:HOH_1636:_HW2         10.00
+     176    211 A:HOH_1637:_OW_        212 A:HOH_1637:_HW1         10.00
+     177    211 A:HOH_1637:_OW_        213 A:HOH_1637:_HW2         10.00
+     178    214 A:HOH_1638:_OW_        215 A:HOH_1638:_HW1         10.00
+     179    214 A:HOH_1638:_OW_        216 A:HOH_1638:_HW2         10.00
+     180    217 A:HOH_1639:_OW_        218 A:HOH_1639:_HW1         10.00
+     181    217 A:HOH_1639:_OW_        219 A:HOH_1639:_HW2         10.00
+     182    220 A:HOH_1640:_OW_        221 A:HOH_1640:_HW1         10.00
+     183    220 A:HOH_1640:_OW_        222 A:HOH_1640:_HW2         10.00
+     184    223 A:HOH_1641:_OW_        224 A:HOH_1641:_HW1         10.00
+     185    223 A:HOH_1641:_OW_        225 A:HOH_1641:_HW2         10.00
+     186    226 A:HOH_1642:_OW_        227 A:HOH_1642:_HW1         10.00
+     187    226 A:HOH_1642:_OW_        228 A:HOH_1642:_HW2         10.00
+     188    229 A:HOH_1643:_OW_        230 A:HOH_1643:_HW1         10.00
+     189    229 A:HOH_1643:_OW_        231 A:HOH_1643:_HW2         10.00
+     190    232 A:HOH_1644:_OW_        233 A:HOH_1644:_HW1         10.00
+     191    232 A:HOH_1644:_OW_        234 A:HOH_1644:_HW2         10.00
+     192    235 A:HOH_1645:_OW_        236 A:HOH_1645:_HW1         10.00
+     193    235 A:HOH_1645:_OW_        237 A:HOH_1645:_HW2         10.00
+     194    238 A:HOH_1646:_OW_        239 A:HOH_1646:_HW1         10.00
+     195    238 A:HOH_1646:_OW_        240 A:HOH_1646:_HW2         10.00
+     196    241 A:HOH_1647:_OW_        242 A:HOH_1647:_HW1         10.00
+     197    241 A:HOH_1647:_OW_        243 A:HOH_1647:_HW2         10.00
+     198    244 A:HOH_1648:_OW_        245 A:HOH_1648:_HW1         10.00
+     199    244 A:HOH_1648:_OW_        246 A:HOH_1648:_HW2         10.00
+     200    247 A:HOH_1649:_OW_        248 A:HOH_1649:_HW1         10.00
+     201    247 A:HOH_1649:_OW_        249 A:HOH_1649:_HW2         10.00
+     202    250 A:HOH_1650:_OW_        251 A:HOH_1650:_HW1         10.00
+     203    250 A:HOH_1650:_OW_        252 A:HOH_1650:_HW2         10.00
+     204    253 A:HOH_1651:_OW_        254 A:HOH_1651:_HW1         10.00
+     205    253 A:HOH_1651:_OW_        255 A:HOH_1651:_HW2         10.00
+     206    256 A:HOH_1652:_OW_        257 A:HOH_1652:_HW1         10.00
+     207    256 A:HOH_1652:_OW_        258 A:HOH_1652:_HW2         10.00
+     208    259 A:HOH_1653:_OW_        260 A:HOH_1653:_HW1         10.00
+     209    259 A:HOH_1653:_OW_        261 A:HOH_1653:_HW2         10.00
+     210    262 A:HOH_1654:_OW_        263 A:HOH_1654:_HW1         10.00
+     211    262 A:HOH_1654:_OW_        264 A:HOH_1654:_HW2         10.00
+     212    265 A:HOH_1655:_OW_        266 A:HOH_1655:_HW1         10.00
+     213    265 A:HOH_1655:_OW_        267 A:HOH_1655:_HW2         10.00
+     214    268 A:HOH_1656:_OW_        269 A:HOH_1656:_HW1         10.00
+     215    268 A:HOH_1656:_OW_        270 A:HOH_1656:_HW2         10.00
+     216    271 A:HOH_1657:_OW_        272 A:HOH_1657:_HW1         10.00
+     217    271 A:HOH_1657:_OW_        273 A:HOH_1657:_HW2         10.00
+     218    274 A:HOH_1658:_OW_        275 A:HOH_1658:_HW1         10.00
+     219    274 A:HOH_1658:_OW_        276 A:HOH_1658:_HW2         10.00
+     220    277 A:HOH_1659:_OW_        278 A:HOH_1659:_HW1         10.00
+     221    277 A:HOH_1659:_OW_        279 A:HOH_1659:_HW2         10.00
+     222    280 A:HOH_1660:_OW_        281 A:HOH_1660:_HW1         10.00
+     223    280 A:HOH_1660:_OW_        282 A:HOH_1660:_HW2         10.00
+     224    283 A:HOH_1661:_OW_        284 A:HOH_1661:_HW1         10.00
+     225    283 A:HOH_1661:_OW_        285 A:HOH_1661:_HW2         10.00
+     226    286 A:HOH_1662:_OW_        287 A:HOH_1662:_HW1         10.00
+     227    286 A:HOH_1662:_OW_        288 A:HOH_1662:_HW2         10.00
+     228    289 A:HOH_1663:_OW_        290 A:HOH_1663:_HW1         10.00
+     229    289 A:HOH_1663:_OW_        291 A:HOH_1663:_HW2         10.00
+     230    292 A:HOH_1664:_OW_        293 A:HOH_1664:_HW1         10.00
+     231    292 A:HOH_1664:_OW_        294 A:HOH_1664:_HW2         10.00
+     232    295 A:HOH_1665:_OW_        296 A:HOH_1665:_HW1         10.00
+     233    295 A:HOH_1665:_OW_        297 A:HOH_1665:_HW2         10.00
+     234    298 A:HOH_1666:_OW_        299 A:HOH_1666:_HW1         10.00
+     235    298 A:HOH_1666:_OW_        300 A:HOH_1666:_HW2         10.00
+     236    301 A:HOH_1667:_OW_        302 A:HOH_1667:_HW1         10.00
+     237    301 A:HOH_1667:_OW_        303 A:HOH_1667:_HW2         10.00
+     238    304 A:HOH_1668:_OW_        305 A:HOH_1668:_HW1         10.00
+     239    304 A:HOH_1668:_OW_        306 A:HOH_1668:_HW2         10.00
+     240    307 A:HOH_1669:_OW_        308 A:HOH_1669:_HW1         10.00
+     241    307 A:HOH_1669:_OW_        309 A:HOH_1669:_HW2         10.00
+     242    310 A:HOH_1670:_OW_        311 A:HOH_1670:_HW1         10.00
+     243    310 A:HOH_1670:_OW_        312 A:HOH_1670:_HW2         10.00
+     244    313 A:HOH_1671:_OW_        314 A:HOH_1671:_HW1         10.00
+     245    313 A:HOH_1671:_OW_        315 A:HOH_1671:_HW2         10.00
+     246    316 A:HOH_1672:_OW_        317 A:HOH_1672:_HW1         10.00
+     247    316 A:HOH_1672:_OW_        318 A:HOH_1672:_HW2         10.00
+     248    319 A:HOH_1673:_OW_        320 A:HOH_1673:_HW1         10.00
+     249    319 A:HOH_1673:_OW_        321 A:HOH_1673:_HW2         10.00
+     250    322 A:HOH_1674:_OW_        323 A:HOH_1674:_HW1         10.00
+     251    322 A:HOH_1674:_OW_        324 A:HOH_1674:_HW2         10.00
+     252    325 A:HOH_1675:_OW_        326 A:HOH_1675:_HW1         10.00
+     253    325 A:HOH_1675:_OW_        327 A:HOH_1675:_HW2         10.00
+     254    328 A:HOH_1676:_OW_        329 A:HOH_1676:_HW1         10.00
+     255    328 A:HOH_1676:_OW_        330 A:HOH_1676:_HW2         10.00
+     256    331 A:HOH_1677:_OW_        332 A:HOH_1677:_HW1         10.00
+     257    331 A:HOH_1677:_OW_        333 A:HOH_1677:_HW2         10.00
+     258    334 A:HOH_1678:_OW_        335 A:HOH_1678:_HW1         10.00
+     259    334 A:HOH_1678:_OW_        336 A:HOH_1678:_HW2         10.00
+     260    337 A:HOH_1679:_OW_        338 A:HOH_1679:_HW1         10.00
+     261    337 A:HOH_1679:_OW_        339 A:HOH_1679:_HW2         10.00
+     262    340 A:HOH_1680:_OW_        341 A:HOH_1680:_HW1         10.00
+     263    340 A:HOH_1680:_OW_        342 A:HOH_1680:_HW2         10.00
+     264    343 A:HOH_1681:_OW_        344 A:HOH_1681:_HW1         10.00
+     265    343 A:HOH_1681:_OW_        345 A:HOH_1681:_HW2         10.00
+     266    346 A:HOH_1682:_OW_        347 A:HOH_1682:_HW1         10.00
+     267    346 A:HOH_1682:_OW_        348 A:HOH_1682:_HW2         10.00
+     268    349 A:HOH_1683:_OW_        350 A:HOH_1683:_HW1         10.00
+     269    349 A:HOH_1683:_OW_        351 A:HOH_1683:_HW2         10.00
+     270    352 A:HOH_1684:_OW_        353 A:HOH_1684:_HW1         10.00
+     271    352 A:HOH_1684:_OW_        354 A:HOH_1684:_HW2         10.00
+     272    355 A:HOH_1685:_OW_        356 A:HOH_1685:_HW1         10.00
+     273    355 A:HOH_1685:_OW_        357 A:HOH_1685:_HW2         10.00
+     274    358 A:HOH_1686:_OW_        359 A:HOH_1686:_HW1         10.00
+     275    358 A:HOH_1686:_OW_        360 A:HOH_1686:_HW2         10.00
+     276    361 A:HOH_1687:_OW_        362 A:HOH_1687:_HW1         10.00
+     277    361 A:HOH_1687:_OW_        363 A:HOH_1687:_HW2         10.00
+     278    364 A:HOH_1688:_OW_        365 A:HOH_1688:_HW1         10.00
+     279    364 A:HOH_1688:_OW_        366 A:HOH_1688:_HW2         10.00
+     280    367 A:HOH_1689:_OW_        368 A:HOH_1689:_HW1         10.00
+     281    367 A:HOH_1689:_OW_        369 A:HOH_1689:_HW2         10.00
+     282    370 A:HOH_1690:_OW_        371 A:HOH_1690:_HW1         10.00
+     283    370 A:HOH_1690:_OW_        372 A:HOH_1690:_HW2         10.00
+     284    373 A:HOH_1691:_OW_        374 A:HOH_1691:_HW1         10.00
+     285    373 A:HOH_1691:_OW_        375 A:HOH_1691:_HW2         10.00
+     286    376 A:HOH_1692:_OW_        377 A:HOH_1692:_HW1         10.00
+     287    376 A:HOH_1692:_OW_        378 A:HOH_1692:_HW2         10.00
+     288    379 A:HOH_1693:_OW_        380 A:HOH_1693:_HW1         10.00
+     289    379 A:HOH_1693:_OW_        381 A:HOH_1693:_HW2         10.00
+     290    382 A:HOH_1694:_OW_        383 A:HOH_1694:_HW1         10.00
+     291    382 A:HOH_1694:_OW_        384 A:HOH_1694:_HW2         10.00
+     292    385 A:HOH_1695:_OW_        386 A:HOH_1695:_HW1         10.00
+     293    385 A:HOH_1695:_OW_        387 A:HOH_1695:_HW2         10.00
+     294    388 A:HOH_1696:_OW_        389 A:HOH_1696:_HW1         10.00
+     295    388 A:HOH_1696:_OW_        390 A:HOH_1696:_HW2         10.00
+     296    391 A:HOH_1697:_OW_        392 A:HOH_1697:_HW1         10.00
+     297    391 A:HOH_1697:_OW_        393 A:HOH_1697:_HW2         10.00
+     298    394 A:HOH_1698:_OW_        395 A:HOH_1698:_HW1         10.00
+     299    394 A:HOH_1698:_OW_        396 A:HOH_1698:_HW2         10.00
+     300    397 A:HOH_1699:_OW_        398 A:HOH_1699:_HW1         10.00
+     301    397 A:HOH_1699:_OW_        399 A:HOH_1699:_HW2         10.00
+     302    400 A:HOH_1700:_OW_        401 A:HOH_1700:_HW1         10.00
+     303    400 A:HOH_1700:_OW_        402 A:HOH_1700:_HW2         10.00
+     304    403 A:HOH_1701:_OW_        404 A:HOH_1701:_HW1         10.00
+     305    403 A:HOH_1701:_OW_        405 A:HOH_1701:_HW2         10.00
+     306    406 A:HOH_1702:_OW_        407 A:HOH_1702:_HW1         10.00
+     307    406 A:HOH_1702:_OW_        408 A:HOH_1702:_HW2         10.00
+     308    409 A:HOH_1703:_OW_        410 A:HOH_1703:_HW1         10.00
+     309    409 A:HOH_1703:_OW_        411 A:HOH_1703:_HW2         10.00
+     310    412 A:HOH_1704:_OW_        413 A:HOH_1704:_HW1         10.00
+     311    412 A:HOH_1704:_OW_        414 A:HOH_1704:_HW2         10.00
+     312    415 A:HOH_1705:_OW_        416 A:HOH_1705:_HW1         10.00
+     313    415 A:HOH_1705:_OW_        417 A:HOH_1705:_HW2         10.00
+     314    418 A:HOH_1706:_OW_        419 A:HOH_1706:_HW1         10.00
+     315    418 A:HOH_1706:_OW_        420 A:HOH_1706:_HW2         10.00
+     316    421 A:HOH_1707:_OW_        422 A:HOH_1707:_HW1         10.00
+     317    421 A:HOH_1707:_OW_        423 A:HOH_1707:_HW2         10.00
+     318    424 A:HOH_1708:_OW_        425 A:HOH_1708:_HW1         10.00
+     319    424 A:HOH_1708:_OW_        426 A:HOH_1708:_HW2         10.00
+     320    427 A:HOH_1709:_OW_        428 A:HOH_1709:_HW1         10.00
+     321    427 A:HOH_1709:_OW_        429 A:HOH_1709:_HW2         10.00
+     322    430 A:HOH_1710:_OW_        431 A:HOH_1710:_HW1         10.00
+     323    430 A:HOH_1710:_OW_        432 A:HOH_1710:_HW2         10.00
+     324    433 A:HOH_1711:_OW_        434 A:HOH_1711:_HW1         10.00
+     325    433 A:HOH_1711:_OW_        435 A:HOH_1711:_HW2         10.00
+     326    436 A:HOH_1712:_OW_        437 A:HOH_1712:_HW1         10.00
+     327    436 A:HOH_1712:_OW_        438 A:HOH_1712:_HW2         10.00
+     328    439 A:HOH_1713:_OW_        440 A:HOH_1713:_HW1         10.00
+     329    439 A:HOH_1713:_OW_        441 A:HOH_1713:_HW2         10.00
+     330    442 A:HOH_1714:_OW_        443 A:HOH_1714:_HW1         10.00
+     331    442 A:HOH_1714:_OW_        444 A:HOH_1714:_HW2         10.00
+     332    445 A:HOH_1715:_OW_        446 A:HOH_1715:_HW1         10.00
+     333    445 A:HOH_1715:_OW_        447 A:HOH_1715:_HW2         10.00
+     334    448 A:HOH_1716:_OW_        449 A:HOH_1716:_HW1         10.00
+     335    448 A:HOH_1716:_OW_        450 A:HOH_1716:_HW2         10.00
+     336    451 A:HOH_1717:_OW_        452 A:HOH_1717:_HW1         10.00
+     337    451 A:HOH_1717:_OW_        453 A:HOH_1717:_HW2         10.00
+     338    454 A:HOH_1718:_OW_        455 A:HOH_1718:_HW1         10.00
+     339    454 A:HOH_1718:_OW_        456 A:HOH_1718:_HW2         10.00
+     340    457 A:HOH_1719:_OW_        458 A:HOH_1719:_HW1         10.00
+     341    457 A:HOH_1719:_OW_        459 A:HOH_1719:_HW2         10.00
+     342    460 A:HOH_1720:_OW_        461 A:HOH_1720:_HW1         10.00
+     343    460 A:HOH_1720:_OW_        462 A:HOH_1720:_HW2         10.00
+     344    463 A:HOH_1721:_OW_        464 A:HOH_1721:_HW1         10.00
+     345    463 A:HOH_1721:_OW_        465 A:HOH_1721:_HW2         10.00
+     346    466 A:HOH_1722:_OW_        467 A:HOH_1722:_HW1         10.00
+     347    466 A:HOH_1722:_OW_        468 A:HOH_1722:_HW2         10.00
+     348    469 A:HOH_1723:_OW_        470 A:HOH_1723:_HW1         10.00
+     349    469 A:HOH_1723:_OW_        471 A:HOH_1723:_HW2         10.00
+     350    472 A:HOH_1724:_OW_        473 A:HOH_1724:_HW1         10.00
+     351    472 A:HOH_1724:_OW_        474 A:HOH_1724:_HW2         10.00
+     352    475 A:HOH_1725:_OW_        476 A:HOH_1725:_HW1         10.00
+     353    475 A:HOH_1725:_OW_        477 A:HOH_1725:_HW2         10.00
+     354    478 A:HOH_1726:_OW_        479 A:HOH_1726:_HW1         10.00
+     355    478 A:HOH_1726:_OW_        480 A:HOH_1726:_HW2         10.00
+     356    481 A:HOH_1727:_OW_        482 A:HOH_1727:_HW1         10.00
+     357    481 A:HOH_1727:_OW_        483 A:HOH_1727:_HW2         10.00
+     358    484 A:HOH_1728:_OW_        485 A:HOH_1728:_HW1         10.00
+     359    484 A:HOH_1728:_OW_        486 A:HOH_1728:_HW2         10.00
+     360    487 A:HOH_1729:_OW_        488 A:HOH_1729:_HW1         10.00
+     361    487 A:HOH_1729:_OW_        489 A:HOH_1729:_HW2         10.00
+     362    490 A:HOH_1730:_OW_        491 A:HOH_1730:_HW1         10.00
+     363    490 A:HOH_1730:_OW_        492 A:HOH_1730:_HW2         10.00
+     364    493 A:HOH_1731:_OW_        494 A:HOH_1731:_HW1         10.00
+     365    493 A:HOH_1731:_OW_        495 A:HOH_1731:_HW2         10.00
+     366    496 A:HOH_1732:_OW_        497 A:HOH_1732:_HW1         10.00
+     367    496 A:HOH_1732:_OW_        498 A:HOH_1732:_HW2         10.00
+     368    499 A:HOH_1733:_OW_        500 A:HOH_1733:_HW1         10.00
+     369    499 A:HOH_1733:_OW_        501 A:HOH_1733:_HW2         10.00
+     370    502 A:HOH_1734:_OW_        503 A:HOH_1734:_HW1         10.00
+     371    502 A:HOH_1734:_OW_        504 A:HOH_1734:_HW2         10.00
+     372    505 A:HOH_1735:_OW_        506 A:HOH_1735:_HW1         10.00
+     373    505 A:HOH_1735:_OW_        507 A:HOH_1735:_HW2         10.00
+     374    508 A:HOH_1736:_OW_        509 A:HOH_1736:_HW1         10.00
+     375    508 A:HOH_1736:_OW_        510 A:HOH_1736:_HW2         10.00
+     376    511 A:HOH_1737:_OW_        512 A:HOH_1737:_HW1         10.00
+     377    511 A:HOH_1737:_OW_        513 A:HOH_1737:_HW2         10.00
+     378    514 A:HOH_1738:_OW_        515 A:HOH_1738:_HW1         10.00
+     379    514 A:HOH_1738:_OW_        516 A:HOH_1738:_HW2         10.00
+     380    517 A:HOH_1739:_OW_        518 A:HOH_1739:_HW1         10.00
+     381    517 A:HOH_1739:_OW_        519 A:HOH_1739:_HW2         10.00
+     382    520 A:HOH_1740:_OW_        521 A:HOH_1740:_HW1         10.00
+     383    520 A:HOH_1740:_OW_        522 A:HOH_1740:_HW2         10.00
+     384    523 A:HOH_1741:_OW_        524 A:HOH_1741:_HW1         10.00
+     385    523 A:HOH_1741:_OW_        525 A:HOH_1741:_HW2         10.00
+     386    526 A:HOH_1742:_OW_        527 A:HOH_1742:_HW1         10.00
+     387    526 A:HOH_1742:_OW_        528 A:HOH_1742:_HW2         10.00
+     388    529 A:HOH_1743:_OW_        530 A:HOH_1743:_HW1         10.00
+     389    529 A:HOH_1743:_OW_        531 A:HOH_1743:_HW2         10.00
+     390    532 A:HOH_1744:_OW_        533 A:HOH_1744:_HW1         10.00
+     391    532 A:HOH_1744:_OW_        534 A:HOH_1744:_HW2         10.00
+     392    535 A:HOH_1745:_OW_        536 A:HOH_1745:_HW1         10.00
+     393    535 A:HOH_1745:_OW_        537 A:HOH_1745:_HW2         10.00
+     394    538 A:HOH_1746:_OW_        539 A:HOH_1746:_HW1         10.00
+     395    538 A:HOH_1746:_OW_        540 A:HOH_1746:_HW2         10.00
+     396    541 A:HOH_1747:_OW_        542 A:HOH_1747:_HW1         10.00
+     397    541 A:HOH_1747:_OW_        543 A:HOH_1747:_HW2         10.00
+     398    544 A:HOH_1748:_OW_        545 A:HOH_1748:_HW1         10.00
+     399    544 A:HOH_1748:_OW_        546 A:HOH_1748:_HW2         10.00
+     400    547 A:HOH_1749:_OW_        548 A:HOH_1749:_HW1         10.00
+     401    547 A:HOH_1749:_OW_        549 A:HOH_1749:_HW2         10.00
+     402    550 A:HOH_1750:_OW_        551 A:HOH_1750:_HW1         10.00
+     403    550 A:HOH_1750:_OW_        552 A:HOH_1750:_HW2         10.00
+     404    553 A:HOH_1751:_OW_        554 A:HOH_1751:_HW1         10.00
+     405    553 A:HOH_1751:_OW_        555 A:HOH_1751:_HW2         10.00
+     406    556 A:HOH_1752:_OW_        557 A:HOH_1752:_HW1         10.00
+     407    556 A:HOH_1752:_OW_        558 A:HOH_1752:_HW2         10.00
+     408    559 A:HOH_1753:_OW_        560 A:HOH_1753:_HW1         10.00
+     409    559 A:HOH_1753:_OW_        561 A:HOH_1753:_HW2         10.00
+     410    562 A:HOH_1754:_OW_        563 A:HOH_1754:_HW1         10.00
+     411    562 A:HOH_1754:_OW_        564 A:HOH_1754:_HW2         10.00
+     412    565 A:HOH_1755:_OW_        566 A:HOH_1755:_HW1         10.00
+     413    565 A:HOH_1755:_OW_        567 A:HOH_1755:_HW2         10.00
+     414    568 A:HOH_1756:_OW_        569 A:HOH_1756:_HW1         10.00
+     415    568 A:HOH_1756:_OW_        570 A:HOH_1756:_HW2         10.00
+     416    571 A:HOH_1757:_OW_        572 A:HOH_1757:_HW1         10.00
+     417    571 A:HOH_1757:_OW_        573 A:HOH_1757:_HW2         10.00
+     418    574 A:HOH_1758:_OW_        575 A:HOH_1758:_HW1         10.00
+     419    574 A:HOH_1758:_OW_        576 A:HOH_1758:_HW2         10.00
+     420    577 A:HOH_1759:_OW_        578 A:HOH_1759:_HW1         10.00
+     421    577 A:HOH_1759:_OW_        579 A:HOH_1759:_HW2         10.00
+     422    580 A:HOH_1760:_OW_        581 A:HOH_1760:_HW1         10.00
+     423    580 A:HOH_1760:_OW_        582 A:HOH_1760:_HW2         10.00
+     424    583 A:HOH_1761:_OW_        584 A:HOH_1761:_HW1         10.00
+     425    583 A:HOH_1761:_OW_        585 A:HOH_1761:_HW2         10.00
+     426    586 A:HOH_1762:_OW_        587 A:HOH_1762:_HW1         10.00
+     427    586 A:HOH_1762:_OW_        588 A:HOH_1762:_HW2         10.00
+     428    589 A:HOH_1763:_OW_        590 A:HOH_1763:_HW1         10.00
+     429    589 A:HOH_1763:_OW_        591 A:HOH_1763:_HW2         10.00
+     430    592 A:HOH_1764:_OW_        593 A:HOH_1764:_HW1         10.00
+     431    592 A:HOH_1764:_OW_        594 A:HOH_1764:_HW2         10.00
+     432    595 A:HOH_1765:_OW_        596 A:HOH_1765:_HW1         10.00
+     433    595 A:HOH_1765:_OW_        597 A:HOH_1765:_HW2         10.00
+     434    598 A:HOH_1766:_OW_        599 A:HOH_1766:_HW1         10.00
+     435    598 A:HOH_1766:_OW_        600 A:HOH_1766:_HW2         10.00
+     436    601 A:HOH_1767:_OW_        602 A:HOH_1767:_HW1         10.00
+     437    601 A:HOH_1767:_OW_        603 A:HOH_1767:_HW2         10.00
+     438    604 A:HOH_1768:_OW_        605 A:HOH_1768:_HW1         10.00
+     439    604 A:HOH_1768:_OW_        606 A:HOH_1768:_HW2         10.00
+     440    607 A:HOH_1769:_OW_        608 A:HOH_1769:_HW1         10.00
+     441    607 A:HOH_1769:_OW_        609 A:HOH_1769:_HW2         10.00
+     442    610 A:HOH_1770:_OW_        611 A:HOH_1770:_HW1         10.00
+     443    610 A:HOH_1770:_OW_        612 A:HOH_1770:_HW2         10.00
+     444    613 A:HOH_1771:_OW_        614 A:HOH_1771:_HW1         10.00
+     445    613 A:HOH_1771:_OW_        615 A:HOH_1771:_HW2         10.00
+     446    616 A:HOH_1772:_OW_        617 A:HOH_1772:_HW1         10.00
+     447    616 A:HOH_1772:_OW_        618 A:HOH_1772:_HW2         10.00
+     448    619 A:HOH_1773:_OW_        620 A:HOH_1773:_HW1         10.00
+     449    619 A:HOH_1773:_OW_        621 A:HOH_1773:_HW2         10.00
+     450    622 A:HOH_1774:_OW_        623 A:HOH_1774:_HW1         10.00
+     451    622 A:HOH_1774:_OW_        624 A:HOH_1774:_HW2         10.00
+     452    625 A:HOH_1775:_OW_        626 A:HOH_1775:_HW1         10.00
+     453    625 A:HOH_1775:_OW_        627 A:HOH_1775:_HW2         10.00
+    2533   2685 A:MET_1223:_SD_       2686 A:MET_1223:_CE_          5.84
+ 
+ ATTN:  large angle energies found:
+ #,atoms,energy,angle,eq
+      61 A:4MK_1503:_C2 A:4MK_1503:_O4 A:4MK_1503:_C5    5.3  126.2  111.0
+ Cannot determine cbeta atoms for A:GOL_1501  
+ Cannot determine cbeta atoms for A:GOL_1502  
+ Cannot determine cbeta atoms for A:4MK_1503  
+ Cannot determine cbeta atoms for A:HOH_1601  
+ Cannot determine cbeta atoms for A:HOH_1602  
+ Cannot determine cbeta atoms for A:HOH_1603  
+ Cannot determine cbeta atoms for A:HOH_1604  
+ Cannot determine cbeta atoms for A:HOH_1605  
+ Cannot determine cbeta atoms for A:HOH_1606  
+ Cannot determine cbeta atoms for A:HOH_1607  
+ Cannot determine cbeta atoms for A:HOH_1608  
+ Cannot determine cbeta atoms for A:HOH_1609  
+ Cannot determine cbeta atoms for A:HOH_1610  
+ Cannot determine cbeta atoms for A:HOH_1611  
+ Cannot determine cbeta atoms for A:HOH_1612  
+ Cannot determine cbeta atoms for A:HOH_1613  
+ Cannot determine cbeta atoms for A:HOH_1614  
+ Cannot determine cbeta atoms for A:HOH_1615  
+ Cannot determine cbeta atoms for A:HOH_1616  
+ Cannot determine cbeta atoms for A:HOH_1617  
+ Cannot determine cbeta atoms for A:HOH_1618  
+ Cannot determine cbeta atoms for A:HOH_1619  
+ Cannot determine cbeta atoms for A:HOH_1620  
+ Cannot determine cbeta atoms for A:HOH_1621  
+ Cannot determine cbeta atoms for A:HOH_1622  
+ Cannot determine cbeta atoms for A:HOH_1623  
+ Cannot determine cbeta atoms for A:HOH_1624  
+ Cannot determine cbeta atoms for A:HOH_1625  
+ Cannot determine cbeta atoms for A:HOH_1626  
+ Cannot determine cbeta atoms for A:HOH_1627  
+ Cannot determine cbeta atoms for A:HOH_1628  
+ Cannot determine cbeta atoms for A:HOH_1629  
+ Cannot determine cbeta atoms for A:HOH_1630  
+ Cannot determine cbeta atoms for A:HOH_1631  
+ Cannot determine cbeta atoms for A:HOH_1632  
+ Cannot determine cbeta atoms for A:HOH_1633  
+ Cannot determine cbeta atoms for A:HOH_1634  
+ Cannot determine cbeta atoms for A:HOH_1635  
+ Cannot determine cbeta atoms for A:HOH_1636  
+ Cannot determine cbeta atoms for A:HOH_1637  
+ Cannot determine cbeta atoms for A:HOH_1638  
+ Cannot determine cbeta atoms for A:HOH_1639  
+ Cannot determine cbeta atoms for A:HOH_1640  
+ Cannot determine cbeta atoms for A:HOH_1641  
+ Cannot determine cbeta atoms for A:HOH_1642  
+ Cannot determine cbeta atoms for A:HOH_1643  
+ Cannot determine cbeta atoms for A:HOH_1644  
+ Cannot determine cbeta atoms for A:HOH_1645  
+ Cannot determine cbeta atoms for A:HOH_1646  
+ Cannot determine cbeta atoms for A:HOH_1647  
+ Cannot determine cbeta atoms for A:HOH_1648  
+ Cannot determine cbeta atoms for A:HOH_1649  
+ Cannot determine cbeta atoms for A:HOH_1650  
+ Cannot determine cbeta atoms for A:HOH_1651  
+ Cannot determine cbeta atoms for A:HOH_1652  
+ Cannot determine cbeta atoms for A:HOH_1653  
+ Cannot determine cbeta atoms for A:HOH_1654  
+ Cannot determine cbeta atoms for A:HOH_1655  
+ Cannot determine cbeta atoms for A:HOH_1656  
+ Cannot determine cbeta atoms for A:HOH_1657  
+ Cannot determine cbeta atoms for A:HOH_1658  
+ Cannot determine cbeta atoms for A:HOH_1659  
+ Cannot determine cbeta atoms for A:HOH_1660  
+ Cannot determine cbeta atoms for A:HOH_1661  
+ Cannot determine cbeta atoms for A:HOH_1662  
+ Cannot determine cbeta atoms for A:HOH_1663  
+ Cannot determine cbeta atoms for A:HOH_1664  
+ Cannot determine cbeta atoms for A:HOH_1665  
+ Cannot determine cbeta atoms for A:HOH_1666  
+ Cannot determine cbeta atoms for A:HOH_1667  
+ Cannot determine cbeta atoms for A:HOH_1668  
+ Cannot determine cbeta atoms for A:HOH_1669  
+ Cannot determine cbeta atoms for A:HOH_1670  
+ Cannot determine cbeta atoms for A:HOH_1671  
+ Cannot determine cbeta atoms for A:HOH_1672  
+ Cannot determine cbeta atoms for A:HOH_1673  
+ Cannot determine cbeta atoms for A:HOH_1674  
+ Cannot determine cbeta atoms for A:HOH_1675  
+ Cannot determine cbeta atoms for A:HOH_1676  
+ Cannot determine cbeta atoms for A:HOH_1677  
+ Cannot determine cbeta atoms for A:HOH_1678  
+ Cannot determine cbeta atoms for A:HOH_1679  
+ Cannot determine cbeta atoms for A:HOH_1680  
+ Cannot determine cbeta atoms for A:HOH_1681  
+ Cannot determine cbeta atoms for A:HOH_1682  
+ Cannot determine cbeta atoms for A:HOH_1683  
+ Cannot determine cbeta atoms for A:HOH_1684  
+ Cannot determine cbeta atoms for A:HOH_1685  
+ Cannot determine cbeta atoms for A:HOH_1686  
+ Cannot determine cbeta atoms for A:HOH_1687  
+ Cannot determine cbeta atoms for A:HOH_1688  
+ Cannot determine cbeta atoms for A:HOH_1689  
+ Cannot determine cbeta atoms for A:HOH_1690  
+ Cannot determine cbeta atoms for A:HOH_1691  
+ Cannot determine cbeta atoms for A:HOH_1692  
+ Cannot determine cbeta atoms for A:HOH_1693  
+ Cannot determine cbeta atoms for A:HOH_1694  
+ Cannot determine cbeta atoms for A:HOH_1695  
+ Cannot determine cbeta atoms for A:HOH_1696  
+ Cannot determine cbeta atoms for A:HOH_1697  
+ Cannot determine cbeta atoms for A:HOH_1698  
+ Cannot determine cbeta atoms for A:HOH_1699  
+ Cannot determine cbeta atoms for A:HOH_1700  
+ Cannot determine cbeta atoms for A:HOH_1701  
+ Cannot determine cbeta atoms for A:HOH_1702  
+ Cannot determine cbeta atoms for A:HOH_1703  
+ Cannot determine cbeta atoms for A:HOH_1704  
+ Cannot determine cbeta atoms for A:HOH_1705  
+ Cannot determine cbeta atoms for A:HOH_1706  
+ Cannot determine cbeta atoms for A:HOH_1707  
+ Cannot determine cbeta atoms for A:HOH_1708  
+ Cannot determine cbeta atoms for A:HOH_1709  
+ Cannot determine cbeta atoms for A:HOH_1710  
+ Cannot determine cbeta atoms for A:HOH_1711  
+ Cannot determine cbeta atoms for A:HOH_1712  
+ Cannot determine cbeta atoms for A:HOH_1713  
+ Cannot determine cbeta atoms for A:HOH_1714  
+ Cannot determine cbeta atoms for A:HOH_1715  
+ Cannot determine cbeta atoms for A:HOH_1716  
+ Cannot determine cbeta atoms for A:HOH_1717  
+ Cannot determine cbeta atoms for A:HOH_1718  
+ Cannot determine cbeta atoms for A:HOH_1719  
+ Cannot determine cbeta atoms for A:HOH_1720  
+ Cannot determine cbeta atoms for A:HOH_1721  
+ Cannot determine cbeta atoms for A:HOH_1722  
+ Cannot determine cbeta atoms for A:HOH_1723  
+ Cannot determine cbeta atoms for A:HOH_1724  
+ Cannot determine cbeta atoms for A:HOH_1725  
+ Cannot determine cbeta atoms for A:HOH_1726  
+ Cannot determine cbeta atoms for A:HOH_1727  
+ Cannot determine cbeta atoms for A:HOH_1728  
+ Cannot determine cbeta atoms for A:HOH_1729  
+ Cannot determine cbeta atoms for A:HOH_1730  
+ Cannot determine cbeta atoms for A:HOH_1731  
+ Cannot determine cbeta atoms for A:HOH_1732  
+ Cannot determine cbeta atoms for A:HOH_1733  
+ Cannot determine cbeta atoms for A:HOH_1734  
+ Cannot determine cbeta atoms for A:HOH_1735  
+ Cannot determine cbeta atoms for A:HOH_1736  
+ Cannot determine cbeta atoms for A:HOH_1737  
+ Cannot determine cbeta atoms for A:HOH_1738  
+ Cannot determine cbeta atoms for A:HOH_1739  
+ Cannot determine cbeta atoms for A:HOH_1740  
+ Cannot determine cbeta atoms for A:HOH_1741  
+ Cannot determine cbeta atoms for A:HOH_1742  
+ Cannot determine cbeta atoms for A:HOH_1743  
+ Cannot determine cbeta atoms for A:HOH_1744  
+ Cannot determine cbeta atoms for A:HOH_1745  
+ Cannot determine cbeta atoms for A:HOH_1746  
+ Cannot determine cbeta atoms for A:HOH_1747  
+ Cannot determine cbeta atoms for A:HOH_1748  
+ Cannot determine cbeta atoms for A:HOH_1749  
+ Cannot determine cbeta atoms for A:HOH_1750  
+ Cannot determine cbeta atoms for A:HOH_1751  
+ Cannot determine cbeta atoms for A:HOH_1752  
+ Cannot determine cbeta atoms for A:HOH_1753  
+ Cannot determine cbeta atoms for A:HOH_1754  
+ Cannot determine cbeta atoms for A:HOH_1755  
+ Cannot determine cbeta atoms for A:HOH_1756  
+ Cannot determine cbeta atoms for A:HOH_1757  
+ Cannot determine cbeta atoms for A:HOH_1758  
+ Cannot determine cbeta atoms for A:HOH_1759  
+ Cannot determine cbeta atoms for A:HOH_1760  
+ Cannot determine cbeta atoms for A:HOH_1761  
+ Cannot determine cbeta atoms for A:HOH_1762  
+ Cannot determine cbeta atoms for A:HOH_1763  
+ Cannot determine cbeta atoms for A:HOH_1764  
+ Cannot determine cbeta atoms for A:HOH_1765  
+ Cannot determine cbeta atoms for A:HOH_1766  
+ Cannot determine cbeta atoms for A:HOH_1767  
+ Cannot determine cbeta atoms for A:HOH_1768  
+ Cannot determine cbeta atoms for A:HOH_1769  
+ Cannot determine cbeta atoms for A:HOH_1770  
+ Cannot determine cbeta atoms for A:HOH_1771  
+ Cannot determine cbeta atoms for A:HOH_1772  
+ Cannot determine cbeta atoms for A:HOH_1773  
+ Cannot determine cbeta atoms for A:HOH_1774  
+ Cannot determine cbeta atoms for A:HOH_1775  
+ 
+ Here are the parameters chosen for side predict:
+ 
+  SC SCREENING PARAMETERS
+   Initial overlap factor:   0.750000000000000     
+   Minimum overlap factor:   0.000000000000000E+000
+   Rotamer library resolution:    10.0000000000000     
+   Total iterations:            1
+   SCs randomized prior to optimization.
+   Current SC rotamers NOT added to library.
+   DO NOT Remove SC Clashes Prior to Prediction
+   New tree-based energy routines used.
+   All energy components are used in rotamer ranking.
+   If sampling not succeed, will NOT revert to original structure.
+   Ecut for full energy updates:   -1.00000000000000     
+   Ecut for full minimizations:   -1.00000000000000     
+   SGB and LR updated after each cycle.
+   Option for SGB update:            1
+   Minimize after rotamer placement converged.
+ 
+  MINIMIZATION PARAMETERS
+   Minimization Algorithm: Automatic
+   Desired final RMS gradient:  1.000000000000000E-002
+   Maximum number of iterations to achieve self-consistency:            2
+   Energy cutoff for determining self-consistency  0.100kcals/mol
+   Maximum number of TN iterations:           65
+   Iterations between NBlist/LR updates:            2
+   LR forces will be updated less frequently than SR.
+   NB list will NOT be updated during minim.
+   SGB will be updated during minim.
+   Option for SGB update:            1
+   Born alpha will NOT be updated during minim
+   NB Clashes will be used in the preconditioning
+ Total side chains to be optimized:            2
+ 
+ Side chains have been found that have no match in the rotamer library:
+ Residue:  A:LYS_1109  
+     Actual angles   39.36 -177.88  180.00 -179.98
+   Closest rotamer   50.00 -170.00  170.00 -180.00
+             Delta   10.64    7.88  -10.00   -0.02
+ 
+ ------------------------------------------
+ NOW PRE-SCREENING ROTAMER STATES ...
+ (res, # after screen, # total, ofac, rmsd_min, rmsd_max, time)
+   A:LYS_1101      2091    2091   0.00   0.14   3.96   0.03s
+   A:LYS_1109      2091    2091   0.00   0.02   2.75   0.02s
+ 
+ Randomizing side chain positions ...
+ 
+ ------------------------------------------
+ NOW PICKING ROTAMER STATE BY ENERGY ...
+ (res, # rotamers, # evaluated, ofac, cluster #, 
+ rot #, old rot #, rmsd, elib, times)
+ nlist =            2
+one_lib:  A:LYS_1101      8364    5645  0.75   13594  11993   7525  1.5    1622.20    0.34s ****
+one_lib:  A:LYS_1109      8364    6993  0.75   1  85   7401  12889  2.6    1616.52    0.56s ****
+Time for iteration:     0.99s
+Rotamer placement not converged; flips (rot,prot,tot):     2    0    2
+ 
+ ------------------------------------------
+ NOW PICKING ROTAMER STATE BY ENERGY ...
+ (res, # rotamers, # evaluated, ofac, cluster #, 
+ rot #, old rot #, rmsd, elib, times)
+ nlist =            2
+one_lib:  A:LYS_1101      8364    5645  0.75   13458  11857  11993  1.6    1622.16    0.35s ****
+one_lib:  A:LYS_1109      8364    6993  0.75   1  85   7401   7401  2.6    1616.54    0.56s
+Time for iteration:     1.00s
+Rotamer placement not converged; flips (rot,prot,tot):     1    0    1
+ 
+ ------------------------------------------
+ NOW PICKING ROTAMER STATE BY ENERGY ...
+ (res, # rotamers, # evaluated, ofac, cluster #, 
+ rot #, old rot #, rmsd, elib, times)
+ nlist =            2
+one_lib:  A:LYS_1101      8364    5645  0.75   13458  11857  11857  1.6    1622.65    0.33s
+one_lib:  A:LYS_1109      8364    6993  0.75   1  85   7401   7401  2.6    1617.20    0.54s
+Time for iteration:     0.96s
+ Rotamer placement converged. Now minimizing...
+Summary of library results(time,ener):     3.40        1895.10     0.56        1892.64
+SIDE_PRED Time:       4.31s
+ 
+ Preparing for first energy calculation ...
+ 
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV     3737.784415      837.603100      764.655017     5340.042532
+     SGB    32308.789337   -11609.435545    -5964.050938    14735.302853
+   TOTAL    36046.573751   -10771.832445    -5199.395921    20075.345385
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1770.725615     6842.646406     -148.564031     8464.807990
+    LIPO        0.000000     -789.390429        0.000000     -789.390429
+      EL     8180.081623   -17681.133463      153.520008    -9347.531832
+     SGB    -5964.050938     7450.642155       27.649518     1514.240734
+   TOTAL     3986.756300    -4177.235332       32.605494     -157.873537
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -23649.902885
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -274.033661
+ PACKING      -28.007627
+SelfCont      -36.944980
+ 
+ SUM:
+ SGB TOT    -1436.308359
+SOLV TOT    -1436.308359
+LIPO TOT     -789.390429
+  TOTALE   1892.633632861    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV     3737.784415      837.603100      764.655017     5340.042532
+     SGB    32308.789337   -11609.435545    -5964.050938    14735.302853
+   TOTAL    36046.573751   -10771.832445    -5199.395921    20075.345385
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1770.725615     6842.596258     -148.513820     8464.808053
+    LIPO        0.000000     -789.390429        0.000000     -789.390429
+      EL     8180.081623   -17680.823082      152.506030    -9348.235430
+     SGB    -5964.050938     7450.272271       29.007212     1515.228545
+   TOTAL     3986.756300    -4177.344983       32.999422     -157.589261
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -23649.902885
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -274.033661
+ PACKING      -28.007627
+SelfCont      -36.944980
+ 
+ SUM:
+ SGB TOT    -1435.320549
+SOLV TOT    -1435.320549
+LIPO TOT     -789.390429
+  TOTALE   1892.917908961    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ Preparing for first energy calculation ...
+ 
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV     3737.784415      837.603100      764.655017     5340.042532
+     SGB    32308.789337   -11609.435545    -5964.050938    14735.302853
+   TOTAL    36046.573751   -10771.832445    -5199.395921    20075.345385
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1770.725615     6842.596258     -148.513820     8464.808053
+    LIPO        0.000000     -789.390429        0.000000     -789.390429
+      EL     8180.081623   -17680.823082      152.506030    -9348.235430
+     SGB    -5964.050938     7450.272271       29.007212     1515.228545
+   TOTAL     3986.756300    -4177.344983       32.999422     -157.589261
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -23649.902885
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -274.033661
+ PACKING      -28.007627
+SelfCont      -36.944980
+ 
+ SUM:
+ SGB TOT    -1435.320549
+SOLV TOT    -1435.320549
+LIPO TOT     -789.390429
+  TOTALE   1892.917908961    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ 
+ NOW REPORTING THE ENERGY (KCAL/MOL): 
+ COVALENT ENERGIES:
+                BOND           ANGLE             TOR           TOTAL
+     COV     3737.784415      837.603100      764.655017     5340.042532
+     SGB    32308.789337   -11609.435545    -5964.050938    14735.302853
+   TOTAL    36046.573751   -10771.832445    -5199.395921    20075.345385
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ NONBONDED (INTRAMOLECULAR) ENERGIES:
+                  14           SHORT            LONG           TOTAL
+      LJ     1770.725615     6842.596258     -148.513820     8464.808053
+    LIPO        0.000000     -789.390429        0.000000     -789.390429
+      EL     8180.081623   -17680.823082      152.506030    -9348.235430
+     SGB    -5964.050938     7450.272271       29.007212     1515.228545
+   TOTAL     3986.756300    -4177.344983       32.999422     -157.589261
+    TIME        0.000s          0.000s          0.000s          0.000s   
+ 
+ OTHER:
+SGB SELF   -23649.902885
+NONPOLAR        0.000000
+PROT COR        0.000000
+   HBOND     -274.033661
+ PACKING      -28.007627
+SelfCont      -36.944980
+ 
+ SUM:
+ SGB TOT    -1435.320549
+SOLV TOT    -1435.320549
+LIPO TOT     -789.390429
+  TOTALE   1892.917908961    
+ [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
+ TOTAL TIME ELAPSED: 4mkc-missing-side-chains_0          52.766s
+ RETURNED LICENSE
+Post-processing output...
+  Processing output structure #1
+Post-processing complete.
+
+

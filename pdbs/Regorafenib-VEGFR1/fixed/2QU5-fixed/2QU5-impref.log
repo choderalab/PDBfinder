@@ -1,0 +1,144 @@
+
+** Heavy-atom coordinates will be fixed: maxlevel set to 0
+  **
+  ** Beginning refinement level 0
+  **
+
+%IMPACT-I (openwt): Request to open FORMATTED file 2QU5-impref_ref0.out on unit   2
+ Entering IMPACT execution environment 
+ Date: Monday, October 02 2017, at 15:03:08 EDT
+ Impact version 76016
+ mmshare version        39016
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+
+ Host: Linux ls04 3.10.0-514.21.2.el7.x86_64 #1 SMP Tue Jun 20 12:24:47 UTC 2017 x86_64
+ Job Name: 2QU5-impref_ref0
+ SCHRODINGER  directory: /data/chodera/schrodinger/schrodinger2017-3-advanced
+ IMPACT_EXEC  directory: /data/chodera/schrodinger/schrodinger2017-3-advanced/impact-v7.6/bin/Linux-x86_64
+ MMSHARE_EXEC directory: /data/chodera/schrodinger/schrodinger2017-3-advanced/mmshare-v3.9/bin/Linux-x86_64
+
+ Clock-based global random seed:     1506970988
+%IMPACT-I(foldmain): calling OPLS3 atomtyping ...
+%IMPACT-I(foldmain): finished parameter assignment
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coord. are written to file: "2QU5-impref.init_coord.rst"
+      Box dimensions not written
+
+
+ Total number of atoms  =  4785
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1128391
+ E-pot        RMS grad     Max grad    
+  3.53308E+06  1.18863E+06  6.13552E+07
+ Step number:         10         Non-bonded count:  1128391
+ -7.38909E+03  1.24692E+00  4.21366E+01
+ Step number:         20         Non-bonded count:  1128391
+ -7.51683E+03  6.87123E-01  2.40371E+01
+ Step number:         30         Non-bonded count:  1128391
+ -7.55692E+03  4.30738E-01  1.34899E+01
+ Step number:         40         Non-bonded count:  1128391
+ -7.57361E+03  3.38661E-01  1.45380E+01
+ Step number:         50         Non-bonded count:  1128391
+ -7.58117E+03  1.81089E-01  4.06945E+00
+ Step number:         60         Non-bonded count:  1128391
+ -7.58611E+03  1.76328E-01  4.14718E+00
+ Step number:         70         Non-bonded count:  1128391
+ -7.59185E+03  1.81477E-01  3.25042E+00
+ Step number:         80         Non-bonded count:  1128391
+ -7.59548E+03  1.58535E-01  4.16625E+00
+ Step number:         90         Non-bonded count:  1128391
+ -7.59814E+03  1.31042E-01  5.09594E+00
+ Step number:        100         Non-bonded count:  1128391
+ -7.60119E+03  1.93539E-01  8.44268E+00
+ Step number:        100         Non-bonded count:  1128391
+ -7.60119E+03  1.93539E-01  8.44268E+00
+      Current coord. are written to file: "2QU5-impref.min0_coord.rst"
+      Box dimensions not written
+      Current coordinates are read from file: "2QU5-impref.init_coord.rst"
+      Box dimensions not read
+          read from "2QU5-impref.init_coord.rst"
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     286
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coordinates are read from file: "2QU5-impref.min0_coord.rst"
+      Box dimensions not read
+          read from "2QU5-impref.min0_coord.rst"
+
+
+ Total number of atoms  =  4785
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1128391
+ E-pot        RMS grad     Max grad    
+ -6.29573E+03  3.02737E+00  2.59128E+01
+ Step number:         10         Non-bonded count:  1128391
+ -7.18143E+03  1.34639E+00  2.71820E+01
+ Step number:         20         Non-bonded count:  1128391
+ -7.34608E+03  9.93290E-01  4.05579E+01
+ Step number:         30         Non-bonded count:  1128391
+ -7.38541E+03  4.20395E-01  1.36205E+01
+ Step number:         40         Non-bonded count:  1128391
+ -7.39293E+03  2.54178E-01  7.09849E+00
+ Step number:         50         Non-bonded count:  1128391
+ -7.39988E+03  2.05262E-01  5.06545E+00
+ Step number:         60         Non-bonded count:  1128391
+ -7.40328E+03  1.66361E-01  6.52114E+00
+ Step number:         70         Non-bonded count:  1128391
+ -7.40603E+03  1.73537E-01  6.26358E+00
+ Step number:         80         Non-bonded count:  1128391
+ -7.40881E+03  1.44192E-01  5.10288E+00
+ Step number:         90         Non-bonded count:  1128391
+ -7.41035E+03  9.47877E-02  2.22266E+00
+ Step number:        100         Non-bonded count:  1128391
+ -7.41118E+03  7.77306E-02  1.99839E+00
+ Step number:        100         Non-bonded count:  1128391
+ -7.41118E+03  7.77306E-02  1.99839E+00
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     581
+
+
+Final Energy Reports:
+------------------------------------
+ Total Energy of the system...... -7.41118E+03 kcal/mol
+ Total Potential Energy.......... -7.41118E+03 kcal/mol
+ Total Kinetic Energy............  0.00000E+00 kcal/mol
+ Temperature of the system.......        0.000 K
+ Bond Stretch Energy.............  1.82843E+01 kcal/mol
+ Angle Bending Energy............  3.63144E+02 kcal/mol
+ Torsion Angle Energy............  1.66566E+01 kcal/mol
+ Restraining Energy for Torsions.  0.00000E+00 kcal/mol
+ 1,4 Lennard Jones Energy........  4.76954E+02 kcal/mol
+ 1,4 Electrostatic Energy........ -4.00535E+02 kcal/mol
+ Lennard Jones Energy............ -4.20749E+02 kcal/mol
+ Electrostatic Energy............ -7.46494E+03 kcal/mol
+ H-bond Energy...................  0.00000E+00 kcal/mol
+ 
+ Exiting IMPACT execution environment 
+ Date: Monday, October 02 2017, at 15:03:25 EDT
+%IMPACT-I (timit): Total CPU time =      16.17 seconds (   0.3 minutes)
+Total elapsed time = 18 seconds
+  ** Completed refinement level 0      rmsd =  0.060
+
+** Refinement finished. Final level: 0
+
+** The refined complex file is 2QU5-impref_ref.mae.
