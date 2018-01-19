@@ -1,0 +1,144 @@
+
+** Heavy-atom coordinates will be fixed: maxlevel set to 0
+  **
+  ** Beginning refinement level 0
+  **
+
+%IMPACT-I (openwt): Request to open FORMATTED file 3UG2-impref_ref0.out on unit   2
+ Entering IMPACT execution environment 
+ Date: Thursday, December 21 2017, at 15:56:58 EST
+ Impact version 77011
+ mmshare version        40011
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+
+ Host: Linux ls04 3.10.0-514.21.2.el7.x86_64 #1 SMP Tue Jun 20 12:24:47 UTC 2017 x86_64
+ Job Name: 3UG2-impref_ref0
+ SCHRODINGER  directory: /data/chodera/schrodinger/schrodinger2017-4-advanced
+ IMPACT_EXEC  directory: /data/chodera/schrodinger/schrodinger2017-4-advanced/impact-v7.7/bin/Linux-x86_64
+ MMSHARE_EXEC directory: /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+
+ Clock-based global random seed:     1513889818
+%IMPACT-I(foldmain): calling OPLS3 atomtyping ...
+%IMPACT-I(foldmain): finished parameter assignment
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coord. are written to file: "3UG2-impref.init_coord.rst"
+      Box dimensions not written
+
+
+ Total number of atoms  =  5277
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1240719
+ E-pot        RMS grad     Max grad    
+ -5.88852E+03  8.93426E+01  5.01864E+03
+ Step number:         10         Non-bonded count:  1240719
+ -8.14434E+03  1.09081E+00  3.77240E+01
+ Step number:         20         Non-bonded count:  1240719
+ -8.23794E+03  6.24446E-01  1.30040E+01
+ Step number:         30         Non-bonded count:  1240719
+ -8.26884E+03  3.56391E-01  7.82335E+00
+ Step number:         40         Non-bonded count:  1240719
+ -8.28149E+03  2.33473E-01  7.49548E+00
+ Step number:         50         Non-bonded count:  1240719
+ -8.28778E+03  2.03364E-01  6.19477E+00
+ Step number:         60         Non-bonded count:  1240719
+ -8.29254E+03  1.62334E-01  4.25338E+00
+ Step number:         70         Non-bonded count:  1240719
+ -8.29668E+03  1.69763E-01  4.90057E+00
+ Step number:         80         Non-bonded count:  1240719
+ -8.30046E+03  1.62441E-01  5.22304E+00
+ Step number:         90         Non-bonded count:  1240719
+ -8.30299E+03  1.13950E-01  3.42015E+00
+ Step number:        100         Non-bonded count:  1240719
+ -8.30469E+03  1.00030E-01  2.69832E+00
+ Step number:        100         Non-bonded count:  1240719
+ -8.30469E+03  1.00030E-01  2.69832E+00
+      Current coord. are written to file: "3UG2-impref.min0_coord.rst"
+      Box dimensions not written
+      Current coordinates are read from file: "3UG2-impref.init_coord.rst"
+      Box dimensions not read
+          read from "3UG2-impref.init_coord.rst"
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     266
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coordinates are read from file: "3UG2-impref.min0_coord.rst"
+      Box dimensions not read
+          read from "3UG2-impref.min0_coord.rst"
+
+
+ Total number of atoms  =  5277
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1240719
+ E-pot        RMS grad     Max grad    
+ -7.05115E+03  2.69014E+00  2.57971E+01
+ Step number:         10         Non-bonded count:  1240719
+ -7.84022E+03  1.55824E+00  1.86893E+01
+ Step number:         20         Non-bonded count:  1240719
+ -8.00033E+03  8.81806E-01  2.25046E+01
+ Step number:         30         Non-bonded count:  1240719
+ -8.06829E+03  5.44838E-01  3.01036E+01
+ Step number:         40         Non-bonded count:  1240719
+ -8.08194E+03  2.45727E-01  9.89962E+00
+ Step number:         50         Non-bonded count:  1240719
+ -8.08601E+03  1.98616E-01  5.61517E+00
+ Step number:         60         Non-bonded count:  1240719
+ -8.09002E+03  1.65065E-01  6.25190E+00
+ Step number:         70         Non-bonded count:  1240719
+ -8.09228E+03  1.33172E-01  6.57076E+00
+ Step number:         80         Non-bonded count:  1240719
+ -8.09418E+03  1.23962E-01  5.38796E+00
+ Step number:         90         Non-bonded count:  1240719
+ -8.09588E+03  1.24442E-01  2.67159E+00
+ Step number:        100         Non-bonded count:  1240719
+ -8.09715E+03  9.44550E-02  1.57740E+00
+ Step number:        100         Non-bonded count:  1240719
+ -8.09715E+03  9.44550E-02  1.57740E+00
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     555
+
+
+Final Energy Reports:
+------------------------------------
+ Total Energy of the system...... -8.09715E+03 kcal/mol
+ Total Potential Energy.......... -8.09715E+03 kcal/mol
+ Total Kinetic Energy............  0.00000E+00 kcal/mol
+ Temperature of the system.......        0.000 K
+ Bond Stretch Energy.............  1.10920E+01 kcal/mol
+ Angle Bending Energy............  3.98218E+02 kcal/mol
+ Torsion Angle Energy............  4.53449E+01 kcal/mol
+ Restraining Energy for Torsions.  0.00000E+00 kcal/mol
+ 1,4 Lennard Jones Energy........  5.60484E+02 kcal/mol
+ 1,4 Electrostatic Energy........ -3.55126E+02 kcal/mol
+ Lennard Jones Energy............ -6.01756E+02 kcal/mol
+ Electrostatic Energy............ -8.15540E+03 kcal/mol
+ H-bond Energy...................  0.00000E+00 kcal/mol
+ 
+ Exiting IMPACT execution environment 
+ Date: Thursday, December 21 2017, at 15:57:22 EST
+%IMPACT-I (timit): Total CPU time =      23.08 seconds (   0.4 minutes)
+Total elapsed time = 25 seconds
+  ** Completed refinement level 0      rmsd =  0.074
+
+** Refinement finished. Final level: 0
+
+** The refined complex file is 3UG2-impref_ref.mae.
