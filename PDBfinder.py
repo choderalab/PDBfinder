@@ -1,7 +1,6 @@
 # Implemented by SKA, Chodera Lab
-# Last edited: 9/15/17
-# TO DO: If we ever publish something with this script, check how to cite PyPDB, the query and search functions
-#        are based on (but very much altered from) the code in that repo
+# Last edited: 1/23/18
+
 
 ##################################################
 import csv
@@ -16,7 +15,7 @@ import os
 from natsort import natsorted
 import pypdb
 import protprep
-
+from renumber import renumber
 #################################################
 
 parser = argparse.ArgumentParser(description="Automated script to search PDB by chemical ID")
@@ -291,11 +290,21 @@ def pdb_fix_pdbfixer(pdbid, file_pathway, ph, chains_to_remove):
 
 
 def pdb_fix_schrodinger(pdbid, file_pathway, ph):
+    """
+
+    :param pdbid: 4 letter PDB code
+    :param file_pathway: point to where the downloaded pdb file is
+    :param ph: ph structure should be prepared out
+    :return: file name of the saved, prepared structure
+    """
 
     print(pdbid)
     input_file = os.path.join(file_pathway, '%s.pdb' % pdbid)
     output_file_pathway = os.path.join(file_pathway, 'fixed')
-    protprep.protein_prep(input_file, output_file_pathway, pdbid, pH=ph)
+    file_name = protprep.protein_prep(input_file, output_file_pathway, pdbid, pH=ph)
+
+    return file_name
+
 
 
 def download_pdb(pdbid, file_pathway):
@@ -322,8 +331,19 @@ def download_pdb(pdbid, file_pathway):
 
     write_file(os.path.join(file_pathway, '%s.pdb' % pdbid), pdb)
 
+    return os.path.join(file_pathway, '%s.pdb' % pdbid)
+
 
 def ligand_search_mode(inhibitor_list, ligname, pH, fixpdb):
+    """
+    Search for all structures containing a given ligand
+
+    :param inhibitor_list: list of chem IDs for a given ligand
+    :param ligname: name of the ligand
+    :param pH: pH structures should be prepared at
+    :param fixpdb: whether or not to fix the pdb file
+    :return: output name
+    """
     pdb_list = []
     pathway = 'pdbs/%s' % ligname
     for id in inhibitor_list:
@@ -334,12 +354,23 @@ def ligand_search_mode(inhibitor_list, ligname, pH, fixpdb):
         if len(found_pdb) > 0:
             print('found %s PDBS for %s' % (len(found_pdb), id))
             for s in found_pdb:
-                download_pdb(s, pathway)
+                name = download_pdb(s, pathway)
                 if fixpdb is True:
-                    pdb_fix_schrodinger(s, pathway, pH)
+                    name = pdb_fix_schrodinger(s, pathway, pH)
 
 
 def ligand_target_search_mode(inhibitor_list, dictionary, ligname, pH, fixpdb):
+
+    """
+    Search for a given ligand and it's primary target
+    :param inhibitor_list: list of PDB ID codes
+    :param dictionary: dictionary created from the CSV file distributed with this code
+    :param ligname: name of the ligand of interest
+    :param pH: pH to prepare structures at
+    :param fixpdb: whether the PDB files output should be prepared
+    """
+
+
     pdb_list = []
     accessions = dictionary['Accession_ID'][dictionary['inhibitor'].index(ligand)]
     accessions_list = accessions.split()
@@ -359,9 +390,11 @@ def ligand_target_search_mode(inhibitor_list, dictionary, ligname, pH, fixpdb):
                 print('found %s PDB(s) for %s/%s' % (len(found_pdb), id, targets_list[i]))
                 for s in found_pdb:
                     pathway = 'pdbs/%s-%s' % (ligname, targets_list[i])
-                    download_pdb(s, pathway)
+                    name = download_pdb(s, pathway)
                     if fixpdb is True:
-                        pdb_fix_schrodinger(s, pathway, pH)
+                        name = pdb_fix_schrodinger(s, pathway, pH)
+                        print(name)
+                    renumber(name, os.path.dirname(name), ac_id, cap=False, lig_name=id)
 
 
 def all_ligand_search_mode(dictionary, pH, fixpdb):
@@ -388,9 +421,11 @@ def all_ligand_search_mode(dictionary, pH, fixpdb):
                     print('found %s PDB(s) for %s/%s' % (len(found_pdb), chem_id, targets_list[i]))
                     for s in found_pdb:
                         pathway = 'pdbs/%s-%s' % (lig, targets_list[i])
-                        download_pdb(s, pathway)
+                        name = download_pdb(s, pathway)
                         if fixpdb is True:
-                            pdb_fix_schrodinger(s, pathway, pH)
+                            name = pdb_fix_schrodinger(s, pathway, pH)
+                        print(name)
+                        renumber(name, os.path.dirname(name), ac_id, cap=False, lig_name=chem_id)
 
 
 def apo_search_mode(dictionary, pH, fixpdb):
@@ -409,9 +444,9 @@ def apo_search_mode(dictionary, pH, fixpdb):
             print('found %s PDB(s) for %s' % (len(found_pdb), accession_id))
             for s in found_pdb:
                 pathway = 'pdbs/apo/%s' % accession_id
-                download_pdb(s, pathway)
+                name = download_pdb(s, pathway)
                 if fixpdb is True:
-                    pdb_fix_schrodinger(s, pathway, pH)
+                    name = pdb_fix_schrodinger(s, pathway, pH)
 
 
 def make_chem_id_list(dictionary, ligname):
@@ -449,6 +484,7 @@ if __name__ == '__main__':
     if query_mode == 'Lig':
         chem_id_list = make_chem_id_list(main_dictionary, ligand)
         ligand_search_mode(chem_id_list, ligand, ph, fix)
+        print('Make sure to check the numbering here!')
 
     # Query Mode LigAndTarget searches for all inhibitor:approved target PDB files
     elif query_mode == 'LigAndTarget':

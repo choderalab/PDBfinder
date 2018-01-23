@@ -3,18 +3,18 @@
 ==============================================================================
         
 --------------------------------------------------------------------------------
-JobId          : lski1985-0-5a678f20
+JobId          : ls04-0-5a3c17f9
 Name           : 5mo4-missing-side-chains
 Program        : RefineStructure
-MMshareExec    : /opt/schrodinger/suites2017-4/mmshare-v4.0/bin/Darwin-x86_64
-Host           : lski1985.mskcc.org
-Dir            : /Users/albaness/github/PDBfinder/pdbs/Nilotinib-BCR-ABL/fixed/5MO4-fixed
+MMshareExec    : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Host           : ls04.hpc.private
+Dir            : /lila/home/albaness/PDBfinder/pdbs/Nilotinib-BCR-ABL/fixed/5MO4-fixed
 HostEntry      : localhost
-JobHost        : lski1985.mskcc.org
-JobDir         : /Users/albaness/.schrodinger/tmp/5mo4-missing-side-chains
-JobMMshareExec : /opt/schrodinger/suites2017-4/mmshare-v4.0/bin/Darwin-x86_64
-Commandline    : /opt/schrodinger/suites2017-4/prime 5mo4-missing-side-chains
-StartTime      : 2018-01-23-14:38:09
+JobHost        : ls04.hpc.private
+JobDir         : /data/chodera/schrodinger/tmpdir/albaness/5mo4-missing-side-chains
+JobMMshareExec : /data/chodera/schrodinger/schrodinger2017-4-advanced/mmshare-v4.0/bin/Linux-x86_64
+Commandline    : /data/chodera/schrodinger/schrodinger2017-4-advanced/prime 5mo4-missing-side-chains
+StartTime      : 2017-12-21-15:22:18
 --------------------------------------------------------------------------------
 Using the following input parameters:
    EXT_DIEL	80.0
@@ -56,23 +56,23 @@ Using OPLS version OPLS3 for force-field parameters.
 
 Pre-processing input
   Treating with residue ID check...
-    Complete:  0 min  1 sec
+    Complete:  0 min  0 sec
   Treating with asl parsing...
     Complete:  0 min  0 sec
   Treating with naming consistency detection...
     Complete:  0 min  0 sec
 
- Random Number Seed Set to:   1859188073
+ Random Number Seed Set to:   1290925644
  
  Contents of the control file:
    
    
-   file outdir "/Users/albaness/.schrodinger/tmp/5mo4-missing-side-chains/"
-   file datadir "/opt/schrodinger/suites2017-4/psp-v5.0/data/pop/"
-   file vddir "/opt/schrodinger/suites2017-4/psp-v5.0/data/pop/"
+   file outdir "/lila/data/chodera/schrodinger/tmpdir/albaness/5mo4-missing-side-chains/"
+   file datadir "/data/chodera/schrodinger/schrodinger2017-4-advanced/psp-v5.0/data/pop/"
+   file vddir "/data/chodera/schrodinger/schrodinger2017-4-advanced/psp-v5.0/data/pop/"
    file tempdir "templates/"
    file protempdir "templates/"
-   file usrtempdir "/Users/albaness/.schrodinger/tmp/5mo4-missing-side-chains/"
+   file usrtempdir "/lila/data/chodera/schrodinger/tmpdir/albaness/5mo4-missing-side-chains/"
    file gluefile "params.glue"
    file logfile stdout
    
@@ -179,7 +179,7 @@ Pre-processing input
   440 ASP  GLU  VAL  GLU  LYS  GLU  LEU  GLY  LYSE
  
  Nonbonded initialization ...
- Time for loading nb parameters:   1.186000000000575E-003
+ Time for loading nb parameters:   3.329000000000804E-003
  Build extended structure ...
  Charged terminal template did not match, trying neutral terminal template for 
   A:ASN_83    
@@ -200,26 +200,26 @@ Pre-processing input
  Initialize sparse atom list ...
  
  Times for various book-keeping steps:
-     build   2.423s
-     cross   0.088s
-     child   0.043s
+     build   3.887s
+     cross   0.111s
+     child   0.050s
       iper   0.000s
-       rev   0.045s
-      info   0.005s
+       rev   0.053s
+      info   0.010s
      resat   0.000s
       rank   0.000s
-     covpt   0.000s
-    sparse   0.076s
+     covpt   0.001s
+    sparse   0.077s
  
  Times for steps in loading structure:
-           Load sequence    3.51s
-    Initialize structure    2.70s
-      Assign coordinates    0.13s
+           Load sequence    3.55s
+    Initialize structure    4.23s
+      Assign coordinates    0.14s
      Initialize symmetry    0.00s
  
  Preparing for first energy calculation ...
  
- Time for assigning nb parameters:    0.014s
+ Time for assigning nb parameters:    0.013s
  
  Number of protein chains       1
    Number of residues         449
@@ -246,18 +246,18 @@ Pre-processing input
  Number of 1/4s             19378
  
  Partial charges and molecular weights:
-  HET group      A:NIL_601        -0.0000     529.5
+  HET group      A:NIL_601         0.0000     529.5
   HET group      A:AY7_602         0.0000     449.8
   Protein chain            A      -8.0000   51245.6
   Entire system                   -8.0000   57755.7
  
- Time for secondary structure initialization   0.004s
+ Time for secondary structure initialization   0.005s
  
  Results of parameter assignment
     type    tot   time
-    BOND   8100   0.01
-    ANGL  13698   0.02
-    TORS  21839   0.11
+    BOND   8100   0.00
+    ANGL  13698   0.01
+    TORS  21839   0.07
  
  Here are the parameters that will be used:
                       Solvent model   SGB
@@ -286,65 +286,65 @@ Pre-processing input
  NOW REPORTING THE ENERGY (KCAL/MOL): 
  COVALENT ENERGIES:
                 BOND           ANGLE             TOR           TOTAL
-     COV     6487.764686     1198.997201     1064.739111     8751.500998
-     SGB    51491.571136   -17824.715488    -9775.623525    23891.232123
-   TOTAL    57979.335822   -16625.718287    -8710.884414    32642.733120
+     COV     6487.764673     1198.997209     1064.739104     8751.500986
+     SGB    51491.580477   -17824.719436    -9775.620207    23891.240835
+   TOTAL    57979.345150   -16625.722227    -8710.881102    32642.741821
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  NONBONDED (INTRAMOLECULAR) ENERGIES:
                   14           SHORT            LONG           TOTAL
-      LJ     2494.563063    89579.214304     -216.015176    91857.762191
+      LJ     2494.563058    89579.214342     -216.015176    91857.762224
     LIPO        0.000000    -1149.890323        0.000000    -1149.890323
-      EL    12691.091662   -26861.907780      563.354500   -13607.461618
-     SGB    -9775.623525    11765.403305     -272.869868     1716.909912
-   TOTAL     5410.031199    73332.819507       74.469456    78817.320162
+      EL    12691.087957   -26861.910003      563.354014   -13607.468033
+     SGB    -9775.620207    11765.403281     -272.869308     1716.913766
+   TOTAL     5410.030808    73332.817296       74.469530    78817.317634
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  OTHER:
-SGB SELF   -38137.226371
+SGB SELF   -38137.234732
 NONPOLAR        0.000000
 PROT COR        0.000000
-   HBOND     -423.491287
+   HBOND     -423.491286
  PACKING      -47.309045
 SelfCont      -56.886186
  
  SUM:
- SGB TOT    -2753.460811
-SOLV TOT    -2753.460811
+ SGB TOT    -2753.459924
+SOLV TOT    -2753.459924
 LIPO TOT    -1149.890323
-  TOTALE   82570.76391877    
+  TOTALE   82570.75841224    
  [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
  
  NOW REPORTING THE ENERGY (KCAL/MOL): 
  COVALENT ENERGIES:
                 BOND           ANGLE             TOR           TOTAL
-     COV     6487.764686     1198.997201     1064.739111     8751.500998
-     SGB    51491.571136   -17824.715488    -9775.623525    23891.232123
-   TOTAL    57979.335822   -16625.718287    -8710.884414    32642.733120
+     COV     6487.764673     1198.997209     1064.739104     8751.500986
+     SGB    51491.580477   -17824.719436    -9775.620207    23891.240835
+   TOTAL    57979.345150   -16625.722227    -8710.881102    32642.741821
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  NONBONDED (INTRAMOLECULAR) ENERGIES:
                   14           SHORT            LONG           TOTAL
-      LJ     2494.563063    89579.214304     -216.015176    91857.762191
+      LJ     2494.563058    89579.214342     -216.015176    91857.762224
     LIPO        0.000000    -1149.890323        0.000000    -1149.890323
-      EL    12691.091662   -26861.907780      563.354500   -13607.461618
-     SGB    -9775.623525    11765.403305     -272.869868     1716.909912
-   TOTAL     5410.031199    73332.819507       74.469456    78817.320162
+      EL    12691.087957   -26861.910003      563.354014   -13607.468033
+     SGB    -9775.620207    11765.403281     -272.869308     1716.913766
+   TOTAL     5410.030808    73332.817296       74.469530    78817.317634
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  OTHER:
-SGB SELF   -38137.226371
+SGB SELF   -38137.234732
 NONPOLAR        0.000000
 PROT COR        0.000000
-   HBOND     -423.491287
+   HBOND     -423.491286
  PACKING      -47.309045
 SelfCont      -56.886186
  
  SUM:
- SGB TOT    -2753.460811
-SOLV TOT    -2753.460811
+ SGB TOT    -2753.459924
+SOLV TOT    -2753.459924
 LIPO TOT    -1149.890323
-  TOTALE   82570.76391877    
+  TOTALE   82570.75841224    
  [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
  
  Preparing for first energy calculation ...
@@ -353,33 +353,33 @@ LIPO TOT    -1149.890323
  NOW REPORTING THE ENERGY (KCAL/MOL): 
  COVALENT ENERGIES:
                 BOND           ANGLE             TOR           TOTAL
-     COV     6487.764686     1198.997201     1064.739111     8751.500998
-     SGB    51491.571136   -17824.715488    -9775.623525    23891.232123
-   TOTAL    57979.335822   -16625.718287    -8710.884414    32642.733120
+     COV     6487.764673     1198.997209     1064.739104     8751.500986
+     SGB    51491.580477   -17824.719436    -9775.620207    23891.240835
+   TOTAL    57979.345150   -16625.722227    -8710.881102    32642.741821
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  NONBONDED (INTRAMOLECULAR) ENERGIES:
                   14           SHORT            LONG           TOTAL
-      LJ     2494.563063    89579.214304     -216.015176    91857.762191
+      LJ     2494.563058    89579.214342     -216.015176    91857.762224
     LIPO        0.000000    -1149.890323        0.000000    -1149.890323
-      EL    12691.091662   -26861.907780      563.354500   -13607.461618
-     SGB    -9775.623525    11765.403305     -272.869868     1716.909912
-   TOTAL     5410.031199    73332.819507       74.469456    78817.320162
+      EL    12691.087957   -26861.910003      563.354014   -13607.468033
+     SGB    -9775.620207    11765.403281     -272.869308     1716.913766
+   TOTAL     5410.030808    73332.817296       74.469530    78817.317634
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  OTHER:
-SGB SELF   -38137.226371
+SGB SELF   -38137.234732
 NONPOLAR        0.000000
 PROT COR        0.000000
-   HBOND     -423.491287
+   HBOND     -423.491286
  PACKING      -47.309045
 SelfCont      -56.886186
  
  SUM:
- SGB TOT    -2753.460811
-SOLV TOT    -2753.460811
+ SGB TOT    -2753.459924
+SOLV TOT    -2753.459924
 LIPO TOT    -1149.890323
-  TOTALE   82570.76391877    
+  TOTALE   82570.75841224    
  [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
  
  ATTN:  large bond energies found:
@@ -1357,27 +1357,27 @@ LIPO TOT    -1149.890323
  NOW PRE-SCREENING ROTAMER STATES ...
  (res, # after screen, # total, ofac, rmsd_min, rmsd_max, time)
    A:ASP_96         233     233   0.00  -1.00  -1.00   0.00s
-   A:LYS_124       2091    2091   0.00   0.10   3.71   0.01s
+   A:LYS_124       2091    2091   0.00   0.10   3.71   0.02s
    A:GLU_174        958     958   0.00  -1.00  -1.00   0.01s
    A:GLN_179        877     877   0.00  -1.00  -1.00   0.01s
-   A:ARG_194       5237    5237   0.00  -1.00  -1.00   0.05s
+   A:ARG_194       5237    5237   0.00  -1.00  -1.00   0.07s
    A:LYS_253       2091    2091   0.00  -1.00  -1.00   0.02s
-   A:LYS_282       2091    2091   0.00  -1.00  -1.00   0.02s
+   A:LYS_282       2091    2091   0.00  -1.00  -1.00   0.03s
    A:LYS_293       2091    2091   0.00  -1.00  -1.00   0.02s
    A:GLU_298        958     958   0.00  -1.00  -1.00   0.01s
-   A:GLU_300        958     958   0.00  -1.00  -1.00   0.00s
+   A:GLU_300        958     958   0.00  -1.00  -1.00   0.01s
    A:GLU_301        958     958   0.00  -1.00  -1.00   0.01s
-   A:GLN_352        877     877   0.00  -1.00  -1.00   0.00s
+   A:GLN_352        877     877   0.00  -1.00  -1.00   0.01s
    A:LYS_375       2091    2091   0.00  -1.00  -1.00   0.02s
    A:PHE_420        141     141   0.00   0.10   2.77   0.00s
    A:LYS_434       2091    2091   0.00   0.08   3.49   0.02s
    A:GLN_466        877     877   0.00  -1.00  -1.00   0.01s
    A:GLU_478        958     958   0.00  -1.00  -1.00   0.01s
    A:GLU_485        958     958   0.00  -1.00  -1.00   0.01s
-   A:GLU_518        958     958   0.00  -1.00  -1.00   0.00s
+   A:GLU_518        958     958   0.00  -1.00  -1.00   0.01s
    A:GLU_526        958     958   0.00  -1.00  -1.00   0.01s
    A:LYS_527       2091    2091   0.00  -1.00  -1.00   0.02s
-   A:LYS_531       2091    2091   0.00  -1.00  -1.00   0.01s
+   A:LYS_531       2091    2091   0.00  -1.00  -1.00   0.02s
  
  Randomizing side chain positions ...
  
@@ -1387,28 +1387,28 @@ LIPO TOT    -1149.890323
  rot #, old rot #, rmsd, elib, times)
  nlist =           22
 one_lib:  A:ASP_96         233     230  0.75   1 135   9251   8993 -1.0    3206.06    0.01s ****
-one_lib:  A:LYS_124       8364    6754  0.75   15788  20540  19096  2.7    3210.32    0.24s ****
-one_lib:  A:GLU_174        958     465  0.75   3   9  81772  84157 -1.0    3217.38    0.05s ****
-one_lib:  A:GLN_179        877     495  0.75   1   5 250267 252661 -1.0    3208.44    0.06s ****
-one_lib:  A:ARG_194       5237    1119  0.75   4   6  98525 120300 -1.0    3212.59    0.26s ****
-one_lib:  A:LYS_253       8364    2790  0.75   2 629  14324  20804 -1.0    3212.02    0.18s ****
-one_lib:  A:LYS_282       8364    1839  0.75   1 317  14196  20948 -1.0    3205.25    0.14s ****
-one_lib:  A:LYS_293       8364    4614  0.75   13793  19804  19660 -1.0    3209.23    0.23s ****
-one_lib:  A:GLU_298        958     310  0.75   1  20  81838  81889 -1.0    3207.71    0.02s ****
-one_lib:  A:GLU_300        958     255  0.75   1  48  81940  82027 -1.0    3216.31    0.01s ****
-one_lib:  A:GLU_301        958      90  0.75   1  34  82837  81991 -1.0    3208.49    0.01s ****
-one_lib:  A:GLN_352        877     720  0.75   1  38 250366 252691 -1.0    3213.23    0.05s ****
-one_lib:  A:LYS_375       8364    2416  0.75   1 609  14384  21144 -1.0    3209.84    0.12s ****
-one_lib:  A:PHE_420        141      69  0.75   1   5   5915   6061  2.6    3210.45    0.02s ****
-one_lib:  A:LYS_434       8364    2744  0.75   1 465  14348  14532  0.3    3205.29    0.17s ****
-one_lib:  A:GLN_466        877     422  0.75   2 358 251995 252301 -1.0    3209.96    0.04s ****
-one_lib:  A:GLU_478        958     660  0.75   2 395  83188  82234 -1.0    3215.82    0.05s ****
-one_lib:  A:GLU_485        958     713  0.75   1  86  82039  83914 -1.0    3212.96    0.06s ****
-one_lib:  A:GLU_518        958     787  0.75   1 457  83203  83641 -1.0    3216.63    0.04s ****
-one_lib:  A:GLU_526        958     473  0.75   1  70  81955  83125 -1.0    3214.57    0.04s ****
-one_lib:  A:LYS_527       8364    4075  0.75   11673  17232  13732 -1.0    3210.65    0.21s ****
-one_lib:  A:LYS_531       8364    6259  0.75   11462  15076  18416 -1.0    3218.18    0.20s ****
-Time for iteration:     3.13s
+one_lib:  A:LYS_124       8364    6754  0.75   15788  20540  19096  2.7    3210.32    0.35s ****
+one_lib:  A:GLU_174        958     465  0.75   3   9  81772  84157 -1.0    3217.38    0.08s ****
+one_lib:  A:GLN_179        877     495  0.75   1   5 250267 252661 -1.0    3208.43    0.09s ****
+one_lib:  A:ARG_194       5237    1119  0.75   4   6  98525 120300 -1.0    3212.58    0.42s ****
+one_lib:  A:LYS_253       8364    2790  0.75   2 629  14324  20804 -1.0    3212.01    0.29s ****
+one_lib:  A:LYS_282       8364    1839  0.75   1 317  14196  20948 -1.0    3205.25    0.20s ****
+one_lib:  A:LYS_293       8364    4614  0.75   13793  19804  19660 -1.0    3209.23    0.35s ****
+one_lib:  A:GLU_298        958     310  0.75   1  20  81838  81889 -1.0    3207.70    0.03s ****
+one_lib:  A:GLU_300        958     255  0.75   1  48  81940  82027 -1.0    3216.31    0.02s ****
+one_lib:  A:GLU_301        958      90  0.75   1  34  82837  81991 -1.0    3208.48    0.01s ****
+one_lib:  A:GLN_352        877     720  0.75   1  38 250366 252691 -1.0    3213.23    0.07s ****
+one_lib:  A:LYS_375       8364    2416  0.75   1 609  14384  21144 -1.0    3209.84    0.18s ****
+one_lib:  A:PHE_420        141      69  0.75   1   5   5915   6061  2.6    3210.45    0.03s ****
+one_lib:  A:LYS_434       8364    2744  0.75   1 465  14348  14532  0.3    3205.29    0.23s ****
+one_lib:  A:GLN_466        877     422  0.75   2 358 251995 252301 -1.0    3209.96    0.06s ****
+one_lib:  A:GLU_478        958     660  0.75   2 395  83188  82234 -1.0    3215.82    0.08s ****
+one_lib:  A:GLU_485        958     713  0.75   1  86  82039  83914 -1.0    3212.96    0.09s ****
+one_lib:  A:GLU_518        958     787  0.75   1 457  83203  83641 -1.0    3216.63    0.07s ****
+one_lib:  A:GLU_526        958     473  0.75   1  70  81955  83125 -1.0    3214.57    0.06s ****
+one_lib:  A:LYS_527       8364    4075  0.75   11673  17232  13732 -1.0    3210.65    0.30s ****
+one_lib:  A:LYS_531       8364    6259  0.75   11462  15076  18416 -1.0    3218.18    0.28s ****
+Time for iteration:     4.23s
 Rotamer placement not converged; flips (rot,prot,tot):    22    0   22
  
  ------------------------------------------
@@ -1417,28 +1417,28 @@ Rotamer placement not converged; flips (rot,prot,tot):    22    0   22
  rot #, old rot #, rmsd, elib, times)
  nlist =           22
 one_lib:  A:ASP_96         233     230  0.75   1 136   9253   9251 -1.0    3225.99    0.01s ****
-one_lib:  A:LYS_124       8364    6754  0.75   16076  20848  20540  2.8    3231.30    0.24s ****
-one_lib:  A:GLU_174        958     465  0.75   3   9  81772  81772 -1.0    3239.24    0.05s
-one_lib:  A:GLN_179        877     408  0.75   1   5 250267 250267 -1.0    3229.39    0.05s
-one_lib:  A:ARG_194       5237    1119  0.75   4   6  98525  98525 -1.0    3234.55    0.27s
-one_lib:  A:LYS_253       8364    2790  0.75   4 629  14324  14324 -1.0    3234.15    0.19s
-one_lib:  A:LYS_282       8364    1839  0.75   1 317  14196  14196 -1.0    3226.85    0.14s
-one_lib:  A:LYS_293       8364    4614  0.75   23809  19824  19804 -1.0    3230.69    0.23s ****
-one_lib:  A:GLU_298        958     237  0.75   1   8  81838  81838 -1.0    3228.89    0.02s
-one_lib:  A:GLU_300        958     255  0.75   1  48  81940  81940 -1.0    3238.41    0.01s
+one_lib:  A:LYS_124       8364    6754  0.75   16076  20848  20540  2.8    3231.30    0.35s ****
+one_lib:  A:GLU_174        958     465  0.75   3   9  81772  81772 -1.0    3239.23    0.07s
+one_lib:  A:GLN_179        877     408  0.75   1   5 250267 250267 -1.0    3229.39    0.08s
+one_lib:  A:ARG_194       5237    1119  0.75   4   6  98525  98525 -1.0    3234.54    0.42s
+one_lib:  A:LYS_253       8364    2790  0.75   4 629  14324  14324 -1.0    3234.15    0.29s
+one_lib:  A:LYS_282       8364    1839  0.75   1 317  14196  14196 -1.0    3226.84    0.20s
+one_lib:  A:LYS_293       8364    4614  0.75   23809  19824  19804 -1.0    3230.69    0.35s ****
+one_lib:  A:GLU_298        958     237  0.75   1   8  81838  81838 -1.0    3228.89    0.03s
+one_lib:  A:GLU_300        958     255  0.75   1  48  81940  81940 -1.0    3238.41    0.02s
 one_lib:  A:GLU_301        958      90  0.75   1  51  83056  82837 -1.0    3230.41    0.01s ****
-one_lib:  A:GLN_352        877     720  0.75   1  38 250366 250366 -1.0    3233.14    0.05s
-one_lib:  A:LYS_375       8364    2416  0.75   11069  14984  14384 -1.0    3230.43    0.13s ****
-one_lib:  A:PHE_420        141      69  0.75   1   5   5915   5915  2.6    3231.43    0.02s
-one_lib:  A:LYS_434       8364    2744  0.75   1 465  14348  14348  0.3    3227.60    0.16s
-one_lib:  A:GLN_466        877     422  0.75   2 358 251995 251995 -1.0    3232.10    0.04s
-one_lib:  A:GLU_478        958     660  0.75   2 395  83188  83188 -1.0    3237.77    0.05s
-one_lib:  A:GLU_485        958     713  0.75   2  86  82039  82039 -1.0    3234.76    0.06s
-one_lib:  A:GLU_518        958     787  0.75   1 458  83206  83203 -1.0    3238.55    0.05s ****
-one_lib:  A:GLU_526        958     473  0.75   1   8  81769  81955 -1.0    3236.34    0.04s ****
-one_lib:  A:LYS_527       8364    6113  0.75   13349  17232  17232 -1.0    3231.76    0.30s
-one_lib:  A:LYS_531       8364    6259  0.75   11462  15076  15076 -1.0    3239.96    0.20s
-Time for iteration:     3.23s
+one_lib:  A:GLN_352        877     720  0.75   1  38 250366 250366 -1.0    3233.14    0.08s
+one_lib:  A:LYS_375       8364    2416  0.75   11069  14984  14384 -1.0    3230.43    0.18s ****
+one_lib:  A:PHE_420        141      69  0.75   1   5   5915   5915  2.6    3231.43    0.03s
+one_lib:  A:LYS_434       8364    2744  0.75   1 465  14348  14348  0.3    3227.60    0.24s
+one_lib:  A:GLN_466        877     422  0.75   2 358 251995 251995 -1.0    3232.10    0.06s
+one_lib:  A:GLU_478        958     660  0.75   2 395  83188  83188 -1.0    3237.77    0.08s
+one_lib:  A:GLU_485        958     713  0.75   2  86  82039  82039 -1.0    3234.76    0.09s
+one_lib:  A:GLU_518        958     787  0.75   1 458  83206  83203 -1.0    3238.55    0.07s ****
+one_lib:  A:GLU_526        958     473  0.75   1   8  81769  81955 -1.0    3236.34    0.06s ****
+one_lib:  A:LYS_527       8364    6113  0.75   13349  17232  17232 -1.0    3231.76    0.44s
+one_lib:  A:LYS_531       8364    6259  0.75   11462  15076  15076 -1.0    3239.96    0.30s
+Time for iteration:     4.39s
 Rotamer placement not converged; flips (rot,prot,tot):     7    0    7
  
  ------------------------------------------
@@ -1447,28 +1447,28 @@ Rotamer placement not converged; flips (rot,prot,tot):     7    0    7
  rot #, old rot #, rmsd, elib, times)
  nlist =           22
 one_lib:  A:ASP_96         233     230  0.75   1 136   9253   9253 -1.0    3228.24    0.01s
-one_lib:  A:LYS_124       8364    6754  0.75   16076  20848  20848  2.8    3232.99    0.26s
-one_lib:  A:GLU_174        958     465  0.75   3   9  81772  81772 -1.0    3241.54    0.05s
-one_lib:  A:GLN_179        877     408  0.75   1   5 250267 250267 -1.0    3231.72    0.05s
-one_lib:  A:ARG_194       5237    1119  0.75   4   6  98525  98525 -1.0    3236.86    0.27s
-one_lib:  A:LYS_253       8364    2790  0.75   4 629  14324  14324 -1.0    3236.46    0.18s
-one_lib:  A:LYS_282       8364    1839  0.75   1 317  14196  14196 -1.0    3229.11    0.14s
-one_lib:  A:LYS_293       8364    4614  0.75   13809  19824  19824 -1.0    3232.63    0.24s
-one_lib:  A:GLU_298        958     217  0.75   1   5  81838  81838 -1.0    3231.30    0.01s
-one_lib:  A:GLU_300        958     255  0.75   1  48  81940  81940 -1.0    3240.80    0.01s
+one_lib:  A:LYS_124       8364    6754  0.75   16076  20848  20848  2.8    3232.98    0.36s
+one_lib:  A:GLU_174        958     465  0.75   3   9  81772  81772 -1.0    3241.54    0.08s
+one_lib:  A:GLN_179        877     408  0.75   1   5 250267 250267 -1.0    3231.72    0.08s
+one_lib:  A:ARG_194       5237    1119  0.75   4   6  98525  98525 -1.0    3236.86    0.43s
+one_lib:  A:LYS_253       8364    2790  0.75   4 629  14324  14324 -1.0    3236.46    0.30s
+one_lib:  A:LYS_282       8364    1839  0.75   1 317  14196  14196 -1.0    3229.11    0.21s
+one_lib:  A:LYS_293       8364    4614  0.75   13809  19824  19824 -1.0    3232.63    0.36s
+one_lib:  A:GLU_298        958     217  0.75   1   5  81838  81838 -1.0    3231.30    0.02s
+one_lib:  A:GLU_300        958     255  0.75   1  48  81940  81940 -1.0    3240.80    0.02s
 one_lib:  A:GLU_301        958      90  0.75   1  51  83056  83056 -1.0    3232.88    0.01s
-one_lib:  A:GLN_352        877     720  0.75   1  38 250366 250366 -1.0    3235.46    0.05s
-one_lib:  A:LYS_375       8364    2416  0.75   11069  14984  14984 -1.0    3232.53    0.12s
-one_lib:  A:PHE_420        141      69  0.75   1   5   5915   5915  2.6    3233.75    0.02s
-one_lib:  A:LYS_434       8364    2744  0.75   1 465  14348  14348  0.3    3229.92    0.16s
-one_lib:  A:GLN_466        877     422  0.75   2 358 251995 251995 -1.0    3234.42    0.04s
-one_lib:  A:GLU_478        958     660  0.75   2 395  83188  83188 -1.0    3240.09    0.06s
-one_lib:  A:GLU_485        958     713  0.75   2  86  82039  82039 -1.0    3237.08    0.07s
-one_lib:  A:GLU_518        958     787  0.75   1 458  83206  83206 -1.0    3240.87    0.04s
-one_lib:  A:GLU_526        958     473  0.75   1   7  81766  81769 -1.0    3238.62    0.04s ****
-one_lib:  A:LYS_527       8364    6113  0.75   13349  17232  17232 -1.0    3234.09    0.29s
-one_lib:  A:LYS_531       8364    6259  0.75   11462  15076  15076 -1.0    3242.28    0.23s
-Time for iteration:     3.26s
+one_lib:  A:GLN_352        877     720  0.75   1  38 250366 250366 -1.0    3235.45    0.08s
+one_lib:  A:LYS_375       8364    2416  0.75   11069  14984  14984 -1.0    3232.53    0.19s
+one_lib:  A:PHE_420        141      69  0.75   1   5   5915   5915  2.6    3233.75    0.03s
+one_lib:  A:LYS_434       8364    2744  0.75   1 465  14348  14348  0.3    3229.91    0.24s
+one_lib:  A:GLN_466        877     422  0.75   2 358 251995 251995 -1.0    3234.42    0.06s
+one_lib:  A:GLU_478        958     660  0.75   2 395  83188  83188 -1.0    3240.09    0.08s
+one_lib:  A:GLU_485        958     713  0.75   2  86  82039  82039 -1.0    3237.07    0.09s
+one_lib:  A:GLU_518        958     787  0.75   1 458  83206  83206 -1.0    3240.87    0.07s
+one_lib:  A:GLU_526        958     473  0.75   1   7  81766  81769 -1.0    3238.62    0.06s ****
+one_lib:  A:LYS_527       8364    6113  0.75   13349  17232  17232 -1.0    3234.09    0.45s
+one_lib:  A:LYS_531       8364    6259  0.75   11462  15076  15076 -1.0    3242.27    0.30s
+Time for iteration:     4.49s
 Rotamer placement not converged; flips (rot,prot,tot):     1    0    1
  
  ------------------------------------------
@@ -1477,31 +1477,31 @@ Rotamer placement not converged; flips (rot,prot,tot):     1    0    1
  rot #, old rot #, rmsd, elib, times)
  nlist =           22
 one_lib:  A:ASP_96         233     230  0.75   1 136   9253   9253 -1.0    3228.48    0.01s
-one_lib:  A:LYS_124       8364    6754  0.75   16076  20848  20848  2.8    3233.23    0.24s
-one_lib:  A:GLU_174        958     465  0.75   3   9  81772  81772 -1.0    3241.78    0.05s
-one_lib:  A:GLN_179        877     408  0.75   1   5 250267 250267 -1.0    3231.97    0.05s
-one_lib:  A:ARG_194       5237    1119  0.75   4   6  98525  98525 -1.0    3237.11    0.27s
-one_lib:  A:LYS_253       8364    2790  0.75   4 629  14324  14324 -1.0    3236.71    0.19s
-one_lib:  A:LYS_282       8364    1839  0.75   1 317  14196  14196 -1.0    3229.36    0.14s
-one_lib:  A:LYS_293       8364    4614  0.75   13809  19824  19824 -1.0    3232.88    0.23s
-one_lib:  A:GLU_298        958     217  0.75   1   5  81838  81838 -1.0    3231.55    0.01s
-one_lib:  A:GLU_300        958     255  0.75   1  48  81940  81940 -1.0    3241.05    0.01s
+one_lib:  A:LYS_124       8364    6754  0.75   16076  20848  20848  2.8    3233.23    0.36s
+one_lib:  A:GLU_174        958     465  0.75   3   9  81772  81772 -1.0    3241.78    0.08s
+one_lib:  A:GLN_179        877     408  0.75   1   5 250267 250267 -1.0    3231.97    0.08s
+one_lib:  A:ARG_194       5237    1119  0.75   4   6  98525  98525 -1.0    3237.11    0.43s
+one_lib:  A:LYS_253       8364    2790  0.75   4 629  14324  14324 -1.0    3236.71    0.30s
+one_lib:  A:LYS_282       8364    1839  0.75   1 317  14196  14196 -1.0    3229.36    0.21s
+one_lib:  A:LYS_293       8364    4614  0.75   13809  19824  19824 -1.0    3232.88    0.36s
+one_lib:  A:GLU_298        958     217  0.75   1   5  81838  81838 -1.0    3231.54    0.02s
+one_lib:  A:GLU_300        958     255  0.75   1  48  81940  81940 -1.0    3241.04    0.02s
 one_lib:  A:GLU_301        958      90  0.75   1  51  83056  83056 -1.0    3233.13    0.01s
-one_lib:  A:GLN_352        877     720  0.75   1  38 250366 250366 -1.0    3235.70    0.05s
-one_lib:  A:LYS_375       8364    2416  0.75   11069  14984  14984 -1.0    3232.77    0.12s
-one_lib:  A:PHE_420        141      69  0.75   1   5   5915   5915  2.6    3233.99    0.02s
-one_lib:  A:LYS_434       8364    2744  0.75   1 465  14348  14348  0.3    3230.16    0.16s
-one_lib:  A:GLN_466        877     422  0.75   2 358 251995 251995 -1.0    3234.67    0.04s
-one_lib:  A:GLU_478        958     660  0.75   2 395  83188  83188 -1.0    3240.33    0.05s
-one_lib:  A:GLU_485        958     713  0.75   2  86  82039  82039 -1.0    3237.32    0.05s
-one_lib:  A:GLU_518        958     787  0.75   1 458  83206  83206 -1.0    3241.11    0.04s
-one_lib:  A:GLU_526        958     473  0.75   1   7  81766  81766 -1.0    3238.89    0.04s
-one_lib:  A:LYS_527       8364    6113  0.75   13349  17232  17232 -1.0    3234.34    0.29s
-one_lib:  A:LYS_531       8364    6259  0.75   11462  15076  15076 -1.0    3242.52    0.20s
-Time for iteration:     3.16s
+one_lib:  A:GLN_352        877     720  0.75   1  38 250366 250366 -1.0    3235.70    0.08s
+one_lib:  A:LYS_375       8364    2416  0.75   11069  14984  14984 -1.0    3232.77    0.19s
+one_lib:  A:PHE_420        141      69  0.75   1   5   5915   5915  2.6    3233.99    0.03s
+one_lib:  A:LYS_434       8364    2744  0.75   1 465  14348  14348  0.3    3230.16    0.24s
+one_lib:  A:GLN_466        877     422  0.75   2 358 251995 251995 -1.0    3234.66    0.06s
+one_lib:  A:GLU_478        958     660  0.75   2 395  83188  83188 -1.0    3240.33    0.08s
+one_lib:  A:GLU_485        958     713  0.75   2  86  82039  82039 -1.0    3237.32    0.09s
+one_lib:  A:GLU_518        958     787  0.75   1 458  83206  83206 -1.0    3241.11    0.07s
+one_lib:  A:GLU_526        958     473  0.75   1   7  81766  81766 -1.0    3238.88    0.06s
+one_lib:  A:LYS_527       8364    6113  0.75   13349  17232  17232 -1.0    3234.33    0.44s
+one_lib:  A:LYS_531       8364    6259  0.75   11462  15076  15076 -1.0    3242.52    0.30s
+Time for iteration:     4.46s
  Rotamer placement converged. Now minimizing...
-Summary of library results(time,ener):    15.58      -10471.82     6.64      -10523.30
-SIDE_PRED Time:      23.78s
+Summary of library results(time,ener):    20.93      -10471.83     9.45      -10523.31
+SIDE_PRED Time:      32.19s
  
  Preparing for first energy calculation ...
  
@@ -1509,65 +1509,65 @@ SIDE_PRED Time:      23.78s
  NOW REPORTING THE ENERGY (KCAL/MOL): 
  COVALENT ENERGIES:
                 BOND           ANGLE             TOR           TOTAL
-     COV     6488.214522     1168.138052     1058.319824     8714.672398
-     SGB    51297.402501   -17749.969647    -9762.377384    23785.055470
-   TOTAL    57785.617023   -16581.831595    -8704.057560    32499.727868
+     COV     6488.214595     1168.137944     1058.319917     8714.672456
+     SGB    51297.411911   -17749.973641    -9762.374064    23785.064206
+   TOTAL    57785.626507   -16581.835697    -8704.054147    32499.736663
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  NONBONDED (INTRAMOLECULAR) ENERGIES:
                   14           SHORT            LONG           TOTAL
-      LJ     2496.481469    -3421.796956     -216.363826    -1141.679313
-    LIPO        0.000000    -1153.402862        0.000000    -1153.402862
-      EL    12702.594405   -27019.149058      603.110259   -13713.444394
-     SGB    -9762.377384    11818.956147     -313.598714     1742.980049
-   TOTAL     5436.698491   -19775.392729       73.147719   -14265.546520
+      LJ     2496.481480    -3421.797034     -216.363825    -1141.679378
+    LIPO        0.000000    -1153.402864        0.000000    -1153.402864
+      EL    12702.590713   -27019.151443      603.109773   -13713.450957
+     SGB    -9762.374064    11818.956294     -313.598154     1742.984075
+   TOTAL     5436.698129   -19775.395047       73.147795   -14265.549124
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  OTHER:
-SGB SELF   -37982.072827
+SGB SELF   -37982.081247
 NONPOLAR        0.000000
 PROT COR        0.000000
-   HBOND     -431.913669
- PACKING      -49.180133
+   HBOND     -431.913675
+ PACKING      -49.180135
 SelfCont      -56.886186
  
  SUM:
- SGB TOT    -2691.659924
-SOLV TOT    -2691.659924
-LIPO TOT    -1153.402862
-  TOTALE  -10523.49408267    
+ SGB TOT    -2691.658901
+SOLV TOT    -2691.658901
+LIPO TOT    -1153.402864
+  TOTALE  -10523.49964053    
  [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
  
  NOW REPORTING THE ENERGY (KCAL/MOL): 
  COVALENT ENERGIES:
                 BOND           ANGLE             TOR           TOTAL
-     COV     6488.214522     1168.138052     1058.319824     8714.672398
-     SGB    51297.402501   -17749.969647    -9762.377384    23785.055470
-   TOTAL    57785.617023   -16581.831595    -8704.057560    32499.727868
+     COV     6488.214595     1168.137944     1058.319917     8714.672456
+     SGB    51297.411911   -17749.973641    -9762.374064    23785.064206
+   TOTAL    57785.626507   -16581.835697    -8704.054147    32499.736663
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  NONBONDED (INTRAMOLECULAR) ENERGIES:
                   14           SHORT            LONG           TOTAL
-      LJ     2496.481469    -3422.149659     -216.011820    -1141.680010
-    LIPO        0.000000    -1153.402862        0.000000    -1153.402862
-      EL    12702.594405   -27020.415047      603.049254   -13714.771389
-     SGB    -9762.377384    11820.214172     -309.294340     1748.542447
-   TOTAL     5436.698491   -19775.753397       77.743093   -14261.311812
+      LJ     2496.481480    -3422.149737     -216.011819    -1141.680075
+    LIPO        0.000000    -1153.402864        0.000000    -1153.402864
+      EL    12702.590713   -27020.417433      603.048767   -13714.777952
+     SGB    -9762.374064    11820.214319     -309.293780     1748.546475
+   TOTAL     5436.698129   -19775.755714       77.743169   -14261.314416
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  OTHER:
-SGB SELF   -37982.072827
+SGB SELF   -37982.081247
 NONPOLAR        0.000000
 PROT COR        0.000000
-   HBOND     -431.913669
- PACKING      -48.829071
+   HBOND     -431.913675
+ PACKING      -48.829073
 SelfCont      -56.886186
  
  SUM:
- SGB TOT    -2686.097526
-SOLV TOT    -2686.097526
-LIPO TOT    -1153.402862
-  TOTALE  -10518.90831338    
+ SGB TOT    -2686.096502
+SOLV TOT    -2686.096502
+LIPO TOT    -1153.402864
+  TOTALE  -10518.91387079    
  [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
  
  Preparing for first energy calculation ...
@@ -1576,67 +1576,67 @@ LIPO TOT    -1153.402862
  NOW REPORTING THE ENERGY (KCAL/MOL): 
  COVALENT ENERGIES:
                 BOND           ANGLE             TOR           TOTAL
-     COV     6488.214522     1168.138052     1058.319824     8714.672398
-     SGB    51297.402501   -17749.969647    -9762.377384    23785.055470
-   TOTAL    57785.617023   -16581.831595    -8704.057560    32499.727868
+     COV     6488.214595     1168.137944     1058.319917     8714.672456
+     SGB    51297.411911   -17749.973641    -9762.374064    23785.064206
+   TOTAL    57785.626507   -16581.835697    -8704.054147    32499.736663
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  NONBONDED (INTRAMOLECULAR) ENERGIES:
                   14           SHORT            LONG           TOTAL
-      LJ     2496.481469    -3422.149659     -216.011820    -1141.680010
-    LIPO        0.000000    -1153.402862        0.000000    -1153.402862
-      EL    12702.594405   -27020.415047      603.049254   -13714.771389
-     SGB    -9762.377384    11820.214172     -309.294340     1748.542447
-   TOTAL     5436.698491   -19775.753397       77.743093   -14261.311812
+      LJ     2496.481480    -3422.149737     -216.011819    -1141.680075
+    LIPO        0.000000    -1153.402864        0.000000    -1153.402864
+      EL    12702.590713   -27020.417433      603.048767   -13714.777952
+     SGB    -9762.374064    11820.214319     -309.293780     1748.546475
+   TOTAL     5436.698129   -19775.755714       77.743169   -14261.314416
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  OTHER:
-SGB SELF   -37982.072827
+SGB SELF   -37982.081247
 NONPOLAR        0.000000
 PROT COR        0.000000
-   HBOND     -431.913669
- PACKING      -48.829071
+   HBOND     -431.913675
+ PACKING      -48.829073
 SelfCont      -56.886186
  
  SUM:
- SGB TOT    -2686.097526
-SOLV TOT    -2686.097526
-LIPO TOT    -1153.402862
-  TOTALE  -10518.90831338    
+ SGB TOT    -2686.096502
+SOLV TOT    -2686.096502
+LIPO TOT    -1153.402864
+  TOTALE  -10518.91387079    
  [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
  
  NOW REPORTING THE ENERGY (KCAL/MOL): 
  COVALENT ENERGIES:
                 BOND           ANGLE             TOR           TOTAL
-     COV     6488.214522     1168.138052     1058.319824     8714.672398
-     SGB    51297.402501   -17749.969647    -9762.377384    23785.055470
-   TOTAL    57785.617023   -16581.831595    -8704.057560    32499.727868
+     COV     6488.214595     1168.137944     1058.319917     8714.672456
+     SGB    51297.411911   -17749.973641    -9762.374064    23785.064206
+   TOTAL    57785.626507   -16581.835697    -8704.054147    32499.736663
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  NONBONDED (INTRAMOLECULAR) ENERGIES:
                   14           SHORT            LONG           TOTAL
-      LJ     2496.481469    -3422.149659     -216.011820    -1141.680010
-    LIPO        0.000000    -1153.402862        0.000000    -1153.402862
-      EL    12702.594405   -27020.415047      603.049254   -13714.771389
-     SGB    -9762.377384    11820.214172     -309.294340     1748.542447
-   TOTAL     5436.698491   -19775.753397       77.743093   -14261.311812
+      LJ     2496.481480    -3422.149737     -216.011819    -1141.680075
+    LIPO        0.000000    -1153.402864        0.000000    -1153.402864
+      EL    12702.590713   -27020.417433      603.048767   -13714.777952
+     SGB    -9762.374064    11820.214319     -309.293780     1748.546475
+   TOTAL     5436.698129   -19775.755714       77.743169   -14261.314416
     TIME        0.000s          0.000s          0.000s          0.000s   
  
  OTHER:
-SGB SELF   -37982.072827
+SGB SELF   -37982.081247
 NONPOLAR        0.000000
 PROT COR        0.000000
-   HBOND     -431.913669
- PACKING      -48.829071
+   HBOND     -431.913675
+ PACKING      -48.829073
 SelfCont      -56.886186
  
  SUM:
- SGB TOT    -2686.097526
-SOLV TOT    -2686.097526
-LIPO TOT    -1153.402862
-  TOTALE  -10518.90831338    
+ SGB TOT    -2686.096502
+SOLV TOT    -2686.096502
+LIPO TOT    -1153.402864
+  TOTALE  -10518.91387079    
  [NOTE: TOTAL ENERGY = COV_TOT + NB_TOT + OTHER - SGB_14|SGB_TOR]
- TOTAL TIME ELAPSED: 5mo4-missing-side-chains_0          98.562s
+ TOTAL TIME ELAPSED: 5mo4-missing-side-chains_0         108.238s
  RETURNED LICENSE
 Post-processing output...
   Processing output structure #1
