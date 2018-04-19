@@ -83,6 +83,7 @@ def renumber(file_name, output_dir, accession_id, cap=True, lig_name=None):
 
     # Create the list of new residue numbers from the alignment
     new_resnums = list(range(alignment_start, alignment_start + pdb_len))
+    lig_resnum = new_resnums[-1] + 1
     # Check if the renumbering is necessary
     if cap:
         first_in_structure = list(structure.get_residues())[1].get_id()[1]
@@ -106,9 +107,10 @@ def renumber(file_name, output_dir, accession_id, cap=True, lig_name=None):
                 residue.resname = 'NME'
             elif three_letter == lig_name:
                 res_id = list(residue.id)
-                res_id[1] = new_resnums[-1] + 1
+                res_id[1] = lig_resnum
                 if residue.id != tuple(res_id):
                     residue.id = tuple(res_id)
+                lig_resnum += 1
             else:
                 pass
         pdb_io.set_structure(structure)
@@ -134,11 +136,14 @@ def renumber(file_name, output_dir, accession_id, cap=True, lig_name=None):
                 residue.resname = 'NME'
             elif three_letter == lig_name:
                 res_id = list(residue.id)
-                res_id[1] = new_resnums[-1] + 1
+                res_id[1] = lig_resnum
                 if residue.id != tuple(res_id):
                     residue.id = tuple(res_id)
+                lig_resnum += 1
+
             elif three_letter not in cap_res and three_letter not in oneletter:
                 pass
+
             else:
                 if cap:
                     index = i - 1
@@ -157,7 +162,6 @@ def renumber(file_name, output_dir, accession_id, cap=True, lig_name=None):
     elif first_in_structure < alignment_start:
         print("%s does need to be renumbered" % file_name)
         temp_resnums = list(range(alignment_end, alignment_end + pdb_len))
-        print(len(new_resnums))
         for i, residue in enumerate(structure.get_residues()):
             three_letter = residue.get_resname()
             if cap:
@@ -188,9 +192,10 @@ def renumber(file_name, output_dir, accession_id, cap=True, lig_name=None):
                     residue.id = tuple(res_id)
             elif three_letter == lig_name:
                 res_id = list(residue.id)
-                res_id[1] = new_resnums[-1] + 1
+                res_id[1] = lig_resnum
                 if residue.id != tuple(res_id):
                     residue.id = tuple(res_id)
+                lig_resnum += 1
             elif three_letter not in cap_res and three_letter not in oneletter:
                 pass
             else:

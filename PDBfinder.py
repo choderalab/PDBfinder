@@ -239,7 +239,6 @@ def pdb_fix_pdbfixer(pdbid, file_pathway, ph, chains_to_remove):
     Returns: nothing, but it does right PDB files
 
     """
-    print(pdbid)
 
     # Download the topology from rcsb based on pdbod
     fixer = PDBFixer(pdbid=pdbid)
@@ -298,7 +297,6 @@ def pdb_fix_schrodinger(pdbid, file_pathway, ph):
     :return: file name of the saved, prepared structure
     """
 
-    print(pdbid)
     input_file = os.path.join(file_pathway, '%s.pdb' % pdbid)
     output_file_pathway = os.path.join(file_pathway, 'fixed')
     file_name = protprep.protein_prep(input_file, output_file_pathway, pdbid, pH=ph)
@@ -393,7 +391,6 @@ def ligand_target_search_mode(inhibitor_list, dictionary, ligname, pH, fixpdb):
                     name = download_pdb(s, pathway)
                     if fixpdb is True:
                         name = pdb_fix_schrodinger(s, pathway, pH)
-                        print(name)
                     renumber(name, os.path.dirname(name), ac_id, cap=False, lig_name=id)
 
 
@@ -424,7 +421,6 @@ def all_ligand_search_mode(dictionary, pH, fixpdb):
                         name = download_pdb(s, pathway)
                         if fixpdb is True:
                             name = pdb_fix_schrodinger(s, pathway, pH)
-                        print(name)
                         renumber(name, os.path.dirname(name), ac_id, cap=False, lig_name=chem_id)
 
 
