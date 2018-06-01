@@ -1,0 +1,378 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ i_m_ct_format
+ :::
+ "" 
+  1
+  1
+  W05IXTFbQ0gyXVtDSDJdW0NIMl1bQ0gyXVtDQEhdMUMyKFtPSF0pW0NIMl1OKFtDSDJdMilDKD1PKWMzW2NIXVtjSF1jKEYpYyhGKWMzW05IXWM0W2NIXVtjSF1jKEkpW2NIXWM0Rg== 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzRBTjItZXBpay5tYWUnLCAnLW9tYWUnLCAnNEFOMi1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+  1
+    0.0098 
+    0.0098 
+    0.0000 
+   -0.0000 
+  0.00979192719676967
+  1
+  1
+   -0.0000 
+  0
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[52] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_color_rgb
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  s_ppw_CCD_assignment_status
+  :::
+  1 15 -31.158000 12.871000 -6.292000 1382 A 70 "EUI " " O20" 8 0 FF2E2E   -1.912    0.900  1 37.38 4 2216 2210 1 "CCD match" 
+  2 2 -30.674000 12.729000 -5.176000 1382 A 10 "EUI " " C18" 6 0 1EE11E  <> <> 1 34.8 4 2217 2211 1 "CCD match" 
+  3 2 -31.196000 11.701000 -4.224000 1382 A 10 "EUI " " C15" 6 0 1EE11E  <> <> 1 31.1 4 2218 2212 1 "CCD match" 
+  4 2 -30.289000 11.038000 -3.331000 1382 A 10 "EUI " " C14" 6 0 1EE11E  <> <> 1 27.88 4 2219 2213 1 "CCD match" 
+  5 2 -30.747000 10.044000 -2.452000 1382 A 10 "EUI " " C13" 6 0 1EE11E  <> <> 1 24.01 4 2220 2214 1 "CCD match" 
+  6 2 -32.119000 9.739000 -2.513000 1382 A 10 "EUI " " C12" 6 0 1EE11E  <> <> 1 27.41 4 2221 2215 1 "CCD match" 
+  7 56 -32.778000 8.872000 -1.790000 1382 A 141 "EUI " " F17" 9 0 6BFFB5  <> <> 1 36.2 4 2222 2216 1 "CCD match" 
+  8 2 -32.978000 10.355000 -3.391000 1382 A 10 "EUI " " C11" 6 0 1EE11E  <> <> 1 29.82 4 2223 2217 1 "CCD match" 
+  9 56 -34.242000 10.039000 -3.339000 1382 A 141 "EUI " " F16" 9 0 6BFFB5  <> <> 1 24.96 4 2224 2218 1 "CCD match" 
+  10 2 -32.558000 11.332000 -4.263000 1382 A 10 "EUI " " C10" 6 0 1EE11E  <> <> 1 30.13 4 2225 2219 1 "CCD match" 
+  11 25 -33.547000 11.897000 -5.044000 1382 A 38 "EUI " " N9 " 7 0 2E2EFF  <> <> 1 36.91 4 2226 2220 1 "CCD match" 
+  12 2 -34.810000 12.439000 -4.753000 1382 A 10 "EUI " " C5 " 6 0 1EE11E  <> <> 1 40.5 4 2227 2221 1 "CCD match" 
+  13 2 -35.332000 12.423000 -3.435000 1382 A 10 "EUI " " C4 " 6 0 1EE11E  <> <> 1 43.02 4 2228 2222 1 "CCD match" 
+  14 2 -36.609000 12.983000 -3.152000 1382 A 10 "EUI " " C3 " 6 0 1EE11E  <> <> 1 39.73 4 2229 2223 1 "CCD match" 
+  15 2 -37.347000 13.577000 -4.178000 1382 A 10 "EUI " " C2 " 6 0 1EE11E  <> <> 1 39.56 4 2230 2224 1 "CCD match" 
+  16 59 -39.331000 14.455000 -3.889000 1382 A 19 "EUI " " I8 " 53 0 FF2EFF  <> <> 1 52.99 4 2231 2225 1 "CCD match" 
+  17 2 -35.570000 13.036000 -5.755000 1382 A 10 "EUI " " C6 " 6 0 1EE11E  <> <> 1 43.07 4 2232 2226 1 "CCD match" 
+  18 56 -35.106000 13.062000 -7.010000 1382 A 141 "EUI " " F7 " 9 0 6BFFB5  <> <> 1 41.27 4 2233 2227 1 "CCD match" 
+  19 2 -36.832000 13.595000 -5.459000 1382 A 10 "EUI " " C1 " 6 0 1EE11E  <> <> 1 39.72 4 2234 2228 1 "CCD match" 
+  20 25 -29.650000 13.537000 -4.842000 1382 A 38 "EUI " " N19" 7 0 2E2EFF  <> <> 1 40.25 4 2235 2229 1 "CCD match" 
+  21 3 -28.925000 13.676000 -3.590000 1382 A 10 "EUI " " C23" 6 0 1EE11E  <> <> 1 39.05 4 2236 2230 1 "CCD match" 
+  22 3 -28.225000 14.824000 -4.433000 1382 A 10 "EUI " " C22" 6 0 1EE11E  <> <> 1 44.36 4 2237 2231 1 "CCD match" 
+  23 3 -29.066000 14.539000 -5.728000 1382 A 10 "EUI " " C21" 6 0 1EE11E  <> <> 1 43.62 4 2238 2232 1 "CCD match" 
+  24 16 -28.598000 16.142000 -4.024000 1382 A 70 "EUI " " O24" 8 0 FF2E2E  <> <> 1 42.65 4 2239 2233 1 "CCD match" 
+  25 3 -26.713000 14.760000 -4.630000 1382 A 10 "EUI " " C25" 6 0 1EE11E  <> <> 1 43.07 4 2240 2234 1 "CCD match" 
+  26 3 -26.189000 13.301000 -4.785000 1382 A 10 "EUI " " C30" 6 0 1EE11E  <> <> 1 41.2 4 2241 2235 1 "CCD match" 
+  27 3 -24.657000 13.301000 -4.625000 1382 A 10 "EUI " " C29" 6 0 1EE11E  <> <> 1 43.53 4 2242 2236 1 "CCD match" 
+  28 3 -24.286000 13.799000 -3.203000 1382 A 10 "EUI " " C28" 6 0 1EE11E  <> <> 1 42.9 4 2243 2237 1 "CCD match" 
+  29 3 -24.817000 15.245000 -3.051000 1382 A 10 "EUI " " C27" 6 0 1EE11E  <> <> 1 45.63 4 2244 2238 1 "CCD match" 
+  30 32 -26.247000 15.403000 -3.392000 1382 A 38 "EUI " " N26" 7 1 2E2EFF  <> <> 1 45.45 4 2245 2239 1 "CCD match" 
+  31 41 -29.241823 11.302235 -3.330573 1382 A 21 "EUI " " H14" 1 0 FFFFFF  <> <> <> <> <> <> 4553 <> <>
+  32 41 -30.056320 9.559283 -1.777900 1382 A 21 "EUI " " H13" 1 0 FFFFFF  <> <> <> <> <> <> 4554 <> <>
+  33 43 -33.406620 11.983798 -6.131547 1382 A 21 "EUI " " HN9" 1 0 FFFFFF   15.457    2.000  <> <> <> <> 4555 <> <>
+  34 41 -34.758983 11.982392 -2.632556 1382 A 21 "EUI " " H4 " 1 0 FFFFFF  <> <> <> <> <> <> 4556 <> <>
+  35 41 -37.003554 12.947538 -2.147276 1382 A 21 "EUI " " H3 " 1 0 FFFFFF  <> <> <> <> <> <> 4557 <> <>
+  36 41 -37.397527 14.044002 -6.262105 1382 A 21 "EUI " " H1 " 1 0 FFFFFF  <> <> <> <> <> <> 4558 <> <>
+  37 41 -29.632388 13.909685 -2.780683 1382 A 21 "EUI " "H231" 1 0 FFFFFF  <> <> <> <> <> <> 4559 <> <>
+  38 41 -28.404276 12.734431 -3.361319 1382 A 21 "EUI " "H232" 1 0 FFFFFF  <> <> <> <> <> <> 4560 <> <>
+  39 41 -28.619114 14.040710 -6.600926 1382 A 21 "EUI " "H211" 1 0 FFFFFF  <> <> <> <> <> <> 4561 <> <>
+  40 41 -29.850335 15.233288 -6.063832 1382 A 21 "EUI " "H212" 1 0 FFFFFF  <> <> <> <> <> <> 4562 <> <>
+  41 42 -29.654754 16.380135 -3.832788 1382 A 21 "EUI " "HO24" 1 0 FFFFFF   13.188    2.000  <> <> <> <> 4563 <> <>
+  42 41 -26.348117 15.285655 -5.524733 1382 A 21 "EUI " " H25" 1 0 FFFFFF  <> <> <> <> <> <> 4564 <> <>
+  43 41 -26.643460 12.664121 -4.011792 1382 A 21 "EUI " "H301" 1 0 FFFFFF  <> <> <> <> <> <> 4565 <> <>
+  44 41 -26.458752 12.918301 -5.780377 1382 A 21 "EUI " "H302" 1 0 FFFFFF  <> <> <> <> <> <> 4566 <> <>
+  45 41 -24.273446 12.279977 -4.767818 1382 A 21 "EUI " "H291" 1 0 FFFFFF  <> <> <> <> <> <> 4567 <> <>
+  46 41 -24.209892 13.969000 -5.375914 1382 A 21 "EUI " "H292" 1 0 FFFFFF  <> <> <> <> <> <> 4568 <> <>
+  47 41 -24.749653 13.142452 -2.452020 1382 A 21 "EUI " "H281" 1 0 FFFFFF  <> <> <> <> <> <> 4569 <> <>
+  48 41 -23.192889 13.780296 -3.081512 1382 A 21 "EUI " "H282" 1 0 FFFFFF  <> <> <> <> <> <> 4570 <> <>
+  49 41 -24.695295 15.572533 -2.007971 1382 A 21 "EUI " "H271" 1 0 FFFFFF  <> <> <> <> <> <> 4571 <> <>
+  50 41 -24.250551 15.915258 -3.714242 1382 A 21 "EUI " "H272" 1 0 FFFFFF  <> <> <> <> <> <> 4572 <> <>
+  51 44 -26.417689 16.487814 -3.455598 1382 A 21 "EUI " "HN26" 1 0 FFFFFF    9.178    2.220  <> <> <> <> 4573 <> <>
+  52 44 -26.802255 14.994100 -2.534975 1382 A 21 "EUI " "    " 1 0 <>   9.178    2.220  <> <> <> <> <> <> <>
+  :::
+ } 
+ m_bond[55] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 2
+  2 2 3 1
+  3 2 20 1
+  4 3 4 2
+  5 3 10 1
+  6 4 5 1
+  7 4 31 1
+  8 5 6 2
+  9 5 32 1
+  10 6 7 1
+  11 6 8 1
+  12 8 9 1
+  13 8 10 2
+  14 10 11 1
+  15 11 12 1
+  16 11 33 1
+  17 12 13 2
+  18 12 17 1
+  19 13 14 1
+  20 13 34 1
+  21 14 15 2
+  22 14 35 1
+  23 15 16 1
+  24 15 19 1
+  25 17 18 1
+  26 17 19 2
+  27 19 36 1
+  28 20 21 1
+  29 20 23 1
+  30 21 22 1
+  31 21 37 1
+  32 21 38 1
+  33 22 23 1
+  34 22 24 1
+  35 22 25 1
+  36 23 39 1
+  37 23 40 1
+  38 24 41 1
+  39 25 26 1
+  40 25 30 1
+  41 25 42 1
+  42 26 27 1
+  43 26 43 1
+  44 26 44 1
+  45 27 28 1
+  46 27 45 1
+  47 27 46 1
+  48 28 29 1
+  49 28 47 1
+  50 28 48 1
+  51 29 30 1
+  52 29 49 1
+  53 29 50 1
+  54 30 51 1
+  55 30 52 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ s_epik_Chemistry_Notes
+ i_m_ct_format
+ :::
+ "" 
+  2
+  2
+  W09IXVAoPU8pKFtPSF0pW0NIMl1bUEBdKD1PKShbT0hdKU9bUEBAXSg9TykoW09IXSlPW0NIMl1bQ0BIXTFPW0NASF0oW0NASF0oW09IXSlbQ0BASF0xW09IXSluKFtjSF1uMiljKGMyMyluW2NIXW5jM1tOSDJd 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzRBTjItZXBpay5tYWUnLCAnLW9tYWUnLCAnNEFOMi1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+  0.999997216410988
+    0.3598 
+    0.0001 
+    0.3597 
+    1.2661 
+  1.26623803313042
+  -3
+  3
+   -0.0000 
+  0
+  "This compound contains an acetal/aminal-like group ( X-CH(R)-Y where X, Y are N, S, or O) that may be acid/base labile, releasing an aldehyde." 
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[46] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_color_rgb
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  s_ppw_CCD_assignment_status
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  r_epik_Metal_State_Penalty
+  :::
+  1 107 -27.225000 17.691000 -6.879000 1383 A 101 "ACP " " PG " 15 0 CC0066  1 45.06 4 2246 2240 2 "CCD match"  <> <> <>
+  2 18 -27.260000 16.629000 -7.958000 1383 A 70 "ACP " " O1G" 8 -1 FF2E2E  1 45.68 4 2247 2241 2 "CCD match"    2.316    0.723  <>
+  3 16 -28.585000 17.848000 -6.170000 1383 A 70 "ACP " " O2G" 8 0 FF2E2E  1 44.14 4 2248 2242 2 "CCD match"  <> <> <>
+  4 15 -26.169000 17.359000 -5.843000 1383 A 70 "ACP " " O3G" 8 0 FF2E2E  1 42.35 4 2249 2243 2 "CCD match"  <> <> <>
+  5 107 -28.359000 19.969000 -8.536000 1383 A 101 "ACP " " PB " 15 0 CC0066  1 40.38 4 2250 2244 2 "CCD match"  <> <> <>
+  6 18 -29.427000 19.997000 -7.467000 1383 A 70 "ACP " " O1B" 8 -1 FF2E2E  1 37.98 4 2251 2245 2 "CCD match"    1.188    2.220  <>
+  7 15 -28.189000 21.313000 -9.213000 1383 A 70 "ACP " " O2B" 8 0 FF2E2E  1 38.56 4 2252 2246 2 "CCD match"  <> <> <>
+  8 3 -26.849000 19.242000 -7.791000 1383 A 10 "ACP " " C3B" 6 0 1EE11E  1 39.64 4 2253 2247 2 "CCD match"  <> <> <>
+  9 107 -30.021000 18.067000 -9.933000 1383 A 101 "ACP " " PA " 15 0 CC0066  1 43.21 4 2254 2248 2 "CCD match"  <> <> <>
+  10 18 -30.606000 17.733000 -8.593000 1383 A 70 "ACP " " O1A" 8 -1 FF2E2E  1 41.74 4 2255 2249 2 "CCD match"    3.727    0.945  <>
+  11 15 -29.581000 16.910000 -10.798000 1383 A 70 "ACP " " O2A" 8 0 FF2E2E  1 46.33 4 2256 2250 2 "CCD match"  <> <> <>
+  12 16 -28.761000 19.067000 -9.791000 1383 A 70 "ACP " " O3A" 8 0 FF2E2E  1 41.54 4 2257 2251 2 "CCD match"  <> <> <>
+  13 16 -30.981000 18.969000 -10.838000 1383 A 70 "ACP " " O5'" 8 0 FF2E2E  1 41.88 4 2258 2252 2 "CCD match"  <> <> <>
+  14 3 -30.486000 19.588000 -12.032000 1383 A 10 "ACP " " C5'" 6 0 1EE11E  1 43.35 4 2259 2253 2 "CCD match"  <> <> <>
+  15 3 -31.319000 20.833000 -12.379000 1383 A 10 "ACP " " C4'" 6 0 1EE11E  1 43.67 4 2260 2254 2 "CCD match"  <> <> <>
+  16 16 -32.716000 20.448000 -12.458000 1383 A 70 "ACP " " O4'" 8 0 FF2E2E  1 46.68 4 2261 2255 2 "CCD match"  <> <> <>
+  17 3 -31.224000 21.857000 -11.250000 1383 A 10 "ACP " " C3'" 6 0 1EE11E  1 44.51 4 2262 2256 2 "CCD match"  <> <> <>
+  18 16 -31.214000 23.216000 -11.733000 1383 A 70 "ACP " " O3'" 8 0 FF2E2E  1 47.85 4 2263 2257 2 "CCD match"   -1.826    0.950  <>
+  19 3 -32.500000 21.645000 -10.493000 1383 A 10 "ACP " " C2'" 6 0 1EE11E  1 44.05 4 2264 2258 2 "CCD match"  <> <> <>
+  20 16 -32.881000 22.859000 -9.865000 1383 A 70 "ACP " " O2'" 8 0 FF2E2E  1 48.34 4 2265 2259 2 "CCD match"   -2.125    0.950  <>
+  21 3 -33.502000 21.235000 -11.568000 1383 A 10 "ACP " " C1'" 6 0 1EE11E  1 41.88 4 2266 2260 2 "CCD match"  <> <> <>
+  22 25 -34.599000 20.486000 -10.935000 1383 A 38 "ACP " " N9 " 7 0 2E2EFF  1 40.83 4 2267 2261 2 "CCD match"  <> <> <>
+  23 2 -34.513000 19.421000 -10.113000 1383 A 10 "ACP " " C8 " 6 0 1EE11E  1 40.71 4 2268 2262 2 "CCD match"  <> <> <>
+  24 25 -35.717000 18.984000 -9.701000 1383 A 38 "ACP " " N7 " 7 0 2E2EFF  1 39.31 4 2269 2263 2 "CCD match"    2.629    2.220    0.0001 
+  25 2 -36.607000 19.813000 -10.260000 1383 A 10 "ACP " " C5 " 6 0 1EE11E  1 39.77 4 2270 2264 2 "CCD match"  <> <> <>
+  26 2 -38.067000 19.966000 -10.238000 1383 A 10 "ACP " " C6 " 6 0 1EE11E  1 40.72 4 2271 2265 2 "CCD match"  <> <> <>
+  27 25 -38.823000 19.119000 -9.513000 1383 A 38 "ACP " " N6 " 7 0 2E2EFF  1 39.23 4 2272 2266 2 "CCD match"  <> <> <>
+  28 25 -38.618000 20.977000 -10.949000 1383 A 38 "ACP " " N1 " 7 0 2E2EFF  1 40.2 4 2273 2267 2 "CCD match"    3.826    0.730   -0.0000 
+  29 2 -37.895000 21.817000 -11.684000 1383 A 10 "ACP " " C2 " 6 0 1EE11E  1 40.46 4 2274 2268 2 "CCD match"  <> <> <>
+  30 25 -36.551000 21.748000 -11.739000 1383 A 38 "ACP " " N3 " 7 0 2E2EFF  1 42.49 4 2275 2269 2 "CCD match"   -0.674    0.800    0.0002 
+  31 2 -35.875000 20.789000 -11.062000 1383 A 10 "ACP " " C4 " 6 0 1EE11E  1 41.37 4 2276 2270 2 "CCD match"  <> <> <>
+  32 42 -28.989557 17.021685 -5.567059 1383 A 21 "ACP " "HO2G" 1 0 FFFFFF  <> <> <> <> 4575 <> <>   7.479    0.791  <>
+  33 41 -26.414078 19.978065 -7.098865 1383 A 21 "ACP " "H3B1" 1 0 FFFFFF  <> <> <> <> 4577 <> <> <> <> <>
+  34 41 -26.131892 19.028584 -8.597356 1383 A 21 "ACP " "H3B2" 1 0 FFFFFF  <> <> <> <> 4578 <> <> <> <> <>
+  35 41 -29.438868 19.889511 -11.881647 1383 A 21 "ACP " "H5'1" 1 0 FFFFFF  <> <> <> <> 4580 <> <> <> <> <>
+  36 41 -30.545774 18.874303 -12.866903 1383 A 21 "ACP " "H5'2" 1 0 FFFFFF  <> <> <> <> 4581 <> <> <> <> <>
+  37 41 -30.995219 21.251360 -13.343438 1383 A 21 "ACP " " H4'" 1 0 FFFFFF  <> <> <> <> 4582 <> <> <> <> <>
+  38 41 -30.295266 21.773066 -10.666556 1383 A 21 "ACP " " H3'" 1 0 FFFFFF  <> <> <> <> 4583 <> <> <> <> <>
+  39 42 -30.359728 23.584951 -12.319596 1383 A 21 "ACP " "HO3'" 1 0 FFFFFF  <> <> <> <> 4584 <> <>  12.622    0.468  <>
+  40 41 -32.425460 20.937222 -9.654255 1383 A 21 "ACP " " H2'" 1 0 FFFFFF  <> <> <> <> 4585 <> <> <> <> <>
+  41 42 -32.256142 23.284624 -9.066003 1383 A 21 "ACP " "HO2'" 1 0 FFFFFF  <> <> <> <> 4586 <> <>  12.230    0.700  <>
+  42 41 -33.991169 22.032112 -12.147074 1383 A 21 "ACP " " H1'" 1 0 FFFFFF  <> <> <> <> 4587 <> <> <> <> <>
+  43 41 -33.681204 18.959441 -9.804653 1383 A 21 "ACP " " H8 " 1 0 FFFFFF  <> <> <> <> 4588 <> <> <> <> <>
+  44 43 -38.347308 18.306083 -8.944772 1383 A 21 "ACP " "H6 1" 1 0 FFFFFF  <> <> <> <> 4589 <> <>  13.016    0.730  <>
+  45 43 -39.916037 19.240263 -9.489198 1383 A 21 "ACP " "H6 2" 1 0 FFFFFF  <> <> <> <> 4590 <> <>  13.016    0.730  <>
+  46 41 -38.381542 22.516902 -12.206890 1383 A 21 "ACP " " H2 " 1 0 FFFFFF  <> <> <> <> 4591 <> <> <> <> <>
+  :::
+ } 
+ m_bond[48] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 3 1
+  3 1 4 2
+  4 1 8 1
+  5 3 32 1
+  6 5 6 1
+  7 5 7 2
+  8 5 8 1
+  9 5 12 1
+  10 8 33 1
+  11 8 34 1
+  12 9 10 1
+  13 9 11 2
+  14 9 12 1
+  15 9 13 1
+  16 13 14 1
+  17 14 15 1
+  18 14 35 1
+  19 14 36 1
+  20 15 16 1
+  21 15 17 1
+  22 15 37 1
+  23 16 21 1
+  24 17 18 1
+  25 17 19 1
+  26 17 38 1
+  27 18 39 1
+  28 19 20 1
+  29 19 21 1
+  30 19 40 1
+  31 20 41 1
+  32 21 22 1
+  33 21 42 1
+  34 22 23 1
+  35 22 31 1
+  36 23 24 2
+  37 23 43 1
+  38 24 25 1
+  39 25 26 1
+  40 25 31 2
+  41 26 27 1
+  42 26 28 2
+  43 27 44 1
+  44 27 45 1
+  45 28 29 1
+  46 29 30 2
+  47 29 46 1
+  48 30 31 1
+  :::
+ } 
+} 
+
