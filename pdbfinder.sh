@@ -12,4 +12,4 @@ cd $LS_SUBCWD
 
 
 # Launch job 
-python PDBfinder.py -l Imatinib --mode All --biological --fix --ph 7.4
+python PDBfinder.py -l Imatinib --mode LigAll --biological --fix --ph 7.4
