@@ -1,0 +1,144 @@
+
+** Heavy-atom coordinates will be fixed: maxlevel set to 0
+  **
+  ** Beginning refinement level 0
+  **
+
+%IMPACT-I (openwt): Request to open FORMATTED file 4ZAU-impref_ref0.out on unit   2
+ Entering IMPACT execution environment 
+ Date: Friday, June 01 2018, at 16:02:53 EDT
+ Impact version 78011
+ mmshare version        41011
+ Copyright (c) Schrodinger, LLC.
+ All Rights Reserved.
+
+ Host: Linux ls17 3.10.0-514.21.2.el7.x86_64 #1 SMP Tue Jun 20 12:24:47 UTC 2017 x86_64
+ Job Name: 4ZAU-impref_ref0
+ SCHRODINGER  directory: /data/chodera/schrodinger/schrodinger2018-1-advanced
+ IMPACT_EXEC  directory: /data/chodera/schrodinger/schrodinger2018-1-advanced/impact-v7.8/bin/Linux-x86_64
+ MMSHARE_EXEC directory: /data/chodera/schrodinger/schrodinger2018-1-advanced/mmshare-v4.1/bin/Linux-x86_64
+
+ Clock-based global random seed:     1527883373
+%IMPACT-I(foldmain): calling OPLS3 atomtyping ...
+%IMPACT-I(foldmain): finished parameter assignment
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coord. are written to file: "4ZAU-impref.init_coord.rst"
+      Box dimensions not written
+
+
+ Total number of atoms  =  4866
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1169703
+ E-pot        RMS grad     Max grad    
+  1.82388E+16  2.23308E+16  1.79060E+18
+ Step number:         10         Non-bonded count:  1169703
+ -3.86186E+03  1.42000E+01  6.90907E+02
+ Step number:         20         Non-bonded count:  1169703
+ -5.28717E+03  5.85339E+00  2.91544E+02
+ Step number:         30         Non-bonded count:  1169703
+ -5.75776E+03  2.11957E+00  1.28142E+02
+ Step number:         40         Non-bonded count:  1169703
+ -5.84247E+03  1.30881E+00  4.88122E+01
+ Step number:         50         Non-bonded count:  1169703
+ -5.90413E+03  1.37499E+00  6.24801E+01
+ Step number:         60         Non-bonded count:  1169703
+ -5.97549E+03  5.96118E-01  2.61219E+01
+ Step number:         70         Non-bonded count:  1169703
+ -5.99005E+03  6.46918E-01  3.42534E+01
+ Step number:         80         Non-bonded count:  1169703
+ -5.99934E+03  4.63752E-01  2.36493E+01
+ Step number:         90         Non-bonded count:  1169703
+ -6.00455E+03  2.95950E-01  1.56144E+01
+ Step number:        100         Non-bonded count:  1169703
+ -6.00802E+03  2.84847E-01  1.03522E+01
+ Step number:        100         Non-bonded count:  1169703
+ -6.00802E+03  2.84847E-01  1.03522E+01
+      Current coord. are written to file: "4ZAU-impref.min0_coord.rst"
+      Box dimensions not written
+      Current coordinates are read from file: "4ZAU-impref.init_coord.rst"
+      Box dimensions not read
+          read from "4ZAU-impref.init_coord.rst"
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     310
+ PARM read from file "paramstd.dat"
+ Parameter obtained from atomtyping
+      Current coordinates are read from file: "4ZAU-impref.min0_coord.rst"
+      Box dimensions not read
+          read from "4ZAU-impref.min0_coord.rst"
+
+
+ Total number of atoms  =  4866
+ 
+ Neighbor List Cutoff Settings
+ ==================================
+ Cutoff radius:   10.0000000000000     
+ Update frequency: every           10  steps
+ Species   1 : Neighbors are calculated on a per residue basis
+ Species   1 : Cutoff by inter-atomic distances
+ 
+ Step number:          0         Non-bonded count:  1169703
+ E-pot        RMS grad     Max grad    
+ -5.09123E+03  2.73886E+00  3.12534E+01
+ Step number:         10         Non-bonded count:  1169703
+ -5.69088E+03  1.90643E+00  7.24727E+01
+ Step number:         20         Non-bonded count:  1169703
+ -5.74558E+03  8.61297E-01  5.13043E+01
+ Step number:         30         Non-bonded count:  1169703
+ -5.76373E+03  5.75547E-01  2.01692E+01
+ Step number:         40         Non-bonded count:  1169703
+ -5.77220E+03  3.59033E-01  1.50939E+01
+ Step number:         50         Non-bonded count:  1169703
+ -5.77687E+03  3.66209E-01  1.26493E+01
+ Step number:         60         Non-bonded count:  1169703
+ -5.78104E+03  2.47411E-01  8.94605E+00
+ Step number:         70         Non-bonded count:  1169703
+ -5.78293E+03  1.90904E-01  7.39840E+00
+ Step number:         80         Non-bonded count:  1169703
+ -5.78458E+03  1.99926E-01  9.19197E+00
+ Step number:         90         Non-bonded count:  1169703
+ -5.78587E+03  1.69701E-01  5.71810E+00
+ Step number:        100         Non-bonded count:  1169703
+ -5.78690E+03  1.52936E-01  5.90094E+00
+ Step number:        100         Non-bonded count:  1169703
+ -5.78690E+03  1.52936E-01  5.90094E+00
+  
+ Energy and Force Generation Info: 
+ --------------------------------- 
+ Number of E&F called:     574
+
+
+Final Energy Reports:
+------------------------------------
+ Total Energy of the system...... -5.78690E+03 kcal/mol
+ Total Potential Energy.......... -5.78690E+03 kcal/mol
+ Total Kinetic Energy............  0.00000E+00 kcal/mol
+ Temperature of the system.......        0.000 K
+ Bond Stretch Energy.............  3.99559E+02 kcal/mol
+ Angle Bending Energy............  9.97720E+02 kcal/mol
+ Torsion Angle Energy............  9.25086E+01 kcal/mol
+ Restraining Energy for Torsions.  0.00000E+00 kcal/mol
+ 1,4 Lennard Jones Energy........  5.55885E+02 kcal/mol
+ 1,4 Electrostatic Energy........ -3.09628E+02 kcal/mol
+ Lennard Jones Energy............  1.22141E+02 kcal/mol
+ Electrostatic Energy............ -7.64509E+03 kcal/mol
+ H-bond Energy...................  0.00000E+00 kcal/mol
+ 
+ Exiting IMPACT execution environment 
+ Date: Friday, June 01 2018, at 16:03:30 EDT
+%IMPACT-I (timit): Total CPU time =      35.67 seconds (   0.6 minutes)
+Total elapsed time = 38 seconds
+  ** Completed refinement level 0      rmsd =  0.049
+
+** Refinement finished. Final level: 0
+
+** The refined complex file is 4ZAU-impref_ref.mae.

@@ -1,0 +1,338 @@
+{ 
+ s_m_m2io_version
+ :::
+ 2.0.0 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_lp_tautomer_probability
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ i_m_ct_format
+ :::
+ "" 
+  1
+  1
+  W0NIMl0xW0NIMl1PW0NIMl1bQ0gyXU4xW0NIMl1bQ0gyXVtDSDJdT2MoW2NIXTIpYyhPW0NIM10pW2NIXWMoYzIzKVtuSF1bY0hdbmNcMz1OL2M0W2NIXWMoQ2wpYyhGKVtjSF1bY0hdNA== 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzNVRzItZXBpay5tYWUnLCAnLW9tYWUnLCAnM1VHMi1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+  0.999978000241998
+    0.1968 
+    0.0000 
+    0.1968 
+    0.1860 
+  0.186024314191534
+  0
+  0
+   -0.0000 
+  0
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[55] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  s_m_color_rgb
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  s_ppw_CCD_assignment_status
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  r_epik_Metal_State_Penalty
+  :::
+  1 3 57.387601 75.242964 25.665958 1 A 10 0.07925 0.07925 "IRE " " CAO" 6 1EE11E  0.5 50.16 4 2343 1 1 "CCD match"  <> <> <>
+  2 3 57.529933 76.249978 26.821308 1 A 10 0.13126 0.13126 "IRE " " CAL" 6 1EE11E  0.5 51.2 4 2344 2 1 "CCD match"  <> <> <>
+  3 16 57.318006 75.589772 28.085496 1 A 70 -0.44923 -0.44923 "IRE " " OAU" 8 FF2E2E  0.5 52.56 4 2345 3 1 "CCD match"  <> <> <>
+  4 3 56.005793 75.019339 28.327936 1 A 10 0.13126 0.13126 "IRE " " CAM" 6 1EE11E  0.5 51.44 4 2346 4 1 "CCD match"  <> <> <>
+  5 3 55.219064 74.722277 27.040357 1 A 10 0.07925 0.07925 "IRE " " CAP" 6 1EE11E  0.5 50.49 4 2347 5 1 "CCD match"  <> <> <>
+  6 26 56.147362 74.471338 25.900207 1 A 38 -0.69805 -0.69805 "IRE " " NBE" 7 2E2EFF  0.5 50.6 4 2348 6 1 "CCD match"    6.994    0.670  <>
+  7 3 55.815116 73.417298 24.953822 1 A 10 0.10442 0.10442 "IRE " " CAN" 6 1EE11E  0.5 46.31 4 2349 7 1 "CCD match"  <> <> <>
+  8 3 54.485920 73.865919 24.330653 1 A 10 -0.17842 -0.17842 "IRE " " CAJ" 6 1EE11E  0.5 43.49 4 2350 8 1 "CCD match"  <> <> <>
+  9 3 53.557384 72.688480 24.010409 1 A 10 0.19484 0.19484 "IRE " " CAK" 6 1EE11E  0.5 39.01 4 2351 9 1 "CCD match"  <> <> <>
+  10 16 54.152980 71.854948 22.999667 1 A 70 -0.35649 -0.35649 "IRE " " OAV" 8 FF2E2E  0.5 32.79 4 2352 10 1 "CCD match"  <> <> <>
+  11 2 53.468747 71.300765 21.946731 1 A 10 0.10327 0.10327 "IRE " " CBA" 6 1EE11E  0.5 26.71 4 2353 11 1 "CCD match"  <> <> <>
+  12 2 54.256024 70.663303 21.006978 1 A 10 0.18768 0.18768 "IRE " " CAZ" 6 1EE11E  0.5 22.72 4 2354 12 1 "CCD match"  <> <> <>
+  13 2 53.663594 70.143602 19.862616 1 A 10 -0.23426 -0.23426 "IRE " " CAH" 6 1EE11E  0.5 18.58 4 2355 13 1 "CCD match"  <> <> <>
+  14 16 55.610470 70.573651 21.183673 1 A 70 -0.34186 -0.34186 "IRE " " OAT" 8 FF2E2E  0.5 21.13 4 2356 14 1 "CCD match"  <> <> <>
+  15 3 56.294564 69.428271 20.613644 1 A 10 0.13469 0.13469 "IRE " " CAA" 6 1EE11E  0.5 18.42 4 2357 15 1 "CCD match"  <> <> <>
+  16 2 52.061113 71.351381 21.789454 1 A 10 -0.08982 -0.08982 "IRE " " CAI" 6 1EE11E  0.5 23.32 4 2358 16 1 "CCD match"  <> <> <>
+  17 2 51.482428 70.737165 20.680377 1 A 10 -0.09471 -0.09471 "IRE " " C5 " 6 1EE11E  0.5 20.99 4 2359 17 1 "CCD match"  <> <> <>
+  18 2 52.292663 70.148211 19.717001 1 A 10 0.25166 0.25166 "IRE " " C4 " 6 1EE11E  0.5 18.52 4 2360 18 1 "CCD match"  <> <> <>
+  19 25 51.756838 69.572541 18.626335 1 A 38 -0.62397 -0.62397 "IRE " " N3 " 7 2E2EFF  0.5 16.35 4 2361 19 1 "CCD match"    4.194    2.220   -0.0000 
+  20 2 50.448915 69.607837 18.404383 1 A 10 0.40420 0.40420 "IRE " " C2 " 6 1EE11E  0.5 18.13 4 2362 20 1 "CCD match"  <> <> <>
+  21 25 49.652597 70.235114 19.264889 1 A 38 -0.64341 -0.64341 "IRE " " N1 " 7 2E2EFF  0.5 21.22 4 2363 21 1 "CCD match"    3.874    2.220    0.0002 
+  22 2 50.120598 70.799863 20.398561 1 A 10 0.52913 0.52913 "IRE " " C6 " 6 1EE11E  0.5 21.86 4 2364 22 1 "CCD match"  <> <> <>
+  23 25 49.278713 71.382950 21.268633 1 A 38 -0.60280 -0.60280 "IRE " " NAS" 7 2E2EFF  0.5 26 4 2365 23 1 "CCD match"  <> <> <>
+  24 2 47.934249 71.168168 21.406815 1 A 10 0.23099 0.23099 "IRE " " CAY" 6 1EE11E  0.5 26.44 4 2366 24 1 "CCD match"  <> <> <>
+  25 2 47.371221 69.902871 21.221819 1 A 10 -0.10823 -0.10823 "IRE " " CAG" 6 1EE11E  0.5 27.41 4 2367 25 1 "CCD match"  <> <> <>
+  26 2 46.004082 69.709381 21.367177 1 A 10 0.04481 0.04481 "IRE " " CAX" 6 1EE11E  0.5 27.14 4 2368 26 1 "CCD match"  <> <> <>
+  27 57 45.177580 68.138364 21.127770 1 A 9 -0.13956 -0.13956 "IRE " "CL  " 17 008C00  0.5 30.25 4 2369 27 1 "CCD match"  <> <> <>
+  28 2 45.216180 70.755368 21.719177 1 A 10 0.16704 0.16704 "IRE " " CAW" 6 1EE11E  0.5 30.88 4 2370 28 1 "CCD match"  <> <> <>
+  29 56 43.894518 70.476248 21.851220 1 A 141 -0.17538 -0.17538 "IRE " " FAB" 9 6BFFB5  0.5 36.7 4 2371 29 1 "CCD match"  <> <> <>
+  30 2 45.762806 72.029971 21.949176 1 A 10 -0.14859 -0.14859 "IRE " " CAD" 6 1EE11E  0.5 28.28 4 2372 30 1 "CCD match"  <> <> <>
+  31 2 47.121037 72.231524 21.808881 1 A 10 -0.11233 -0.11233 "IRE " " CAE" 6 1EE11E  0.5 23.77 4 2373 31 1 "CCD match"  <> <> <>
+  32 41 57.328187 75.786216 24.711313 1 A 21 0.07123 0.07123 "IRE " "HAO1" 1 FFFFFF  <> <> <> <> 32 <> <> <> <> <>
+  33 41 58.260478 74.573693 25.653247 1 A 21 0.07123 0.07123 "IRE " "HAO2" 1 FFFFFF  <> <> <> <> 33 <> <> <> <> <>
+  34 41 58.540433 76.684346 26.806681 1 A 21 0.05319 0.05319 "IRE " "HAL1" 1 FFFFFF  <> <> <> <> 34 <> <> <> <> <>
+  35 41 56.784925 77.050685 26.703705 1 A 21 0.05319 0.05319 "IRE " "HAL2" 1 FFFFFF  <> <> <> <> 35 <> <> <> <> <>
+  36 41 56.113616 74.070762 28.874355 1 A 21 0.05319 0.05319 "IRE " "HAM1" 1 FFFFFF  <> <> <> <> 36 <> <> <> <> <>
+  37 41 55.405803 75.720894 28.926126 1 A 21 0.05319 0.05319 "IRE " "HAM2" 1 FFFFFF  <> <> <> <> 37 <> <> <> <> <>
+  38 41 54.592486 73.830807 27.190964 1 A 21 0.07123 0.07123 "IRE " "HAP1" 1 FFFFFF  <> <> <> <> 38 <> <> <> <> <>
+  39 41 54.579392 75.582785 26.794705 1 A 21 0.07123 0.07123 "IRE " "HAP2" 1 FFFFFF  <> <> <> <> 39 <> <> <> <> <>
+  40 41 56.613694 73.334611 24.201867 1 A 21 0.06194 0.06194 "IRE " "HAN1" 1 FFFFFF  <> <> <> <> 40 <> <> <> <> <>
+  41 41 55.715436 72.461668 25.489393 1 A 21 0.06194 0.06194 "IRE " "HAN2" 1 FFFFFF  <> <> <> <> 41 <> <> <> <> <>
+  42 41 53.958763 74.530874 25.030610 1 A 21 0.08872 0.08872 "IRE " "HAJ1" 1 FFFFFF  <> <> <> <> 42 <> <> <> <> <>
+  43 41 54.684176 74.404427 23.392195 1 A 21 0.08872 0.08872 "IRE " "HAJ2" 1 FFFFFF  <> <> <> <> 43 <> <> <> <> <>
+  44 41 53.392912 72.093149 24.920645 1 A 21 0.03553 0.03553 "IRE " "HAK1" 1 FFFFFF  <> <> <> <> 44 <> <> <> <> <>
+  45 41 52.593549 73.070895 23.643285 1 A 21 0.03553 0.03553 "IRE " "HAK2" 1 FFFFFF  <> <> <> <> 45 <> <> <> <> <>
+  46 41 54.230947 69.737575 19.146199 1 A 21 0.14055 0.14055 "IRE " " HAH" 1 FFFFFF  <> <> <> <> 46 <> <> <> <> <>
+  47 41 57.369669 69.495042 20.836559 1 A 21 0.04213 0.04213 "IRE " "HAA1" 1 FFFFFF  <> <> <> <> 47 <> <> <> <> <>
+  48 41 56.146027 69.417548 19.523772 1 A 21 0.04213 0.04213 "IRE " "HAA2" 1 FFFFFF  <> <> <> <> 48 <> <> <> <> <>
+  49 41 55.886648 68.503844 21.048430 1 A 21 0.04213 0.04213 "IRE " "HAA3" 1 FFFFFF  <> <> <> <> 49 <> <> <> <> <>
+  50 41 51.498734 71.822838 22.468761 1 A 21 0.16681 0.16681 "IRE " " HAI" 1 FFFFFF  <> <> <> <> 50 <> <> <> <> <>
+  51 43 49.655646 72.131308 21.981291 1 A 21 0.35168 0.35168 "IRE " " HN3" 1 FFFFFF  <> <> <> <> 51 <> <>  12.974    2.220  <>
+  52 41 50.061446 69.166005 17.595276 1 A 21 0.12290 0.12290 "IRE " " H2 " 1 FFFFFF  <> <> <> <> 52 <> <> <> <> <>
+  53 41 48.000732 69.064253 20.963292 1 A 21 0.15230 0.15230 "IRE " " HAG" 1 FFFFFF  <> <> <> <> 53 <> <> <> <> <>
+  54 41 45.120212 72.849538 22.235153 1 A 21 0.14987 0.14987 "IRE " " HAD" 1 FFFFFF  <> <> <> <> 54 <> <> <> <> <>
+  55 41 47.556716 73.199763 22.006610 1 A 21 0.14283 0.14283 "IRE " " HAE" 1 FFFFFF  <> <> <> <> 55 <> <> <> <> <>
+  :::
+ } 
+ m_bond[58] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 6 1
+  3 1 32 1
+  4 1 33 1
+  5 2 3 1
+  6 2 34 1
+  7 2 35 1
+  8 3 4 1
+  9 4 5 1
+  10 4 36 1
+  11 4 37 1
+  12 5 6 1
+  13 5 38 1
+  14 5 39 1
+  15 6 7 1
+  16 7 8 1
+  17 7 40 1
+  18 7 41 1
+  19 8 9 1
+  20 8 42 1
+  21 8 43 1
+  22 9 10 1
+  23 9 44 1
+  24 9 45 1
+  25 10 11 1
+  26 11 16 2
+  27 11 12 1
+  28 12 14 1
+  29 12 13 2
+  30 13 46 1
+  31 13 18 1
+  32 14 15 1
+  33 15 47 1
+  34 15 48 1
+  35 15 49 1
+  36 16 17 1
+  37 16 50 1
+  38 17 22 2
+  39 17 18 1
+  40 18 19 2
+  41 19 20 1
+  42 20 52 1
+  43 20 21 2
+  44 21 22 1
+  45 22 23 1
+  46 23 24 1
+  47 23 51 1
+  48 24 25 1
+  49 24 31 2
+  50 25 26 2
+  51 25 53 1
+  52 26 27 1
+  53 26 28 1
+  54 28 29 1
+  55 28 30 2
+  56 30 31 1
+  57 30 54 1
+  58 31 55 1
+  :::
+ } 
+} 
+
+f_m_ct { 
+ s_m_title
+ i_ppw_hetnum
+ i_ppw_het
+ s_epik_input
+ s_epik_cmdline
+ r_epik_Ionization_Penalty
+ r_epik_Ionization_Penalty_Charging
+ r_epik_Ionization_Penalty_Neutral
+ r_epik_State_Penalty
+ r_epik_Charging_Adjusted_Penalty
+ i_epik_Tot_Q
+ i_epik_Tot_abs_Q
+ r_epik_Metal_State_Penalty
+ b_epik_Metal_Only
+ i_m_ct_format
+ :::
+ "" 
+  2
+  2
+  W0NIMl0xW0NIMl1PW0NIMl1bQ0gyXVtOSCtdMVtDSDJdW0NIMl1TKFtPLV0pKD1PKT1P 
+  J2VwaWtfYXBwJywgJy1pbWFlJywgJzNVRzItZXBpay5tYWUnLCAnLW9tYWUnLCAnM1VHMi1lcGlrLW91dC5tYWUnLCAnLW1zJywgJzMyJywgJy1waCcsICc3LjQnLCAnLXBodCcsICcwLjAnLCAnLWNnJywgJzAuMycsICcwLjMnLCAnLW1ldGFsX2JpbmRpbmcn 
+    0.1129 
+    0.0000 
+    0.1129 
+    0.1899 
+  0.189928316603661
+  -1
+  1
+   -0.0000 
+  0
+  2
+ m_depend[7] { 
+  # First column is dependency index #
+  i_m_depend_dependency
+  s_m_depend_property
+  :::
+  1 10 r_lp_tautomer_probability 
+  2 10 r_epik_Ionization_Penalty 
+  3 10 r_epik_Ionization_Penalty_Charging 
+  4 10 r_epik_Ionization_Penalty_Neutral 
+  5 10 r_epik_State_Penalty 
+  6 10 r_epik_Charging_Adjusted_Penalty 
+  7 10 i_epik_Tot_Q 
+  :::
+ } 
+ m_atom[24] { 
+  # First column is atom index #
+  i_m_mmod_type
+  r_m_x_coord
+  r_m_y_coord
+  r_m_z_coord
+  i_m_residue_number
+  s_m_chain_name
+  i_m_color
+  r_m_charge1
+  r_m_charge2
+  s_m_pdb_residue_name
+  s_m_pdb_atom_name
+  i_m_atomic_number
+  i_m_formal_charge
+  s_m_color_rgb
+  r_m_pdb_occupancy
+  r_m_pdb_tfactor
+  i_m_pdb_convert_problem
+  i_pdb_PDB_serial
+  i_ppw_anum
+  i_ppw_het
+  i_psp_added_missing_loops
+  s_ppw_CCD_assignment_status
+  r_epik_H2O_pKa
+  r_epik_H2O_pKa_uncertainty
+  :::
+  1 16 49.346000 84.945000 26.198000 1023 A 70 -0.42052 -0.42052 "MES " " O1 " 8 0 FF2E2E  0.6 40.6 4 2374 5263 2 1 "CCD match"  <> <>
+  2 3 48.042000 85.011000 26.799000 1023 A 10 0.07367 0.07367 "MES " " C2 " 6 0 1EE11E  0.6 41.73 4 2375 5264 2 1 "CCD match"  <> <>
+  3 3 47.111000 85.981000 26.047000 1023 A 10 0.04064 0.04064 "MES " " C3 " 6 0 1EE11E  0.6 40.03 4 2376 5265 2 1 "CCD match"  <> <>
+  4 26 47.699000 87.312000 26.139000 1023 A 38 -0.43932 -0.43932 "MES " " N4 " 7 0 2E2EFF  0.6 42.48 4 2377 5266 2 1 "CCD match"    6.722    0.670 
+  5 3 49.160000 87.477000 26.282000 1023 A 10 0.04064 0.04064 "MES " " C5 " 6 0 1EE11E  0.6 42.64 4 2378 5267 2 1 "CCD match"  <> <>
+  6 3 49.889000 86.216000 25.756000 1023 A 10 0.07367 0.07367 "MES " " C6 " 6 0 1EE11E  0.6 41.12 4 2379 5268 2 1 "CCD match"  <> <>
+  7 3 46.804000 88.496000 26.035000 1023 A 10 0.08258 0.08258 "MES " " C7 " 6 0 1EE11E  0.6 43.82 4 2380 5269 2 1 "CCD match"  <> <>
+  8 3 47.258000 89.626000 26.963000 1023 A 10 -0.37382 -0.37382 "MES " " C8 " 6 0 1EE11E  0.6 41.14 4 2381 5270 2 1 "CCD match"  <> <>
+  9 113 46.746000 91.094000 26.378000 1023 A 143 1.29842 1.29842 "MES " " S  " 16 0 FFFF6B  0.6 43.97 4 2382 5271 2 1 "CCD match"  <> <>
+  10 18 47.400000 92.157000 27.145000 1023 A 70 -0.68589 -0.68589 "MES " " O1S" 8 -1 FF2E2E  0.6 45.94 4 2383 5272 2 1 "CCD match"   -0.413    2.000 
+  11 15 47.151000 91.347000 24.994000 1023 A 70 -0.68589 -0.68589 "MES " " O2S" 8 0 FF2E2E  0.6 44.5 4 2384 5273 2 1 "CCD match"  <> <>
+  12 15 45.295000 91.344000 26.453000 1023 A 70 -0.68589 -0.68589 "MES " " O3S" 8 0 FF2E2E  0.6 44.04 4 2385 5274 2 1 "CCD match"  <> <>
+  13 41 47.581403 84.012157 26.786191 1023 A 21 0.08098 0.08098 "MES " " H21" 1 0 FFFFFF  <> <> <> <> 5275 <> 1 <> <> <>
+  14 41 48.134494 85.358795 27.838463 1023 A 21 0.08098 0.08098 "MES " " H22" 1 0 FFFFFF  <> <> <> <> 5276 <> 1 <> <> <>
+  15 41 47.028538 85.668905 24.995431 1023 A 21 0.13475 0.13475 "MES " " H31" 1 0 FFFFFF  <> <> <> <> 5277 <> 1 <> <> <>
+  16 41 46.114475 85.967844 26.512581 1023 A 21 0.13475 0.13475 "MES " " H32" 1 0 FFFFFF  <> <> <> <> 5278 <> 1 <> <> <>
+  17 41 49.488442 88.352894 25.703264 1023 A 21 0.13475 0.13475 "MES " " H51" 1 0 FFFFFF  <> <> <> <> 5280 <> 1 <> <> <>
+  18 41 49.410336 87.623742 27.343037 1023 A 21 0.13475 0.13475 "MES " " H52" 1 0 FFFFFF  <> <> <> <> 5281 <> 1 <> <> <>
+  19 41 50.934207 86.303351 26.087531 1023 A 21 0.08098 0.08098 "MES " " H61" 1 0 FFFFFF  <> <> <> <> 5282 <> 1 <> <> <>
+  20 41 49.846764 86.270915 24.658184 1023 A 21 0.08098 0.08098 "MES " " H62" 1 0 FFFFFF  <> <> <> <> 5283 <> 1 <> <> <>
+  21 41 46.810700 88.870968 25.000904 1023 A 21 0.12566 0.12566 "MES " " H71" 1 0 FFFFFF  <> <> <> <> 5284 <> 1 <> <> <>
+  22 41 45.779840 88.207090 26.313615 1023 A 21 0.12566 0.12566 "MES " " H72" 1 0 FFFFFF  <> <> <> <> 5285 <> 1 <> <> <>
+  23 41 46.832143 89.470771 27.965272 1023 A 21 0.13359 0.13359 "MES " " H81" 1 0 FFFFFF  <> <> <> <> 5286 <> 1 <> <> <>
+  24 41 48.356099 89.628618 27.027584 1023 A 21 0.13359 0.13359 "MES " " H82" 1 0 FFFFFF  <> <> <> <> 5287 <> 1 <> <> <>
+  :::
+ } 
+ m_bond[24] { 
+  # First column is bond index #
+  i_m_from
+  i_m_to
+  i_m_order
+  :::
+  1 1 2 1
+  2 1 6 1
+  3 2 3 1
+  4 2 13 1
+  5 2 14 1
+  6 3 4 1
+  7 3 15 1
+  8 3 16 1
+  9 4 5 1
+  10 4 7 1
+  11 5 6 1
+  12 5 17 1
+  13 5 18 1
+  14 6 19 1
+  15 6 20 1
+  16 7 8 1
+  17 7 21 1
+  18 7 22 1
+  19 8 9 1
+  20 8 23 1
+  21 8 24 1
+  22 9 10 1
+  23 9 11 2
+  24 9 12 2
+  :::
+ } 
+} 
+
